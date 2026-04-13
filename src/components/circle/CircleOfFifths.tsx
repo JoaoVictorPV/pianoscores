@@ -5,6 +5,7 @@ import * as React from "react";
 import { cn } from "@/lib/cn";
 import { MVP_KEYS, type KeySlug } from "@/content/keys";
 import { useProgressStore } from "@/store/progressStore";
+import { Button } from "@/components/ui/Button";
 
 type KeyId = "C" | "G" | "D" | "A" | "E" | "B" | "F#" | "C#" | "Ab" | "Eb" | "Bb" | "F";
 
@@ -86,6 +87,8 @@ export function CircleOfFifths({
   className?: string;
   onPickKey?: (slug: KeySlug) => void;
 }) {
+  const [mode, setMode] = React.useState<"major" | "minor">("major");
+  const [spelling, setSpelling] = React.useState<"sharp" | "flat">("sharp");
   const [hovered, setHovered] = React.useState<KeyId | null>(null);
   const size = 520;
   const cx = size / 2;
@@ -99,15 +102,24 @@ export function CircleOfFifths({
     if (!hydrated) hydrate();
   }, [hydrated, hydrate]);
 
-  const keyToSlug: Partial<Record<KeyId, KeySlug>> = {
-    C: "c-major",
-    G: "g-major",
-    D: "d-major",
-    A: "a-minor", // placeholder: A sector used for A minor in MVP
+  // MVP mapping. Full mapping will be expanded later.
+  const keyToSlug: Partial<Record<string, KeySlug>> = {
+    "major:sharp:C": "c-major",
+    "major:sharp:G": "g-major",
+    "major:sharp:D": "d-major",
+    "minor:sharp:A": "a-minor",
+
+    // also allow picking A minor even if user is in "flat" mode.
+    "minor:flat:A": "a-minor",
   };
 
+  function slugFor(id: KeyId) {
+    const key = `${mode}:${spelling}:${id}`;
+    return keyToSlug[key];
+  }
+
   function pctForKey(id: KeyId) {
-    const slug = keyToSlug[id];
+    const slug = slugFor(id);
     if (!slug) return 0;
     const content = MVP_KEYS.find((k) => k.slug === slug);
     if (!content) return 0;
@@ -118,8 +130,8 @@ export function CircleOfFifths({
   }
 
   function labelForKey(id: KeyId) {
-    const slug = keyToSlug[id];
-    if (!slug) return `${id} (em breve)`;
+    const slug = slugFor(id);
+    if (!slug) return `${id} (${mode === "major" ? "Maior" : "menor"}) (em breve)`;
     const c = MVP_KEYS.find((k) => k.slug === slug);
     return c ? `${c.label}` : `${id}`;
   }
@@ -132,11 +144,55 @@ export function CircleOfFifths({
     return `rgba(20,199,255,${alpha.toFixed(3)})`;
   }
 
-  const hoveredSlug = hovered ? keyToSlug[hovered] : undefined;
+  const hoveredSlug = hovered ? slugFor(hovered) : undefined;
   const hoveredPct = hovered ? pctForKey(hovered) : 0;
 
   return (
-    <div className={cn("flex w-full items-center justify-center", className)}>
+    <div className={cn("flex w-full flex-col items-center justify-center gap-4", className)}>
+      <div className="flex flex-wrap items-center justify-center gap-2">
+        <div className="inline-flex overflow-hidden rounded-xl border border-[var(--color-border)] bg-[rgba(0,0,0,0.12)]">
+          <Button
+            type="button"
+            size="sm"
+            variant="segmented"
+            className={cn("rounded-none border-0", mode === "major" ? "bg-[var(--color-neon-500)] text-black" : "")}
+            onClick={() => setMode("major")}
+          >
+            Maiores
+          </Button>
+          <Button
+            type="button"
+            size="sm"
+            variant="segmented"
+            className={cn("rounded-none border-0", mode === "minor" ? "bg-[var(--color-neon-500)] text-black" : "")}
+            onClick={() => setMode("minor")}
+          >
+            Menores
+          </Button>
+        </div>
+
+        <div className="inline-flex overflow-hidden rounded-xl border border-[var(--color-border)] bg-[rgba(0,0,0,0.12)]">
+          <Button
+            type="button"
+            size="sm"
+            variant="segmented"
+            className={cn("rounded-none border-0", spelling === "sharp" ? "bg-[var(--color-neon-500)] text-black" : "")}
+            onClick={() => setSpelling("sharp")}
+          >
+            ♯
+          </Button>
+          <Button
+            type="button"
+            size="sm"
+            variant="segmented"
+            className={cn("rounded-none border-0", spelling === "flat" ? "bg-[var(--color-neon-500)] text-black" : "")}
+            onClick={() => setSpelling("flat")}
+          >
+            ♭
+          </Button>
+        </div>
+      </div>
+
       <svg
         viewBox={`0 0 ${size} ${size}`}
         className="h-[320px] w-[320px] md:h-[420px] md:w-[420px]"
@@ -197,7 +253,7 @@ export function CircleOfFifths({
 
           const midAngle = (startAngle + endAngle) / 2;
           const labelPos = polarToCartesian(cx, cy, (rOuter + rInner) / 2, midAngle);
-          const slug = keyToSlug[k.id];
+          const slug = slugFor(k.id);
           const isHovered = hovered === k.id;
           const scale = slug && isHovered ? 1.018 : 1;
           return (

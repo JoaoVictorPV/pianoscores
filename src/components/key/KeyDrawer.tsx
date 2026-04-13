@@ -143,7 +143,7 @@ export function KeyDrawer({
 
           <ScrollArea.Root className="h-[calc(86vh-88px)] md:h-[calc(100vh-3rem-88px)]">
             <ScrollArea.Viewport className="h-full px-5 py-5">
-              <Accordion.Root type="multiple" className="space-y-3" defaultValue={["mechanical"]}>
+              <Accordion.Root type="multiple" className="space-y-3" defaultValue={["mechanical", "repertoire"]}>
                 {/* Mechanical */}
                 <Accordion.Item value="mechanical" className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-panel-900)]">
                   <Accordion.Header>
@@ -197,36 +197,11 @@ export function KeyDrawer({
                 {/* Affect */}
                 {/* (B) removed by design: focus on Context + Repertoire */}
 
-                {/* Context */}
-                <Accordion.Item value="context" className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-panel-900)]">
-                  <Accordion.Header>
-                    <Accordion.Trigger className="flex w-full items-center justify-between gap-4 px-4 py-3 text-left">
-                      <span className="text-sm font-semibold">B) {keyContent.context.title}</span>
-                      <span className="text-[var(--color-muted)]">▼</span>
-                    </Accordion.Trigger>
-                  </Accordion.Header>
-                  <Accordion.Content className="px-4 pb-4">
-                    <p className="text-sm leading-6 text-[var(--color-muted)]">{keyContent.context.intro}</p>
-                    <div className="mt-4 space-y-3">
-                      {keyContent.context.topics.map((t) => (
-                        <div key={t.title} className="rounded-2xl border border-[var(--color-border)] bg-[color-mix(in_oklab,var(--color-panel-900),white_4%)] p-4">
-                          <div className="text-sm font-semibold">{t.title}</div>
-                          <ul className="mt-2 list-disc space-y-2 pl-5 text-sm leading-6 text-[var(--color-muted)]">
-                            {t.bullets.map((b, i) => (
-                              <li key={i}>{b}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      ))}
-                    </div>
-                  </Accordion.Content>
-                </Accordion.Item>
-
                 {/* Repertoire */}
                 <Accordion.Item value="repertoire" className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-panel-900)]">
                   <Accordion.Header>
                     <Accordion.Trigger className="flex w-full items-center justify-between gap-4 px-4 py-3 text-left">
-                      <span className="text-sm font-semibold">C) {keyContent.repertoire.title}</span>
+                      <span className="text-sm font-semibold">B) {keyContent.repertoire.title}</span>
                       <span className="text-[var(--color-muted)]">▼</span>
                     </Accordion.Trigger>
                   </Accordion.Header>

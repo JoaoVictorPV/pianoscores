@@ -13,6 +13,8 @@ const buttonVariants = cva(
           "bg-[var(--color-neon-500)] text-black hover:bg-[var(--color-neon-400)]",
         secondary:
           "border border-[var(--color-border)] bg-[var(--color-panel-900)] text-[var(--color-foreground)] hover:bg-[color-mix(in_oklab,var(--color-panel-900),white_6%)]",
+        segmented:
+          "border border-[var(--color-border)] bg-[rgba(0,0,0,0.18)] text-[var(--color-foreground)] hover:bg-[rgba(0,0,0,0.28)]",
         ghost:
           "text-[var(--color-foreground)] hover:bg-[color-mix(in_oklab,var(--color-panel-900),white_6%)]",
       },

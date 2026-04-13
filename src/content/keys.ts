@@ -42,11 +42,6 @@ export type KeyContent = {
     intro: string;
     exercises: Exercise[];
   };
-  context: {
-    title: string;
-    intro: string;
-    topics: { title: string; bullets: string[] }[];
-  };
   repertoire: {
     title: string;
     intro: string;
@@ -197,27 +192,6 @@ export const MVP_KEYS: KeyContent[] = [
             "Use este estudo como laboratório de igualdade: notas ‘sem importância’ não existem.",
             "Se o dedo ‘pula’ demais, o som fica picotado. Mantenha a mão perto da tecla.",
             "Meta: legato convincente sem pedal, com dinâmica uniforme.",
-          ],
-        },
-      ],
-    },
-    context: {
-      title: "Desafio do Contexto",
-      intro:
-        "Em Dó Maior, dá pra falar do que o piano virou quando saiu do salão aristocrático e começou a morar no apartamento burguês: o instrumento como ‘mídia social’ do século XIX. Quem tocava bem era literalmente alguém.",
-      topics: [
-        {
-          title: "O piano como tecnologia doméstica",
-          bullets: [
-            "A evolução de mecanismo e estrutura (mais tensão de corda, mais potência) mudou o que era ‘técnica’.",
-            "O repertório ‘para casa’ cresce: sonatinas, álbuns infantis, peças de caráter — o mercado editorial manda muito.",
-          ],
-        },
-        {
-          title: "Neutralidade não existe",
-          bullets: [
-            "Mesmo ‘sem acidentes’, você escolhe retórica: fraseado, articulação e hierarquia de vozes.",
-            "Ouvir vozes internas é o grande divisor entre tocar e ‘falar piano’.",
           ],
         },
       ],
@@ -583,20 +557,6 @@ export const MVP_KEYS: KeyContent[] = [
         },
       ],
     },
-    context: {
-      title: "Desafio do Contexto",
-      intro:
-        "Sol Maior é um bom lugar para falar da ascensão do repertório doméstico e do gosto burguês: música como educação moral, etiqueta e status. O piano vira ‘mobiliário sonoro’.",
-      topics: [
-        {
-          title: "Pedagogia e mercado",
-          bullets: [
-            "Compositores escrevem sonatinas e coleções para vender: isso molda o que virou ‘técnica básica’.",
-            "O aluno não é só artista: é consumidor. O repertório se adapta.",
-          ],
-        },
-      ],
-    },
     repertoire: {
       title: "Desafio do Repertório",
       intro:
@@ -812,27 +772,6 @@ export const MVP_KEYS: KeyContent[] = [
         },
       ],
     },
-    context: {
-      title: "Desafio do Contexto",
-      intro:
-        "Ré Maior é um portal perfeito para Viena e o século XVIII/XIX: guerras, burguesia, indústria e o piano virando um bicho mais potente. Onde tem aço e madeira, tem política.",
-      topics: [
-        {
-          title: "Do cravo ao piano robusto",
-          bullets: [
-            "Mudança de mecânica e tensão de cordas altera a escrita: mais dinâmica, mais legato, mais ‘peso’.",
-            "As guerras e a indústria impactam materiais; a produção em massa muda o acesso ao instrumento.",
-          ],
-        },
-        {
-          title: "Clementi vs. Mozart (o ringue elegante)",
-          bullets: [
-            "Duelo de 1781 diante do Imperador José II: virtuose como entretenimento de elite.",
-            "Clementi foi chamado de ‘mecânico’, mas seu legado é pedagógico — e muito.",
-          ],
-        },
-      ],
-    },
     repertoire: {
       title: "Desafio do Repertório",
       intro:
@@ -1015,21 +954,6 @@ export const MVP_KEYS: KeyContent[] = [
           notes: [
             "Treine pouco e bem: o objetivo é precisão, não fadiga.",
             "Se a mão ‘queima’, pare. Técnica não é treino de dor.",
-          ],
-        },
-      ],
-    },
-    context: {
-      title: "Desafio do Contexto",
-      intro:
-        "Menor não é ‘triste’: é uma gramática diferente. Falar de tonalidade menor é falar de linguagem, retórica e psicologia musical — e também de como o romantismo vendeu emoção como produto.",
-      topics: [
-        {
-          title: "As três escalas menores e a história por trás",
-          bullets: [
-            "Natural: herança modal e simplicidade.",
-            "Harmônica: o ‘puxão’ do 7º grau para criar dominante mais forte.",
-            "Melódica: solução prática para canto/linha melódica, depois ‘virou regra’ pedagógica.",
           ],
         },
       ],
