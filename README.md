@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cronograma de Piano
 
-## Getting Started
+**Entre numa tonalidade. Saia com um mundo novo na cabeça.**
 
-First, run the development server:
+Um roteiro online para ensino/estudo de piano com uma pegada de **dicionário enciclopédico interativo**.
+
+O “portal” é o **Círculo das Quintas**: ao tocar em uma tonalidade, você abre um **Simpósio de Estudo** com 4 células:
+
+1) **Desafio Mecânico** (Hanon/Czerny + biomecânica e prática guiada)
+2) **Desafio de Afeto** (escala/arpejo + caráter/timbre)
+3) **Desafio do Contexto** (história/biografia/política)
+4) **Desafio do Repertório** (curadoria com links para YouTube/Spotify/Apple Music/IMSLP)
+
+## Sem banco de dados
+
+O app não usa banco de dados.
+
+Ele salva no **LocalStorage** apenas o progresso do usuário:
+- exercícios marcados
+- repertório marcado
+- “tonalidade concluída”
+- streak semanal (baseado em tonalidades concluídas)
+
+## MVP (conteúdo inicial)
+
+- C Maior
+- G Maior
+- D Maior
+- A menor
+
+## Rodando localmente
+
+Pré-requisito: Node.js + npm.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra: http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+## Deploy na Vercel (passo a passo)
 
-To learn more about Next.js, take a look at the following resources:
+1) Entre em https://vercel.com/
+2) Clique em **Add New → Project**
+3) Importe o repositório do GitHub: `JoaoVictorPV/pianoscores`
+4) A Vercel deve detectar automaticamente **Next.js**
+5) Clique em **Deploy**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Depois disso, qualquer push na branch **main** vai gerar novo deploy automaticamente.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Observações
 
-## Deploy on Vercel
+- O projeto foi pensado para **iPad-first**, tema escuro premium, drawer e leitura longa com tópicos expansíveis.
+- Links de áudio/partitura são externos (YouTube/Spotify/Apple/IMSLP).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Créditos e stack
+
+- Next.js + TypeScript
+- TailwindCSS
+- Radix UI (Dialog/Accordion/ScrollArea)
+- Zustand + Zod (LocalStorage robusto)
