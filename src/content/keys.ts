@@ -9,11 +9,15 @@ export type KeySlug =
   | "b-major"
   | "fsharp-major"
   | "csharp-major"
+  | "ab-major"
+  | "eb-major"
   | "a-minor"
   | "e-minor"
   | "b-minor"
   | "dsharp-minor"
   | "asharp-minor"
+  | "f-minor"
+  | "c-minor"
   | "fsharp-minor"
   | "csharp-minor"
   | "gsharp-minor";
@@ -4089,6 +4093,1044 @@ export const MVP_KEYS: KeyContent[] = [
           technicalFocus: "cantabile",
           notes: "Quanto melhor o canto, menos você precisa ‘forçar drama’.",
           links: [{ label: "YouTube", url: ytSearch("Chopin nocturnes") }],
+        },
+      ],
+    },
+  },
+
+  {
+    slug: "ab-major",
+    label: "A♭ Maior",
+    mode: "major",
+    pitchClass: "A♭",
+    motto:
+      "A♭ Maior é veludo aristocrático: uma tonalidade que parece ‘rica’ só de existir — mas, no piano, luxo não é volume; é controle de camadas, pedal limpo e fraseado com postura (sem virar perfume barato).",
+    estimatedReadingMinutes: 26,
+    mechanical: {
+      title: "Desafio Mecânico",
+      intro:
+        "Quatro bemóis (B♭, E♭, A♭, D♭) mudam a ergonomia de um jeito curioso: a mão tende a ‘entrar’ no teclado e a aceitar as teclas pretas como apoio. Isso é ótimo — *desde que* você não use esse conforto como desculpa para relaxar o ouvido e borrar tudo no pedal. Em A♭ maior, a técnica central é **timbre de seda com contorno**: bordas nítidas (jeu perlé quando necessário), mas sem dureza; e **voicing** como prioridade número 1 (melodia sempre acima da névoa harmônica). E, sim: se você quer um resumo da Doutrina dos Afetos em uma frase, é isso — A♭ maior na tradição clássica/romântica costuma soar como nobreza, ternura e ‘calma iluminada’ (não alegria eufórica).",
+      exercises: [
+        {
+          id: "scale-ab-major",
+          title: "Escala de A♭ Maior (mãos separadas → juntas)",
+          subtitle: "timbre de veludo + cruzamentos sem ‘clique’",
+          exampleNotes: scaleNotes("A♭", "B♭", "C", "D♭", "E♭", "F", "G", "A♭"),
+          notes: [
+            "Treine em p como lupa: se o som ‘afunda’ nas teclas pretas, você está chegando com ângulo ruim ou com dedo alto demais.",
+            "Objetivo concreto: mesma cor em todas as notas — nenhuma preta pode soar ‘mais funda’ por acidente.",
+            "Polegar educado: ele entra de lado (sensação de deslize). Se fizer clique, você está cavando.",
+          ],
+        },
+        {
+          id: "arpeggio-ab-major",
+          title: "Arpejo de A♭ Maior",
+          subtitle: "um arco só (sem ‘escada’ de posições)",
+          exampleNotes: "A♭ C E♭ A♭ | A♭ E♭ C A♭",
+          notes: [
+            "A armadilha é tentar ‘encaixar’ cada acorde com os dedos. Quem viaja é o antebraço; o dedo só finaliza.",
+            "Faça 3 versões: legato, non-legato e staccato leve. A mão deve ficar igualmente solta nas três.",
+          ],
+        },
+        {
+          id: "hanon-1-in-ab-major",
+          title: "Hanon nº 1 (em A♭ Maior) — transposição",
+          subtitle: "anti-memória muscular (intervalos mandam)",
+          notes: [
+            "Transpor para A♭ maior é o teste do ‘ouvido piloto’. Você para de dirigir pela rua conhecida e passa a dirigir pelo mapa.",
+            "Toque curto e perfeito: 30–60s, pausa, repete. Técnica boa cresce por repetição limpa, não por sofrimento.",
+          ],
+        },
+        {
+          id: "czerny-pattern-ab-major",
+          title: "Czerny (padrões de escala) — aplique em A♭ maior",
+          subtitle: "borda clara (sem pressa) + regularidade",
+          notes: [
+            "Escolha um estudo de Czerny com padrão evidente e ‘traduza’ a geometria para A♭.",
+            "Jeu perlé não é toque fraco: é contorno limpo com relaxamento imediato.",
+          ],
+        },
+        {
+          id: "broken-chords-ab-major",
+          title: "Acordes quebrados (A♭–Fm–D♭–E♭)",
+          subtitle: "mão esquerda tapete; mão direita conversa",
+          notes: [
+            "Pense em acompanhamento de canção: fluxo harmônico sem picos.",
+            "Treine voicing: a nota de cima canta; internas ficam em p.",
+          ],
+        },
+        {
+          id: "voicing-ab-major",
+          title: "Voicing em A♭ Maior (camadas na mesma mão)",
+          subtitle: "melodia mf, internas p — sem travar",
+          notes: [
+            "Faça um acorde de A♭ (A♭–C–E♭) e treine 2 camadas: melodia em mf; o resto em p.",
+            "Se você precisa ‘apertar’ a melodia para aparecer, o bug está nas internas (altas demais).",
+          ],
+        },
+        {
+          id: "pedal-lab-ab-major",
+          title: "Laboratório de pedal (A♭ Maior)",
+          subtitle: "cor sem borrão",
+          notes: [
+            "Regra brutal: pedal é lente, não cobertor. Se o desenho some, é pedal demais ou ouvido de menos.",
+            "Treine ‘meio pedal’ e trocas curtas em cadências. Grave 20s e compare.",
+          ],
+        },
+        {
+          id: "rhythm-cells-ab-major",
+          title: "Células rítmicas na escala (longo-curto / curto-longo)",
+          subtitle: "debug de ansiedade",
+          notes: [
+            "Ritmos alterados expõem onde você acelera para ‘se livrar’ do cruzamento.",
+            "Quando voltar ao ritmo normal, a sensação deve ser de estrada lisa.",
+          ],
+        },
+        {
+          id: "reading-ab-major",
+          title: "Leitura lenta em A♭ Maior (1 página)",
+          subtitle: "olho à frente, mão calma",
+          notes: [
+            "Escolha uma peça curta em A♭ (ou com muitos bemóis) e leia sem parar.",
+            "Olhe 1 compasso à frente. A mão apressa quando o olho chega atrasado.",
+          ],
+        },
+        {
+          id: "micro-routine-ab-major",
+          title: "Micro-rotina (3 minutos): veludo com contorno",
+          subtitle: "p → mf → p",
+          notes: [
+            "1 min: escala em p (controle fino).",
+            "1 min: arpejo em mf (som cheio sem dureza).",
+            "1 min: acorde quebrado A♭–Fm–D♭–E♭ em p com voicing.",
+          ],
+        },
+      ],
+    },
+    repertoire: {
+      title: "Desafio do Repertório",
+      intro:
+        "Curadoria em A♭ Maior (10+). Aqui o foco é: timbre ‘caro’, rubato disciplinado (quando houver), e pedal como ferramenta de cor — nunca como camuflagem. Links por busca para você comparar interpretações (e descobrir que ‘A♭ maior’ pode ser tanto seda quanto fogo, dependendo do compositor).",
+      items: [
+        {
+          id: "ab-chopin-etude-op25-1",
+          composer: "Frédéric Chopin",
+          title: "Estudo Op. 25 nº 1 (A♭ Maior) — ‘Harpa Eólia’",
+          level: "avançado",
+          technicalFocus: "toque flutuante + braço solto + pedal limpo",
+          notes:
+            "Parece ‘fácil’ até você tentar manter a leveza sem acelerar. Excelente laboratório de som: brilho sem dureza.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Etude Op 25 No 1 A flat major") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 25 No. 1") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 25 No. 1") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 25 No. 1") },
+          ],
+        },
+        {
+          id: "ab-chopin-waltz-op69-1",
+          composer: "Frédéric Chopin",
+          title: "Valsa Op. 69 nº 1 (A♭ Maior) — ‘Adeus’",
+          level: "intermediário",
+          technicalFocus: "rubato com chão + cantabile",
+          notes:
+            "A mão esquerda é o piso; a direita respira por cima. Se a esquerda ‘derrete’, vira sentimentalismo sem estrutura.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Waltz Op 69 No 1 A flat major") },
+            { label: "Spotify", url: spotifySearch("Chopin Waltz Op. 69 No. 1") },
+            { label: "Apple Music", url: appleSearch("Chopin Waltz Op. 69 No. 1") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 69 No. 1") },
+          ],
+        },
+        {
+          id: "ab-chopin-polonaise-fantaisie-op61",
+          composer: "Frédéric Chopin",
+          title: "Polonaise-Fantaisie Op. 61 (A♭ Maior) — trechos",
+          level: "avançado",
+          technicalFocus: "arquitetura + camadas + narrativa",
+          notes:
+            "Obra de ‘Chopin tardio’: não é só técnica — é planejamento de discurso. Ótima para treinar forma, não só dedos.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Polonaise-Fantaisie Op 61 A flat major") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 61") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 61") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 61") },
+          ],
+        },
+        {
+          id: "ab-beethoven-op26",
+          composer: "L. v. Beethoven",
+          title: "Sonata Op. 26 (A♭ Maior) — seleção de movimentos",
+          level: "avançado",
+          technicalFocus: "clareza clássica + variação de caráter",
+          notes:
+            "A marcha fúnebre no meio do A♭ maior é uma aula de contraste: luz e sombra dentro da mesma ‘casa tonal’.",
+          links: [
+            { label: "YouTube", url: ytSearch("Beethoven Sonata Op 26 A flat major") },
+            { label: "Spotify", url: spotifySearch("Beethoven Op. 26") },
+            { label: "Apple Music", url: appleSearch("Beethoven Op. 26") },
+            { label: "IMSLP", url: imslpSearch("Beethoven Op. 26") },
+          ],
+        },
+        {
+          id: "ab-schubert-impromptu-op90-4",
+          composer: "Franz Schubert",
+          title: "Impromptu Op. 90 nº 4 (A♭ Maior)",
+          level: "avançado",
+          technicalFocus: "regularidade + leveza + resistência",
+          notes:
+            "Treino de ‘máquina leve’: energia contínua sem dureza. Se apertar, você perde a dança.",
+          links: [
+            { label: "YouTube", url: ytSearch("Schubert Impromptu Op 90 No 4 A flat major") },
+            { label: "Spotify", url: spotifySearch("Schubert Op. 90 No. 4") },
+            { label: "Apple Music", url: appleSearch("Schubert Op. 90 No. 4") },
+            { label: "IMSLP", url: imslpSearch("Schubert Op. 90 No. 4") },
+          ],
+        },
+        {
+          id: "ab-liszt-liebestraum-3",
+          composer: "Franz Liszt",
+          title: "Liebestraum nº 3 (A♭ Maior)",
+          level: "avançado",
+          technicalFocus: "cantabile + voicing + clímax controlado",
+          notes:
+            "Liszt aqui é ‘cantor de ópera’ no piano: se a melodia não canta, vira ginástica. Treina clímax sem gritaria.",
+          links: [
+            { label: "YouTube", url: ytSearch("Liszt Liebestraum No 3 A flat major") },
+            { label: "Spotify", url: spotifySearch("Liszt Liebestraum No. 3") },
+            { label: "Apple Music", url: appleSearch("Liszt Liebestraum No. 3") },
+            { label: "IMSLP", url: imslpSearch("Liebestraum No. 3") },
+          ],
+        },
+        {
+          id: "ab-bach-wtc1-ab",
+          composer: "J. S. Bach",
+          title: "(ponte) WTC: procure prelúdio/fuga em A♭ Maior (ou G♯ Maior) — laboratório de clareza",
+          level: "avançado",
+          technicalFocus: "articulação e vozes",
+          notes:
+            "Item-ponte porque o repertório ‘central’ em A♭ varia muito por edição: Bach funciona como detergente de pedal e de textura.",
+          links: [
+            { label: "YouTube", url: ytSearch("Bach A flat major prelude fugue piano") },
+            { label: "Spotify", url: spotifySearch("Bach A flat major") },
+            { label: "IMSLP", url: imslpSearch("Bach A flat major prelude fugue") },
+          ],
+        },
+        {
+          id: "ab-debussy-bridge",
+          composer: "Claude Debussy",
+          title: "(ponte) Prelúdios/Estampes (seleção) — cor com transparência",
+          level: "avançado",
+          technicalFocus: "pedal limpo + timbre",
+          notes:
+            "Ponte: Debussy te obriga a tratar pedal como engenharia de ressonância. Isso deixa A♭ maior ‘de vidro’, não ‘de algodão’.",
+          links: [
+            { label: "YouTube", url: ytSearch("Debussy piano A flat major") },
+            { label: "Spotify", url: spotifySearch("Debussy piano") },
+          ],
+        },
+        {
+          id: "ab-brahms-bridge",
+          composer: "Johannes Brahms",
+          title: "(ponte) Intermezzi (seleção) — camadas e densidade íntima",
+          level: "avançado",
+          technicalFocus: "voicing",
+          notes:
+            "Ponte: Brahms é o professor definitivo de camadas. Se você aprende isso, A♭ maior vira ‘luxo’ de verdade.",
+          links: [
+            { label: "YouTube", url: ytSearch("Brahms Intermezzo A flat major") },
+            { label: "Spotify", url: spotifySearch("Brahms Intermezzo") },
+          ],
+        },
+        {
+          id: "ab-transposition",
+          composer: "J. S. Bach / você",
+          title: "(ponte) Transponha 8–16 compassos para A♭ Maior",
+          level: "intermediário",
+          technicalFocus: "leitura + função harmônica",
+          notes:
+            "Transposição é a forma mais rápida de parar de tocar por ‘memória de dedo’. E A♭ maior é um ótimo campo de treino por causa dos bemóis.",
+          links: [{ label: "YouTube", url: ytSearch("piano transposition exercise") }],
+        },
+      ],
+    },
+  },
+
+  {
+    slug: "eb-major",
+    label: "E♭ Maior",
+    mode: "major",
+    pitchClass: "E♭",
+    motto:
+      "E♭ Maior é o palco com cortinas pesadas: nobre, amplo, com ‘ar’ para discursos longos. A técnica aqui é aprender a fazer som grande sem dureza — e manter a forma em pé quando a música começa a ficar ‘importante’.",
+    estimatedReadingMinutes: 25,
+    mechanical: {
+      title: "Desafio Mecânico",
+      intro:
+        "Três bemóis (B♭, E♭, A♭) dão uma sensação de conforto na mão — mas E♭ maior tem uma armadilha: é uma tonalidade ‘orquestral’ na história (pense em Beethoven, em fanfarras, em textura cheia). No piano, isso costuma virar **gente tocando pesado** achando que está sendo ‘grandioso’. Então a regra técnica é: **grande ≠ duro**. Você vai treinar: peso distribuído, ataque com contorno, e pedal com higiene (trocas claras em harmonia). E, como bônus cultural: E♭ maior no imaginário clássico-romântico é frequentemente associada a heroísmo, solenidade, espaço aberto — mas com dignidade, não com berro.",
+      exercises: [
+        {
+          id: "scale-eb-major",
+          title: "Escala de E♭ Maior (mãos separadas → juntas)",
+          subtitle: "som grande em p (sim, dá) ",
+          exampleNotes: scaleNotes("E♭", "F", "G", "A♭", "B♭", "C", "D", "E♭"),
+          notes: [
+            "Treine em p e tente manter ‘coluna vertebral’ no som. Se o pianíssimo desmancha, você está sustentando por tensão.",
+            "Observe a passagem por A♭ e B♭: teclas pretas como plataforma, dedos longos pousados.",
+            "Meta: cruzamentos sem degrau de volume (polegar civilizado).",
+          ],
+        },
+        {
+          id: "arpeggio-eb-major",
+          title: "Arpejo de E♭ Maior",
+          subtitle: "gesto único + antecipação",
+          exampleNotes: "E♭ G B♭ E♭ | E♭ B♭ G E♭",
+          notes: [
+            "Pense no braço desenhando um arco. Se você ‘troca de posição’ atrasado, o arpejo vira escada.",
+            "Treine com acento móvel (a cada 3 ou 4 notas) para estabilizar coordenação.",
+          ],
+        },
+        {
+          id: "hanon-1-in-eb-major",
+          title: "Hanon nº 1 (em E♭ Maior) — transposição",
+          subtitle: "controle de dedo com ouvido no volante",
+          notes: [
+            "E♭ maior é excelente para testar se você está tocando ‘por forma’ ou ‘por função’.",
+            "Faça 2 versões: (1) legato muito ligado, (2) non-legato com micro-respiro. Mesmo controle, outra estética.",
+          ],
+        },
+        {
+          id: "czerny-eb-major",
+          title: "Czerny (padrão de escalas/arpejos) — aplique em E♭",
+          subtitle: "regularidade + borda nítida",
+          notes: [
+            "Escolha um estudo com padrão repetitivo e faça em E♭. Repetição com intenção = técnica adulta.",
+            "Se o som ficar ‘quadrado’, diminua altura dos dedos e procure peso redondo.",
+          ],
+        },
+        {
+          id: "broken-chords-eb-major",
+          title: "Acordes quebrados (E♭–Cm–A♭–B♭)",
+          subtitle: "mão esquerda orquestra sem bater",
+          notes: [
+            "Fluxo harmônico: deixe a progressão ‘andar’ sem aumentar volume nas mudanças.",
+            "Voicing obrigatório: nota de cima canta; internas sustentam.",
+          ],
+        },
+        {
+          id: "voicing-eb-major",
+          title: "Voicing em E♭ (melodia sobre textura)",
+          subtitle: "camadas: melodia mf, internas p",
+          notes: [
+            "Treine melodia acima de acordes sem ‘apertar’. O segredo é baixar internas.",
+            "Se o som fica duro, você está confundindo ‘grandioso’ com ‘pesado’.",
+          ],
+        },
+        {
+          id: "pedal-eb-major",
+          title: "Pedal limpo em E♭ (cadências curtas)",
+          subtitle: "troca no momento certo",
+          notes: [
+            "Treine trocas de pedal em cadências I–V–I em E♭. A meta é: cor, mas com harmonia legível.",
+            "Use o ouvido como sensor: se a harmonia vira sopa, limpe.",
+          ],
+        },
+        {
+          id: "rhythm-cells-eb-major",
+          title: "Células rítmicas na escala",
+          subtitle: "anti-embolação",
+          notes: [
+            "Longo-curto/curto-longo expõe pontos em que a mão quer correr.",
+            "Volte ao normal só quando o movimento estiver confortável.",
+          ],
+        },
+        {
+          id: "reading-eb-major",
+          title: "Leitura lenta em E♭ Maior (1 página)",
+          subtitle: "ritmo vivo sem pressa",
+          notes: [
+            "Leia sem parar. Se parar, você treina parar.",
+            "Olho 1 compasso à frente = mão calma.",
+          ],
+        },
+        {
+          id: "micro-routine-eb-major",
+          title: "Micro-rotina (3 minutos): som grande sem dureza",
+          subtitle: "p → mf → p",
+          notes: [
+            "1 min: escala em p.",
+            "1 min: arpejo em mf.",
+            "1 min: acordes quebrados E♭–Cm–A♭–B♭ em p com voicing.",
+          ],
+        },
+      ],
+    },
+    repertoire: {
+      title: "Desafio do Repertório",
+      intro:
+        "Curadoria em E♭ Maior (10+). Ideal para treinar postura clássica, som amplo e, principalmente, **equilíbrio**: quando tudo é bonito e cheio, a tendência é perder hierarquia. Aqui você aprende a decidir quem fala e quem acompanha.",
+      items: [
+        {
+          id: "eb-mozart-k282",
+          composer: "W. A. Mozart",
+          title: "Sonata K. 282 (E♭ Maior) — I mov. (Adagio)",
+          level: "intermediário",
+          technicalFocus: "cantabile + controle de tempo + voicing",
+          notes:
+            "Mozart lento é microscópio: cada nota expõe seu controle de som. Perfeito para treinar ‘nobreza’ sem peso.",
+          links: [
+            { label: "YouTube", url: ytSearch("Mozart Sonata K 282 E flat major Adagio") },
+            { label: "Spotify", url: spotifySearch("Mozart K. 282") },
+            { label: "Apple Music", url: appleSearch("Mozart K. 282") },
+            { label: "IMSLP", url: imslpSearch("K. 282") },
+          ],
+        },
+        {
+          id: "eb-chopin-nocturne-op9-2",
+          composer: "Frédéric Chopin",
+          title: "Noturno Op. 9 nº 2 (E♭ Maior)",
+          level: "intermediário",
+          technicalFocus: "melodia cantada + acompanhamento de seda",
+          notes:
+            "A lição não é ‘tocar bonito’. É tocar bonito sem perder o pulso interno. Rubato é respiração, não derretimento.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Nocturne Op 9 No 2 E flat major") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 9 No. 2") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 9 No. 2") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 9 No. 2") },
+          ],
+        },
+        {
+          id: "eb-chopin-etude-op10-11",
+          composer: "Frédéric Chopin",
+          title: "Estudo Op. 10 nº 11 (E♭ Maior)",
+          level: "avançado",
+          technicalFocus: "arpejos amplos + braço guiando + som redondo",
+          notes:
+            "Um dos melhores estudos para aprender ‘som grande sem pancada’. Se doer, você está usando estratégia errada.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Etude Op 10 No 11 E flat major") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 10 No. 11") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 10 No. 11") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 10 No. 11") },
+          ],
+        },
+        {
+          id: "eb-schubert-impromptu-op90-2",
+          composer: "Franz Schubert",
+          title: "Impromptu Op. 90 nº 2 (E♭ Maior)",
+          level: "avançado",
+          technicalFocus: "controle de acompanhamento + cantabile",
+          notes:
+            "Schubert é aula de tempo interno. Se você apressa, o encanto desaba. Perfeito para treinar estabilidade emocional.",
+          links: [
+            { label: "YouTube", url: ytSearch("Schubert Impromptu Op 90 No 2 E flat major") },
+            { label: "Spotify", url: spotifySearch("Schubert Op. 90 No. 2") },
+            { label: "Apple Music", url: appleSearch("Schubert Op. 90 No. 2") },
+            { label: "IMSLP", url: imslpSearch("Schubert Op. 90 No. 2") },
+          ],
+        },
+        {
+          id: "eb-beethoven-op31-3",
+          composer: "L. v. Beethoven",
+          title: "Sonata Op. 31 nº 3 (E♭ Maior) — trechos",
+          level: "avançado",
+          technicalFocus: "energia rítmica + clareza + humor beethoveniano",
+          notes:
+            "Beethoven em E♭ é palco: o perigo é tocar ‘sério demais’. Treine articulação e timing (e a coragem de ser leve).",
+          links: [
+            { label: "YouTube", url: ytSearch("Beethoven Sonata Op 31 No 3 E flat major") },
+            { label: "Spotify", url: spotifySearch("Beethoven Op. 31 No. 3") },
+            { label: "Apple Music", url: appleSearch("Beethoven Op. 31 No. 3") },
+            { label: "IMSLP", url: imslpSearch("Beethoven Op. 31 No. 3") },
+          ],
+        },
+        {
+          id: "eb-bach-wtc1-eb",
+          composer: "J. S. Bach",
+          title: "WTC I: Prelúdio e Fuga em E♭ Maior (BWV 852)",
+          level: "avançado",
+          technicalFocus: "clareza de vozes + higiene de pedal",
+          notes:
+            "Bach em E♭ é o detector de ‘sujeira bonita’. Se a textura borra, é falta de articulação ou excesso de pedal.",
+          links: [
+            { label: "YouTube", url: ytSearch("Bach BWV 852 E flat major prelude fugue piano") },
+            { label: "Spotify", url: spotifySearch("BWV 852") },
+            { label: "Apple Music", url: appleSearch("BWV 852") },
+            { label: "IMSLP", url: imslpSearch("BWV 852") },
+          ],
+        },
+        {
+          id: "eb-haydn-hob-xvi-49",
+          composer: "Joseph Haydn",
+          title: "Sonata Hob. XVI:49 (E♭ Maior) — seleção de trechos",
+          level: "avançado",
+          technicalFocus: "articulação + clareza formal",
+          notes:
+            "Haydn é o mestre do ‘timing’. Em E♭, a forma fica grande sem perder o humor.",
+          links: [
+            { label: "YouTube", url: ytSearch("Haydn Sonata Hob XVI 49 E flat major") },
+            { label: "Spotify", url: spotifySearch("Hob. XVI:49") },
+            { label: "Apple Music", url: appleSearch("Hob. XVI:49") },
+            { label: "IMSLP", url: imslpSearch("Hob. XVI:49") },
+          ],
+        },
+        {
+          id: "eb-debussy-bridge",
+          composer: "Claude Debussy",
+          title: "(ponte) Debussy (seleção) — transparência e cor",
+          level: "avançado",
+          technicalFocus: "pedal limpo + camadas",
+          notes:
+            "Ponte: treina o tipo de transparência que impede E♭ maior de virar ‘massa sonora’ quando você usa pedal.",
+          links: [
+            { label: "YouTube", url: ytSearch("Debussy E flat major piano") },
+            { label: "Spotify", url: spotifySearch("Debussy piano") },
+          ],
+        },
+        {
+          id: "eb-brahms-bridge",
+          composer: "Johannes Brahms",
+          title: "(ponte) Valsas/Intermezzi (seleção) — camadas e som redondo",
+          level: "intermediário",
+          technicalFocus: "voicing",
+          notes:
+            "Ponte: Brahms te obriga a fazer som redondo em dinâmica média/baixa — perfeito para manter E♭ ‘nobre’ sem dureza.",
+          links: [
+            { label: "YouTube", url: ytSearch("Brahms E flat major piano piece") },
+            { label: "Spotify", url: spotifySearch("Brahms piano") },
+          ],
+        },
+        {
+          id: "eb-transposition",
+          composer: "J. S. Bach / você",
+          title: "(ponte) Transponha 8 compassos para E♭ Maior",
+          level: "iniciante",
+          technicalFocus: "leitura + função",
+          notes:
+            "Se você transpõe mesmo devagar, você está construindo um cérebro musical (não só dedos).",
+          links: [{ label: "YouTube", url: ytSearch("piano transposition exercise") }],
+        },
+      ],
+    },
+  },
+
+  {
+    slug: "f-minor",
+    label: "F menor",
+    mode: "minor",
+    pitchClass: "F",
+    motto:
+      "F menor é gravidade com dentes: não é ‘triste por triste’ — é tensão organizada. Se você tocar pesado, vira lama; se tocar leve demais, vira drama vazio. Aqui você aprende a ser profundo com clareza.",
+    estimatedReadingMinutes: 27,
+    mechanical: {
+      title: "Desafio Mecânico",
+      intro:
+        "F menor (quatro bemóis: B♭, E♭, A♭, D♭) é uma tonalidade que costuma aparecer quando o compositor quer peso emocional *com estrutura*. Técnica central: **voicing** e **gestão de tensão**. Biomecânica real (sem romantização): 4º e 5º dedos compartilham tendões e gostam de ‘colar’ — então, quando você tenta fazer drama com dedo alto e força, o antebraço trava e a sonoridade endurece. O caminho adulto é: dedos perto da tecla, braço guiando e micro-rotação para apoiar dedos fracos. E o extra histórico: F menor foi um ‘território sério’ para muitos compositores (Beethoven, Chopin) porque combina densidade e clareza formal — um ótimo lugar para treinar não só técnica, mas também **arquitetura de discurso**.",
+      exercises: [
+        {
+          id: "scale-f-minor-natural",
+          title: "Escala de F menor (natural)",
+          subtitle: "som escuro com contorno",
+          exampleNotes: "F G A♭ B♭ C D♭ E♭ F",
+          notes: [
+            "Treine em p e ouça se A♭/B♭/D♭ ‘somem’ ou ‘gritam’. O objetivo é timbre homogêneo.",
+            "Faça a escala como frase (tensão → pico → resolução), não como exercício de academia.",
+          ],
+        },
+        {
+          id: "scale-f-minor-harmonic",
+          title: "Escala de F menor (harmônica)",
+          subtitle: "E natural como lâmina de tensão",
+          exampleNotes: "F G A♭ B♭ C D♭ E F",
+          notes: [
+            "O E natural é o ‘ponto dramático’: ele costuma denunciar ansiedade (som duro/alto). Controle pelo braço, não pelo dedo.",
+            "Use ritmos longo-curto/curto-longo para estabilizar a volta para F.",
+          ],
+        },
+        {
+          id: "scale-f-minor-melodic",
+          title: "Escala de F menor (melódica)",
+          subtitle: "subindo com D e E naturais; descendo natural",
+          exampleNotes: "Subindo: F G A♭ B♭ C D E F | Descendo: F E♭ D♭ C B♭ A♭ G F",
+          notes: [
+            "Não ‘decore acidente’. Entenda direção: na subida, a linha quer clarear; na descida, ela volta para a sombra.",
+            "Mantenha o mesmo tipo de toque. Mudança de escala não é desculpa para mudar a mecânica.",
+          ],
+        },
+        {
+          id: "arpeggio-f-minor",
+          title: "Arpejo de F menor",
+          subtitle: "gesto único + concha firme",
+          exampleNotes: "F A♭ C F | F C A♭ F",
+          notes: [
+            "Se o arpejo vira escada, o braço chegou atrasado.",
+            "Evite ‘pinçar’ A♭: dedos longos pousam; o braço apoia.",
+          ],
+        },
+        {
+          id: "hanon-1-in-f-minor",
+          title: "Hanon nº 1 (em F menor) — transposição",
+          subtitle: "controle frio em tonalidade quente",
+          notes: [
+            "Faça lento e bonito. Hanon feio ensina feiura.",
+            "Se 4 e 5 endurecem, use micro-rotação (quase invisível) em vez de levantar dedo como garra.",
+          ],
+        },
+        {
+          id: "czerny-f-minor",
+          title: "Czerny (padrão) — aplique em F menor",
+          subtitle: "regularidade sob tensão",
+          notes: [
+            "Pegue um padrão (escala, arpejo, acordes quebrados) e treine em F menor.",
+            "O objetivo é: contorno limpo mesmo quando a música ‘parece dramática’.",
+          ],
+        },
+        {
+          id: "broken-chords-f-minor",
+          title: "Acordes quebrados (Fm–D♭–A♭–E♭)",
+          subtitle: "i–VI–III–VII: harmonia andando",
+          notes: [
+            "Trate como acompanhamento de canção: mão esquerda tapete (quente, regular, sem bater).",
+            "Treine voicing: a nota de cima canta; internas em p.",
+          ],
+        },
+        {
+          id: "voicing-f-minor",
+          title: "Voicing em F menor (melodia interna e externa)",
+          subtitle: "relevo dentro da textura",
+          notes: [
+            "Treine fazer uma melodia aparecer ‘no meio’ do acorde. Isso é pianismo adulto.",
+            "Grave 20s. Se a melodia não aparece, não é falta de emoção — é falta de camadas.",
+          ],
+        },
+        {
+          id: "rhythm-cells-f-minor",
+          title: "Células rítmicas (anti-ansiedade) na escala",
+          subtitle: "debug de coordenação",
+          notes: [
+            "Ritmos alterados expõem onde você acelera por medo do E natural (harmônica) ou dos cruzamentos.",
+          ],
+        },
+        {
+          id: "micro-routine-f-minor",
+          title: "Micro-rotina (3 minutos): profundo sem lama",
+          subtitle: "p → mf → p",
+          notes: [
+            "1 min: escala natural em p.",
+            "1 min: arpejo em mf (som cheio sem dureza).",
+            "1 min: acordes quebrados Fm–D♭–A♭–E♭ em p com voicing.",
+          ],
+        },
+      ],
+    },
+    repertoire: {
+      title: "Desafio do Repertório",
+      intro:
+        "Curadoria em F menor (10+). Aqui você ganha duas coisas: (1) técnica de camadas/peso e (2) cultura musical — F menor é uma vitrine de ‘tragédia organizada’. A regra de ouro: quanto mais dramática a peça, mais você precisa de clareza.",
+      items: [
+        {
+          id: "fmin-beethoven-op57",
+          composer: "L. v. Beethoven",
+          title: "Sonata Op. 57 ‘Appassionata’ (F menor) — trechos",
+          level: "avançado",
+          technicalFocus: "energia organizada + clareza de textura + resistência",
+          notes:
+            "Uma aula de arquitetura e controle de tensão. Se você toca pesado, você perde a clareza e a peça vira barulho.",
+          links: [
+            { label: "YouTube", url: ytSearch("Beethoven Appassionata Op 57 F minor piano") },
+            { label: "Spotify", url: spotifySearch("Beethoven Op. 57 Appassionata") },
+            { label: "Apple Music", url: appleSearch("Beethoven Op. 57 Appassionata") },
+            { label: "IMSLP", url: imslpSearch("Beethoven Op. 57") },
+          ],
+        },
+        {
+          id: "fmin-chopin-ballade-4",
+          composer: "Frédéric Chopin",
+          title: "Balada nº 4 Op. 52 (F menor) — trechos",
+          level: "avançado",
+          technicalFocus: "narrativa + voicing + textura",
+          notes:
+            "Chopin aqui é romance pesado com gramática perfeita. Ótimo para treinar camadas e direção formal.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Ballade No 4 Op 52 F minor") },
+            { label: "Spotify", url: spotifySearch("Chopin Ballade No. 4 Op. 52") },
+            { label: "Apple Music", url: appleSearch("Chopin Ballade No. 4 Op. 52") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 52") },
+          ],
+        },
+        {
+          id: "fmin-chopin-nocturne-op55-1",
+          composer: "Frédéric Chopin",
+          title: "Noturno Op. 55 nº 1 (F menor)",
+          level: "avançado",
+          technicalFocus: "cantabile + rubato disciplinado + voicing",
+          notes:
+            "Treino de ‘cantar baixo’ com controle. A mão esquerda segura o chão enquanto a direita respira.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Nocturne Op 55 No 1 F minor") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 55 No. 1") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 55 No. 1") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 55 No. 1") },
+          ],
+        },
+        {
+          id: "fmin-bach-wtc1-fm",
+          composer: "J. S. Bach",
+          title: "WTC I: Prelúdio e Fuga em F menor (BWV 857)",
+          level: "avançado",
+          technicalFocus: "clareza de vozes + tempo interno",
+          notes:
+            "Bach em modo menor é detergente: limpa pedal e limpa exagero. Se borrar, desacelere e articule.",
+          links: [
+            { label: "YouTube", url: ytSearch("Bach BWV 857 F minor prelude fugue piano") },
+            { label: "Spotify", url: spotifySearch("BWV 857") },
+            { label: "Apple Music", url: appleSearch("BWV 857") },
+            { label: "IMSLP", url: imslpSearch("BWV 857") },
+          ],
+        },
+        {
+          id: "fmin-schubert-impromptu-op142-1",
+          composer: "Franz Schubert",
+          title: "Impromptu Op. 142 nº 1 (F menor)",
+          level: "avançado",
+          technicalFocus: "contrastes + textura + controle de energia",
+          notes:
+            "Ótimo para treinar contrastes sem perder controle. Schubert exige tempo interno e clareza.",
+          links: [
+            { label: "YouTube", url: ytSearch("Schubert Impromptu Op 142 No 1 F minor") },
+            { label: "Spotify", url: spotifySearch("Schubert Op. 142 No. 1") },
+            { label: "Apple Music", url: appleSearch("Schubert Op. 142 No. 1") },
+            { label: "IMSLP", url: imslpSearch("Schubert Op. 142") },
+          ],
+        },
+        {
+          id: "fmin-mendelssohn-rondo-capriccioso-op14",
+          composer: "Felix Mendelssohn",
+          title: "Rondo Capriccioso Op. 14 (E menor → F# / ponte de brilho) — trechos",
+          level: "avançado",
+          technicalFocus: "clareza + leveza em alta energia",
+          notes:
+            "Item-ponte: não é F menor, mas treina a habilidade que impede o drama de virar pancada: clareza em velocidade.",
+          links: [
+            { label: "YouTube", url: ytSearch("Mendelssohn Rondo Capriccioso Op 14 piano") },
+            { label: "Spotify", url: spotifySearch("Mendelssohn Rondo Capriccioso") },
+            { label: "Apple Music", url: appleSearch("Mendelssohn Rondo Capriccioso") },
+            { label: "IMSLP", url: imslpSearch("Mendelssohn Op. 14") },
+          ],
+        },
+        {
+          id: "fmin-rachmaninoff-op23-5-bridge",
+          composer: "Sergei Rachmaninoff",
+          title: "(ponte) Prelúdio Op. 23 nº 5 (Sol menor) — energia e acentos",
+          level: "avançado",
+          technicalFocus: "ritmo + acento + controle de peso",
+          notes:
+            "Ponte: treina energia organizada. Leve essa disciplina de volta para o universo de F menor.",
+          links: [
+            { label: "YouTube", url: ytSearch("Rachmaninoff Prelude Op 23 No 5") },
+            { label: "Spotify", url: spotifySearch("Rachmaninoff Op. 23 No. 5") },
+            { label: "Apple Music", url: appleSearch("Rachmaninoff Op. 23 No. 5") },
+            { label: "IMSLP", url: imslpSearch("Rachmaninoff Op. 23") },
+          ],
+        },
+        {
+          id: "fmin-brahms-bridge",
+          composer: "Johannes Brahms",
+          title: "(ponte) Intermezzi (seleção) — densidade íntima",
+          level: "avançado",
+          technicalFocus: "camadas",
+          notes:
+            "Brahms ensina o tipo de peso ‘por dentro’ que F menor precisa para soar profundo sem virar barulho.",
+          links: [
+            { label: "YouTube", url: ytSearch("Brahms Intermezzo F minor") },
+            { label: "Spotify", url: spotifySearch("Brahms Intermezzo") },
+          ],
+        },
+        {
+          id: "fmin-debussy-bridge",
+          composer: "Claude Debussy",
+          title: "(ponte) Prelúdios (seleção) — sombra com transparência",
+          level: "intermediário",
+          technicalFocus: "pedal limpo + timbre",
+          notes:
+            "Ponte: transparência é o antídoto universal contra ‘lama sonora’ em tonalidades escuras.",
+          links: [
+            { label: "YouTube", url: ytSearch("Debussy prelude F minor piano") },
+            { label: "Spotify", url: spotifySearch("Debussy Preludes") },
+            { label: "Apple Music", url: appleSearch("Debussy Preludes") },
+            { label: "IMSLP", url: imslpSearch("Debussy Preludes") },
+          ],
+        },
+        {
+          id: "fmin-transposition",
+          composer: "J. S. Bach / você",
+          title: "(ponte) Transponha 8 compassos para F menor",
+          level: "iniciante",
+          technicalFocus: "leitura + função",
+          notes:
+            "Se você consegue manter a harmonia legível ao transpor, você está estudando de verdade.",
+          links: [{ label: "YouTube", url: ytSearch("piano transposition exercise") }],
+        },
+      ],
+    },
+  },
+
+  {
+    slug: "c-minor",
+    label: "C menor",
+    mode: "minor",
+    pitchClass: "C",
+    motto:
+      "C menor é a gravata preta do círculo: dramática, formal e teimosa. É a tonalidade perfeita para aprender ‘retórica’ no piano — acento com sentido, frase com direção e energia que não vira pancada.",
+    estimatedReadingMinutes: 26,
+    mechanical: {
+      title: "Desafio Mecânico",
+      intro:
+        "C menor (três bemóis: E♭, A♭, B♭) aparece como palco de tensão e grandeza em vários momentos históricos — Beethoven amava esse clima de ‘luta organizada’. Tecnicamente, C menor é ótimo para treinar **ataque com intenção** (acento não é volume, é timing + peso bem distribuído) e **clareza em texturas densas**. Em outras palavras: você vai treinar o que impede o modo menor de virar lama e o que impede o drama de virar teatro ruim.",
+      exercises: [
+        {
+          id: "scale-c-minor-natural",
+          title: "Escala de C menor (natural)",
+          subtitle: "pulso firme + som escuro sem peso",
+          exampleNotes: "C D E♭ F G A♭ B♭ C",
+          notes: [
+            "Treine em p com metrônomo e busque timbre homogêneo (sem degraus nas pretas).",
+            "Faça a escala como frase. C menor vive de direção — não de ‘subir e descer’.",
+          ],
+        },
+        {
+          id: "scale-c-minor-harmonic",
+          title: "Escala de C menor (harmônica)",
+          subtitle: "B natural como ‘ponta de flecha’",
+          exampleNotes: "C D E♭ F G A♭ B C",
+          notes: [
+            "O B natural costuma sair duro ou alto. Controle pelo braço e pelo ouvido.",
+            "Use ritmos longo-curto/curto-longo e volte ao normal só quando estiver liso.",
+          ],
+        },
+        {
+          id: "scale-c-minor-melodic",
+          title: "Escala de C menor (melódica)",
+          subtitle: "clarear na subida, sombrear na descida",
+          exampleNotes: "Subindo: C D E♭ F G A B C | Descendo: C B♭ A♭ G F E♭ D C",
+          notes: [
+            "C menor melódica é aula de intenção: você muda ‘luz’, mas não muda a mecânica.",
+          ],
+        },
+        {
+          id: "arpeggio-c-minor",
+          title: "Arpejo de C menor",
+          subtitle: "gesto único + concha estável",
+          exampleNotes: "C E♭ G C | C G E♭ C",
+          notes: [
+            "Arpejo bom não é dedo rápido: é braço chegando cedo.",
+          ],
+        },
+        {
+          id: "hanon-6-in-c-minor",
+          title: "Hanon nº 6 (em C menor) — transposição",
+          subtitle: "4º e 5º dedos com micro-rotação",
+          notes: [
+            "Modo menor tende a ‘convocar peso’. Não caia nessa. Peso é distribuído; dedo é leve.",
+            "Micro-rotação ajuda 4 e 5 a não colapsarem.",
+          ],
+        },
+        {
+          id: "czerny-c-minor",
+          title: "Czerny (padrão rítmico) — aplique em C menor",
+          subtitle: "clareza em alta energia",
+          notes: [
+            "Escolha um padrão com semicolcheias e trabalhe em C menor com borda clara.",
+            "Divida em células. Se borrar, você acelerou antes de controlar.",
+          ],
+        },
+        {
+          id: "broken-chords-c-minor",
+          title: "Acordes quebrados (Cm–A♭–E♭–B♭)",
+          subtitle: "i–VI–III–VII",
+          notes: [
+            "Treine como acompanhamento. Mão esquerda é tapete, não martelo.",
+            "Faça voicing: nota de cima mf, internas p.",
+          ],
+        },
+        {
+          id: "accent-lab-c-minor",
+          title: "Laboratório de acentos (C menor)",
+          subtitle: "acento = timing, não pancada",
+          notes: [
+            "Toque uma célula de 4 notas e acentue só a primeira sem aumentar a altura do dedo.",
+            "Se o som fica agressivo, você está batendo — não acentuando.",
+          ],
+        },
+        {
+          id: "reading-c-minor",
+          title: "Leitura lenta em C menor (1 página)",
+          subtitle: "clareza sob pressão",
+          notes: [
+            "Escolha algo com textura densa (Bach, Beethoven) e leia lento sem parar.",
+            "Olho 1 compasso à frente.",
+          ],
+        },
+        {
+          id: "micro-routine-c-minor",
+          title: "Micro-rotina (3 minutos): drama com coluna",
+          subtitle: "p → mf → p",
+          notes: [
+            "1 min: escala natural em p.",
+            "1 min: arpejo em mf (som cheio sem dureza).",
+            "1 min: acordes quebrados Cm–A♭–E♭–B♭ em p com voicing.",
+          ],
+        },
+      ],
+    },
+    repertoire: {
+      title: "Desafio do Repertório",
+      intro:
+        "Curadoria em C menor (10+). C menor é a sala do ‘debate sério’: ótimo para estudar retórica, forma e controle de energia. Aqui a música te obriga a ter opinião — e técnica suficiente para não gritar.",
+      items: [
+        {
+          id: "cmin-beethoven-op13",
+          composer: "L. v. Beethoven",
+          title: "Sonata Op. 13 ‘Patética’ (C menor) — trechos",
+          level: "intermediário",
+          technicalFocus: "contrastes + acentos + clareza",
+          notes:
+            "O Grave inicial é laboratório de acento com sentido. Se bater, fica caricatura. Se alisar, perde o drama.",
+          links: [
+            { label: "YouTube", url: ytSearch("Beethoven Pathetique Sonata Op 13 C minor") },
+            { label: "Spotify", url: spotifySearch("Beethoven Op. 13 Pathetique") },
+            { label: "Apple Music", url: appleSearch("Beethoven Op. 13 Pathetique") },
+            { label: "IMSLP", url: imslpSearch("Beethoven Op. 13") },
+          ],
+        },
+        {
+          id: "cmin-bach-wtc1-847",
+          composer: "J. S. Bach",
+          title: "WTC I: Prelúdio e Fuga em C menor (BWV 847)",
+          level: "avançado",
+          technicalFocus: "contraponto + clareza + tempo estável",
+          notes:
+            "Se isso ficar claro, você ganhou um ouvido novo. Bach é o antídoto universal contra ‘drama borrado’.",
+          links: [
+            { label: "YouTube", url: ytSearch("Bach BWV 847 C minor prelude fugue piano") },
+            { label: "Spotify", url: spotifySearch("BWV 847") },
+            { label: "Apple Music", url: appleSearch("BWV 847") },
+            { label: "IMSLP", url: imslpSearch("BWV 847") },
+          ],
+        },
+        {
+          id: "cmin-bach-invention-2",
+          composer: "J. S. Bach",
+          title: "Invenção nº 2 (C menor) — BWV 773",
+          level: "intermediário",
+          technicalFocus: "independência de mãos + articulação",
+          notes:
+            "Peça curta, mas cruel: se você não tem clareza de intenção, ela vira confusão.",
+          links: [
+            { label: "YouTube", url: ytSearch("Bach Invention No 2 BWV 773 C minor") },
+            { label: "Spotify", url: spotifySearch("BWV 773") },
+            { label: "Apple Music", url: appleSearch("BWV 773") },
+            { label: "IMSLP", url: imslpSearch("BWV 773") },
+          ],
+        },
+        {
+          id: "cmin-chopin-prelude-op28-20",
+          composer: "Frédéric Chopin",
+          title: "Prelúdio Op. 28 nº 20 (C menor)",
+          level: "intermediário",
+          technicalFocus: "voicing + acordes + tempo interno",
+          notes:
+            "Acordes simples que exigem maturidade: camadas, direção e pedal limpo.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Prelude Op 28 No 20 C minor") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 28 No. 20") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 28 No. 20") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 28 No. 20") },
+          ],
+        },
+        {
+          id: "cmin-chopin-etude-op10-12",
+          composer: "Frédéric Chopin",
+          title: "Estudo Op. 10 nº 12 (C menor) — ‘Revolucionário’",
+          level: "avançado",
+          technicalFocus: "mão esquerda + energia organizada",
+          notes:
+            "O mito é ‘força’. A verdade é: rota + resistência inteligente + clareza. Se apertar, você perde o controle.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Etude Op 10 No 12 C minor Revolutionary") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 10 No. 12") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 10 No. 12") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 10 No. 12") },
+          ],
+        },
+        {
+          id: "cmin-mozart-k475",
+          composer: "W. A. Mozart",
+          title: "Fantasia K. 475 (C menor)",
+          level: "avançado",
+          technicalFocus: "contrastes + retórica + clareza",
+          notes:
+            "Mozart em menor aqui é teatro bom: contraste com elegância. Treina ‘drama com etiqueta’.",
+          links: [
+            { label: "YouTube", url: ytSearch("Mozart Fantasia K 475 C minor") },
+            { label: "Spotify", url: spotifySearch("Mozart K. 475") },
+            { label: "Apple Music", url: appleSearch("Mozart K. 475") },
+            { label: "IMSLP", url: imslpSearch("K. 475") },
+          ],
+        },
+        {
+          id: "cmin-beethoven-op111",
+          composer: "L. v. Beethoven",
+          title: "Sonata Op. 111 (C menor) — trechos",
+          level: "avançado",
+          technicalFocus: "textura + arquitetura + controle de energia",
+          notes:
+            "Beethoven tardio: é sobre arquitetura de som. Mesmo em trechos curtos, você treina ‘forma’.",
+          links: [
+            { label: "YouTube", url: ytSearch("Beethoven Sonata Op 111 C minor") },
+            { label: "Spotify", url: spotifySearch("Beethoven Op. 111") },
+            { label: "Apple Music", url: appleSearch("Beethoven Op. 111") },
+            { label: "IMSLP", url: imslpSearch("Beethoven Op. 111") },
+          ],
+        },
+        {
+          id: "cmin-rachmaninoff-op3-2-bridge",
+          composer: "Sergei Rachmaninoff",
+          title: "(ponte) Prelúdio Op. 3 nº 2 (C♯ menor) — peso sem dureza",
+          level: "avançado",
+          technicalFocus: "camadas + som grande",
+          notes:
+            "Ponte: treina som grande com camadas. Ajuda a tocar C menor sem virar pedra.",
+          links: [
+            { label: "YouTube", url: ytSearch("Rachmaninoff Prelude Op 3 No 2") },
+            { label: "Spotify", url: spotifySearch("Rachmaninoff Op. 3 No. 2") },
+            { label: "Apple Music", url: appleSearch("Rachmaninoff Op. 3 No. 2") },
+            { label: "IMSLP", url: imslpSearch("Rachmaninoff Op. 3") },
+          ],
+        },
+        {
+          id: "cmin-brahms-bridge",
+          composer: "Johannes Brahms",
+          title: "(ponte) Rapsódias/Intermezzi (seleção) — densidade e camadas",
+          level: "avançado",
+          technicalFocus: "voicing",
+          notes:
+            "Ponte: Brahms ensina densidade organizada. Excelente para C menor não virar ‘muro’ de som.",
+          links: [
+            { label: "YouTube", url: ytSearch("Brahms C minor piano rhapsody") },
+            { label: "Spotify", url: spotifySearch("Brahms piano rhapsody") },
+          ],
+        },
+        {
+          id: "cmin-transposition",
+          composer: "J. S. Bach / você",
+          title: "(ponte) Transponha 8 compassos para C menor",
+          level: "iniciante",
+          technicalFocus: "leitura + harmonia",
+          notes:
+            "Transposição em modo menor é uma vacina contra tocar por hábito. Você começa a pensar em função.",
+          links: [{ label: "YouTube", url: ytSearch("piano transposition exercise") }],
         },
       ],
     },
