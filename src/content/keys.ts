@@ -4,7 +4,11 @@ export type KeySlug =
   | "c-major"
   | "g-major"
   | "d-major"
-  | "a-minor";
+  | "a-major"
+  | "a-minor"
+  | "e-minor"
+  | "b-minor"
+  | "fsharp-minor";
 
 export type Exercise = {
   id: string;
@@ -63,6 +67,546 @@ function imslpSearch(q: string) {
 }
 
 export const MVP_KEYS: KeyContent[] = [
+  {
+    slug: "a-major",
+    label: "A Maior",
+    mode: "major",
+    pitchClass: "A",
+    motto:
+      "Lá Maior é luz com nervo: um brilho que parece simples, mas exige polegar educado e dedos longos ‘morando’ nas teclas pretas sem ansiedade.",
+    estimatedReadingMinutes: 18,
+    mechanical: {
+      title: "Desafio Mecânico",
+      intro:
+        "Três sustenidos (F#, C#, G#) deixam claro quem está dirigindo: se a mão ‘manda’ sozinha, você derrapa; se o braço conduz e os dedos só finalizam, tudo fica estável. Em A maior, a técnica-chave é alinhar o gesto com as pretas: dedos longos (2–3–4) pousam nelas com naturalidade e o polegar entra silencioso, sem se espremer pra dentro do teclado.",
+      exercises: [
+        {
+          id: "hanon-1-in-a-major",
+          title: "Hanon nº 1 (em A Maior) — transposição",
+          subtitle: "mesma ideia, outra geometria (pretas como ‘casa’)",
+          notes: [
+            "Transpor em A maior é um detox contra ‘memória de dedo’. O cérebro precisa reconhecer intervalos, não hábitos.",
+            "Quando aparecer G#, observe se o dedo 3/4 ‘escorrega’ por falta de apoio do braço. Corrija com alinhamento, não com força.",
+            "Faça 2 versões: (1) legato completo, (2) non-legato (um ‘respiro’ entre notas). A mão deve ficar igualmente solta em ambas.",
+          ],
+        },
+        {
+          id: "hanon-6-in-a-major",
+          title: "Hanon nº 6 (em A Maior)",
+          subtitle: "4º e 5º dedos com micro-rotação (sem punho dançarino)",
+          notes: [
+            "Em A maior, o 5º dedo tende a ‘gritar’ ou ‘sumir’. Ambos são controle ruim: procure borda clara com relaxamento imediato.",
+            "Pense em rotação mínima do antebraço como um ‘assistente invisível’ para 4 e 5.",
+            "Micro-rotina: 20s mf (som cheio), 20s p (controle fino), 20s staccato leve (elasticidade).",
+          ],
+        },
+        {
+          id: "scales-a-major",
+          title: "Escala de A Maior (mãos separadas → juntas)",
+          subtitle: "polegar silencioso + pretas confortáveis",
+          exampleNotes: "A B C# D E F# G# A",
+          notes: [
+            "Regra prática: nas teclas pretas, dedo ‘entra’ mais para dentro do teclado; nas brancas, dedo fica mais na borda. Misture isso sem pânico.",
+            "O erro nº 1 é empurrar o polegar para dentro e torcer o punho. Em vez disso, mova o antebraço ligeiramente para a direita/esquerda.",
+            "Treine com metrônomo lento e objetivo de som: mesmo timbre em todas as notas, sem degraus nos cruzamentos.",
+          ],
+        },
+        {
+          id: "arpeggio-a-major",
+          title: "Arpejo de A Maior",
+          subtitle: "trajetória do braço + concha estável",
+          exampleNotes: "A C# E A | A E C# A",
+          notes: [
+            "Arpejo bom parece um único gesto. Se soa como ‘três posições coladas’, o braço chegou atrasado.",
+            "C# deve ser confortável (dedo longo). Se você tenta tocar C# com ‘dedo curto’ muito na borda, o som fica inseguro.",
+          ],
+        },
+        {
+          id: "czerny-599-11-a-major",
+          title: "Czerny Op. 599 nº 11 (adapte o padrão para A maior quando fizer sentido)",
+          subtitle: "regularidade e pulso estável",
+          notes: [
+            "A meta é previsibilidade do ataque: mesma intenção em cada repetição.",
+            "Se cansar rápido, você está apertando. Técnica é peso bem distribuído + dedos perto da tecla.",
+          ],
+        },
+        {
+          id: "broken-chords-a-major",
+          title: "Acordes quebrados em A (padrões de acompanhamento)",
+          subtitle: "mão esquerda ‘tapete’, mão direita ‘fala’",
+          notes: [
+            "A mão esquerda bonita é quase invisível: regular, quente, sem bater.",
+            "Treine voicing: nota de cima canta, o resto sustenta sem competir.",
+          ],
+        },
+        {
+          id: "staccato-a-major",
+          title: "Staccato elástico (padrões curtos em A)",
+          subtitle: "soltar rápido sem contrair",
+          notes: [
+            "Staccato é ‘quique’, não martelo. O dedo sai, mas o corpo fica disponível.",
+            "Se o som fica agressivo, diminua altura do dedo e aumente clareza do gesto.",
+          ],
+        },
+        {
+          id: "voicing-a-major",
+          title: "Voz superior destacada (acordes em A) — mini laboratório",
+          subtitle: "camadas de volume na mesma mão",
+          notes: [
+            "Treine 2 níveis: melodia em mf, notas internas em p.",
+            "Se a melodia não aparece, você está apertando as notas internas demais.",
+          ],
+        },
+        {
+          id: "rhythm-cells-a-major",
+          title: "Células rítmicas (longo-curto / curto-longo) em padrões de escala",
+          subtitle: "anti-embolação",
+          notes: [
+            "Ritmo alterado ‘destrava’ coordenação: expõe onde a mão está ‘chutando’ em vez de controlar.",
+            "Quando voltar ao ritmo normal, a sensação deve ser de estrada lisa.",
+          ],
+        },
+        {
+          id: "reading-a-major",
+          title: "Leitura consciente em A maior (1 página lenta)",
+          subtitle: "olho à frente, mão calma",
+          notes: [
+            "Leia 1 compasso à frente. Mão apressa quando o olho chega atrasado.",
+            "Faça ‘poucas notas bem feitas’: qualidade > quantidade.",
+          ],
+        },
+      ],
+    },
+    repertoire: {
+      title: "Desafio do Repertório",
+      intro:
+        "Curadoria em Lá Maior (10+): peças que pedem brilho elegante, articulação clara e controle de pedal/vozes. Links são por busca (YouTube/Spotify/Apple/IMSLP) para você comparar interpretações.",
+      items: [
+        {
+          id: "mozart-k331",
+          composer: "W. A. Mozart",
+          title: "Sonata K. 331 (A Maior) — I mov. (Tema e Variações)",
+          level: "avançado",
+          technicalFocus: "variações de toque, clareza e estilo",
+          notes:
+            "Ótima pra treinar ‘mesma mão, mil timbres’: cada variação pede uma intenção de ataque diferente.",
+          links: [
+            { label: "YouTube", url: ytSearch("Mozart K 331 A major theme and variations piano") },
+            { label: "Spotify", url: spotifySearch("Mozart K. 331") },
+            { label: "Apple Music", url: appleSearch("Mozart K. 331") },
+            { label: "IMSLP", url: imslpSearch("K. 331") },
+          ],
+        },
+        {
+          id: "beethoven-op2-2",
+          composer: "L. v. Beethoven",
+          title: "Sonata Op. 2 nº 2 (A Maior) — trechos",
+          level: "avançado",
+          technicalFocus: "clareza clássica com energia",
+          notes:
+            "Treina direção formal e acentos ‘inteligentes’: energia sem martelar.",
+          links: [
+            { label: "YouTube", url: ytSearch("Beethoven Sonata Op 2 No 2 A major piano") },
+            { label: "Spotify", url: spotifySearch("Beethoven Op. 2 No. 2") },
+            { label: "Apple Music", url: appleSearch("Beethoven Op. 2 No. 2") },
+            { label: "IMSLP", url: imslpSearch("Beethoven Op. 2 No. 2") },
+          ],
+        },
+        {
+          id: "schubert-d664",
+          composer: "Franz Schubert",
+          title: "Sonata D 664 (A Maior) — trechos",
+          level: "avançado",
+          technicalFocus: "cantabile longo + equilíbrio",
+          notes:
+            "Schubert em A é aula de frase longa: som bonito sem inflar o volume.",
+          links: [
+            { label: "YouTube", url: ytSearch("Schubert Sonata D 664 A major piano") },
+            { label: "Spotify", url: spotifySearch("Schubert D 664") },
+            { label: "Apple Music", url: appleSearch("Schubert D 664") },
+            { label: "IMSLP", url: imslpSearch("Schubert D 664") },
+          ],
+        },
+        {
+          id: "chopin-prelude-7-a",
+          composer: "Frédéric Chopin",
+          title: "Prelúdio Op. 28 nº 7 (A Maior) — micro-joia",
+          level: "intermediário",
+          technicalFocus: "harmonia implícita + voicing",
+          notes:
+            "Curto e concentrado: cada acorde precisa ‘dizer algo’.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Op 28 No 7 A major piano") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 28 No. 7") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 28 No. 7") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 28") },
+          ],
+        },
+        {
+          id: "chopin-polonaise-op40-1",
+          composer: "Frédéric Chopin",
+          title: "Polonaise Op. 40 nº 1 (A Maior) — ‘Militar’ (trechos)",
+          level: "avançado",
+          technicalFocus: "ritmo, acentos e resistência",
+          notes:
+            "Excelente para treinar pulso firme e acentos que ‘andam’ sem virar pancada. Se cansar rápido, você está apertando demais.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Polonaise Op 40 No 1 A major") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 40 No. 1") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 40 No. 1") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 40") },
+          ],
+        },
+        {
+          id: "brahms-op118-2",
+          composer: "Johannes Brahms",
+          title: "Intermezzo Op. 118 nº 2 (A Maior) — canto interno",
+          level: "avançado",
+          technicalFocus: "voicing e camadas (melodia dentro da textura)",
+          notes:
+            "A dificuldade é ‘arquitetura emocional’: manter a melodia viva sem esmagar as vozes internas.",
+          links: [
+            { label: "YouTube", url: ytSearch("Brahms Intermezzo Op 118 No 2 A major piano") },
+            { label: "Spotify", url: spotifySearch("Brahms Op. 118 No. 2") },
+            { label: "Apple Music", url: appleSearch("Brahms Op. 118 No. 2") },
+            { label: "IMSLP", url: imslpSearch("Brahms Op. 118") },
+          ],
+        },
+        {
+          id: "mendelssohn-op62-6",
+          composer: "Felix Mendelssohn",
+          title: "Songs Without Words Op. 62 nº 6 (A Maior) — ‘Spring Song’",
+          level: "intermediário",
+          technicalFocus: "melodia cantada + acompanhamento leve",
+          notes:
+            "‘Leve’ aqui não é ‘fraco’: é elástico. Acompanhamento deve sorrir sem empurrar.",
+          links: [
+            { label: "YouTube", url: ytSearch("Mendelssohn Op 62 No 6 Spring Song A major") },
+            { label: "Spotify", url: spotifySearch("Mendelssohn Op. 62 No. 6") },
+            { label: "Apple Music", url: appleSearch("Mendelssohn Op. 62 No. 6") },
+            { label: "IMSLP", url: imslpSearch("Mendelssohn Op. 62") },
+          ],
+        },
+        {
+          id: "bach-wtc2-a",
+          composer: "J. S. Bach",
+          title: "Prelúdio e Fuga em A Maior (Cravo Bem Temperado, Livro II — BWV 888)",
+          level: "avançado",
+          technicalFocus: "independência de vozes e clareza",
+          notes:
+            "Bach em A é uma aula de ‘mãos independentes com cérebro único’. Se borrar, desacelere e clareie articulação.",
+          links: [
+            { label: "YouTube", url: ytSearch("Bach BWV 888 A major prelude fugue piano") },
+            { label: "Spotify", url: spotifySearch("BWV 888") },
+            { label: "Apple Music", url: appleSearch("BWV 888") },
+            { label: "IMSLP", url: imslpSearch("BWV 888") },
+          ],
+        },
+        {
+          id: "scarlatti-k208",
+          composer: "Domenico Scarlatti",
+          title: "Sonata em A Maior (K. 208/L. 238) — ‘pianismo com sorriso’",
+          level: "intermediário",
+          technicalFocus: "articulação, clareza e leveza",
+          notes:
+            "Scarlatti treina precisão sem rigidez: cada nota tem borda, mas o braço continua solto.",
+          links: [
+            { label: "YouTube", url: ytSearch("Scarlatti Sonata K 208 A major piano") },
+            { label: "Spotify", url: spotifySearch("Scarlatti K. 208") },
+            { label: "Apple Music", url: appleSearch("Scarlatti K. 208") },
+            { label: "IMSLP", url: imslpSearch("Scarlatti K. 208") },
+          ],
+        },
+        {
+          id: "beethoven-op101",
+          composer: "L. v. Beethoven",
+          title: "Sonata Op. 101 (A Maior) — trechos",
+          level: "avançado",
+          technicalFocus: "texturas, vozes e controle de energia",
+          notes:
+            "Beethoven tardio: exige maturidade de som. É treino de ‘clareza com densidade’.",
+          links: [
+            { label: "YouTube", url: ytSearch("Beethoven Sonata Op 101 A major piano") },
+            { label: "Spotify", url: spotifySearch("Beethoven Op. 101") },
+            { label: "Apple Music", url: appleSearch("Beethoven Op. 101") },
+            { label: "IMSLP", url: imslpSearch("Beethoven Op. 101") },
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    slug: "e-minor",
+    label: "E menor",
+    mode: "minor",
+    pitchClass: "E",
+    motto:
+      "Mi menor é sombra com bússola: o drama existe, mas quem manda é o pulso. Aqui você aprende a ser expressivo sem ficar pesado.",
+    estimatedReadingMinutes: 18,
+    mechanical: {
+      title: "Desafio Mecânico",
+      intro:
+        "E menor tem um sustenido (F#). Parece pouco, mas é o suficiente pra revelar vícios: polegar barulhento, punho que torce pra ‘achar’ teclas pretas e a tendência de confundir ‘triste’ com ‘pesado’. O objetivo é construir um som escuro e denso com um corpo solto. Tensão emocional na música, zero tensão inútil no gesto.",
+      exercises: [
+        {
+          id: "scale-e-minor-natural",
+          title: "Escala de E menor (natural)",
+          subtitle: "legato real + direção de frase",
+          exampleNotes: "E F# G A B C D E",
+          notes: [
+            "Trate a escala como frase musical: começo (tensão) → meio (cresce) → topo (pico) → volta (resolução).",
+            "O F# é o ‘teste de civilidade’: se ele sai mais duro/alto, você está mudando o gesto nas pretas. Uniformize.",
+            "Toque 2 oitavas em p. Se ficar irregular, você estava se escondendo no volume.",
+          ],
+        },
+        {
+          id: "scale-e-minor-harmonic",
+          title: "Escala de E menor (harmônica)",
+          subtitle: "D# como pivô sem tropeçar",
+          exampleNotes: "E F# G A B C D# E",
+          notes: [
+            "O intervalo ‘estranho’ é onde a mão denuncia rigidez. Antecipe a posição: o braço viaja antes do dedo.",
+            "Use ritmos longo-curto e curto-longo. Coordenação melhora quando o cérebro para de escapar no automático.",
+            "Se o D# sai como susto, você está chegando atrasado — é rota, não força.",
+          ],
+        },
+        {
+          id: "scale-e-minor-melodic",
+          title: "Escala de E menor (melódica)",
+          subtitle: "subida/descida com intenção (não regra cega)",
+          exampleNotes: "Subindo: E F# G A B C# D# E | Descendo: E D C B A G F# E",
+          notes: [
+            "Você ‘escolhe’ as alterações pra dar direção, não pra obedecer fórmula.",
+            "Na descida, não relaxe demais: clareza também precisa de controle.",
+          ],
+        },
+        {
+          id: "arpeggio-e-minor",
+          title: "Arpejo de E menor",
+          subtitle: "gesto único + concha firme",
+          exampleNotes: "E G B E | E B G E",
+          notes: [
+            "Arpejo bom é trajetória do braço com dedos perto da tecla.",
+            "Se o som ‘quebra’ no polegar, o braço chegou atrasado. Dê o volante pro antebraço.",
+          ],
+        },
+        {
+          id: "hanon-1-in-e-minor",
+          title: "Hanon nº 1 (em E menor) — transposição",
+          subtitle: "intervalos, não hábitos",
+          notes: [
+            "Faça lento e bonito. Hanon feio ensina feiura — técnica é estética aplicada.",
+            "Se 4 e 5 endurecem, use micro-rotação do antebraço (quase invisível) em vez de levantar dedo como garra.",
+          ],
+        },
+        {
+          id: "czerny-599-8-e-minor",
+          title: "Czerny Op. 599 nº 8 (trechos em E menor)",
+          subtitle: "fluxo de mão + olho à frente",
+          notes: [
+            "O estudo treina fluxo. Se você para sempre, você treina parar.",
+            "Leia 1 compasso à frente. Mão apressa quando o olho chega atrasado.",
+          ],
+        },
+        {
+          id: "broken-chords-e-minor",
+          title: "Acordes quebrados em E menor",
+          subtitle: "mão esquerda tapete (sem picos)",
+          notes: [
+            "Acompanhamento bonito é invisível: regular, quente e sem bater.",
+            "Toque o baixo como contrabaixo: presente, mas não mandão.",
+            "Treine voicing: a voz de cima canta, o resto sustenta.",
+          ],
+        },
+        {
+          id: "voicing-e-minor",
+          title: "Voz superior em acordes (E menor) — laboratório",
+          subtitle: "camadas de volume na mesma mão",
+          notes: [
+            "Faça a melodia falar sem gritar. Se precisar gritar, o resto está alto demais.",
+            "Teste: tudo p e só a voz superior mf. Se endurecer, você está apertando internas.",
+          ],
+        },
+        {
+          id: "staccato-e-minor",
+          title: "Staccato elástico (2 notas alternadas) em E menor",
+          subtitle: "soltar rápido sem contrair",
+          notes: [
+            "Staccato bom é quique, não martelo.",
+            "Se ficar agressivo, reduza altura do dedo e aumente a clareza do gesto.",
+          ],
+        },
+        {
+          id: "micro-routine-e-minor",
+          title: "Micro-rotina (3 minutos): som escuro sem peso",
+          subtitle: "p → mf → p sem mudar gesto",
+          notes: [
+            "1 min: escala natural em p (controle fino).",
+            "1 min: arpejo em mf (som cheio, mas redondo).",
+            "1 min: volte pra p e confira se o gesto não ‘aperta’ pra compensar.",
+          ],
+        },
+      ],
+    },
+    repertoire: {
+      title: "Desafio do Repertório",
+      intro:
+        "Curadoria em E menor (10+). Prioridade: peças realmente em E menor. No máximo alguns itens-ponte (bem marcados) pra conectar linguagem e técnica.",
+      items: [
+        {
+          id: "chopin-op28-4",
+          composer: "Frédéric Chopin",
+          title: "Prelúdio Op. 28 nº 4 (E menor) — respiração e harmonia",
+          level: "intermediário",
+          technicalFocus: "voicing, tempo interno e pedal discreto",
+          notes:
+            "A técnica aqui é psicológica: manter o tempo vivo sem empurrar. Controle de peso no braço, sem afundar teclas.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Prelude Op 28 No 4 E minor piano") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 28 No. 4") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 28 No. 4") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 28") },
+          ],
+        },
+        {
+          id: "chopin-op72-1",
+          composer: "Frédéric Chopin",
+          title: "Noturno Op. 72 nº 1 (E menor) — cantabile com sombra",
+          level: "avançado",
+          technicalFocus: "melodia cantada + acompanhamento aveludado",
+          notes:
+            "Treina rubato com disciplina: a mão esquerda é o chão; a direita respira por cima.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Nocturne Op 72 No 1 E minor") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 72 No. 1") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 72 No. 1") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 72") },
+          ],
+        },
+        {
+          id: "chopin-op41-2",
+          composer: "Frédéric Chopin",
+          title: "Mazurca Op. 41 nº 2 (E menor) — dança com acento inteligente",
+          level: "avançado",
+          technicalFocus: "acento, rubato e caráter",
+          notes:
+            "Mazurca é ‘fala com sotaque’: acentos deslocados sem perder o pulso. Treina elegância rítmica.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Mazurka Op 41 No 2 E minor") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 41 No. 2") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 41 No. 2") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 41") },
+          ],
+        },
+        {
+          id: "bach-bwv855",
+          composer: "J. S. Bach",
+          title: "Cravo Bem Temperado, Livro I: Prelúdio e Fuga em E menor (BWV 855)",
+          level: "avançado",
+          technicalFocus: "independência de vozes e clareza",
+          notes:
+            "Bach ‘limpa’ a mão: se o som vira massa, você perdeu articulação. Excelente para treinar cada voz com propósito.",
+          links: [
+            { label: "YouTube", url: ytSearch("Bach BWV 855 E minor prelude fugue piano") },
+            { label: "Spotify", url: spotifySearch("BWV 855") },
+            { label: "Apple Music", url: appleSearch("BWV 855") },
+            { label: "IMSLP", url: imslpSearch("BWV 855") },
+          ],
+        },
+        {
+          id: "mendelssohn-op35-1",
+          composer: "Felix Mendelssohn",
+          title: "Prelúdio e Fuga Op. 35 nº 1 (E menor)",
+          level: "avançado",
+          technicalFocus: "contraponto romântico + controle de textura",
+          notes:
+            "Ótimo para ligar Bach ao romantismo: clareza contrapontística com sonoridade mais ‘pianística’.",
+          links: [
+            { label: "YouTube", url: ytSearch("Mendelssohn Op 35 No 1 E minor prelude fugue") },
+            { label: "Spotify", url: spotifySearch("Mendelssohn Op. 35 No. 1") },
+            { label: "Apple Music", url: appleSearch("Mendelssohn Op. 35 No. 1") },
+            { label: "IMSLP", url: imslpSearch("Mendelssohn Op. 35") },
+          ],
+        },
+        {
+          id: "beethoven-op90",
+          composer: "L. v. Beethoven",
+          title: "Sonata Op. 90 (E menor) — I mov. (trechos)",
+          level: "avançado",
+          technicalFocus: "drama controlado + clareza de textura",
+          notes:
+            "Beethoven em E menor: energia interna forte. Treina acento e direção sem endurecer o som.",
+          links: [
+            { label: "YouTube", url: ytSearch("Beethoven Sonata Op 90 E minor piano") },
+            { label: "Spotify", url: spotifySearch("Beethoven Op. 90") },
+            { label: "Apple Music", url: appleSearch("Beethoven Op. 90") },
+            { label: "IMSLP", url: imslpSearch("Beethoven Op. 90") },
+          ],
+        },
+        {
+          id: "haydn-hob-xvi-34",
+          composer: "Joseph Haydn",
+          title: "Sonata Hob. XVI:34 (E menor) — seleção de movimentos/trechos",
+          level: "avançado",
+          technicalFocus: "articulação, timing e clareza clássica",
+          notes:
+            "Haydn em menor é ótimo pra treinar ‘drama sem excesso’. Timing precisa ser cirúrgico.",
+          links: [
+            { label: "YouTube", url: ytSearch("Haydn Hob XVI 34 E minor piano") },
+            { label: "Spotify", url: spotifySearch("Hob. XVI:34") },
+            { label: "Apple Music", url: appleSearch("Hob. XVI:34") },
+            { label: "IMSLP", url: imslpSearch("Hob. XVI:34") },
+          ],
+        },
+        {
+          id: "grieg-op12-1",
+          composer: "Edvard Grieg",
+          title: "Peças Líricas Op. 12 nº 1 ‘Arietta’ (E menor) — simplicidade profunda",
+          level: "intermediário",
+          technicalFocus: "cantabile e pedais curtos",
+          notes:
+            "Treina som quente em dinâmica baixa. Boa peça para ouvir ‘dentro’ do som.",
+          links: [
+            { label: "YouTube", url: ytSearch("Grieg Arietta Op 12 No 1 E minor piano") },
+            { label: "Spotify", url: spotifySearch("Grieg Arietta Op. 12 No. 1") },
+            { label: "Apple Music", url: appleSearch("Grieg Arietta Op. 12 No. 1") },
+            { label: "IMSLP", url: imslpSearch("Grieg Op. 12") },
+          ],
+        },
+        {
+          id: "rachmaninoff-op32-4",
+          composer: "Sergei Rachmaninoff",
+          title: "Prelúdio Op. 32 nº 4 (E menor) — peso sem dureza",
+          level: "avançado",
+          technicalFocus: "toque profundo + camadas",
+          notes:
+            "Perfeito para treinar ‘peso bem distribuído’: som grande sem esmagar teclas. Se a mão travar, volte e reorganize o braço.",
+          links: [
+            { label: "YouTube", url: ytSearch("Rachmaninoff Prelude Op 32 No 4 E minor") },
+            { label: "Spotify", url: spotifySearch("Rachmaninoff Op. 32 No. 4") },
+            { label: "Apple Music", url: appleSearch("Rachmaninoff Op. 32 No. 4") },
+            { label: "IMSLP", url: imslpSearch("Rachmaninoff Op. 32") },
+          ],
+        },
+        {
+          id: "bridge-burgmuller-op100",
+          composer: "Friedrich Burgmüller",
+          title: "(ponte) 25 Estudos Fáceis Op. 100 — escolha 1 estudo em modo menor e transfira o som para E menor",
+          level: "iniciante",
+          technicalFocus: "articulação + expressão sem peso",
+          notes:
+            "Item-ponte: a ideia é treinar a estética de ‘modo menor’ e aplicar o mesmo tipo de toque/respiração quando você volta para E menor.",
+          links: [
+            { label: "YouTube", url: ytSearch("Burgmuller Op 100 piano") },
+            { label: "Spotify", url: spotifySearch("Burgmuller Op. 100") },
+            { label: "Apple Music", url: appleSearch("Burgmuller Op. 100") },
+            { label: "IMSLP", url: imslpSearch("Burgmuller Op. 100") },
+          ],
+        },
+      ],
+    },
+  },
   {
     slug: "c-major",
     label: "C Maior",

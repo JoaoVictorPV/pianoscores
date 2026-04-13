@@ -4,7 +4,16 @@ import { z } from "zod";
 
 const STORAGE_KEY = "pianoscores:v1";
 
-export const keySlugSchema = z.enum(["c-major", "g-major", "d-major", "a-minor"]);
+export const keySlugSchema = z.enum([
+  "c-major",
+  "g-major",
+  "d-major",
+  "a-major",
+  "a-minor",
+  "e-minor",
+  "b-minor",
+  "fsharp-minor",
+]);
 
 export const userProgressSchema = z.object({
   version: z.literal(1),
@@ -29,7 +38,11 @@ export function emptyProgress(): UserProgress {
       "c-major": { exercisesDone: [], repertoireDone: [], concludedAt: null },
       "g-major": { exercisesDone: [], repertoireDone: [], concludedAt: null },
       "d-major": { exercisesDone: [], repertoireDone: [], concludedAt: null },
+      "a-major": { exercisesDone: [], repertoireDone: [], concludedAt: null },
       "a-minor": { exercisesDone: [], repertoireDone: [], concludedAt: null },
+      "e-minor": { exercisesDone: [], repertoireDone: [], concludedAt: null },
+      "b-minor": { exercisesDone: [], repertoireDone: [], concludedAt: null },
+      "fsharp-minor": { exercisesDone: [], repertoireDone: [], concludedAt: null },
     },
   };
 }
@@ -40,7 +53,17 @@ export function loadProgress(): UserProgress {
     if (!raw) return emptyProgress();
     const parsed = userProgressSchema.safeParse(JSON.parse(raw));
     if (!parsed.success) return emptyProgress();
-    return parsed.data;
+    // Merge with the latest empty schema so older localStorage versions
+    // automatically gain new keys without losing existing progress.
+    const base = emptyProgress();
+    return {
+      ...base,
+      ...parsed.data,
+      keys: {
+        ...base.keys,
+        ...parsed.data.keys,
+      },
+    };
   } catch {
     return emptyProgress();
   }

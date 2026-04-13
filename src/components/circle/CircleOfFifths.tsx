@@ -93,8 +93,9 @@ export function CircleOfFifths({
   const cy = size / 2;
   const rOuter = 220;
   const rInner = 150;
-  const rInner2Outer = 138;
-  const rInner2Inner = 102;
+  // Inner ring (relative minors) is intentionally thicker for readability on iPad.
+  const rInner2Outer = 148;
+  const rInner2Inner = 92;
 
   const { progress, hydrated, hydrate } = useProgressStore();
 
@@ -107,6 +108,7 @@ export function CircleOfFifths({
     C: "c-major",
     G: "g-major",
     D: "d-major",
+    A: "a-major",
   };
 
   // Inner ring uses *relative minors* aligned with outer major sectors.
@@ -114,9 +116,9 @@ export function CircleOfFifths({
   // Labels are shown for all, but only some are clickable (MVP).
   const INNER_RELATIVE_MINORS: { label: string; slug?: KeySlug }[] = [
     { label: "Am", slug: "a-minor" },
-    { label: "Em" },
-    { label: "Bm" },
-    { label: "F♯m" },
+    { label: "Em", slug: "e-minor" },
+    { label: "Bm", slug: "b-minor" },
+    { label: "F♯m", slug: "fsharp-minor" },
     { label: "C♯m" },
     { label: "G♯m" },
     { label: "D♯m" },
@@ -345,13 +347,13 @@ export function CircleOfFifths({
         <circle
           cx={cx}
           cy={cy}
-          r={112}
+          r={96}
           fill="rgba(14,17,27,0.92)"
           stroke="rgba(255,255,255,0.07)"
         />
         <text
           x={cx}
-          y={cy - 10}
+          y={cy - 8}
           textAnchor="middle"
           dominantBaseline="middle"
           fontSize={14}
