@@ -9,10 +9,14 @@ export const keySlugSchema = z.enum([
   "g-major",
   "d-major",
   "a-major",
+  "e-major",
+  "b-major",
   "a-minor",
   "e-minor",
   "b-minor",
   "fsharp-minor",
+  "csharp-minor",
+  "gsharp-minor",
 ]);
 
 export const userProgressSchema = z.object({
@@ -39,10 +43,14 @@ export function emptyProgress(): UserProgress {
       "g-major": { exercisesDone: [], repertoireDone: [], concludedAt: null },
       "d-major": { exercisesDone: [], repertoireDone: [], concludedAt: null },
       "a-major": { exercisesDone: [], repertoireDone: [], concludedAt: null },
+      "e-major": { exercisesDone: [], repertoireDone: [], concludedAt: null },
+      "b-major": { exercisesDone: [], repertoireDone: [], concludedAt: null },
       "a-minor": { exercisesDone: [], repertoireDone: [], concludedAt: null },
       "e-minor": { exercisesDone: [], repertoireDone: [], concludedAt: null },
       "b-minor": { exercisesDone: [], repertoireDone: [], concludedAt: null },
       "fsharp-minor": { exercisesDone: [], repertoireDone: [], concludedAt: null },
+      "csharp-minor": { exercisesDone: [], repertoireDone: [], concludedAt: null },
+      "gsharp-minor": { exercisesDone: [], repertoireDone: [], concludedAt: null },
     },
   };
 }
