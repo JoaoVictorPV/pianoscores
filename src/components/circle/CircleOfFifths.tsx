@@ -5,7 +5,6 @@ import * as React from "react";
 import { cn } from "@/lib/cn";
 import { MVP_KEYS, type KeySlug } from "@/content/keys";
 import { useProgressStore } from "@/store/progressStore";
-import { Button } from "@/components/ui/Button";
 
 type KeyId = "C" | "G" | "D" | "A" | "E" | "B" | "F#" | "C#" | "Ab" | "Eb" | "Bb" | "F";
 
@@ -87,14 +86,15 @@ export function CircleOfFifths({
   className?: string;
   onPickKey?: (slug: KeySlug) => void;
 }) {
-  const [mode, setMode] = React.useState<"major" | "minor">("major");
-  const [spelling, setSpelling] = React.useState<"sharp" | "flat">("sharp");
   const [hovered, setHovered] = React.useState<KeyId | null>(null);
+  const [hoveredInner, setHoveredInner] = React.useState<number | null>(null);
   const size = 520;
   const cx = size / 2;
   const cy = size / 2;
   const rOuter = 220;
   const rInner = 150;
+  const rInner2Outer = 138;
+  const rInner2Inner = 102;
 
   const { progress, hydrated, hydrate } = useProgressStore();
 
@@ -102,24 +102,32 @@ export function CircleOfFifths({
     if (!hydrated) hydrate();
   }, [hydrated, hydrate]);
 
-  // MVP mapping. Full mapping will be expanded later.
-  const keyToSlug: Partial<Record<string, KeySlug>> = {
-    "major:sharp:C": "c-major",
-    "major:sharp:G": "g-major",
-    "major:sharp:D": "d-major",
-    "minor:sharp:A": "a-minor",
-
-    // also allow picking A minor even if user is in "flat" mode.
-    "minor:flat:A": "a-minor",
+  // MVP mapping. We'll evolve to cover all 24 keys later.
+  const outerMajorToSlug: Partial<Record<KeyId, KeySlug>> = {
+    C: "c-major",
+    G: "g-major",
+    D: "d-major",
   };
 
-  function slugFor(id: KeyId) {
-    const key = `${mode}:${spelling}:${id}`;
-    return keyToSlug[key];
-  }
+  // Inner ring uses *relative minors* aligned with outer major sectors.
+  // C major <-> A minor, G major <-> E minor, D major <-> B minor, ...
+  // Labels are shown for all, but only some are clickable (MVP).
+  const INNER_RELATIVE_MINORS: { label: string; slug?: KeySlug }[] = [
+    { label: "Am", slug: "a-minor" },
+    { label: "Em" },
+    { label: "Bm" },
+    { label: "F♯m" },
+    { label: "C♯m" },
+    { label: "G♯m" },
+    { label: "D♯m" },
+    { label: "A♯m" },
+    { label: "Fm" },
+    { label: "Cm" },
+    { label: "Gm" },
+    { label: "Dm" },
+  ];
 
-  function pctForKey(id: KeyId) {
-    const slug = slugFor(id);
+  function pctForSlug(slug?: KeySlug) {
     if (!slug) return 0;
     const content = MVP_KEYS.find((k) => k.slug === slug);
     if (!content) return 0;
@@ -129,70 +137,33 @@ export function CircleOfFifths({
     return total === 0 ? 0 : Math.round((done / total) * 100);
   }
 
-  function labelForKey(id: KeyId) {
-    const slug = slugFor(id);
-    if (!slug) return `${id} (${mode === "major" ? "Maior" : "menor"}) (em breve)`;
+  function labelForSlug(slug?: KeySlug, fallback?: string) {
+    if (!slug) return fallback ?? "(em breve)";
     const c = MVP_KEYS.find((k) => k.slug === slug);
-    return c ? `${c.label}` : `${id}`;
+    return c ? c.label : fallback ?? slug;
+  }
+
+  function labelForOuter(id: KeyId) {
+    const slug = outerMajorToSlug[id];
+    return labelForSlug(slug, `${id} (em breve)`);
   }
 
   function fillFor(id: KeyId) {
-    const pct = pctForKey(id);
+    const pct = pctForSlug(outerMajorToSlug[id]);
     const base = 0.03;
     const glow = 0.26;
     const alpha = base + (pct / 100) * glow;
     return `rgba(20,199,255,${alpha.toFixed(3)})`;
   }
 
-  const hoveredSlug = hovered ? slugFor(hovered) : undefined;
-  const hoveredPct = hovered ? pctForKey(hovered) : 0;
+  const hoveredSlug = hovered ? outerMajorToSlug[hovered] : undefined;
+  const hoveredInnerSlug =
+    hoveredInner === null ? undefined : INNER_RELATIVE_MINORS[hoveredInner]?.slug;
+  const hoveredPct = hovered ? pctForSlug(hoveredSlug) : 0;
+  const hoveredInnerPct = hoveredInner !== null ? pctForSlug(hoveredInnerSlug) : 0;
 
   return (
-    <div className={cn("flex w-full flex-col items-center justify-center gap-4", className)}>
-      <div className="flex flex-wrap items-center justify-center gap-2">
-        <div className="inline-flex overflow-hidden rounded-xl border border-[var(--color-border)] bg-[rgba(0,0,0,0.12)]">
-          <Button
-            type="button"
-            size="sm"
-            variant="segmented"
-            className={cn("rounded-none border-0", mode === "major" ? "bg-[var(--color-neon-500)] text-black" : "")}
-            onClick={() => setMode("major")}
-          >
-            Maiores
-          </Button>
-          <Button
-            type="button"
-            size="sm"
-            variant="segmented"
-            className={cn("rounded-none border-0", mode === "minor" ? "bg-[var(--color-neon-500)] text-black" : "")}
-            onClick={() => setMode("minor")}
-          >
-            Menores
-          </Button>
-        </div>
-
-        <div className="inline-flex overflow-hidden rounded-xl border border-[var(--color-border)] bg-[rgba(0,0,0,0.12)]">
-          <Button
-            type="button"
-            size="sm"
-            variant="segmented"
-            className={cn("rounded-none border-0", spelling === "sharp" ? "bg-[var(--color-neon-500)] text-black" : "")}
-            onClick={() => setSpelling("sharp")}
-          >
-            ♯
-          </Button>
-          <Button
-            type="button"
-            size="sm"
-            variant="segmented"
-            className={cn("rounded-none border-0", spelling === "flat" ? "bg-[var(--color-neon-500)] text-black" : "")}
-            onClick={() => setSpelling("flat")}
-          >
-            ♭
-          </Button>
-        </div>
-      </div>
-
+    <div className={cn("flex w-full flex-col items-center justify-center", className)}>
       <svg
         viewBox={`0 0 ${size} ${size}`}
         className="h-[320px] w-[320px] md:h-[420px] md:w-[420px]"
@@ -242,6 +213,21 @@ export function CircleOfFifths({
           stroke="rgba(255,255,255,0.06)"
         />
 
+        <circle
+          cx={cx}
+          cy={cy}
+          r={rInner2Outer + 2}
+          fill="none"
+          stroke="rgba(255,255,255,0.04)"
+        />
+        <circle
+          cx={cx}
+          cy={cy}
+          r={rInner2Inner - 2}
+          fill="none"
+          stroke="rgba(255,255,255,0.04)"
+        />
+
         {KEYS.map((k, idx) => {
           const segAngle = 360 / KEYS.length;
           const startAngle = idx * segAngle;
@@ -253,7 +239,7 @@ export function CircleOfFifths({
 
           const midAngle = (startAngle + endAngle) / 2;
           const labelPos = polarToCartesian(cx, cy, (rOuter + rInner) / 2, midAngle);
-          const slug = slugFor(k.id);
+          const slug = outerMajorToSlug[k.id];
           const isHovered = hovered === k.id;
           const scale = slug && isHovered ? 1.018 : 1;
           return (
@@ -297,6 +283,65 @@ export function CircleOfFifths({
           );
         })}
 
+        {/* Inner relative minors ring */}
+        {KEYS.map((k, idx) => {
+          const segAngle = 360 / KEYS.length;
+          const startAngle = idx * segAngle;
+          const endAngle = (idx + 1) * segAngle;
+          const path = describeArc(cx, cy, rInner2Outer, rInner2Inner, startAngle, endAngle);
+
+          const inner = INNER_RELATIVE_MINORS[idx];
+          const slug = inner?.slug;
+          const pct = pctForSlug(slug);
+          const alpha = 0.02 + (pct / 100) * 0.22;
+          const fill = `rgba(134,97,255,${alpha.toFixed(3)})`;
+
+          const midAngle = (startAngle + endAngle) / 2;
+          const labelPos = polarToCartesian(cx, cy, (rInner2Outer + rInner2Inner) / 2, midAngle);
+          const isHovered = hoveredInner === idx;
+          const scale = slug && isHovered ? 1.02 : 1;
+
+          return (
+            <g
+              key={`inner-${k.id}`}
+              onMouseEnter={() => setHoveredInner(idx)}
+              onMouseLeave={() => setHoveredInner(null)}
+              onFocus={() => setHoveredInner(idx)}
+              onBlur={() => setHoveredInner(null)}
+              style={{ transformOrigin: `${cx}px ${cy}px`, transform: `scale(${scale})` }}
+              className={cn("transition-transform duration-200", slug ? "cursor-pointer" : "opacity-60")}
+            >
+              <path
+                d={path}
+                fill={fill}
+                stroke="rgba(255,255,255,0.05)"
+                className={cn(
+                  "transition-[fill,stroke] duration-200",
+                  slug
+                    ? "hover:fill-[rgba(134,97,255,0.26)] hover:stroke-[rgba(134,97,255,0.45)]"
+                    : "",
+                )}
+                filter={slug && isHovered ? "url(#softGlow)" : undefined}
+                onClick={() => {
+                  if (!slug) return;
+                  onPickKey?.(slug);
+                }}
+              />
+              <text
+                x={labelPos.x}
+                y={labelPos.y}
+                textAnchor="middle"
+                dominantBaseline="middle"
+                fontSize={14}
+                fill="rgba(233,238,247,0.78)"
+                style={{ fontFamily: "var(--font-sans)" }}
+              >
+                {inner?.label ?? ""}
+              </text>
+            </g>
+          );
+        })}
+
         <circle
           cx={cx}
           cy={cy}
@@ -324,10 +369,14 @@ export function CircleOfFifths({
           fill="rgba(233,238,247,0.95)"
           style={{ fontFamily: "var(--font-sans)", fontWeight: 600 }}
         >
-          {hovered ? labelForKey(hovered) : "Círculo das Quintas"}
+          {hovered
+            ? labelForSlug(hoveredSlug, labelForOuter(hovered))
+            : hoveredInner !== null
+              ? labelForSlug(hoveredInnerSlug, INNER_RELATIVE_MINORS[hoveredInner]?.label)
+              : "Círculo das Quintas"}
         </text>
 
-        {hovered ? (
+        {hovered || hoveredInner ? (
           <text
             x={cx}
             y={cy + 44}
@@ -337,7 +386,11 @@ export function CircleOfFifths({
             fill="rgba(169,179,197,0.95)"
             style={{ fontFamily: "var(--font-sans)" }}
           >
-            {hoveredSlug ? `${hoveredPct}% completo` : "conteúdo em construção"}
+            {hoveredSlug
+              ? `${hoveredPct}% completo`
+              : hoveredInnerSlug
+                ? `${hoveredInnerPct}% completo`
+                : "conteúdo em construção"}
           </text>
         ) : null}
       </svg>
