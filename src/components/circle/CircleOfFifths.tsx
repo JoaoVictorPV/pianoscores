@@ -111,6 +111,8 @@ export function CircleOfFifths({
     A: "a-major",
     E: "e-major",
     B: "b-major",
+    "F#": "fsharp-major",
+    "C#": "csharp-major",
   };
 
   // Inner ring uses *relative minors* aligned with outer major sectors.
@@ -123,8 +125,8 @@ export function CircleOfFifths({
     { label: "F♯m", slug: "fsharp-minor" },
     { label: "C♯m", slug: "csharp-minor" },
     { label: "G♯m", slug: "gsharp-minor" },
-    { label: "D♯m" },
-    { label: "A♯m" },
+    { label: "D♯m", slug: "dsharp-minor" },
+    { label: "A♯m", slug: "asharp-minor" },
     { label: "Fm" },
     { label: "Cm" },
     { label: "Gm" },

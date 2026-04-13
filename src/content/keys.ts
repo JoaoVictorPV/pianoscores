@@ -7,9 +7,13 @@ export type KeySlug =
   | "a-major"
   | "e-major"
   | "b-major"
+  | "fsharp-major"
+  | "csharp-major"
   | "a-minor"
   | "e-minor"
   | "b-minor"
+  | "dsharp-minor"
+  | "asharp-minor"
   | "fsharp-minor"
   | "csharp-minor"
   | "gsharp-minor";
@@ -3287,6 +3291,804 @@ export const MVP_KEYS: KeyContent[] = [
             { label: "Apple Music", url: appleSearch("Für Elise WoO 59") },
             { label: "IMSLP", url: imslpSearch("Für Elise WoO 59") },
           ],
+        },
+      ],
+    },
+  },
+
+  {
+    slug: "fsharp-major",
+    label: "F♯ Maior",
+    mode: "major",
+    pitchClass: "F♯",
+    motto:
+      "Fá sustenido Maior é o paraíso das teclas pretas — e justamente por isso é um ótimo detector de vícios: conforto demais vira desatenção; medo de E# vira rigidez. Aqui o luxo é controle.",
+    estimatedReadingMinutes: 22,
+    mechanical: {
+      title: "Desafio Mecânico",
+      intro:
+        "F♯ maior tem seis sustenidos (F#, C#, G#, D#, A#, E#). No teclado, isso favorece os dedos longos (2–3–4) nas pretas, e exige um polegar silencioso nos cruzamentos. O ponto ‘teórico’ que vira técnica prática: **E# é a tecla do F natural, mas a função é 7º grau** (tensão que resolve em F#). Quando você entende função, você para de ‘caçar tecla’ e passa a guiar a mão por rota e intenção sonora.",
+      exercises: [
+        {
+          id: "scale-fsharp-major",
+          title: "Escala de F♯ Maior (mãos separadas → juntas)",
+          subtitle: "timbre homogêneo + polegar silencioso",
+          exampleNotes: scaleNotes("F#", "G#", "A#", "B", "C#", "D#", "E#", "F#"),
+          notes: [
+            "Pense em ‘pretas como plataforma’: dedos longos entram um pouco mais nelas. Isso estabiliza o ataque.",
+            "E# não é pegadinha: ouça a tensão resolvendo. Segurança começa no ouvido.",
+            "Se aparecer degrau de volume no cruzamento do polegar, é rota do braço chegando tarde. Corrija rota, não força.",
+          ],
+        },
+        {
+          id: "arpeggio-fsharp-major",
+          title: "Arpejo de F♯ Maior",
+          subtitle: "um gesto só (sem escada)",
+          exampleNotes: "F# A# C# F# | F# C# A# F#",
+          notes: [
+            "Arpejo bom parece um arco contínuo. Se vira escada, o braço está chegando atrasado.",
+            "Polegar entra de lado (deslize). Se faz clique, ajuste ângulo e rota.",
+          ],
+        },
+        {
+          id: "hanon-1-in-fsharp-major",
+          title: "Hanon nº 1 (em F♯ Maior) — transposição",
+          subtitle: "intervalos mandam; dedo obedece",
+          notes: [
+            "Transpor para F# maior é um choque de realidade: você não pode depender da ‘geografia de teclas brancas’.",
+            "Faça p → mf → p. Se o último p endurecer, você estava compensando com volume.",
+          ],
+        },
+        {
+          id: "broken-chords-fsharp-major",
+          title: "Acordes quebrados em F♯ (padrões de acompanhamento)",
+          subtitle: "F#–D#m–B–C# (fluxo harmônico)",
+          notes: [
+            "A mão esquerda deve ser tapete: regular e quente. Se late, reduza altura do dedo e use peso.",
+            "Treine voicing: nota de cima mf, internas p.",
+          ],
+        },
+        {
+          id: "rhythm-cells-fsharp-major",
+          title: "Células rítmicas na escala (longo-curto / curto-longo)",
+          subtitle: "debug de ansiedade",
+          notes: [
+            "Ritmo alterado expõe onde você acelera para escapar. Aí você corrige no lugar certo.",
+          ],
+        },
+        {
+          id: "micro-routine-fsharp-major",
+          title: "Micro-rotina (3 minutos): luxo controlado",
+          subtitle: "p → mf → p",
+          notes: [
+            "1 min: escala em p.",
+            "1 min: arpejo em mf.",
+            "1 min: acordes quebrados F#–D#m–B–C# em p com voicing.",
+          ],
+        },
+      ],
+    },
+    repertoire: {
+      title: "Desafio do Repertório",
+      intro:
+        "Curadoria em F♯ Maior (10+). Observação prática: muita coisa aparece escrita como **G♭ Maior** (enarmônico). Aqui eu marco isso explicitamente, porque aprender enarmonia faz você tocar com cabeça (e não só com dedo).",
+      items: [
+        {
+          id: "bach-bwv858",
+          composer: "J. S. Bach",
+          title: "WTC I: Prelúdio e Fuga em F♯ Maior (BWV 858)",
+          level: "avançado",
+          technicalFocus: "clareza e vozes",
+          notes: "Transparência total: excelente para lapidar articulação e independência de vozes.",
+          links: [
+            { label: "YouTube", url: ytSearch("BWV 858 F sharp major prelude fugue piano") },
+            { label: "Spotify", url: spotifySearch("BWV 858") },
+            { label: "Apple Music", url: appleSearch("BWV 858") },
+            { label: "IMSLP", url: imslpSearch("BWV 858") },
+          ],
+        },
+        {
+          id: "beethoven-op78",
+          composer: "L. v. Beethoven",
+          title: "Sonata Op. 78 (F♯ Maior) — seleção de trechos",
+          level: "avançado",
+          technicalFocus: "energia organizada + cantabile",
+          notes: "Beethoven em F# maior pede som grande sem dureza e frase com direção.",
+          links: [
+            { label: "YouTube", url: ytSearch("Beethoven Sonata Op 78 F sharp major") },
+            { label: "Spotify", url: spotifySearch("Beethoven Op. 78") },
+            { label: "Apple Music", url: appleSearch("Beethoven Op. 78") },
+            { label: "IMSLP", url: imslpSearch("Beethoven Op. 78") },
+          ],
+        },
+        {
+          id: "chopin-prelude-28-13",
+          composer: "Frédéric Chopin",
+          title: "Prelúdio Op. 28 nº 13 (F♯ Maior)",
+          level: "intermediário",
+          technicalFocus: "controle de acompanhamento + melodia",
+          notes: "Ótimo para treinar a mão esquerda como seda e a direita cantando por cima.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Prelude Op 28 No 13 F sharp major") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 28 No. 13") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 28 No. 13") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 28 No. 13") },
+          ],
+        },
+        {
+          id: "chopin-nocturne-op15-2",
+          composer: "Frédéric Chopin",
+          title: "Noturno Op. 15 nº 2 (F♯ Maior)",
+          level: "avançado",
+          technicalFocus: "cantabile + rubato disciplinado",
+          notes: "Laboratório de tempo interno: respirar sem perder o chão da mão esquerda.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Nocturne Op 15 No 2 F sharp major") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 15 No. 2") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 15 No. 2") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 15") },
+          ],
+        },
+        {
+          id: "chopin-barcarolle-op60",
+          composer: "Frédéric Chopin",
+          title: "Barcarola Op. 60 (F♯ Maior)",
+          level: "avançado",
+          technicalFocus: "voicing + pedal + narrativa",
+          notes: "Pedal como lente: cor sem lama. Melodia canta sobre ondas harmônicas.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Barcarolle Op 60 F sharp major") },
+            { label: "Spotify", url: spotifySearch("Chopin Barcarolle Op. 60") },
+            { label: "Apple Music", url: appleSearch("Chopin Barcarolle Op. 60") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 60") },
+          ],
+        },
+        {
+          id: "debussy-fille-gflat",
+          composer: "Claude Debussy",
+          title: "(enarmônico) ‘La fille aux cheveux de lin’ (G♭ Maior)",
+          level: "intermediário",
+          technicalFocus: "timbre + pedal limpo",
+          notes: "Peça curta e sofisticada: transparência e controle fino de ressonância.",
+          links: [
+            { label: "YouTube", url: ytSearch("Debussy La fille aux cheveux de lin G flat major") },
+            { label: "Spotify", url: spotifySearch("La fille aux cheveux de lin") },
+            { label: "Apple Music", url: appleSearch("La fille aux cheveux de lin") },
+            { label: "IMSLP", url: imslpSearch("La fille aux cheveux de lin") },
+          ],
+        },
+        {
+          id: "schubert-impromptu-op90-3",
+          composer: "Franz Schubert",
+          title: "(enarmônico) Impromptu Op. 90 nº 3 (G♭ Maior)",
+          level: "avançado",
+          technicalFocus: "legato + camadas + resistência",
+          notes: "Treina o tipo de legato e controle de camadas que deixam F# maior realmente elegante.",
+          links: [
+            { label: "YouTube", url: ytSearch("Schubert Impromptu Op 90 No 3 G flat major") },
+            { label: "Spotify", url: spotifySearch("Schubert Impromptu Op. 90 No. 3") },
+            { label: "Apple Music", url: appleSearch("Schubert Impromptu Op. 90 No. 3") },
+            { label: "IMSLP", url: imslpSearch("Schubert Op. 90 No. 3") },
+          ],
+        },
+        {
+          id: "bridge-bach-transposition",
+          composer: "J. S. Bach",
+          title: "(ponte) Transponha 8–16 compassos de uma invenção para F♯ Maior",
+          level: "avançado",
+          technicalFocus: "harmonia + leitura",
+          notes: "Ponte brutalmente eficiente: você perde vício de dedo e ganha consciência tonal.",
+          links: [{ label: "YouTube", url: ytSearch("Bach invention transposition piano") }],
+        },
+        {
+          id: "bridge-debussy-preludes",
+          composer: "Claude Debussy",
+          title: "(ponte) Prelúdios de Debussy (seleção) — transparência",
+          level: "avançado",
+          technicalFocus: "pedal limpo + timbre",
+          notes: "Ponte: aprender transparência evita que o brilho vire borrão.",
+          links: [{ label: "YouTube", url: ytSearch("Debussy preludes piano") }],
+        },
+      ],
+    },
+  },
+
+  {
+    slug: "csharp-major",
+    label: "C♯ Maior (enarmônico: D♭ Maior)",
+    mode: "major",
+    pitchClass: "C♯",
+    motto:
+      "C♯ Maior é a ‘biblioteca secreta’ do círculo: quase ninguém estuda por escrita, mas todo mundo acaba vivendo nela via D♭ Maior. A graça é aprender que som e nome nem sempre andam de mãos dadas.",
+    estimatedReadingMinutes: 23,
+    mechanical: {
+      title: "Desafio Mecânico",
+      intro:
+        "C♯ maior tem sete sustenidos (C#, D#, E#, F#, G#, A#, B#). Na prática, repertório costuma escrever isso como D♭ maior (cinco bemóis), porque é mais legível. Aqui você ganha 2 habilidades ao mesmo tempo: (1) conforto ‘por dentro’ do teclado (muitas pretas) e (2) maturidade musical: entender **enarmonia** (mesmo som, nomes diferentes). Técnica central: concha estável, polegar silencioso e um ouvido que manda mais do que o susto visual de B# e E#.",
+      exercises: [
+        {
+          id: "scale-csharp-major",
+          title: "Escala de C♯ Maior",
+          subtitle: "B# e E# com função (não pegadinha)",
+          exampleNotes: scaleNotes("C#", "D#", "E#", "F#", "G#", "A#", "B#", "C#"),
+          notes: [
+            "B# é a tecla do C natural. O objetivo é ouvir como 7º grau que resolve, não como ‘nota diferente’.",
+            "E# é a tecla do F natural. Se o polegar faz ‘clique’ ali, o braço chegou tarde.",
+            "Treine em p. C# maior bonito em p é assinatura de controle (e não de força).",
+          ],
+        },
+        {
+          id: "arpeggio-csharp-major",
+          title: "Arpejo de C♯ Maior",
+          subtitle: "gesto único + braço chegando cedo",
+          exampleNotes: "C# E# G# C# | C# G# E# C#",
+          notes: [
+            "Arpejo com ‘degrau’ quase sempre é braço atrasado. Antecipe o pouso.",
+            "Nas pretas (C#, D#, F#, G#, A#), dedos longos (2–3–4) são seus melhores amigos.",
+          ],
+        },
+        {
+          id: "hanon-1-in-csharp-major",
+          title: "Hanon nº 1 (em C♯ Maior) — transposição",
+          subtitle: "memória de dedo não tem vez",
+          notes: [
+            "Faça curto e perfeito: 20–40s por tentativa, pausa, repete. Assim você treina controle, não cansaço.",
+            "Se a mão endurece, reduza amplitude e traga os dedos mais perto das teclas.",
+          ],
+        },
+        {
+          id: "broken-chords-csharp-major",
+          title: "Acordes quebrados (C#–A#m–F#–G#)",
+          subtitle: "harmonia andando + voicing",
+          notes: [
+            "Toque como canção: fluxo harmônico sem picos de volume.",
+            "Voicing: nota de cima mf, internas p. Sem camadas, essa tonalidade vira ‘borrão bonito’.",
+          ],
+        },
+        {
+          id: "rhythm-cells-csharp-major",
+          title: "Células rítmicas na escala (longo-curto / curto-longo)",
+          subtitle: "debug do susto visual",
+          notes: [
+            "Isso mostra onde você acelera para escapar das notas ‘estranhas’ (B#, E#).",
+            "Volte ao ritmo normal só quando a sensação estiver lisa.",
+          ],
+        },
+        {
+          id: "reading-csharp-major",
+          title: "Leitura lenta em D♭ Maior (pensando ‘C♯ Maior’) — 1 página",
+          subtitle: "enarmonia na prática",
+          notes: [
+            "Pegue algo escrito em D♭ maior e trate como estudo de C# maior. Seu ouvido é o juiz.",
+            "Olho 1 compasso à frente reduz pânico e estabiliza tempo.",
+          ],
+        },
+        {
+          id: "micro-routine-csharp-major",
+          title: "Micro-rotina (3 minutos): vidro polido",
+          subtitle: "p → mf → p",
+          notes: [
+            "1 min: escala em p.",
+            "1 min: arpejo em mf (som cheio sem dureza).",
+            "1 min: acordes quebrados C#–A#m–F#–G# em p com voicing.",
+          ],
+        },
+      ],
+    },
+    repertoire: {
+      title: "Desafio do Repertório",
+      intro:
+        "Curadoria de C♯ Maior via D♭ Maior (enarmônico). O objetivo aqui é: cantabile, pedal limpo e camadas. D♭ maior é ‘muito piano’: é onde você aprende a fazer o instrumento soar caro sem aumentar o volume.",
+      items: [
+        {
+          id: "csharp-major-bach-wtc-db",
+          composer: "J. S. Bach",
+          title: "WTC I: Prelúdio e Fuga em D♭ Maior (enarmônico de C♯)",
+          level: "avançado",
+          technicalFocus: "clareza contrapontística + timbre estável",
+          notes: "Bach aqui é ‘detergente’: limpa o toque e expõe qualquer excesso de pedal.",
+          links: [
+            { label: "YouTube", url: ytSearch("Bach WTC D flat major prelude fugue") },
+            { label: "Spotify", url: spotifySearch("Bach D flat major prelude fugue") },
+            { label: "Apple Music", url: appleSearch("Bach D flat major prelude fugue") },
+            { label: "IMSLP", url: imslpSearch("D flat major prelude fugue") },
+          ],
+        },
+        {
+          id: "csharp-major-chopin-op28-15",
+          composer: "Frédéric Chopin",
+          title: "Prelúdio Op. 28 nº 15 ‘Raindrop’ (D♭ Maior)",
+          level: "intermediário",
+          technicalFocus: "controle de repetição + narrativa",
+          notes: "Repetir sem endurecer é técnica de elite. Aqui você aprende isso com música de verdade.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Prelude Op 28 No 15 D flat major") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 28 No. 15") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 28 No. 15") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 28 No. 15") },
+          ],
+        },
+        {
+          id: "csharp-major-chopin-nocturne-op27-2",
+          composer: "Frédéric Chopin",
+          title: "Noturno Op. 27 nº 2 (D♭ Maior)",
+          level: "avançado",
+          technicalFocus: "voicing + pedal + rubato disciplinado",
+          notes: "Se borrar, você perde o luxo. É peça de camadas e controle fino de ressonância.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Nocturne Op 27 No 2 D flat major") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 27 No. 2") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 27 No. 2") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 27") },
+          ],
+        },
+        {
+          id: "csharp-major-chopin-waltz-op64-1",
+          composer: "Frédéric Chopin",
+          title: "Valsa Op. 64 nº 1 (D♭ Maior)",
+          level: "intermediário",
+          technicalFocus: "leveza + pulso firme",
+          notes: "A piada é parecer fácil. A lição é: leveza sem correria.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Waltz Op 64 No 1 D flat major") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 64 No. 1") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 64 No. 1") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 64 No. 1") },
+          ],
+        },
+        {
+          id: "csharp-major-debussy-reflets",
+          composer: "Claude Debussy",
+          title: "‘Reflets dans l’eau’ (D♭ Maior)",
+          level: "avançado",
+          technicalFocus: "timbre + transparência + pedal limpo",
+          notes: "Aula de água sem lama: camadas e ressonância controlada.",
+          links: [
+            { label: "YouTube", url: ytSearch("Debussy Reflets dans l'eau D flat major") },
+            { label: "Spotify", url: spotifySearch("Reflets dans l'eau") },
+            { label: "Apple Music", url: appleSearch("Reflets dans l'eau") },
+            { label: "IMSLP", url: imslpSearch("Reflets dans l'eau") },
+          ],
+        },
+        {
+          id: "csharp-major-scriabin-op11-selection",
+          composer: "Alexander Scriabin",
+          title: "Prelúdios Op. 11 (seleção em D♭/vizinhança)",
+          level: "intermediário",
+          technicalFocus: "função harmônica + voicing",
+          notes: "Scriabin é ótimo para aprender a colorir sem perder contorno.",
+          links: [{ label: "YouTube", url: ytSearch("Scriabin D flat major prelude") }],
+        },
+        {
+          id: "csharp-major-rachmaninoff-op23-4",
+          composer: "Sergei Rachmaninoff",
+          title: "(ponte) Prelúdio Op. 23 nº 4 (C♯ menor) — camadas em pretas",
+          level: "avançado",
+          technicalFocus: "voicing e controle de peso",
+          notes: "Ponte útil: mesma geografia de teclas pretas. Fortalece rota e camadas.",
+          links: [
+            { label: "YouTube", url: ytSearch("Rachmaninoff Prelude Op 23 No 4") },
+            { label: "Spotify", url: spotifySearch("Rachmaninoff Op. 23 No. 4") },
+            { label: "Apple Music", url: appleSearch("Rachmaninoff Op. 23 No. 4") },
+            { label: "IMSLP", url: imslpSearch("Rachmaninoff Op. 23") },
+          ],
+        },
+        {
+          id: "csharp-major-bridge-brahms",
+          composer: "Johannes Brahms",
+          title: "(ponte) Intermezzi (seleção) — camadas em textura densa",
+          level: "avançado",
+          technicalFocus: "voicing",
+          notes: "Brahms ensina a esculpir camadas. Isso faz D♭/C♯ soar ‘de vidro’.",
+          links: [{ label: "YouTube", url: ytSearch("Brahms Intermezzo piano") }],
+        },
+        {
+          id: "csharp-major-bridge-transposition",
+          composer: "J. S. Bach",
+          title: "(ponte) Transponha 8 compassos para D♭/C♯ Maior",
+          level: "avançado",
+          technicalFocus: "leitura + enarmonia",
+          notes: "Transposição curta e eficiente para você parar de depender do nome das notas.",
+          links: [{ label: "YouTube", url: ytSearch("piano transposition exercise") }],
+        },
+      ],
+    },
+  },
+
+  {
+    slug: "dsharp-minor",
+    label: "D♯ menor (enarmônico: E♭ menor)",
+    mode: "minor",
+    pitchClass: "D♯",
+    motto:
+      "D♯ menor é o quarto escuro com a lâmina de luz entrando pela janela: muito preto no teclado, muito silêncio entre as notas — e uma chance perfeita de aprender ‘drama sem lama’.",
+    estimatedReadingMinutes: 24,
+    mechanical: {
+      title: "Desafio Mecânico",
+      intro:
+        "D♯ menor aparece no repertório principalmente como **E♭ menor**, porque é muito mais legível. No teclado, porém, a sensação é parecida: você está ‘por dentro’ das teclas pretas, e isso facilita algumas rotas — mas também aumenta a chance de usar pedal como cobertor e transformar tudo em massa. A regra técnica aqui é simples e brutal: **camadas** (voicing) + **polegar silencioso** + **rota do antebraço**. Se você domina isso em D# / Eb menor, você começa a dominar o piano romântico de verdade.",
+      exercises: [
+        {
+          id: "scale-dsharp-minor-natural",
+          title: "Escala de D♯ menor (natural)",
+          subtitle: "som escuro com contorno",
+          exampleNotes: scaleNotes("D#", "E#", "F#", "G#", "A#", "B", "C#", "D#"),
+          notes: [
+            "E# é a tecla do F natural. O objetivo é ouvir função, não ‘caçar tecla’.",
+            "Note o B (tecla branca) no meio do mundo preto: se ele ‘salta’ no volume, é rota desigual.",
+            "Treine em p. Em tonalidade escura, pianíssimo é o laboratório mais honesto.",
+          ],
+        },
+        {
+          id: "scale-dsharp-minor-harmonic",
+          title: "Escala de D♯ menor (harmônica)",
+          subtitle: "C## (C duplo sustenido) com calma",
+          exampleNotes: "D# E# F# G# A# B C## D#",
+          notes: [
+            "C## é a tecla do D natural, mas a função é 7º grau: tensão que resolve. Se você entende isso, a mão para de entrar em pânico.",
+            "Use células rítmicas (longo-curto / curto-longo) para estabilizar o salto antes da tônica.",
+          ],
+        },
+        {
+          id: "arpeggio-dsharp-minor",
+          title: "Arpejo de D♯ menor",
+          subtitle: "gesto único + concha firme",
+          exampleNotes: "D# F# A# D# | D# A# F# D#",
+          notes: [
+            "Arpejo bom é arco. Se vira degrau, o braço está atrasado.",
+            "A# é preta: use dedo longo pousado. Aperto é inimigo de precisão.",
+          ],
+        },
+        {
+          id: "hanon-1-in-dsharp-minor",
+          title: "Hanon nº 1 (em D♯ menor) — transposição",
+          subtitle: "regularidade sob ‘pressão psicológica’",
+          notes: [
+            "Faça curto e perfeito: 20–40s, pausa, repete. É treino de controle, não de resistência.",
+            "Se o polegar cava, diminua a velocidade e ajuste ângulo/rota do antebraço.",
+          ],
+        },
+        {
+          id: "broken-chords-dsharp-minor",
+          title: "Acordes quebrados em D♯ menor (i–VI–III–VII)",
+          subtitle: "D#m–B–F#–C#",
+          notes: [
+            "Trate isso como acompanhamento de canção: fluxo harmônico, zero picos de volume.",
+            "Treine voicing: nota de cima mf, internas p. Sem isso, vira lama.",
+          ],
+        },
+        {
+          id: "voicing-dsharp-minor",
+          title: "Voicing em D♯ menor (melodia em cima de textura)",
+          subtitle: "camadas ou nada",
+          notes: [
+            "Teste: tudo em p e só a melodia em mf. Se você travar, as internas estão altas demais.",
+            "Grave 20s e escute: a melodia aparece com facilidade? Se não, é mecânica, não ‘falta de emoção’.",
+          ],
+        },
+        {
+          id: "micro-routine-dsharp-minor",
+          title: "Micro-rotina (3 minutos): drama organizado",
+          subtitle: "p → mf → p",
+          notes: [
+            "1 min: escala natural em p.",
+            "1 min: arpejo em mf (som cheio sem dureza).",
+            "1 min: acordes quebrados D#m–B–F#–C# em p com voicing.",
+          ],
+        },
+      ],
+    },
+    repertoire: {
+      title: "Desafio do Repertório",
+      intro:
+        "Curadoria em D♯ menor via **E♭ menor** (enarmônico). A ideia é: peças que te obrigam a controlar camadas, pedal e tempo interno. Notas críticas são mais curtas, mas sempre com foco pedagógico.",
+      items: [
+        {
+          id: "dsharpmin-bach-wtc-ebm",
+          composer: "J. S. Bach",
+          title: "WTC I: Prelúdio e Fuga em E♭ menor (BWV 853)",
+          level: "avançado",
+          technicalFocus: "clareza e contraponto (detergente de textura)",
+          notes: "Se ficar borrado, é excesso de pedal ou tensão. Bach denuncia.",
+          links: [
+            { label: "YouTube", url: ytSearch("BWV 853 E flat minor prelude fugue") },
+            { label: "Spotify", url: spotifySearch("BWV 853") },
+            { label: "Apple Music", url: appleSearch("BWV 853") },
+            { label: "IMSLP", url: imslpSearch("BWV 853") },
+          ],
+        },
+        {
+          id: "dsharpmin-chopin-op10-6",
+          composer: "Frédéric Chopin",
+          title: "Estudo Op. 10 nº 6 (E♭ menor)",
+          level: "avançado",
+          technicalFocus: "legato + voicing + canto triste sem peso",
+          notes: "Uma aula de camadas: a melodia precisa existir sem esmagar a textura.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Etude Op 10 No 6 E flat minor") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 10 No. 6") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 10 No. 6") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 10 No. 6") },
+          ],
+        },
+        {
+          id: "dsharpmin-chopin-op28-14",
+          composer: "Frédéric Chopin",
+          title: "Prelúdio Op. 28 nº 14 (E♭ menor)",
+          level: "intermediário",
+          technicalFocus: "articulação + pulso firme",
+          notes: "Curto e incisivo: ataque claro sem rigidez.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Prelude Op 28 No 14 E flat minor") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 28 No. 14") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 28 No. 14") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 28 No. 14") },
+          ],
+        },
+        {
+          id: "dsharpmin-scriabin-op8-12",
+          composer: "Alexander Scriabin",
+          title: "Estudo Op. 8 nº 12 (D♯ menor)",
+          level: "avançado",
+          technicalFocus: "energia + resistência + controle de tensão",
+          notes: "Virtuosismo que só funciona com corpo solto. Se endurecer, vira luta.",
+          links: [
+            { label: "YouTube", url: ytSearch("Scriabin Etude Op 8 No 12 D sharp minor") },
+            { label: "Spotify", url: spotifySearch("Scriabin Op. 8 No. 12") },
+            { label: "Apple Music", url: appleSearch("Scriabin Op. 8 No. 12") },
+            { label: "IMSLP", url: imslpSearch("Scriabin Op. 8 No. 12") },
+          ],
+        },
+        {
+          id: "dsharpmin-brahms-op118-6",
+          composer: "Johannes Brahms",
+          title: "Intermezzo Op. 118 nº 6 (E♭ menor)",
+          level: "avançado",
+          technicalFocus: "camadas + som profundo sem esmagar",
+          notes: "Densidade íntima: se você apertar, a poesia desaparece.",
+          links: [
+            { label: "YouTube", url: ytSearch("Brahms Op 118 No 6 E flat minor piano") },
+            { label: "Spotify", url: spotifySearch("Brahms Op. 118 No. 6") },
+            { label: "Apple Music", url: appleSearch("Brahms Op. 118 No. 6") },
+            { label: "IMSLP", url: imslpSearch("Brahms Op. 118 No. 6") },
+          ],
+        },
+        {
+          id: "dsharpmin-bridge-rachmaninoff-ebm",
+          composer: "Sergei Rachmaninoff",
+          title: "(ponte) Procure um Prelúdio/Etude em E♭ menor — laboratório de camadas",
+          level: "avançado",
+          technicalFocus: "som grande + voicing",
+          notes: "Ponte: treinar som grande organizado melhora sua clareza no modo menor.",
+          links: [{ label: "YouTube", url: ytSearch("Rachmaninoff E flat minor prelude") }],
+        },
+        {
+          id: "dsharpmin-bridge-debussy",
+          composer: "Claude Debussy",
+          title: "(ponte) Prelúdios (seleção) — sombra com transparência",
+          level: "avançado",
+          technicalFocus: "pedal limpo + textura",
+          notes: "Ponte: aprender transparência evita ‘lama sonora’ em tonalidades escuras.",
+          links: [{ label: "YouTube", url: ytSearch("Debussy piano prelude E flat minor") }],
+        },
+        {
+          id: "dsharpmin-bridge-transposition",
+          composer: "J. S. Bach",
+          title: "(ponte) Transponha 8 compassos para E♭ menor",
+          level: "avançado",
+          technicalFocus: "harmonia + leitura",
+          notes: "Ponte curta e poderosa: você começa a pensar função, não dedo.",
+          links: [{ label: "YouTube", url: ytSearch("piano transposition exercise") }],
+        },
+        {
+          id: "dsharpmin-bridge-chopin-nocturnes",
+          composer: "Frédéric Chopin",
+          title: "(ponte) Noturnos (seleção) — pedagogia do canto",
+          level: "intermediário",
+          technicalFocus: "cantabile + rubato disciplinado",
+          notes: "Ponte: quanto melhor o canto, menos você precisa ‘pesar’ no modo menor.",
+          links: [{ label: "YouTube", url: ytSearch("Chopin nocturnes piano") }],
+        },
+        {
+          id: "dsharpmin-bridge-brahms",
+          composer: "Johannes Brahms",
+          title: "(ponte) Outros Intermezzi (seleção) — camadas",
+          level: "avançado",
+          technicalFocus: "voicing",
+          notes: "Ponte: camadas bem esculpidas são o antídoto universal contra lama.",
+          links: [{ label: "YouTube", url: ytSearch("Brahms intermezzo piano") }],
+        },
+      ],
+    },
+  },
+
+  {
+    slug: "asharp-minor",
+    label: "A♯ menor (enarmônico: B♭ menor)",
+    mode: "minor",
+    pitchClass: "A♯",
+    motto:
+      "A♯ menor é B♭ menor com crachá falso — e isso é ótimo: você aprende a mesma realidade musical por duas grafias. Aqui o jogo é: cantabile + pulso + camadas.",
+    estimatedReadingMinutes: 24,
+    mechanical: {
+      title: "Desafio Mecânico",
+      intro:
+        "A♯ menor quase sempre aparece como **B♭ menor** no repertório (e com razão). Mas estudar o enarmônico é uma vacina contra o ‘pânico de escrita’: você aprende que técnica boa é independente do nome da nota. No teclado, o modo menor aqui pede controle de peso e, principalmente, **voicing**. Sem camadas, vira drama genérico. Com camadas, vira narrativa.",
+      exercises: [
+        {
+          id: "scale-asharp-minor-natural",
+          title: "Escala de A♯ menor (natural)",
+          subtitle: "(pense também como B♭ menor)",
+          exampleNotes: scaleNotes("A#", "B#", "C#", "D#", "E#", "F#", "G#", "A#"),
+          notes: [
+            "B# é tecla do C natural; E# é tecla do F natural. Entenda função e a mão relaxa.",
+            "Treine em p e busque timbre homogêneo. Modo menor não é desculpa para som ‘sujo’.",
+          ],
+        },
+        {
+          id: "scale-asharp-minor-harmonic",
+          title: "Escala de A♯ menor (harmônica)",
+          subtitle: "G## (G duplo sustenido) sem pânico",
+          exampleNotes: "A# B# C# D# E# F# G## A#",
+          notes: [
+            "G## é tecla do A natural, mas função é 7º grau. Segurança começa no ouvido.",
+            "Use ritmo longo-curto / curto-longo para estabilizar o salto antes da tônica.",
+          ],
+        },
+        {
+          id: "arpeggio-asharp-minor",
+          title: "Arpejo de A♯ menor",
+          subtitle: "gesto único + polegar silencioso",
+          exampleNotes: "A# C# E# A# | A# E# C# A#",
+          notes: [
+            "Arpejo é arco. Se vira escada, braço atrasou.",
+            "E# (tecla do F) deve soar natural, sem clique e sem ‘susto’.",
+          ],
+        },
+        {
+          id: "broken-chords-asharp-minor",
+          title: "Acordes quebrados (A#m–F#–C#–G#)",
+          subtitle: "i–VI–III–VII",
+          notes: [
+            "Treine como acompanhamento de canção: fluxo harmônico e mão esquerda tapete.",
+            "Voicing obrigatório: nota de cima mf, internas p.",
+          ],
+        },
+        {
+          id: "voicing-asharp-minor",
+          title: "Voicing (melodia por cima de textura) — laboratório",
+          subtitle: "camadas ou lama",
+          notes: [
+            "Toque tudo p e só a melodia mf. Se travar, internas estão altas demais.",
+            "Grave 20–30s: a melodia aparece sem esforço? Se não, é mecânica.",
+          ],
+        },
+        {
+          id: "micro-routine-asharp-minor",
+          title: "Micro-rotina (3 minutos): escuro elegante",
+          subtitle: "p → mf → p",
+          notes: [
+            "1 min: escala natural em p.",
+            "1 min: arpejo em mf.",
+            "1 min: acordes quebrados A#m–F#–C#–G# em p com voicing.",
+          ],
+        },
+      ],
+    },
+    repertoire: {
+      title: "Desafio do Repertório",
+      intro:
+        "Curadoria em A♯ menor via **B♭ menor** (enarmônico). Aqui entram peças clássicas do romantismo e repertório que treina: canto, pedal e clareza em alta energia.",
+      items: [
+        {
+          id: "asharpmin-chopin-op9-1",
+          composer: "Frédéric Chopin",
+          title: "Noturno Op. 9 nº 1 (B♭ menor)",
+          level: "intermediário",
+          technicalFocus: "cantabile + acompanhamento aveludado",
+          notes: "Laboratório de rubato disciplinado e melodia ‘de voz’.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Nocturne Op 9 No 1 B flat minor") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 9 No. 1") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 9 No. 1") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 9 No. 1") },
+          ],
+        },
+        {
+          id: "asharpmin-chopin-op28-16",
+          composer: "Frédéric Chopin",
+          title: "Prelúdio Op. 28 nº 16 (B♭ menor)",
+          level: "avançado",
+          technicalFocus: "agilidade + clareza",
+          notes: "Alta energia com contorno. Se borrar, reconstrua em células.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Prelude Op 28 No 16 B flat minor") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 28 No. 16") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 28 No. 16") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 28 No. 16") },
+          ],
+        },
+        {
+          id: "asharpmin-rachmaninoff-op23-2",
+          composer: "Sergei Rachmaninoff",
+          title: "Prelúdio Op. 23 nº 2 (B♭ menor)",
+          level: "avançado",
+          technicalFocus: "peso distribuído + camadas",
+          notes: "Som grande sem esmagar: mãos relaxadas, arquitetura clara.",
+          links: [
+            { label: "YouTube", url: ytSearch("Rachmaninoff Prelude Op 23 No 2 B flat minor") },
+            { label: "Spotify", url: spotifySearch("Rachmaninoff Op. 23 No. 2") },
+            { label: "Apple Music", url: appleSearch("Rachmaninoff Op. 23 No. 2") },
+            { label: "IMSLP", url: imslpSearch("Rachmaninoff Op. 23 No. 2") },
+          ],
+        },
+        {
+          id: "asharpmin-bach-wtc-bbm",
+          composer: "J. S. Bach",
+          title: "WTC: Prelúdio e Fuga em B♭ menor (A♯ menor) — escolha Livro I/II",
+          level: "avançado",
+          technicalFocus: "clareza de vozes",
+          notes: "Bach te obriga a organizar camadas sem usar pedal como desculpa.",
+          links: [{ label: "YouTube", url: ytSearch("Bach B flat minor prelude fugue WTC") }],
+        },
+        {
+          id: "asharpmin-scriabin-bbm",
+          composer: "Alexander Scriabin",
+          title: "(ponte) Procure um Prelúdio/Estudo em B♭ menor — cor e tensão",
+          level: "avançado",
+          technicalFocus: "harmonia + voicing",
+          notes: "Scriabin é excelente para treinar tensão elástica sem rigidez.",
+          links: [{ label: "YouTube", url: ytSearch("Scriabin B flat minor prelude") }],
+        },
+        {
+          id: "asharpmin-brahms-bridge",
+          composer: "Johannes Brahms",
+          title: "(ponte) Intermezzi (seleção) — densidade íntima",
+          level: "avançado",
+          technicalFocus: "camadas",
+          notes: "Ponte: aprender densidade íntima ajuda a tocar minor sem peso físico.",
+          links: [{ label: "YouTube", url: ytSearch("Brahms intermezzo") }],
+        },
+        {
+          id: "asharpmin-debussy-bridge",
+          composer: "Claude Debussy",
+          title: "(ponte) Debussy (seleção) — transparência em clima escuro",
+          level: "avançado",
+          technicalFocus: "pedal limpo",
+          notes: "Ponte: transparência é antídoto contra lama.",
+          links: [{ label: "YouTube", url: ytSearch("Debussy B flat minor") }],
+        },
+        {
+          id: "asharpmin-chopin-bbm-sonata",
+          composer: "Frédéric Chopin",
+          title: "Sonata nº 2 Op. 35 (B♭ menor) — trechos",
+          level: "avançado",
+          technicalFocus: "estrutura + energia organizada",
+          notes: "Mesmo em trechos, treina arquitetura e controle de textura.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Sonata No 2 Op 35 B flat minor") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 35") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 35") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 35") },
+          ],
+        },
+        {
+          id: "asharpmin-bridge-transposition",
+          composer: "J. S. Bach",
+          title: "(ponte) Transponha 8 compassos para B♭ menor",
+          level: "avançado",
+          technicalFocus: "leitura + harmonia",
+          notes: "Transposição curta para consolidar função tonal.",
+          links: [{ label: "YouTube", url: ytSearch("transposition practice piano") }],
+        },
+        {
+          id: "asharpmin-bridge-nocturnes",
+          composer: "Frédéric Chopin",
+          title: "(ponte) Outros noturnos — pedagogia do canto no piano",
+          level: "intermediário",
+          technicalFocus: "cantabile",
+          notes: "Quanto melhor o canto, menos você precisa ‘forçar drama’.",
+          links: [{ label: "YouTube", url: ytSearch("Chopin nocturnes") }],
         },
       ],
     },
