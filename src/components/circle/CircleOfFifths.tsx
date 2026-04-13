@@ -86,6 +86,7 @@ export function CircleOfFifths({
   className?: string;
   onPickKey?: (slug: KeySlug) => void;
 }) {
+  const [hovered, setHovered] = React.useState<KeyId | null>(null);
   const size = 520;
   const cx = size / 2;
   const cy = size / 2;
@@ -116,6 +117,24 @@ export function CircleOfFifths({
     return total === 0 ? 0 : Math.round((done / total) * 100);
   }
 
+  function labelForKey(id: KeyId) {
+    const slug = keyToSlug[id];
+    if (!slug) return `${id} (em breve)`;
+    const c = MVP_KEYS.find((k) => k.slug === slug);
+    return c ? `${c.label}` : `${id}`;
+  }
+
+  function fillFor(id: KeyId) {
+    const pct = pctForKey(id);
+    const base = 0.03;
+    const glow = 0.26;
+    const alpha = base + (pct / 100) * glow;
+    return `rgba(20,199,255,${alpha.toFixed(3)})`;
+  }
+
+  const hoveredSlug = hovered ? keyToSlug[hovered] : undefined;
+  const hoveredPct = hovered ? pctForKey(hovered) : 0;
+
   return (
     <div className={cn("flex w-full items-center justify-center", className)}>
       <svg
@@ -130,6 +149,25 @@ export function CircleOfFifths({
             <stop offset="70%" stopColor="rgba(20,199,255,0.06)" />
             <stop offset="100%" stopColor="rgba(20,199,255,0.00)" />
           </radialGradient>
+
+          <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feColorMatrix
+              in="blur"
+              type="matrix"
+              values="
+                1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.55 0
+              "
+              result="glow"
+            />
+            <feMerge>
+              <feMergeNode in="glow" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
         </defs>
 
         <circle cx={cx} cy={cy} r={rOuter + 35} fill="url(#ringGlow)" />
@@ -155,25 +193,34 @@ export function CircleOfFifths({
 
           const path = describeArc(cx, cy, rOuter, rInner, startAngle, endAngle);
 
-          const pct = pctForKey(k.id);
-          const base = 0.03;
-          const glow = 0.26;
-          const alpha = base + (pct / 100) * glow;
-          const fill = `rgba(20,199,255,${alpha.toFixed(3)})`;
+          const fill = fillFor(k.id);
 
           const midAngle = (startAngle + endAngle) / 2;
           const labelPos = polarToCartesian(cx, cy, (rOuter + rInner) / 2, midAngle);
           const slug = keyToSlug[k.id];
+          const isHovered = hovered === k.id;
+          const scale = slug && isHovered ? 1.018 : 1;
           return (
-            <g key={k.id}>
+            <g
+              key={k.id}
+              onMouseEnter={() => setHovered(k.id)}
+              onMouseLeave={() => setHovered(null)}
+              onFocus={() => setHovered(k.id)}
+              onBlur={() => setHovered(null)}
+              style={{ transformOrigin: `${cx}px ${cy}px`, transform: `scale(${scale})` }}
+              className={cn("transition-transform duration-200", slug ? "cursor-pointer" : "opacity-60")}
+            >
               <path
                 d={path}
                 fill={fill}
                 stroke="rgba(255,255,255,0.06)"
                 className={cn(
-                  "transition-colors",
-                  slug ? "cursor-pointer hover:fill-[rgba(20,199,255,0.22)]" : "opacity-60",
+                  "transition-[fill,stroke] duration-200",
+                  slug
+                    ? "hover:fill-[rgba(20,199,255,0.28)] hover:stroke-[rgba(77,225,255,0.35)]"
+                    : "",
                 )}
+                filter={slug && isHovered ? "url(#softGlow)" : undefined}
                 onClick={() => {
                   if (!slug) return;
                   onPickKey?.(slug);
@@ -194,7 +241,13 @@ export function CircleOfFifths({
           );
         })}
 
-        <circle cx={cx} cy={cy} r={112} fill="rgba(14,17,27,0.9)" stroke="rgba(255,255,255,0.06)" />
+        <circle
+          cx={cx}
+          cy={cy}
+          r={112}
+          fill="rgba(14,17,27,0.92)"
+          stroke="rgba(255,255,255,0.07)"
+        />
         <text
           x={cx}
           y={cy - 10}
@@ -204,7 +257,7 @@ export function CircleOfFifths({
           fill="rgba(169,179,197,0.95)"
           style={{ fontFamily: "var(--font-sans)" }}
         >
-          portal
+          {hovered ? "selecionar" : "portal"}
         </text>
         <text
           x={cx}
@@ -215,8 +268,22 @@ export function CircleOfFifths({
           fill="rgba(233,238,247,0.95)"
           style={{ fontFamily: "var(--font-sans)", fontWeight: 600 }}
         >
-          Círculo das Quintas
+          {hovered ? labelForKey(hovered) : "Círculo das Quintas"}
         </text>
+
+        {hovered ? (
+          <text
+            x={cx}
+            y={cy + 44}
+            textAnchor="middle"
+            dominantBaseline="middle"
+            fontSize={12}
+            fill="rgba(169,179,197,0.95)"
+            style={{ fontFamily: "var(--font-sans)" }}
+          >
+            {hoveredSlug ? `${hoveredPct}% completo` : "conteúdo em construção"}
+          </text>
+        ) : null}
       </svg>
     </div>
   );

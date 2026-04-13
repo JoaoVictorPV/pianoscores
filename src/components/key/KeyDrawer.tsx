@@ -166,6 +166,11 @@ export function KeyDrawer({
                               {ex.subtitle ? (
                                 <div className="text-xs text-[var(--color-muted)]">{ex.subtitle}</div>
                               ) : null}
+                              {ex.exampleNotes ? (
+                                <div className="mt-2 rounded-xl border border-[var(--color-border)] bg-[rgba(0,0,0,0.25)] px-3 py-2 font-mono text-xs text-[var(--color-foreground)]">
+                                  {ex.exampleNotes}
+                                </div>
+                              ) : null}
                             </div>
                             <Badge className="shrink-0">exercício</Badge>
                           </div>
@@ -190,35 +195,13 @@ export function KeyDrawer({
                 </Accordion.Item>
 
                 {/* Affect */}
-                <Accordion.Item value="affect" className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-panel-900)]">
-                  <Accordion.Header>
-                    <Accordion.Trigger className="flex w-full items-center justify-between gap-4 px-4 py-3 text-left">
-                      <span className="text-sm font-semibold">B) {keyContent.affect.title}</span>
-                      <span className="text-[var(--color-muted)]">▼</span>
-                    </Accordion.Trigger>
-                  </Accordion.Header>
-                  <Accordion.Content className="px-4 pb-4">
-                    <p className="text-sm leading-6 text-[var(--color-muted)]">{keyContent.affect.intro}</p>
-                    <div className="mt-3 rounded-2xl border border-[var(--color-border)] bg-[color-mix(in_oklab,var(--color-panel-900),white_4%)] p-4">
-                      <div className="text-xs uppercase tracking-wide text-[var(--color-muted)]">Plano</div>
-                      <ul className="mt-2 list-disc space-y-2 pl-5 text-sm leading-6 text-[var(--color-muted)]">
-                        {keyContent.affect.scalePlan.map((s, i) => (
-                          <li key={i}>{s}</li>
-                        ))}
-                      </ul>
-                      <div className="mt-3 text-sm leading-6 text-[var(--color-muted)]">
-                        <span className="font-semibold text-[var(--color-foreground)]">Timbre:</span> {" "}
-                        {keyContent.affect.toneImage}
-                      </div>
-                    </div>
-                  </Accordion.Content>
-                </Accordion.Item>
+                {/* (B) removed by design: focus on Context + Repertoire */}
 
                 {/* Context */}
                 <Accordion.Item value="context" className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-panel-900)]">
                   <Accordion.Header>
                     <Accordion.Trigger className="flex w-full items-center justify-between gap-4 px-4 py-3 text-left">
-                      <span className="text-sm font-semibold">C) {keyContent.context.title}</span>
+                      <span className="text-sm font-semibold">B) {keyContent.context.title}</span>
                       <span className="text-[var(--color-muted)]">▼</span>
                     </Accordion.Trigger>
                   </Accordion.Header>
@@ -243,7 +226,7 @@ export function KeyDrawer({
                 <Accordion.Item value="repertoire" className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-panel-900)]">
                   <Accordion.Header>
                     <Accordion.Trigger className="flex w-full items-center justify-between gap-4 px-4 py-3 text-left">
-                      <span className="text-sm font-semibold">D) {keyContent.repertoire.title}</span>
+                      <span className="text-sm font-semibold">C) {keyContent.repertoire.title}</span>
                       <span className="text-[var(--color-muted)]">▼</span>
                     </Accordion.Trigger>
                   </Accordion.Header>

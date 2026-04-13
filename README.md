@@ -6,10 +6,9 @@ Um roteiro online para ensino/estudo de piano com uma pegada de **dicionário en
 
 O “portal” é o **Círculo das Quintas**: ao tocar em uma tonalidade, você abre um **Simpósio de Estudo** com 4 células:
 
-1) **Desafio Mecânico** (Hanon/Czerny + biomecânica e prática guiada)
-2) **Desafio de Afeto** (escala/arpejo + caráter/timbre)
-3) **Desafio do Contexto** (história/biografia/política)
-4) **Desafio do Repertório** (curadoria com links para YouTube/Spotify/Apple Music/IMSLP)
+1) **Desafio Mecânico** (exercícios + exemplo de notas)
+2) **Desafio do Contexto** (história/biografia/política)
+3) **Desafio do Repertório** (curadoria com links para YouTube/Spotify/Apple Music/IMSLP)
 
 ## Sem banco de dados
 

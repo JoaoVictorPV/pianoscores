@@ -10,6 +10,7 @@ export type Exercise = {
   id: string;
   title: string;
   subtitle?: string;
+  exampleNotes?: string; // e.g. "C D E F G"
   notes: string[];
 };
 
@@ -40,12 +41,6 @@ export type KeyContent = {
     title: string;
     intro: string;
     exercises: Exercise[];
-  };
-  affect: {
-    title: string;
-    intro: string;
-    scalePlan: string[];
-    toneImage: string;
   };
   context: {
     title: string;
@@ -90,6 +85,7 @@ export const MVP_KEYS: KeyContent[] = [
           id: "hanon-1",
           title: "Hanon nº 1",
           subtitle: "igualdade de dedos, sem ‘dedo rei’",
+          exampleNotes: "C D E F G F E D (padrão exemplo) — repita e desloque",
           notes: [
             "Toque como se cada dedo tivesse o mesmo sobrenome — nada de privilegiar 1 e 2.",
             "Procure micro-rotação do antebraço para estabilizar 4 e 5 sem travar o punho.",
@@ -139,6 +135,7 @@ export const MVP_KEYS: KeyContent[] = [
           id: "hanon-6",
           title: "Hanon nº 6",
           subtitle: "apoio de 4º e 5º dedos com rotação mínima",
+          exampleNotes: "C D E F G | G F E D C (varie articulação)",
           notes: [
             "4 e 5 são ‘irmãos siameses’ por tendões: independência total é mito; coordenação inteligente é a meta.",
             "Use rotação como um volante pequeno: quase invisível. Se parecer ‘dança’, é demais.",
@@ -148,6 +145,7 @@ export const MVP_KEYS: KeyContent[] = [
           id: "scales-c-major",
           title: "Escala de C Maior (prática guiada)",
           subtitle: "legato real, polegar silencioso",
+          exampleNotes: "C D E F G A B C (suba e desça, 2 oitavas se der)",
           notes: [
             "O polegar não deve ‘cavar’ a tecla. Ele entra de lado com a unha apontando para o próximo dedo — sensação de deslize.",
             "Treine mãos separadas em dinâmica baixa: controle é mais difícil quando o som não ‘mascara’ irregularidade.",
@@ -158,6 +156,7 @@ export const MVP_KEYS: KeyContent[] = [
           id: "arpeggio-c-major",
           title: "Arpejo de C Maior",
           subtitle: "alinhamento e trajetória do braço",
+          exampleNotes: "C E G C | C G E C (1–3–5–1)",
           notes: [
             "Não ‘torça’ o punho pra alcançar: o braço viaja junto.",
             "A mão forma uma concha estável; os dedos mudam dentro dela.",
@@ -201,18 +200,6 @@ export const MVP_KEYS: KeyContent[] = [
           ],
         },
       ],
-    },
-    affect: {
-      title: "Desafio de Afeto",
-      intro:
-        "Na tradição, Dó Maior é o ‘branco total’: neutralidade que pode virar solenidade, inocência ou uma arquitetura clássica impecável. O truque é você decidir o caráter — e não deixar a tonalidade decidir por você.",
-      scalePlan: [
-        "Escala de C Maior: mãos separadas, depois juntas, pensando em legato ‘colado’ sem cola (sem pedal).",
-        "Arpejo de C Maior: foco em cruzamento silencioso do polegar — sem ‘clique’ nem degrau de volume.",
-        "Terças em C Maior (opcional): só se estiver confortável, porque isso expõe tensão imediatamente.",
-      ],
-      toneImage:
-        "Imagem sonora: ‘vidro limpo’ — não é fraco, é transparente. Se você errar, dá pra ver.",
     },
     context: {
       title: "Desafio do Contexto",
@@ -485,6 +472,7 @@ export const MVP_KEYS: KeyContent[] = [
           id: "hanon-6",
           title: "Hanon nº 6",
           subtitle: "independência do 5º dedo, sem punho travado",
+          exampleNotes: "G A B C D | D C B A G (exemplo em Sol)",
           notes: [
             "O 5º dedo é fraco por design: tendões compartilham estrutura. Compense com micro-rotação, não com força bruta.",
             "Se o som do 5º dedo ‘some’, você está levantando o ombro sem perceber. Ombro baixo = dedo presente.",
@@ -532,6 +520,7 @@ export const MVP_KEYS: KeyContent[] = [
           id: "scales-g-major",
           title: "Escala de G Maior",
           subtitle: "F# como tempero, não como acidente",
+          exampleNotes: "G A B C D E F# G (suba e desça)",
           notes: [
             "O F# não é ‘nota diferente’: é apenas uma tecla com outra altura. Trate como normal.",
             "Use dedos longos nas pretas e evite empurrar o polegar para dentro.",
@@ -541,6 +530,7 @@ export const MVP_KEYS: KeyContent[] = [
           id: "arpeggio-g-major",
           title: "Arpejo de G Maior",
           subtitle: "passagens suaves e sem degraus",
+          exampleNotes: "G B D G | G D B G",
           notes: [
             "O ‘buraco’ de volume normalmente aparece no cruzamento do polegar. Grave e compare.",
             "Se a mão abre demais, a articulação perde precisão. Concha firme.",
@@ -592,17 +582,6 @@ export const MVP_KEYS: KeyContent[] = [
           ],
         },
       ],
-    },
-    affect: {
-      title: "Desafio de Afeto",
-      intro:
-        "Sol Maior costuma soar ‘solar’ (sem trocadilho), pastoral, claro. O risco é tocar tudo igual: o afeto vira wallpaper. Aqui, você aprende a variar caráter dentro do mesmo brilho.",
-      scalePlan: [
-        "Escala de G Maior: foco no F# — ele é o tempero. Não deixe virar acidente mecânico.",
-        "Arpejo de G Maior: controle do polegar para evitar ‘buraco’ no som.",
-      ],
-      toneImage:
-        "Imagem sonora: ‘luz da manhã’ — definida, mas suave. Brilho sem agressividade.",
     },
     context: {
       title: "Desafio do Contexto",
@@ -761,6 +740,7 @@ export const MVP_KEYS: KeyContent[] = [
           id: "hanon-scales-d",
           title: "Hanon (Parte II): escala de D Maior",
           subtitle: "timbre de bronze, sem dureza",
+          exampleNotes: "D E F# G A B C# D (suba e desça)",
           notes: [
             "Use dinâmica média (mf) e busque brilho redondo: ataque firme, release limpo.",
             "Se o som ficar ‘metálico’, você está batendo com dedo alto demais.",
@@ -770,6 +750,7 @@ export const MVP_KEYS: KeyContent[] = [
           id: "arpeggio-d-major",
           title: "Arpejo de D Maior",
           subtitle: "polegar não se espreme",
+          exampleNotes: "D F# A D | D A F# D",
           notes: [
             "Em arpejos com pretas, o polegar tende a entrar torto. Corrija pelo alinhamento do braço.",
             "Sinta o braço ‘viajando’ junto. Arpejo não é só dedo.",
@@ -830,17 +811,6 @@ export const MVP_KEYS: KeyContent[] = [
           ],
         },
       ],
-    },
-    affect: {
-      title: "Desafio de Afeto",
-      intro:
-        "Na doutrina dos afetos, Ré Maior é festa e triunfo porque trompetes e cordas soavam ‘naturais’ ali. No piano, você imita isso: articulação firme, brilho controlado e clareza rítmica.",
-      scalePlan: [
-        "Escala de D Maior: pense em ‘timbre de bronze’ — firme e brilhante, sem dureza.",
-        "Arpejos: especialmente o encaixe do polegar ao passar do F#.",
-      ],
-      toneImage:
-        "Imagem sonora: ‘metal quente polido’. Brilha, mas não corta.",
     },
     context: {
       title: "Desafio do Contexto",
@@ -984,6 +954,7 @@ export const MVP_KEYS: KeyContent[] = [
           id: "scale-a-minor-natural",
           title: "Escala de A menor (natural)",
           subtitle: "legato e direção de frase",
+          exampleNotes: "A B C D E F G A",
           notes: [
             "Não toque ‘subindo e descendo’. Faça uma frase: tensão → pico → resolução.",
             "Controle o polegar para ele não ‘clicar’ ao passar.",
@@ -993,6 +964,7 @@ export const MVP_KEYS: KeyContent[] = [
           id: "scale-a-minor-harmonic",
           title: "Escala de A menor (harmônica)",
           subtitle: "o salto do 7º grau (G#) sem tropeçar",
+          exampleNotes: "A B C D E F G# A",
           notes: [
             "O intervalo aumentado é onde a mão denuncia rigidez. Antecipe a posição.",
             "Treine em ritmos diferentes (longo-curto/curto-longo) para corrigir coordenação.",
@@ -1002,6 +974,7 @@ export const MVP_KEYS: KeyContent[] = [
           id: "scale-a-minor-melodic",
           title: "Escala de A menor (melódica)",
           subtitle: "subida e descida com intenção",
+          exampleNotes: "Subindo: A B C D E F# G# A | Descendo: A G F E D C B A",
           notes: [
             "Não confunda ‘regra’ com reflexo. Entenda o porquê e toque como música.",
             "O objetivo é controlar as alterações (F# e G#) sem virar susto mecânico.",
@@ -1011,6 +984,7 @@ export const MVP_KEYS: KeyContent[] = [
           id: "arpeggio-a-minor",
           title: "Arpejo de A menor",
           subtitle: "trajetória do braço e estabilidade",
+          exampleNotes: "A C E A | A E C A",
           notes: [
             "Arpejo é o mesmo gesto em escalas diferentes. Procure economia de movimento.",
             "Se o som ‘quebra’ em degraus, é atraso do braço (não falta de dedo).",
@@ -1044,17 +1018,6 @@ export const MVP_KEYS: KeyContent[] = [
           ],
         },
       ],
-    },
-    affect: {
-      title: "Desafio de Afeto",
-      intro:
-        "Lá menor frequentemente soa como introspecção e urgência contida. Na prática: você aprende a controlar rubato e direção de frase sem ‘puxar’ o tempo como se estivesse afundando num sofá.",
-      scalePlan: [
-        "Escala de A menor natural/harmônica/melódica: entender por que elas existem muda sua musicalidade.",
-        "Arpejos: estabilidade na passagem do polegar.",
-      ],
-      toneImage:
-        "Imagem sonora: ‘carvão aceso’. Escuro, mas com energia.",
     },
     context: {
       title: "Desafio do Contexto",
