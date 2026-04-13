@@ -607,6 +607,533 @@ export const MVP_KEYS: KeyContent[] = [
       ],
     },
   },
+
+  {
+    slug: "b-minor",
+    label: "B menor",
+    mode: "minor",
+    pitchClass: "B",
+    motto:
+      "Si menor é o corredor comprido de uma catedral: ressoa por dentro. Aqui você treina foco (e não pressa) — e aprende a fazer o piano sussurrar sem perder a coluna vertebral.",
+    estimatedReadingMinutes: 19,
+    mechanical: {
+      title: "Desafio Mecânico",
+      intro:
+        "B menor tem dois sustenidos (F# e C#). Isso é o suficiente pra te forçar a ‘morar’ com elegância nas pretas, sem virar braço duro. O risco típico é emocional: como o modo menor sugere drama, muita gente toca pesado. A missão aqui é produzir densidade de som com gesto econômico: dedos perto da tecla, antebraço que guia a rota e punho que não colapsa.",
+      exercises: [
+        {
+          id: "scale-b-minor-natural",
+          title: "Escala de B menor (natural)",
+          subtitle: "duas pretas, um corpo calmo",
+          exampleNotes: "B C# D E F# G A B",
+          notes: [
+            "C# e F# devem soar tão naturais quanto as brancas. Se ‘mudam de cor’ sem você querer, é gesto desigual.",
+            "Treine em p para revelar irregularidades. Dinâmica baixa é lupa.",
+            "Faça 3 articulações: legato, non-legato e staccato leve. O braço precisa permanecer disponível em todas.",
+          ],
+        },
+        {
+          id: "scale-b-minor-harmonic",
+          title: "Escala de B menor (harmônica)",
+          subtitle: "A# como precisão sem susto",
+          exampleNotes: "B C# D E F# G A# B",
+          notes: [
+            "O A# é o ponto onde a mão entrega ansiedade. Antecipe: posicione antes do dedo ‘cair’.",
+            "Use ritmos longo-curto/curto-longo para estabilizar coordenação.",
+            "Se o som fica áspero no A#, reduza altura do dedo e pense em ‘peso’ em vez de ‘batida’.",
+          ],
+        },
+        {
+          id: "scale-b-minor-melodic",
+          title: "Escala de B menor (melódica)",
+          subtitle: "subindo com intenção, descendo com clareza",
+          exampleNotes: "Subindo: B C# D E F# G# A# B | Descendo: B A G F# E D C# B",
+          notes: [
+            "A subida costuma ‘encantar’ e a descida vira relaxo. Não. A descida tem que ser tão controlada quanto.",
+            "G# e A# são pretas: use dedos longos e mantenha o polegar civilizado.",
+          ],
+        },
+        {
+          id: "arpeggio-b-minor",
+          title: "Arpejo de B menor",
+          subtitle: "gesto único, sem degraus",
+          exampleNotes: "B D F# B | B F# D B",
+          notes: [
+            "Se o arpejo parece ‘escada’, você está mudando de posição tarde demais.",
+            "Pense na rota do antebraço e deixe a mão como concha estável.",
+          ],
+        },
+        {
+          id: "hanon-6-in-b-minor",
+          title: "Hanon nº 6 (em B menor) — transposição",
+          subtitle: "4º e 5º dedos com micro-rotação",
+          notes: [
+            "B menor costuma expor o 5º dedo na mão direita (quando o cérebro fica ‘ocupado’ com pretas).",
+            "Micro-rotação ajuda 4 e 5 sem travar punho. Se o punho ‘dança’, é rotação demais.",
+            "Treine curto e bem: 3×30s, com pausa. Qualidade > fadiga.",
+          ],
+        },
+        {
+          id: "czerny-pattern-b-minor",
+          title: "Czerny (padrão de escala) — aplique em B menor",
+          subtitle: "agilidade com borda clara",
+          notes: [
+            "Use um estudo de Czerny que tenha padrões de escala e re-harmonize/transpose trechos para B menor.",
+            "A regra: velocidade só entra depois que a borda do som estiver nítida.",
+          ],
+        },
+        {
+          id: "broken-chords-b-minor",
+          title: "Acordes quebrados (i–VI–III–VII) em B menor",
+          subtitle: "mão esquerda tapete + voicing",
+          notes: [
+            "Treine progressão típica do modo menor: Bm–G–D–A. Faça a harmonia ‘andar’ sem aumentar volume.",
+            "Mantenha o baixo presente e quente, sem bater. É contrabaixo, não martelo.",
+          ],
+        },
+        {
+          id: "voicing-b-minor",
+          title: "Voicing: melodia em cima de acompanhamento em B menor",
+          subtitle: "camadas de volume",
+          notes: [
+            "Toque a melodia como voz humana (consoantes/vogais).",
+            "Se o acompanhamento encobre a melodia, abaixe a mão — não force o dedo da melodia.",
+          ],
+        },
+        {
+          id: "staccato-b-minor",
+          title: "Staccato leve (controle de ataque) em B menor",
+          subtitle: "elasticidade",
+          notes: [
+            "Staccato bom é rápido e leve. Se ficar agressivo, você está batendo.",
+            "Use altura mínima de dedo e sensação de ‘quique’.",
+          ],
+        },
+        {
+          id: "micro-routine-b-minor",
+          title: "Micro-rotina (3 minutos): pretas sem ansiedade",
+          subtitle: "p → mf → p",
+          notes: [
+            "1 min: escala natural em p.",
+            "1 min: arpejo em mf (som cheio sem dureza).",
+            "1 min: acorde quebrado Bm–G–D–A em p com voicing.",
+          ],
+        },
+      ],
+    },
+    repertoire: {
+      title: "Desafio do Repertório",
+      intro:
+        "Curadoria em B menor (10+). Prioridade total para obras em B menor; no máximo poucos itens-ponte que realmente ajudem (marcados).",
+      items: [
+        {
+          id: "bach-wtc1-bm",
+          composer: "J. S. Bach",
+          title: "Cravo Bem Temperado, Livro I: Prelúdio e Fuga em Si menor (BWV 869)",
+          level: "avançado",
+          technicalFocus: "contraponto, clareza e tempo estável",
+          notes:
+            "Se você conseguir fazer isso soar ‘simples’, você ganhou um ouvido novo. Articule como quem desenha com caneta fina.",
+          links: [
+            { label: "YouTube", url: ytSearch("Bach BWV 869 B minor prelude fugue piano") },
+            { label: "Spotify", url: spotifySearch("BWV 869") },
+            { label: "Apple Music", url: appleSearch("BWV 869") },
+            { label: "IMSLP", url: imslpSearch("BWV 869") },
+          ],
+        },
+        {
+          id: "chopin-op58",
+          composer: "Frédéric Chopin",
+          title: "Sonata nº 3 Op. 58 (Si menor) — trechos",
+          level: "avançado",
+          technicalFocus: "textura, resistência e voicing",
+          notes:
+            "Chopin em B menor é ‘piano-orquestra’. Treina densidade sem virar barro: camadas claras.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Sonata No 3 Op 58 B minor piano") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 58") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 58") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 58") },
+          ],
+        },
+        {
+          id: "liszt-sonata",
+          composer: "Franz Liszt",
+          title: "Sonata em Si menor — trechos (o Everest)",
+          level: "avançado",
+          technicalFocus: "controle de energia e arquitetura",
+          notes:
+            "Mesmo em trechos curtos, isso treina ‘planejamento’: você não toca só o compasso; você toca a estrutura.",
+          links: [
+            { label: "YouTube", url: ytSearch("Liszt Sonata in B minor piano") },
+            { label: "Spotify", url: spotifySearch("Liszt Sonata in B minor") },
+            { label: "Apple Music", url: appleSearch("Liszt Sonata in B minor") },
+            { label: "IMSLP", url: imslpSearch("Liszt Sonata in B minor") },
+          ],
+        },
+        {
+          id: "tchaikovsky-op39-16",
+          composer: "P. I. Tchaikovsky",
+          title: "Children's Album Op. 39: ‘Sweet Dream’ (Si menor) — cantabile",
+          level: "iniciante",
+          technicalFocus: "melodia cantada e controle de tempo",
+          notes:
+            "Peça ‘simples’ que ensina coisa séria: manter o pulso vivo em dinâmica baixa.",
+          links: [
+            { label: "YouTube", url: ytSearch("Tchaikovsky Sweet Dream Op 39 B minor piano") },
+            { label: "Spotify", url: spotifySearch("Tchaikovsky Children's Album Sweet Dream") },
+            { label: "Apple Music", url: appleSearch("Tchaikovsky Sweet Dream Op. 39") },
+            { label: "IMSLP", url: imslpSearch("Tchaikovsky Children's Album Op. 39") },
+          ],
+        },
+        {
+          id: "schumann-op15-7",
+          composer: "Robert Schumann",
+          title: "Kinderszenen Op. 15 nº 7 ‘Träumerei’ (Fá maior) — (ponte: cantabile) ",
+          level: "intermediário",
+          technicalFocus: "canto e controle de peso",
+          notes:
+            "Item-ponte (não é B menor): serve pra treinar cantabile e peso redondo que você precisa pra tocar B menor sem ficar pesado.",
+          links: [
+            { label: "YouTube", url: ytSearch("Schumann Traumerei piano") },
+            { label: "Spotify", url: spotifySearch("Schumann Traumerei") },
+            { label: "Apple Music", url: appleSearch("Schumann Traumerei") },
+            { label: "IMSLP", url: imslpSearch("Kinderszenen Op. 15") },
+          ],
+        },
+        {
+          id: "schubert-d960-2",
+          composer: "Franz Schubert",
+          title: "Sonata D 960 (Si bemol maior) — (ponte: arquitetura lenta) ",
+          level: "avançado",
+          technicalFocus: "tempo interno e estrutura",
+          notes:
+            "Item-ponte: não é B menor, mas treina o tipo de tempo interno ‘adulto’ necessário para sustentar modos menores longos sem pressa.",
+          links: [
+            { label: "YouTube", url: ytSearch("Schubert D 960 piano") },
+            { label: "Spotify", url: spotifySearch("Schubert D 960") },
+            { label: "Apple Music", url: appleSearch("Schubert D 960") },
+            { label: "IMSLP", url: imslpSearch("Schubert D 960") },
+          ],
+        },
+        {
+          id: "grieg-op54-4",
+          composer: "Edvard Grieg",
+          title: "Lyric Pieces Op. 54 nº 4 ‘Notturno’ (Si menor) — cor e pedal",
+          level: "avançado",
+          technicalFocus: "pedal limpo e vozes internas",
+          notes:
+            "Uma aula de ‘neblina controlada’: pedal suficiente pra cor, mas nunca pra esconder articulação.",
+          links: [
+            { label: "YouTube", url: ytSearch("Grieg Notturno Op 54 No 4 B minor piano") },
+            { label: "Spotify", url: spotifySearch("Grieg Op. 54 No. 4 Notturno") },
+            { label: "Apple Music", url: appleSearch("Grieg Notturno Op. 54 No. 4") },
+            { label: "IMSLP", url: imslpSearch("Grieg Op. 54") },
+          ],
+        },
+        {
+          id: "brahms-op119-1",
+          composer: "Johannes Brahms",
+          title: "Intermezzo Op. 119 nº 1 (Si menor) — densidade íntima",
+          level: "avançado",
+          technicalFocus: "voicing e controle de textura",
+          notes:
+            "Treina tocar ‘por dentro’: se tudo soar igual, você perdeu o relevo. Camadas, camadas, camadas.",
+          links: [
+            { label: "YouTube", url: ytSearch("Brahms Op 119 No 1 B minor piano") },
+            { label: "Spotify", url: spotifySearch("Brahms Op. 119 No. 1") },
+            { label: "Apple Music", url: appleSearch("Brahms Op. 119 No. 1") },
+            { label: "IMSLP", url: imslpSearch("Brahms Op. 119") },
+          ],
+        },
+        {
+          id: "rachmaninoff-op23-5",
+          composer: "Sergei Rachmaninoff",
+          title: "Prelúdio Op. 23 nº 5 (Sol menor) — (ponte: acentos e energia)",
+          level: "avançado",
+          technicalFocus: "ritmo e acentos",
+          notes:
+            "Item-ponte: não é B menor, mas treina energia rítmica e acentos que você vai precisar em passagens dramáticas sem virar pancada.",
+          links: [
+            { label: "YouTube", url: ytSearch("Rachmaninoff Prelude Op 23 No 5 piano") },
+            { label: "Spotify", url: spotifySearch("Rachmaninoff Op. 23 No. 5") },
+            { label: "Apple Music", url: appleSearch("Rachmaninoff Op. 23 No. 5") },
+            { label: "IMSLP", url: imslpSearch("Rachmaninoff Op. 23") },
+          ],
+        },
+      ],
+    },
+  },
+
+  {
+    slug: "fsharp-minor",
+    label: "F♯ menor",
+    mode: "minor",
+    pitchClass: "F♯",
+    motto:
+      "Fá sustenido menor é um céu noturno bem nítido: frio, brilhante e profundo. Aqui, a técnica vira ‘astronomia’: você precisa de rota, não de força.",
+    estimatedReadingMinutes: 20,
+    mechanical: {
+      title: "Desafio Mecânico",
+      intro:
+        "F♯ menor tem três sustenidos (F#, C#, G#) e a sensação natural é ‘mão indo pra dentro do teclado’. Se você tenta controlar isso por dedo, trava; se controla por rota do antebraço, fica elegante. O objetivo é dominar pretas sem ansiedade: dedos longos pousam, polegar entra silencioso, punho estável (não rígido) e som escuro sem virar baque.",
+      exercises: [
+        {
+          id: "scale-fsharp-minor-natural",
+          title: "Escala de F♯ menor (natural)",
+          subtitle: "pretas como casa",
+          exampleNotes: "F# G# A B C# D E F#",
+          notes: [
+            "Pense em ‘morar’ nas pretas: dedos longos nelas, sem escorregar.",
+            "Se o polegar faz barulho no cruzamento, o braço chegou tarde.",
+            "Treine em p pra obrigar controle fino.",
+          ],
+        },
+        {
+          id: "scale-fsharp-minor-harmonic",
+          title: "Escala de F♯ menor (harmônica)",
+          subtitle: "E# (sim, E#) sem susto",
+          exampleNotes: "F# G# A B C# D E# F#",
+          notes: [
+            "Teoricamente é E# (mesma tecla do F natural), mas o cérebro precisa entender função. Isso melhora leitura e consciência tonal.",
+            "O salto D → E# revela rota: antecipe o posicionamento.",
+          ],
+        },
+        {
+          id: "scale-fsharp-minor-melodic",
+          title: "Escala de F♯ menor (melódica)",
+          subtitle: "subindo (D# e E#), descendo natural",
+          exampleNotes: "Subindo: F# G# A B C# D# E# F# | Descendo: F# E D C# B A G# F#",
+          notes: [
+            "Não deixe as alterações virarem ‘surpresa’. Antecipe e mantenha o mesmo timbre.",
+            "Na descida, não relaxe a ponto de perder clareza.",
+          ],
+        },
+        {
+          id: "arpeggio-fsharp-minor",
+          title: "Arpejo de F♯ menor",
+          subtitle: "gesto único + braço guiando",
+          exampleNotes: "F# A C# F# | F# C# A F#",
+          notes: [
+            "Arpejo bom parece um arco. Se parece degrau, o braço está atrasado.",
+            "Use dedos longos nas pretas (C#) e mantenha a concha firme.",
+          ],
+        },
+        {
+          id: "hanon-1-in-fsharp-minor",
+          title: "Hanon nº 1 (em F♯ menor) — transposição",
+          subtitle: "coordenação em terreno com 3 sustenidos",
+          notes: [
+            "Excelente pra revelar ‘aperto’ no polegar e ansiedade nas pretas.",
+            "Faça lento e com borda nítida. Velocidade sem borda é borrão.",
+          ],
+        },
+        {
+          id: "hanon-6-in-fsharp-minor",
+          title: "Hanon nº 6 (em F♯ menor)",
+          subtitle: "4º e 5º dedos sem colapso",
+          notes: [
+            "Em tonalidades com muitas pretas, o 5º dedo ‘some’ porque a mão muda de geometria. Traga ele de volta com micro-rotação.",
+            "Curto e bem feito: 2–3 min total.",
+          ],
+        },
+        {
+          id: "broken-chords-fsharp-minor",
+          title: "Acordes quebrados em F♯ menor (i–VI–III–VII)",
+          subtitle: "harmonia andando sem peso",
+          notes: [
+            "Progressão típica: F#m–D–A–E. Treine o fluxo harmônico como se fosse respiração.",
+            "Se a mão esquerda bate, reduza altura do dedo e use peso do braço.",
+          ],
+        },
+        {
+          id: "voicing-fsharp-minor",
+          title: "Voicing em F♯ menor",
+          subtitle: "melodia canta, internas sustentam",
+          notes: [
+            "Treine camadas: melodia em mf, internas em p.",
+            "Se a melodia não aparece, abaixe as internas. Não ‘esprema’ a melodia.",
+          ],
+        },
+        {
+          id: "staccato-fsharp-minor",
+          title: "Staccato elástico em F♯ menor",
+          subtitle: "ataque claro, corpo solto",
+          notes: [
+            "Staccato bom é precisão, não agressão.",
+            "Se ficar duro, volte ao non-legato e reconstrua.",
+          ],
+        },
+        {
+          id: "micro-routine-fsharp-minor",
+          title: "Micro-rotina (3 minutos): rota antes do dedo",
+          subtitle: "p → mf → p",
+          notes: [
+            "1 min: escala natural em p.",
+            "1 min: arpejo em mf com gesto único.",
+            "1 min: acordes quebrados F#m–D–A–E em p com voicing.",
+          ],
+        },
+      ],
+    },
+    repertoire: {
+      title: "Desafio do Repertório",
+      intro:
+        "Curadoria em F♯ menor (10+). Prioridade para obras em F♯ menor; no máximo alguns itens-ponte bem justificados.",
+      items: [
+        {
+          id: "chopin-op48-2",
+          composer: "Frédéric Chopin",
+          title: "Noturno Op. 48 nº 2 (F♯ menor) — drama com disciplina",
+          level: "avançado",
+          technicalFocus: "cantabile + controle de clímax",
+          notes:
+            "Treina a coisa mais difícil do romantismo: crescer sem perder clareza e sem virar pancada.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Nocturne Op 48 No 2 F sharp minor") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 48 No. 2") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 48 No. 2") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 48") },
+          ],
+        },
+        {
+          id: "chopin-op44",
+          composer: "Frédéric Chopin",
+          title: "Polonaise-Fantaisie Op. 61 (A♭ maior) — (ponte: arquitetura) ",
+          level: "avançado",
+          technicalFocus: "planejamento e voicing",
+          notes:
+            "Item-ponte: não é F♯ menor, mas treina arquitetura de som e narrativa — útil para repertório denso em F♯ menor.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Polonaise Fantaisie Op 61") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 61") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 61") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 61") },
+          ],
+        },
+        {
+          id: "scriabin-op8-12",
+          composer: "Alexander Scriabin",
+          title: "Estudo Op. 8 nº 12 (D# menor) — (ponte: energia e técnica)",
+          level: "avançado",
+          technicalFocus: "energia e resistência",
+          notes:
+            "Item-ponte: não é F♯ menor, mas treina energia e controle em teclas pretas, útil para o ‘território’ de F♯ menor.",
+          links: [
+            { label: "YouTube", url: ytSearch("Scriabin Etude Op 8 No 12") },
+            { label: "Spotify", url: spotifySearch("Scriabin Op. 8 No. 12") },
+            { label: "Apple Music", url: appleSearch("Scriabin Op. 8 No. 12") },
+            { label: "IMSLP", url: imslpSearch("Scriabin Op. 8") },
+          ],
+        },
+        {
+          id: "bach-wtc2-fsharp-minor",
+          composer: "J. S. Bach",
+          title: "Cravo Bem Temperado, Livro II: Prelúdio e Fuga em F♯ menor (BWV 883)",
+          level: "avançado",
+          technicalFocus: "contraponto e clareza",
+          notes:
+            "Bach em F♯ menor é treino de mente fria: clareza e direção em textura densa.",
+          links: [
+            { label: "YouTube", url: ytSearch("Bach BWV 883 F sharp minor prelude fugue piano") },
+            { label: "Spotify", url: spotifySearch("BWV 883") },
+            { label: "Apple Music", url: appleSearch("BWV 883") },
+            { label: "IMSLP", url: imslpSearch("BWV 883") },
+          ],
+        },
+        {
+          id: "mozart-k475",
+          composer: "W. A. Mozart",
+          title: "Fantasia K. 475 (C menor) — (ponte: drama clássico)",
+          level: "avançado",
+          technicalFocus: "contrastes e clareza",
+          notes:
+            "Item-ponte: treina drama clássico sem peso — habilidade essencial pra tocar modo menor com elegância.",
+          links: [
+            { label: "YouTube", url: ytSearch("Mozart Fantasia K 475 piano") },
+            { label: "Spotify", url: spotifySearch("Mozart K. 475") },
+            { label: "Apple Music", url: appleSearch("Mozart K. 475") },
+            { label: "IMSLP", url: imslpSearch("K. 475") },
+          ],
+        },
+        {
+          id: "rachmaninoff-op3-2",
+          composer: "Sergei Rachmaninoff",
+          title: "Morceaux de fantaisie Op. 3 nº 2 ‘Prelúdio em C# menor’ — (ponte: peso)",
+          level: "avançado",
+          technicalFocus: "peso sem dureza",
+          notes:
+            "Item-ponte: território de pretas e peso. Ensina a sustentar som grande sem esmagar teclas — útil no universo de F♯ menor.",
+          links: [
+            { label: "YouTube", url: ytSearch("Rachmaninoff Prelude Op 3 No 2 C sharp minor") },
+            { label: "Spotify", url: spotifySearch("Rachmaninoff Op. 3 No. 2") },
+            { label: "Apple Music", url: appleSearch("Rachmaninoff Op. 3 No. 2") },
+            { label: "IMSLP", url: imslpSearch("Rachmaninoff Op. 3") },
+          ],
+        },
+        {
+          id: "schumann-op16-2",
+          composer: "Robert Schumann",
+          title: "Kreisleriana Op. 16 nº 2 (B♭ maior) — (ponte: vozes e turbulência) ",
+          level: "avançado",
+          technicalFocus: "vozes internas e energia",
+          notes:
+            "Item-ponte: Schumann te obriga a controlar turbulência sem perder vozes. Ajuda a tocar F♯ menor com densidade organizada.",
+          links: [
+            { label: "YouTube", url: ytSearch("Schumann Kreisleriana Op 16 No 2") },
+            { label: "Spotify", url: spotifySearch("Schumann Kreisleriana Op. 16") },
+            { label: "Apple Music", url: appleSearch("Schumann Kreisleriana Op. 16") },
+            { label: "IMSLP", url: imslpSearch("Kreisleriana Op. 16") },
+          ],
+        },
+        {
+          id: "tchaikovsky-op19-2",
+          composer: "P. I. Tchaikovsky",
+          title: "6 Pieces Op. 19 nº 2 ‘Nocturne’ (F♯ menor) — canto e pedal",
+          level: "avançado",
+          technicalFocus: "cantabile e pedal limpo",
+          notes:
+            "Treina cantar em cima de harmonia com cuidado de pedal. Se borrar, o drama vira névoa sem desenho.",
+          links: [
+            { label: "YouTube", url: ytSearch("Tchaikovsky Nocturne Op 19 No 2 F sharp minor") },
+            { label: "Spotify", url: spotifySearch("Tchaikovsky Op. 19 No. 2") },
+            { label: "Apple Music", url: appleSearch("Tchaikovsky Op. 19 No. 2") },
+            { label: "IMSLP", url: imslpSearch("Tchaikovsky Op. 19") },
+          ],
+        },
+        {
+          id: "field-nocturne-fsharp-minor",
+          composer: "John Field",
+          title: "Noturno em F♯ menor (seleção) — o DNA do noturno",
+          level: "avançado",
+          technicalFocus: "cantabile e acompanhamento aveludado",
+          notes:
+            "Field é a raiz do noturno: ensina a mão esquerda a ser seda e a direita a ser voz.",
+          links: [
+            { label: "YouTube", url: ytSearch("John Field nocturne F sharp minor") },
+            { label: "Spotify", url: spotifySearch("John Field nocturne F sharp minor") },
+            { label: "Apple Music", url: appleSearch("John Field nocturne F sharp minor") },
+            { label: "IMSLP", url: imslpSearch("John Field nocturne F sharp minor") },
+          ],
+        },
+        {
+          id: "grieg-op54-4-bridge",
+          composer: "Edvard Grieg",
+          title: "Lyric Pieces Op. 54 nº 4 ‘Notturno’ (Si menor) — (ponte: neblina controlada)",
+          level: "avançado",
+          technicalFocus: "pedal e cor",
+          notes:
+            "Item-ponte: mesma estética de noite e cor. Ajuda a pensar o som de F♯ menor com ‘luz fria’ sem borrar.",
+          links: [
+            { label: "YouTube", url: ytSearch("Grieg Notturno Op 54 No 4 piano") },
+            { label: "Spotify", url: spotifySearch("Grieg Op. 54 No. 4") },
+            { label: "Apple Music", url: appleSearch("Grieg Op. 54 No. 4") },
+            { label: "IMSLP", url: imslpSearch("Grieg Op. 54") },
+          ],
+        },
+      ],
+    },
+  },
   {
     slug: "c-major",
     label: "C Maior",
