@@ -18,6 +18,11 @@
   --color-neon-500: #14c7ff;
   --color-neon-600: #00a2d6;
 
+  /* Secondary accent used as the “heat” glow in the Circle of Fifths */
+  --color-heat-400: #a78bfa;
+  --color-heat-500: #8b5cf6;
+  --color-heat-600: #6d28d9;
+
   --color-foreground: #e9eef7;
   --color-muted: #a9b3c5;
   --color-border: rgba(255, 255, 255, 0.08);
@@ -41,6 +46,10 @@
   --color-neon-400: var(--color-neon-400);
   --color-neon-500: var(--color-neon-500);
   --color-neon-600: var(--color-neon-600);
+
+  --color-heat-400: var(--color-heat-400);
+  --color-heat-500: var(--color-heat-500);
+  --color-heat-600: var(--color-heat-600);
 
   --font-sans: var(--font-sans);
   --font-serif: var(--font-serif);

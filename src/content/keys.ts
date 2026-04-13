@@ -11,6 +11,8 @@ export type KeySlug =
   | "csharp-major"
   | "ab-major"
   | "eb-major"
+  | "bb-major"
+  | "f-major"
   | "a-minor"
   | "e-minor"
   | "b-minor"
@@ -18,6 +20,8 @@ export type KeySlug =
   | "asharp-minor"
   | "f-minor"
   | "c-minor"
+  | "g-minor"
+  | "d-minor"
   | "fsharp-minor"
   | "csharp-minor"
   | "gsharp-minor";
@@ -5130,6 +5134,940 @@ export const MVP_KEYS: KeyContent[] = [
           technicalFocus: "leitura + harmonia",
           notes:
             "Transposição em modo menor é uma vacina contra tocar por hábito. Você começa a pensar em função.",
+          links: [{ label: "YouTube", url: ytSearch("piano transposition exercise") }],
+        },
+      ],
+    },
+  },
+
+  {
+    slug: "bb-major",
+    label: "B♭ Maior",
+    mode: "major",
+    pitchClass: "B♭",
+    motto:
+      "B♭ Maior é a sala de estar bem iluminada: acolhedora, humana, com brilho redondo. No piano, ela ensina um luxo discreto: som cheio em dinâmica moderada, cruzamentos silenciosos e pedal limpo (porque conforto tonal é o melhor jeito de você se enganar).",
+    estimatedReadingMinutes: 26,
+    mechanical: {
+      title: "Desafio Mecânico",
+      intro:
+        "Dois bemóis (B♭, E♭) dão uma ergonomia confortável: teclas pretas viram ‘ilhas’ de apoio. O perigo é justamente esse conforto virar relaxo auditivo e pedal-cobertor. A missão técnica em B♭ Maior é: **som redondo com contorno** (borda nítida sem dureza), **polegar civilizado** nos cruzamentos, e **camadas** (voicing) para manter hierarquia. Pense assim: B♭ não pede grito — pede postura.",
+      exercises: [
+        {
+          id: "scale-bb-major",
+          title: "Escala de B♭ Maior (mãos separadas → juntas)",
+          subtitle: "som cheio em p (sim, dá)",
+          exampleNotes: scaleNotes("B♭", "C", "D", "E♭", "F", "G", "A", "B♭"),
+          notes: [
+            "Treine em p como lupa: se E♭ ‘afunda’ ou some, seu ângulo mudou ao tocar a tecla preta.",
+            "Meta: mesma cor em todas as notas. Bemóis não são desculpa para desigualdade.",
+            "Polegar entra de lado (deslize). Se fizer clique, a rota do antebraço está atrasada.",
+          ],
+        },
+        {
+          id: "arpeggio-bb-major",
+          title: "Arpejo de B♭ Maior",
+          subtitle: "um arco só (sem escada de posições)",
+          exampleNotes: "B♭ D F B♭ | B♭ F D B♭",
+          notes: [
+            "Arpejo bom é gesto único: braço chega cedo; dedos só finalizam.",
+            "Faça 3 versões: legato, non-legato e staccato leve (mesma soltura, outra estética).",
+          ],
+        },
+        {
+          id: "hanon-1-in-bb-major",
+          title: "Hanon nº 1 (em B♭ Maior) — transposição",
+          subtitle: "anti-memória muscular",
+          notes: [
+            "Faça curto e perfeito (30–60s). Pausa. Repete. Técnica adulta cresce por repetição limpa.",
+            "Se a mão endurece, diminua amplitude e traga dedos mais perto da tecla.",
+          ],
+        },
+        {
+          id: "czerny-bb-major-pattern",
+          title: "Czerny (padrões) — aplique em B♭",
+          subtitle: "jeu perlé: clareza primeiro",
+          notes: [
+            "Escolha um estudo com padrão claro (escala/arpejo) e ‘traduza’ para B♭.",
+            "Se borrar, quebre em células de 2–4 notas e reconstrua.",
+          ],
+        },
+        {
+          id: "broken-chords-bb-major",
+          title: "Acordes quebrados (B♭–Gm–E♭–F)",
+          subtitle: "fluxo harmônico sem picos",
+          notes: [
+            "Mão esquerda = tapete (regular, quente, sem bater).",
+            "Voicing obrigatório: nota de cima canta; internas ficam em p.",
+          ],
+        },
+        {
+          id: "voicing-bb-major",
+          title: "Voicing em B♭ (camadas na mesma mão)",
+          subtitle: "melodia mf, internas p",
+          notes: [
+            "Faça um acorde B♭–D–F e pinte a voz superior sem apertar.",
+            "Se a melodia não aparece, o bug não é ‘falta de emoção’: internas altas demais.",
+          ],
+        },
+        {
+          id: "pedal-lab-bb-major",
+          title: "Laboratório de pedal (cadência I–V–I em B♭)",
+          subtitle: "cor sem sopa",
+          notes: [
+            "Pedal é lente, não cobertor: troque com a harmonia (F → B♭).",
+            "Treine meio-pedal e trocas curtas. Grave 15s e confira legibilidade harmônica.",
+          ],
+        },
+        {
+          id: "rhythm-cells-bb-major",
+          title: "Células rítmicas na escala (longo-curto / curto-longo)",
+          subtitle: "debug de cruzamentos",
+          notes: [
+            "Ritmos alterados expõem onde você acelera por medo do polegar.",
+            "Volte ao ritmo normal só quando estiver ‘estrada lisa’.",
+          ],
+        },
+        {
+          id: "reading-bb-major",
+          title: "Leitura lenta em B♭ Maior (1 página)",
+          subtitle: "olho 1 compasso à frente",
+          notes: [
+            "Leia sem parar. Se parar, você treina parar.",
+            "O objetivo é fluxo e calma, não perfeição de detalhe.",
+          ],
+        },
+        {
+          id: "micro-routine-bb-major",
+          title: "Micro-rotina (3 minutos): redondo e claro",
+          subtitle: "p → mf → p",
+          notes: [
+            "1 min: escala em p.",
+            "1 min: arpejo em mf.",
+            "1 min: acordes quebrados B♭–Gm–E♭–F em p com voicing.",
+          ],
+        },
+      ],
+    },
+    repertoire: {
+      title: "Desafio do Repertório",
+      intro:
+        "Curadoria em B♭ Maior (10+). Prioridade para repertório realmente em B♭; quando for ponte, eu marco sem vergonha. A ideia é treinar: cantabile, textura clara e ‘som cheio sem dureza’.",
+      items: [
+        {
+          id: "bb-mozart-k333",
+          composer: "W. A. Mozart",
+          title: "Sonata K. 333 (B♭ Maior) — trechos",
+          level: "avançado",
+          technicalFocus: "clareza + fraseado",
+          notes: "Mozart em B♭ é etiqueta: som bonito com precisão cirúrgica.",
+          links: [
+            { label: "YouTube", url: ytSearch("Mozart Sonata K 333 B flat major") },
+            { label: "Spotify", url: spotifySearch("Mozart K. 333") },
+            { label: "Apple Music", url: appleSearch("Mozart K. 333") },
+            { label: "IMSLP", url: imslpSearch("K. 333") },
+          ],
+        },
+        {
+          id: "bb-beethoven-op22",
+          composer: "L. v. Beethoven",
+          title: "Sonata Op. 22 (B♭ Maior) — trechos",
+          level: "avançado",
+          technicalFocus: "forma + energia",
+          notes: "Disciplina e energia sem pancada. Ótima para treinar hierarquia.",
+          links: [
+            { label: "YouTube", url: ytSearch("Beethoven Sonata Op 22 B flat major") },
+            { label: "Spotify", url: spotifySearch("Beethoven Op. 22") },
+            { label: "Apple Music", url: appleSearch("Beethoven Op. 22") },
+            { label: "IMSLP", url: imslpSearch("Beethoven Op. 22") },
+          ],
+        },
+        {
+          id: "bb-schubert-d960",
+          composer: "Franz Schubert",
+          title: "Sonata D. 960 (B♭ Maior) — trechos",
+          level: "avançado",
+          technicalFocus: "tempo interno + camadas",
+          notes: "Aula de tempo adulto: manter tensão sem pressa e sem peso.",
+          links: [
+            { label: "YouTube", url: ytSearch("Schubert Sonata D 960 B flat major") },
+            { label: "Spotify", url: spotifySearch("Schubert D 960") },
+            { label: "Apple Music", url: appleSearch("Schubert D 960") },
+            { label: "IMSLP", url: imslpSearch("Schubert D 960") },
+          ],
+        },
+        {
+          id: "bb-bach-wtc1-866",
+          composer: "J. S. Bach",
+          title: "WTC I: Prelúdio e Fuga em B♭ Maior (BWV 866)",
+          level: "avançado",
+          technicalFocus: "vozes + articulação",
+          notes: "Bach denuncia qualquer borrão: clareza absoluta.",
+          links: [
+            { label: "YouTube", url: ytSearch("Bach BWV 866 B flat major prelude fugue piano") },
+            { label: "Spotify", url: spotifySearch("BWV 866") },
+            { label: "Apple Music", url: appleSearch("BWV 866") },
+            { label: "IMSLP", url: imslpSearch("BWV 866") },
+          ],
+        },
+        {
+          id: "bb-haydn-bb-sonata",
+          composer: "Joseph Haydn",
+          title: "Sonata em B♭ Maior (seleção) — pontuação musical",
+          level: "intermediário",
+          technicalFocus: "timing + articulação",
+          notes: "Haydn ensina vírgulas e pontos: fraseado com clareza formal.",
+          links: [{ label: "YouTube", url: ytSearch("Haydn piano sonata B flat major") }],
+        },
+        {
+          id: "bb-beethoven-hammerklavier-bridge",
+          composer: "L. v. Beethoven",
+          title: "(ponte) Sonata Op. 106 (B♭ Maior) — trechos",
+          level: "avançado",
+          technicalFocus: "arquitetura",
+          notes: "Ponte: mesmo em trechos, é aula de forma e energia organizada.",
+          links: [
+            { label: "YouTube", url: ytSearch("Beethoven Hammerklavier Op 106 B flat major") },
+            { label: "Spotify", url: spotifySearch("Beethoven Op. 106") },
+            { label: "Apple Music", url: appleSearch("Beethoven Op. 106") },
+            { label: "IMSLP", url: imslpSearch("Beethoven Op. 106") },
+          ],
+        },
+        {
+          id: "bb-chopin-bridge",
+          composer: "Frédéric Chopin",
+          title: "(ponte) Aprenda 1 peça cantabile em tom vizinho (E♭/A♭) e traga o som para B♭",
+          level: "intermediário",
+          technicalFocus: "cantabile",
+          notes: "Ponte: o objetivo é importar qualidade de canto e camadas para B♭.",
+          links: [{ label: "YouTube", url: ytSearch("Chopin cantabile piano") }],
+        },
+        {
+          id: "bb-debussy-bridge",
+          composer: "Claude Debussy",
+          title: "(ponte) Prelúdios (seleção) — transparência",
+          level: "intermediário",
+          technicalFocus: "pedal limpo",
+          notes: "Ponte: transparência evita que B♭ vire ‘borrão bonito’.",
+          links: [{ label: "YouTube", url: ytSearch("Debussy preludes piano") }],
+        },
+        {
+          id: "bb-brahms-bridge",
+          composer: "Johannes Brahms",
+          title: "(ponte) Intermezzi/Valsas (seleção) — camadas",
+          level: "avançado",
+          technicalFocus: "voicing",
+          notes: "Brahms é academia de camadas: som cheio por dentro, sem engrossar.",
+          links: [{ label: "YouTube", url: ytSearch("Brahms intermezzo piano") }],
+        },
+        {
+          id: "bb-transposition",
+          composer: "J. S. Bach / você",
+          title: "(ponte) Transponha 8–16 compassos para B♭ Maior",
+          level: "iniciante",
+          technicalFocus: "leitura + função",
+          notes: "Transposição em bemóis: vacina contra piloto automático.",
+          links: [{ label: "YouTube", url: ytSearch("piano transposition exercise") }],
+        },
+      ],
+    },
+  },
+
+  {
+    slug: "f-major",
+    label: "F Maior",
+    mode: "major",
+    pitchClass: "F",
+    motto:
+      "F Maior é calor com coluna vertebral: parece simples, mas revela tudo sobre seu controle de som. A lição aqui é fazer um piano presente sem dureza e tratar o B♭ como elegância — não como tropeço.",
+    estimatedReadingMinutes: 24,
+    mechanical: {
+      title: "Desafio Mecânico",
+      intro:
+        "Um bemol (B♭) é pouco o suficiente para o cérebro relaxar demais — e aí nascem os bugs: B♭ alto/duro por ansiedade, pedal cobrindo falta de legato, e frase sem direção. Em F Maior, você treina **som redondo**, **pulso estável** e **pedal higiênico**. É ‘música bonita sem maquiagem’.",
+      exercises: [
+        {
+          id: "scale-f-major",
+          title: "Escala de F Maior",
+          subtitle: "B♭ elegante",
+          exampleNotes: scaleNotes("F", "G", "A", "B♭", "C", "D", "E", "F"),
+          notes: [
+            "Treine em p: se o B♭ saltar no volume, você mudou o gesto.",
+            "Faça como frase (direção → topo → volta). Escala sem direção vira academia.",
+          ],
+        },
+        {
+          id: "arpeggio-f-major",
+          title: "Arpejo de F Maior",
+          subtitle: "um arco só",
+          exampleNotes: "F A C F | F C A F",
+          notes: [
+            "Arpejo bom é braço chegando cedo. Se virar escada, o braço atrasou.",
+            "Treine non-legato controlado para som continuar redondo.",
+          ],
+        },
+        {
+          id: "hanon-1-in-f-major",
+          title: "Hanon nº 1 (em F Maior) — transposição",
+          subtitle: "igualdade em tom ‘quase C’",
+          notes: [
+            "Justamente por parecer fácil, F maior mostra vícios de relaxo.",
+            "Ataque consistente + relaxamento imediato.",
+          ],
+        },
+        {
+          id: "czerny-f-major",
+          title: "Czerny (padrão simples) — aplique em F",
+          subtitle: "leitura e regularidade",
+          notes: [
+            "Pegue um estudo de padrão repetitivo e faça em F com metrônomo lento.",
+            "Olho 1 compasso à frente: mão acalma.",
+          ],
+        },
+        {
+          id: "broken-chords-f-major",
+          title: "Acordes quebrados (F–Dm–B♭–C)",
+          subtitle: "I–vi–IV–V",
+          notes: [
+            "Treine fluxo harmônico sem inflar volume a cada troca.",
+            "Voicing: voz superior canta; internas sustentam em p.",
+          ],
+        },
+        {
+          id: "voicing-f-major",
+          title: "Voicing em F (melodia acima de textura)",
+          subtitle: "camadas simples",
+          notes: [
+            "Treine 2 níveis: melodia mf; internas p.",
+            "Se a mão travar, abaixe internas (não aperte melodia).",
+          ],
+        },
+        {
+          id: "pedal-f-major",
+          title: "Pedal limpo em F (I–V–I)",
+          subtitle: "clareza harmônica",
+          notes: [
+            "Troque o pedal com a harmonia (C → F).",
+            "Se a harmonia ficar ‘nublada’, é pedal demais ou ouvido de menos.",
+          ],
+        },
+        {
+          id: "rhythm-cells-f-major",
+          title: "Células rítmicas na escala",
+          subtitle: "anti-pressa",
+          notes: [
+            "Longo-curto/curto-longo expõe pontos em que você acelera.",
+          ],
+        },
+        {
+          id: "reading-f-major",
+          title: "Leitura lenta em F Maior (1 página)",
+          subtitle: "sem parar",
+          notes: [
+            "Regra: não pare. Ajuste o andamento para manter fluxo.",
+          ],
+        },
+        {
+          id: "micro-routine-f-major",
+          title: "Micro-rotina (3 minutos): calor com contorno",
+          subtitle: "p → mf → p",
+          notes: [
+            "1 min: escala em p.",
+            "1 min: arpejo em mf.",
+            "1 min: acordes quebrados F–Dm–B♭–C em p com voicing.",
+          ],
+        },
+      ],
+    },
+    repertoire: {
+      title: "Desafio do Repertório",
+      intro:
+        "Curadoria em F Maior (10+). F é ótimo para treinar canto, clareza e ‘som humano’.",
+      items: [
+        {
+          id: "f-mozart-k332",
+          composer: "W. A. Mozart",
+          title: "Sonata K. 332 (F Maior) — trechos",
+          level: "avançado",
+          technicalFocus: "clareza + articulação",
+          notes: "Mozart em F é microscópio: qualquer ansiedade aparece.",
+          links: [
+            { label: "YouTube", url: ytSearch("Mozart Sonata K 332 F major") },
+            { label: "Spotify", url: spotifySearch("Mozart K. 332") },
+            { label: "Apple Music", url: appleSearch("Mozart K. 332") },
+            { label: "IMSLP", url: imslpSearch("K. 332") },
+          ],
+        },
+        {
+          id: "f-beethoven-op10-2",
+          composer: "L. v. Beethoven",
+          title: "Sonata Op. 10 nº 2 (F Maior) — trechos",
+          level: "avançado",
+          technicalFocus: "energia + clareza",
+          notes: "Humor + precisão. Excelente para aprender acentos sem pancada.",
+          links: [
+            { label: "YouTube", url: ytSearch("Beethoven Sonata Op 10 No 2 F major") },
+            { label: "Spotify", url: spotifySearch("Beethoven Op. 10 No. 2") },
+            { label: "Apple Music", url: appleSearch("Beethoven Op. 10 No. 2") },
+            { label: "IMSLP", url: imslpSearch("Beethoven Op. 10 No. 2") },
+          ],
+        },
+        {
+          id: "f-bach-wtc1-856",
+          composer: "J. S. Bach",
+          title: "WTC I: Prelúdio e Fuga em F Maior (BWV 856)",
+          level: "avançado",
+          technicalFocus: "vozes + articulação",
+          notes: "Detergente de textura e de pedal.",
+          links: [
+            { label: "YouTube", url: ytSearch("Bach BWV 856 F major prelude fugue piano") },
+            { label: "Spotify", url: spotifySearch("BWV 856") },
+            { label: "Apple Music", url: appleSearch("BWV 856") },
+            { label: "IMSLP", url: imslpSearch("BWV 856") },
+          ],
+        },
+        {
+          id: "f-chopin-nocturne-op15-1",
+          composer: "Frédéric Chopin",
+          title: "Noturno Op. 15 nº 1 (F Maior)",
+          level: "avançado",
+          technicalFocus: "cantabile + camadas",
+          notes: "Aula de canto no piano: mão esquerda chão, direita respira.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Nocturne Op 15 No 1 F major") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 15 No. 1") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 15 No. 1") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 15") },
+          ],
+        },
+        {
+          id: "f-haydn-bridge",
+          composer: "Joseph Haydn",
+          title: "(ponte) Sonatas em F Maior (seleção) — clareza formal",
+          level: "intermediário",
+          technicalFocus: "timing + forma",
+          notes: "Haydn é a escola do ‘timing’.",
+          links: [{ label: "YouTube", url: ytSearch("Haydn piano sonata F major") }],
+        },
+        {
+          id: "f-scarlatti-bridge",
+          composer: "D. Scarlatti",
+          title: "(ponte) Sonatas (seleção) — toque perolado",
+          level: "intermediário",
+          technicalFocus: "articulação",
+          notes: "Borda clara sem rigidez.",
+          links: [{ label: "YouTube", url: ytSearch("Scarlatti sonata F major piano") }],
+        },
+        {
+          id: "f-debussy-bridge",
+          composer: "Claude Debussy",
+          title: "(ponte) Peças de transparência (seleção) — pedal limpo",
+          level: "intermediário",
+          technicalFocus: "pedal limpo",
+          notes: "Ponte: transparência melhora qualquer tonalidade.",
+          links: [{ label: "YouTube", url: ytSearch("Debussy piano transparency pedal") }],
+        },
+        {
+          id: "f-brahms-bridge",
+          composer: "Johannes Brahms",
+          title: "(ponte) Intermezzi (seleção) — camadas",
+          level: "avançado",
+          technicalFocus: "voicing",
+          notes: "Treino definitivo de camadas.",
+          links: [{ label: "YouTube", url: ytSearch("Brahms intermezzo piano") }],
+        },
+        {
+          id: "f-schumann-bridge",
+          composer: "Robert Schumann",
+          title: "(ponte) Álbum para a Juventude (seleção) — som humano",
+          level: "iniciante",
+          technicalFocus: "cantabile",
+          notes: "Frase simples e honesta (difícil de verdade).",
+          links: [{ label: "YouTube", url: ytSearch("Schumann Album for the Young piano") }],
+        },
+        {
+          id: "f-transposition",
+          composer: "J. S. Bach / você",
+          title: "(ponte) Transponha 8 compassos para F Maior",
+          level: "iniciante",
+          technicalFocus: "leitura + função",
+          notes: "Transposição curta para fortalecer cérebro tonal.",
+          links: [{ label: "YouTube", url: ytSearch("piano transposition exercise") }],
+        },
+      ],
+    },
+  },
+
+  {
+    slug: "g-minor",
+    label: "G menor",
+    mode: "minor",
+    pitchClass: "G",
+    motto:
+      "G menor é tempestade com etiqueta: dramática, mas com esqueleto. Aqui você aprende que modo menor não é licença para pesar — é convite para clareza sob tensão.",
+    estimatedReadingMinutes: 26,
+    mechanical: {
+      title: "Desafio Mecânico",
+      intro:
+        "Dois bemóis (B♭, E♭) e um universo retórico forte. Tecnicamente: **voicing**, **pulso firme** e controle de tensão (braço disponível; dedos perto). O bug clássico é tocar ‘forte’ para parecer dramático. O acerto é tocar **claro**.",
+      exercises: [
+        {
+          id: "scale-g-minor-natural",
+          title: "Escala de G menor (natural)",
+          subtitle: "sombra com contorno",
+          exampleNotes: "G A B♭ C D E♭ F G",
+          notes: [
+            "Treine em p. Modo menor bonito em p é assinatura de controle.",
+            "Homogeneidade: B♭/E♭ não podem ‘sumir’ nem ‘gritar’.",
+          ],
+        },
+        {
+          id: "scale-g-minor-harmonic",
+          title: "Escala de G menor (harmônica)",
+          subtitle: "F# como lâmina",
+          exampleNotes: "G A B♭ C D E♭ F# G",
+          notes: [
+            "Controle o F#: se ele sai duro, é ansiedade.",
+            "Use ritmos alterados para estabilizar a volta para G.",
+          ],
+        },
+        {
+          id: "scale-g-minor-melodic",
+          title: "Escala de G menor (melódica)",
+          subtitle: "clarear na subida",
+          exampleNotes: "Subindo: G A B♭ C D E F# G | Descendo: G F E♭ D C B♭ A G",
+          notes: [
+            "Mesma mecânica, outra direção. Se a mão muda, você perdeu o volante.",
+          ],
+        },
+        {
+          id: "arpeggio-g-minor",
+          title: "Arpejo de G menor",
+          subtitle: "gesto único",
+          exampleNotes: "G B♭ D G | G D B♭ G",
+          notes: [
+            "Arpejo é arco; degrau = braço atrasado.",
+            "Treine non-legato para manter contorno com relaxamento.",
+          ],
+        },
+        {
+          id: "hanon-6-in-g-minor",
+          title: "Hanon nº 6 (em G menor) — transposição",
+          subtitle: "4º/5º dedos com micro-rotação",
+          notes: [
+            "Modo menor puxa peso: não caia. Peso é distribuído; dedo é leve.",
+            "Micro-rotação ajuda 4/5 sem travar.",
+          ],
+        },
+        {
+          id: "czerny-g-minor",
+          title: "Czerny (padrão rápido) — aplique em Gm",
+          subtitle: "clareza sob pressão",
+          notes: [
+            "Divida em células. Repetição limpa antes de acelerar.",
+          ],
+        },
+        {
+          id: "broken-chords-g-minor",
+          title: "Acordes quebrados (Gm–E♭–B♭–F)",
+          subtitle: "i–VI–III–VII",
+          notes: [
+            "Mão esquerda tapete, sem bater.",
+            "Voicing: voz superior mf, internas p.",
+          ],
+        },
+        {
+          id: "voicing-g-minor",
+          title: "Voicing em Gm (melodia interna)",
+          subtitle: "relevo dentro da textura",
+          notes: [
+            "Treine melodia no meio do acorde. Isso é pianismo adulto.",
+            "Grave 20s e confira se a melodia aparece sem força.",
+          ],
+        },
+        {
+          id: "rhythm-cells-g-minor",
+          title: "Células rítmicas na escala",
+          subtitle: "anti-ansiedade",
+          notes: [
+            "Ritmos alterados expõem pressa perto do F# (harmônica) e nos cruzamentos.",
+          ],
+        },
+        {
+          id: "micro-routine-g-minor",
+          title: "Micro-rotina (3 minutos): drama com coluna",
+          subtitle: "p → mf → p",
+          notes: [
+            "1 min: escala natural em p.",
+            "1 min: arpejo em mf.",
+            "1 min: acordes quebrados Gm–E♭–B♭–F em p com voicing.",
+          ],
+        },
+      ],
+    },
+    repertoire: {
+      title: "Desafio do Repertório",
+      intro:
+        "Curadoria em G menor (10+). Aqui você treina retórica: acento com sentido, tempo interno e clareza em textura densa.",
+      items: [
+        {
+          id: "gmin-bach-wtc1-861",
+          composer: "J. S. Bach",
+          title: "WTC I: Prelúdio e Fuga em G menor (BWV 861)",
+          level: "avançado",
+          technicalFocus: "contraponto + clareza",
+          notes: "Detergente de textura: deixa qualquer excesso evidente.",
+          links: [
+            { label: "YouTube", url: ytSearch("Bach BWV 861 G minor prelude fugue piano") },
+            { label: "Spotify", url: spotifySearch("BWV 861") },
+            { label: "Apple Music", url: appleSearch("BWV 861") },
+            { label: "IMSLP", url: imslpSearch("BWV 861") },
+          ],
+        },
+        {
+          id: "gmin-mozart-k457",
+          composer: "W. A. Mozart",
+          title: "Sonata K. 457 (G menor) — trechos",
+          level: "avançado",
+          technicalFocus: "drama clássico",
+          notes: "Drama com etiqueta: contraste claro sem virar dureza.",
+          links: [
+            { label: "YouTube", url: ytSearch("Mozart Sonata K 457 G minor") },
+            { label: "Spotify", url: spotifySearch("Mozart K. 457") },
+            { label: "Apple Music", url: appleSearch("Mozart K. 457") },
+            { label: "IMSLP", url: imslpSearch("K. 457") },
+          ],
+        },
+        {
+          id: "gmin-beethoven-op49-1",
+          composer: "L. v. Beethoven",
+          title: "Sonata Op. 49 nº 1 (G menor) — I mov.",
+          level: "intermediário",
+          technicalFocus: "pulso + clareza",
+          notes: "Peça curta, perfeita para treino de pulso firme.",
+          links: [
+            { label: "YouTube", url: ytSearch("Beethoven Op 49 No 1 G minor") },
+            { label: "Spotify", url: spotifySearch("Beethoven Op. 49 No. 1") },
+            { label: "Apple Music", url: appleSearch("Beethoven Op. 49 No. 1") },
+            { label: "IMSLP", url: imslpSearch("Beethoven Op. 49") },
+          ],
+        },
+        {
+          id: "gmin-chopin-op23",
+          composer: "Frédéric Chopin",
+          title: "Balada nº 1 Op. 23 (G menor) — trechos",
+          level: "avançado",
+          technicalFocus: "narrativa + arquitetura",
+          notes: "Aula de forma: drama organizado.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Ballade No 1 Op 23 G minor") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 23") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 23") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 23") },
+          ],
+        },
+        {
+          id: "gmin-rachmaninoff-op23-5",
+          composer: "Sergei Rachmaninoff",
+          title: "Prelúdio Op. 23 nº 5 (G menor)",
+          level: "avançado",
+          technicalFocus: "ritmo + acentos",
+          notes: "Energia rítmica sem pancada: acento com sentido.",
+          links: [
+            { label: "YouTube", url: ytSearch("Rachmaninoff Prelude Op 23 No 5 G minor") },
+            { label: "Spotify", url: spotifySearch("Rachmaninoff Op. 23 No. 5") },
+            { label: "Apple Music", url: appleSearch("Rachmaninoff Op. 23 No. 5") },
+            { label: "IMSLP", url: imslpSearch("Rachmaninoff Op. 23") },
+          ],
+        },
+        {
+          id: "gmin-brahms-op79-2",
+          composer: "Johannes Brahms",
+          title: "Rapsódia Op. 79 nº 2 (G menor)",
+          level: "avançado",
+          technicalFocus: "densidade + camadas",
+          notes: "Controle de textura em alta energia.",
+          links: [
+            { label: "YouTube", url: ytSearch("Brahms Rhapsody Op 79 No 2 G minor") },
+            { label: "Spotify", url: spotifySearch("Brahms Op. 79 No. 2") },
+            { label: "Apple Music", url: appleSearch("Brahms Op. 79 No. 2") },
+            { label: "IMSLP", url: imslpSearch("Brahms Op. 79") },
+          ],
+        },
+        {
+          id: "gmin-bach-little-prelude",
+          composer: "J. S. Bach",
+          title: "Pequeno Prelúdio em G menor (BWV 930) — (selecione edição)",
+          level: "intermediário",
+          technicalFocus: "clareza + articulação",
+          notes: "Peça curta para treinar contorno no modo menor.",
+          links: [{ label: "YouTube", url: ytSearch("Bach BWV 930 G minor prelude piano") }],
+        },
+        {
+          id: "gmin-debussy-bridge",
+          composer: "Claude Debussy",
+          title: "(ponte) Prelúdios (seleção) — sombra transparente",
+          level: "intermediário",
+          technicalFocus: "pedal limpo",
+          notes: "Transparência = antídoto contra lama.",
+          links: [{ label: "YouTube", url: ytSearch("Debussy preludes piano") }],
+        },
+        {
+          id: "gmin-transposition",
+          composer: "J. S. Bach / você",
+          title: "(ponte) Transponha 8 compassos para G menor",
+          level: "iniciante",
+          technicalFocus: "leitura + função",
+          notes: "Transposição em menor reforça cérebro tonal.",
+          links: [{ label: "YouTube", url: ytSearch("piano transposition exercise") }],
+        },
+        {
+          id: "gmin-scarlatti-bridge",
+          composer: "D. Scarlatti",
+          title: "(ponte) Sonatas em modo menor (seleção) — borda",
+          level: "intermediário",
+          technicalFocus: "articulação",
+          notes: "Borda nítida deixa o drama elegante.",
+          links: [{ label: "YouTube", url: ytSearch("Scarlatti sonata g minor") }],
+        },
+      ],
+    },
+  },
+
+  {
+    slug: "d-minor",
+    label: "D menor",
+    mode: "minor",
+    pitchClass: "D",
+    motto:
+      "D menor é o modo sério sem caricatura: profundo, direto, com retórica forte. A missão é fazer sombra com clareza — drama organizado, não peso físico.",
+    estimatedReadingMinutes: 26,
+    mechanical: {
+      title: "Desafio Mecânico",
+      intro:
+        "Um bemol (B♭) e um caráter que o repertório ‘leva a sério’. D menor é laboratório de acordes, voicing e pulso firme. O bug é tentar ‘parecer profundo’ apertando. O acerto é: camadas, direção e timbre escuro com contorno.",
+      exercises: [
+        {
+          id: "scale-d-minor-natural",
+          title: "Escala de D menor (natural)",
+          subtitle: "sombra com pulso",
+          exampleNotes: "D E F G A B♭ C D",
+          notes: [
+            "Treine em p: escuro sem opaco. Escuro ≠ abafado.",
+            "B♭ deve soar normal, sem susto e sem acento involuntário.",
+          ],
+        },
+        {
+          id: "scale-d-minor-harmonic",
+          title: "Escala de D menor (harmônica)",
+          subtitle: "C# como direção",
+          exampleNotes: "D E F G A B♭ C# D",
+          notes: [
+            "C# denuncia ansiedade. Controle pelo braço, não pelo dedo alto.",
+            "Use ritmos alterados para estabilizar a chegada.",
+          ],
+        },
+        {
+          id: "scale-d-minor-melodic",
+          title: "Escala de D menor (melódica)",
+          subtitle: "clarear na subida",
+          exampleNotes: "Subindo: D E F G A B C# D | Descendo: D C B♭ A G F E D",
+          notes: [
+            "Mesma mecânica, outra cor. Se a mão muda, você perdeu o controle.",
+          ],
+        },
+        {
+          id: "arpeggio-d-minor",
+          title: "Arpejo de D menor",
+          subtitle: "gesto único",
+          exampleNotes: "D F A D | D A F D",
+          notes: [
+            "Arpejo bom é arco; degrau = braço atrasado.",
+          ],
+        },
+        {
+          id: "hanon-1-in-d-minor",
+          title: "Hanon nº 1 (em D menor) — transposição",
+          subtitle: "controle frio",
+          notes: [
+            "Curto e perfeito. Se doer, pare: dor é bug.",
+            "Micro-rotação ajuda 4/5 sem travar.",
+          ],
+        },
+        {
+          id: "czerny-d-minor",
+          title: "Czerny (padrões) — aplique em Dm",
+          subtitle: "clareza sob tensão",
+          notes: [
+            "Divida em células e reconstrua. Clareza primeiro.",
+          ],
+        },
+        {
+          id: "broken-chords-d-minor",
+          title: "Acordes quebrados (Dm–B♭–F–C)",
+          subtitle: "i–VI–III–VII",
+          notes: [
+            "Mão esquerda tapete; mão direita fala.",
+            "Voicing: voz superior mf; internas p.",
+          ],
+        },
+        {
+          id: "voicing-d-minor",
+          title: "Voicing em Dm (melodia interna)",
+          subtitle: "profundo sem peso",
+          notes: [
+            "Treine melodia no meio do acorde. Isso dá profundidade real.",
+            "Grave 20s e confira se a melodia aparece sem esforço.",
+          ],
+        },
+        {
+          id: "rhythm-cells-d-minor",
+          title: "Células rítmicas na escala",
+          subtitle: "anti-ansiedade",
+          notes: [
+            "Use ritmos para expor pressa perto do C# (harmônica) e nos cruzamentos.",
+          ],
+        },
+        {
+          id: "micro-routine-d-minor",
+          title: "Micro-rotina (3 minutos): sombra com contorno",
+          subtitle: "p → mf → p",
+          notes: [
+            "1 min: escala natural em p.",
+            "1 min: arpejo em mf.",
+            "1 min: acordes quebrados Dm–B♭–F–C em p com voicing.",
+          ],
+        },
+      ],
+    },
+    repertoire: {
+      title: "Desafio do Repertório",
+      intro:
+        "Curadoria em D menor (10+). D menor é escola de retórica: acentos com sentido, clareza e tempo interno.",
+      items: [
+        {
+          id: "dmin-bach-wtc1-851",
+          composer: "J. S. Bach",
+          title: "WTC I: Prelúdio e Fuga em D menor (BWV 851)",
+          level: "avançado",
+          technicalFocus: "contraponto",
+          notes: "Bach é o juiz: clareza absoluta.",
+          links: [
+            { label: "YouTube", url: ytSearch("Bach BWV 851 D minor prelude fugue piano") },
+            { label: "Spotify", url: spotifySearch("BWV 851") },
+            { label: "Apple Music", url: appleSearch("BWV 851") },
+            { label: "IMSLP", url: imslpSearch("BWV 851") },
+          ],
+        },
+        {
+          id: "dmin-bach-invention-4",
+          composer: "J. S. Bach",
+          title: "Invenção nº 4 (D menor) — BWV 775",
+          level: "intermediário",
+          technicalFocus: "independência + articulação",
+          notes: "Peça curta e cruel: perfeito para clareza em modo menor.",
+          links: [
+            { label: "YouTube", url: ytSearch("Bach Invention No 4 BWV 775 D minor") },
+            { label: "Spotify", url: spotifySearch("BWV 775") },
+            { label: "Apple Music", url: appleSearch("BWV 775") },
+            { label: "IMSLP", url: imslpSearch("BWV 775") },
+          ],
+        },
+        {
+          id: "dmin-mozart-k466",
+          composer: "W. A. Mozart",
+          title: "Concerto nº 20 K. 466 (D menor) — trechos/arranjos",
+          level: "avançado",
+          technicalFocus: "retórica + acentos",
+          notes: "Mozart em D menor: teatro sério com precisão.",
+          links: [
+            { label: "YouTube", url: ytSearch("Mozart Piano Concerto No 20 K 466 D minor") },
+            { label: "Spotify", url: spotifySearch("Mozart K. 466") },
+            { label: "Apple Music", url: appleSearch("Mozart K. 466") },
+            { label: "IMSLP", url: imslpSearch("K. 466") },
+          ],
+        },
+        {
+          id: "dmin-beethoven-tempest",
+          composer: "L. v. Beethoven",
+          title: "Sonata Op. 31 nº 2 ‘Tempest’ (D menor) — trechos",
+          level: "avançado",
+          technicalFocus: "energia organizada",
+          notes: "Treino de narrativa e controle de energia: drama com coluna.",
+          links: [
+            { label: "YouTube", url: ytSearch("Beethoven Tempest Sonata Op 31 No 2 D minor") },
+            { label: "Spotify", url: spotifySearch("Beethoven Op. 31 No. 2") },
+            { label: "Apple Music", url: appleSearch("Beethoven Op. 31 No. 2") },
+            { label: "IMSLP", url: imslpSearch("Beethoven Op. 31 No. 2") },
+          ],
+        },
+        {
+          id: "dmin-chopin-prelude-op28-24",
+          composer: "Frédéric Chopin",
+          title: "Prelúdio Op. 28 nº 24 (D menor)",
+          level: "avançado",
+          technicalFocus: "pulso + acentos",
+          notes: "Curto e intenso: energia rítmica com clareza.",
+          links: [
+            { label: "YouTube", url: ytSearch("Chopin Prelude Op 28 No 24 D minor") },
+            { label: "Spotify", url: spotifySearch("Chopin Op. 28 No. 24") },
+            { label: "Apple Music", url: appleSearch("Chopin Op. 28 No. 24") },
+            { label: "IMSLP", url: imslpSearch("Chopin Op. 28") },
+          ],
+        },
+        {
+          id: "dmin-scarlatti-k9",
+          composer: "D. Scarlatti",
+          title: "Sonata K. 9 (D menor) — virtuosismo com clareza",
+          level: "intermediário",
+          technicalFocus: "articulação + coordenação",
+          notes: "Borda nítida (sem rigidez) e cruzamentos limpos.",
+          links: [
+            { label: "YouTube", url: ytSearch("Scarlatti Sonata K 9 D minor piano") },
+            { label: "Spotify", url: spotifySearch("Scarlatti K. 9") },
+            { label: "Apple Music", url: appleSearch("Scarlatti K. 9") },
+            { label: "IMSLP", url: imslpSearch("Scarlatti K 9") },
+          ],
+        },
+        {
+          id: "dmin-rachmaninoff-op23-3",
+          composer: "Sergei Rachmaninoff",
+          title: "Prelúdio Op. 23 nº 3 (D menor) — seleta de trechos",
+          level: "avançado",
+          technicalFocus: "som grande + camadas",
+          notes: "Ponte de peso organizado: som grande sem esmagar.",
+          links: [
+            { label: "YouTube", url: ytSearch("Rachmaninoff Prelude Op 23 No 3 D minor") },
+            { label: "Spotify", url: spotifySearch("Rachmaninoff Op. 23 No. 3") },
+            { label: "Apple Music", url: appleSearch("Rachmaninoff Op. 23 No. 3") },
+            { label: "IMSLP", url: imslpSearch("Rachmaninoff Op. 23") },
+          ],
+        },
+        {
+          id: "dmin-brahms-bridge",
+          composer: "Johannes Brahms",
+          title: "(ponte) Intermezzi (seleção) — densidade íntima",
+          level: "intermediário",
+          technicalFocus: "voicing",
+          notes: "Profundidade por camadas, não por peso.",
+          links: [{ label: "YouTube", url: ytSearch("Brahms intermezzo D minor") }],
+        },
+        {
+          id: "dmin-debussy-bridge",
+          composer: "Claude Debussy",
+          title: "(ponte) Prelúdios (seleção) — transparência",
+          level: "intermediário",
+          technicalFocus: "pedal limpo",
+          notes: "Transparência evita lama em modo menor.",
+          links: [{ label: "YouTube", url: ytSearch("Debussy preludes piano") }],
+        },
+        {
+          id: "dmin-transposition",
+          composer: "J. S. Bach / você",
+          title: "(ponte) Transponha 8 compassos para D menor",
+          level: "iniciante",
+          technicalFocus: "leitura + função",
+          notes: "Transposição em menor fortalece leitura real.",
           links: [{ label: "YouTube", url: ytSearch("piano transposition exercise") }],
         },
       ],

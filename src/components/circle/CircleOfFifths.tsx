@@ -115,6 +115,8 @@ export function CircleOfFifths({
     "C#": "csharp-major",
     Ab: "ab-major",
     Eb: "eb-major",
+    Bb: "bb-major",
+    F: "f-major",
   };
 
   // Inner ring uses *relative minors* aligned with outer major sectors.
@@ -131,8 +133,8 @@ export function CircleOfFifths({
     { label: "A♯m", slug: "asharp-minor" },
     { label: "Fm", slug: "f-minor" },
     { label: "Cm", slug: "c-minor" },
-    { label: "Gm" },
-    { label: "Dm" },
+    { label: "Gm", slug: "g-minor" },
+    { label: "Dm", slug: "d-minor" },
   ];
 
   function pctForSlug(slug?: KeySlug) {
@@ -158,11 +160,11 @@ export function CircleOfFifths({
 
   function fillFor(id: KeyId) {
     const pct = pctForSlug(outerMajorToSlug[id]);
-    const base = 0.03;
-    const glow = 0.22;
+    const base = 0.04;
+    const glow = 0.34;
     const alpha = base + (pct / 100) * glow;
-    // More professional/futuristic grayscale base; progress adds subtle brightness.
-    return `rgba(235,240,255,${alpha.toFixed(3)})`;
+    // Purple heat glow (more visible and iPad Safari-friendly: plain rgba).
+    return `rgba(139,92,246,${alpha.toFixed(3)})`;
   }
 
   const hoveredSlug = hovered ? outerMajorToSlug[hovered] : undefined;
@@ -268,7 +270,7 @@ export function CircleOfFifths({
                 className={cn(
                   "transition-[fill,stroke] duration-200",
                   slug
-                    ? "hover:fill-[rgba(235,240,255,0.18)] hover:stroke-[rgba(235,240,255,0.26)]"
+                    ? "hover:fill-[rgba(139,92,246,0.22)] hover:stroke-[rgba(167,139,250,0.30)]"
                     : "",
                 )}
                 filter={slug && isHovered ? "url(#softGlow)" : undefined}
@@ -302,8 +304,8 @@ export function CircleOfFifths({
           const inner = INNER_RELATIVE_MINORS[idx];
           const slug = inner?.slug;
           const pct = pctForSlug(slug);
-          const alpha = 0.02 + (pct / 100) * 0.18;
-          const fill = `rgba(190,195,210,${alpha.toFixed(3)})`;
+          const alpha = 0.03 + (pct / 100) * 0.28;
+          const fill = `rgba(167,139,250,${alpha.toFixed(3)})`;
 
           const midAngle = (startAngle + endAngle) / 2;
           const labelPos = polarToCartesian(cx, cy, (rInner2Outer + rInner2Inner) / 2, midAngle);
@@ -327,7 +329,7 @@ export function CircleOfFifths({
                 className={cn(
                   "transition-[fill,stroke] duration-200",
                   slug
-                    ? "hover:fill-[rgba(190,195,210,0.18)] hover:stroke-[rgba(190,195,210,0.28)]"
+                    ? "hover:fill-[rgba(167,139,250,0.26)] hover:stroke-[rgba(167,139,250,0.32)]"
                     : "",
                 )}
                 filter={slug && isHovered ? "url(#softGlow)" : undefined}
