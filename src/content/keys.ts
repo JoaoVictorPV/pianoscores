@@ -2163,7 +2163,7 @@ export const MVP_KEYS: KeyContent[] = [
           title: "Hanon nº 1",
           subtitle: "igualdade de dedos, sem ‘dedo rei’",
           exampleNotes:
-            "Padrão-base (Hanon nº 1): C D E F G F E D C (depois comece em D, depois em E… e assim por diante)",
+            "Padrão-base (Hanon nº 1): C E F G A G F E D | depois: D F G A B A G F E | (continue subindo o ponto de partida)",
           notes: notes(
             "Toque como se cada dedo tivesse o mesmo sobrenome — nada de privilegiar 1 e 2.",
             "Procure micro-rotação do antebraço para estabilizar 4 e 5 sem travar o punho.",
