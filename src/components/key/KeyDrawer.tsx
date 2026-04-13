@@ -11,6 +11,98 @@ import { cn } from "@/lib/cn";
 import { useProgressStore } from "@/store/progressStore";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
+import { getComposerBlurb } from "@/content/composers";
+
+function autoExerciseGoals(title: string) {
+  const t = title.toLowerCase();
+  if (t.includes("escala")) {
+    return [
+      "Uniformizar timbre e volume em todas as notas (inclusive nos cruzamentos).",
+      "Treinar ‘polegar silencioso’: troca de posição sem clique nem degrau de dinâmica.",
+      "Construir estabilidade rítmica: a escala vira frase (não ‘subir e descer’).",
+    ];
+  }
+  if (t.includes("arpejo")) {
+    return [
+      "Transformar o arpejo em um gesto contínuo (um arco), evitando ‘escada de posições’.",
+      "Treinar antecipação de rota do antebraço: o braço chega antes do dedo.",
+      "Construir legato convincente (com ou sem pedal, dependendo do estilo).",
+    ];
+  }
+  if (t.includes("hanon")) {
+    return [
+      "Igualdade de ataque (borda nítida) + relaxamento imediato (sem acumular tensão).",
+      "Educar independência/coordenação de dedos sem ‘levantar garra’.",
+      "Quebrar memória muscular automática (especialmente quando é transposição).",
+    ];
+  }
+  if (t.includes("czerny")) {
+    return [
+      "Agilidade com contorno (jeu perlé): clareza primeiro, velocidade depois.",
+      "Regularidade: repetir sem perder intenção musical.",
+      "Sincronizar olho e mão (antecipação visual).",
+    ];
+  }
+  if (t.includes("voicing") || t.includes("voz")) {
+    return [
+      "Separar camadas de volume na mesma mão (melodia canta; internas sustentam).",
+      "Treinar ‘peso distribuído’ (som cheio) sem apertar as notas internas.",
+    ];
+  }
+  if (t.includes("staccato")) {
+    return [
+      "Staccato elástico (quique), sem martelar nem travar o antebraço.",
+      "Borda clara no ataque + soltura imediata (som curto, corpo disponível).",
+    ];
+  }
+  if (t.includes("células rítmicas") || t.includes("células")) {
+    return [
+      "Diagnosticar pontos de ansiedade/embolação (ritmos alterados expõem falhas).",
+      "Reprogramar coordenação para voltar ao ritmo normal com estrada lisa.",
+    ];
+  }
+  if (t.includes("leitura")) {
+    return [
+      "Treinar fluxo (não parar) e reduzir ‘pânico de nota’.",
+      "Forçar o olho a trabalhar à frente (mão acalma quando o olho chega cedo).",
+    ];
+  }
+  return [
+    "Consolidar controle fino (clareza, relaxamento e repetição consciente).",
+    "Treinar estabilidade de gesto (o mesmo som em repetições iguais).",
+  ];
+}
+
+function autoExerciseHowTo(title: string) {
+  const t = title.toLowerCase();
+  const base = [
+    "Comece em andamento lento (onde você controla 100% do gesto) e só acelere quando estiver ‘liso’.",
+    "Use 2 dinâmicas: p (lupa de controle) e mf (som cheio sem dureza).",
+    "Faça sessões curtas (30–90s) com pausas: técnica boa não depende de ‘força na marra’.",
+    "Meta de conforto: ombro baixo, punho estável (estável ≠ rígido), dedos perto da tecla.",
+    "Se surgir dor/aguda: pare e ajuste. Dor é bug de mecânica, não medalha.",
+  ];
+
+  if (t.includes("escala") || t.includes("arpejo")) {
+    return [
+      "Mãos separadas primeiro (som e rota), depois mãos juntas (sincronização).",
+      "Treine 3 articulações: legato, non-legato e staccato leve (mesma soltura em todas).",
+      "Use metrônomo como ‘juiz’ do pulso — mas não sacrifique timbre por velocidade.",
+      ...base,
+    ];
+  }
+
+  if (t.includes("hanon") || t.includes("czerny")) {
+    return [
+      "Toque como se fosse música: frase, direção e som bonito (exercício feio ensina feiura).",
+      "Se embolar, quebre em células de 2–4 notas e reconstrua.",
+      "Grave 20–30s e ouça: o microfone denuncia irregularidade melhor que a sensação da mão.",
+      ...base,
+    ];
+  }
+
+  return base;
+}
 
 function ProgressBar({ value }: { value: number }) {
   return (
@@ -181,6 +273,24 @@ export function KeyDrawer({
                             ))}
                           </ul>
 
+                          <div className="mt-4 rounded-2xl border border-[var(--color-border)] bg-[rgba(0,0,0,0.18)] p-4">
+                            <div className="text-xs font-semibold text-[var(--color-foreground)]">Objetivo</div>
+                            <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm leading-6 text-[var(--color-muted)]">
+                              {autoExerciseGoals(ex.title).map((t) => (
+                                <li key={t}>{t}</li>
+                              ))}
+                            </ul>
+
+                            <div className="mt-4 text-xs font-semibold text-[var(--color-foreground)]">
+                              Como praticar (protocolo)
+                            </div>
+                            <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm leading-6 text-[var(--color-muted)]">
+                              {autoExerciseHowTo(ex.title).map((t) => (
+                                <li key={t}>{t}</li>
+                              ))}
+                            </ul>
+                          </div>
+
                           <div className="mt-4">
                             <CheckItem
                               checked={k?.exercisesDone.includes(ex.id) ?? false}
@@ -226,6 +336,15 @@ export function KeyDrawer({
                             </div>
 
                             <p className="mt-3 text-sm leading-6 text-[var(--color-muted)]">{item.notes}</p>
+
+                            <div className="mt-4 rounded-2xl border border-[var(--color-border)] bg-[rgba(0,0,0,0.18)] p-4">
+                              <div className="text-xs font-semibold text-[var(--color-foreground)]">
+                                Contexto histórico/biográfico (rápido)
+                              </div>
+                              <p className="mt-2 text-sm leading-6 text-[var(--color-muted)]">
+                                {getComposerBlurb(item.composer)}
+                              </p>
+                            </div>
 
                             <div className="mt-3 flex flex-wrap gap-2">
                               {item.links.map((l) => (

@@ -22,6 +22,15 @@ export type Exercise = {
   notes: string[];
 };
 
+function notes(...xs: string[]) {
+  return xs;
+}
+
+function scaleNotes(...xs: string[]) {
+  // Visual padrão: sempre “A B C# ...” com espaços.
+  return xs.join(" ");
+}
+
 export type RepertoireLink = {
   label: "YouTube" | "Spotify" | "Apple Music" | "IMSLP";
   url: string;
@@ -2153,13 +2162,14 @@ export const MVP_KEYS: KeyContent[] = [
           id: "hanon-1",
           title: "Hanon nº 1",
           subtitle: "igualdade de dedos, sem ‘dedo rei’",
-          exampleNotes: "C D E F G F E D (padrão exemplo) — repita e desloque",
-          notes: [
+          exampleNotes:
+            "Padrão-base (Hanon nº 1): C D E F G F E D C (depois comece em D, depois em E… e assim por diante)",
+          notes: notes(
             "Toque como se cada dedo tivesse o mesmo sobrenome — nada de privilegiar 1 e 2.",
             "Procure micro-rotação do antebraço para estabilizar 4 e 5 sem travar o punho.",
             "Se o som fica ‘duro’, a causa comum é elevar demais os dedos: pense em dedos curtos, articulação mínima e peso controlado.",
             "Regra de ouro: quando um dedo desce, o resto do braço não precisa ‘cair junto’. Ataque é local; peso é global.",
-          ],
+          ),
         },
         {
           id: "czerny-599-1",
@@ -2204,34 +2214,34 @@ export const MVP_KEYS: KeyContent[] = [
           title: "Hanon nº 6",
           subtitle: "apoio de 4º e 5º dedos com rotação mínima",
           exampleNotes: "C D E F G | G F E D C (varie articulação)",
-          notes: [
+          notes: notes(
             "4 e 5 são ‘irmãos siameses’ por tendões: independência total é mito; coordenação inteligente é a meta.",
             "Use rotação como um volante pequeno: quase invisível. Se parecer ‘dança’, é demais.",
             "Micro-rotina prática (2–3 min): (1) toque lento em mf, (2) repita em p (controle fino), (3) repita em staccato leve sem ‘bater’. Se qualquer etapa ficar feia, volte uma casa: você achou o limite do seu controle.",
             "Erro clássico: tentar ‘fortalecer o dedo’ apertando. O que fortalece é repetição com gesto bom. Se doer, pare: dor é sinal de mecânica ruim, não de progresso.",
             "Hack de atenção: coloque uma moeda leve (ou papel dobrado) no dorso da mão. Se ela cair, você está mexendo demais o pulso em vez de rotacionar minimamente o antebraço.",
-          ],
+          ),
         },
         {
           id: "scales-c-major",
           title: "Escala de C Maior (prática guiada)",
           subtitle: "legato real, polegar silencioso",
-          exampleNotes: "C D E F G A B C (suba e desça, 2 oitavas se der)",
-          notes: [
+          exampleNotes: scaleNotes("C", "D", "E", "F", "G", "A", "B", "C"),
+          notes: notes(
             "O polegar não deve ‘cavar’ a tecla. Ele entra de lado com a unha apontando para o próximo dedo — sensação de deslize.",
             "Treine mãos separadas em dinâmica baixa: controle é mais difícil quando o som não ‘mascara’ irregularidade.",
             "Meta de qualidade: volume contínuo, sem degraus nos cruzamentos.",
-          ],
+          ),
         },
         {
           id: "arpeggio-c-major",
           title: "Arpejo de C Maior",
           subtitle: "alinhamento e trajetória do braço",
           exampleNotes: "C E G C | C G E C (1–3–5–1)",
-          notes: [
+          notes: notes(
             "Não ‘torça’ o punho pra alcançar: o braço viaja junto.",
             "A mão forma uma concha estável; os dedos mudam dentro dela.",
-          ],
+          ),
         },
         {
           id: "double-notes-3rds-c-major",

@@ -155,9 +155,10 @@ export function CircleOfFifths({
   function fillFor(id: KeyId) {
     const pct = pctForSlug(outerMajorToSlug[id]);
     const base = 0.03;
-    const glow = 0.26;
+    const glow = 0.22;
     const alpha = base + (pct / 100) * glow;
-    return `rgba(20,199,255,${alpha.toFixed(3)})`;
+    // More professional/futuristic grayscale base; progress adds subtle brightness.
+    return `rgba(235,240,255,${alpha.toFixed(3)})`;
   }
 
   const hoveredSlug = hovered ? outerMajorToSlug[hovered] : undefined;
@@ -176,9 +177,9 @@ export function CircleOfFifths({
       >
         <defs>
           <radialGradient id="ringGlow" cx="50%" cy="50%" r="60%">
-            <stop offset="0%" stopColor="rgba(20,199,255,0.20)" />
-            <stop offset="70%" stopColor="rgba(20,199,255,0.06)" />
-            <stop offset="100%" stopColor="rgba(20,199,255,0.00)" />
+            <stop offset="0%" stopColor="rgba(235,240,255,0.14)" />
+            <stop offset="70%" stopColor="rgba(235,240,255,0.05)" />
+            <stop offset="100%" stopColor="rgba(235,240,255,0.00)" />
           </radialGradient>
 
           <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
@@ -207,7 +208,7 @@ export function CircleOfFifths({
           cy={cy}
           r={rOuter + 2}
           fill="none"
-          stroke="rgba(77,225,255,0.20)"
+          stroke="rgba(235,240,255,0.16)"
         />
         <circle
           cx={cx}
@@ -263,7 +264,7 @@ export function CircleOfFifths({
                 className={cn(
                   "transition-[fill,stroke] duration-200",
                   slug
-                    ? "hover:fill-[rgba(20,199,255,0.28)] hover:stroke-[rgba(77,225,255,0.35)]"
+                    ? "hover:fill-[rgba(235,240,255,0.18)] hover:stroke-[rgba(235,240,255,0.26)]"
                     : "",
                 )}
                 filter={slug && isHovered ? "url(#softGlow)" : undefined}
@@ -297,8 +298,8 @@ export function CircleOfFifths({
           const inner = INNER_RELATIVE_MINORS[idx];
           const slug = inner?.slug;
           const pct = pctForSlug(slug);
-          const alpha = 0.02 + (pct / 100) * 0.22;
-          const fill = `rgba(134,97,255,${alpha.toFixed(3)})`;
+          const alpha = 0.02 + (pct / 100) * 0.18;
+          const fill = `rgba(190,195,210,${alpha.toFixed(3)})`;
 
           const midAngle = (startAngle + endAngle) / 2;
           const labelPos = polarToCartesian(cx, cy, (rInner2Outer + rInner2Inner) / 2, midAngle);
@@ -322,7 +323,7 @@ export function CircleOfFifths({
                 className={cn(
                   "transition-[fill,stroke] duration-200",
                   slug
-                    ? "hover:fill-[rgba(134,97,255,0.26)] hover:stroke-[rgba(134,97,255,0.45)]"
+                    ? "hover:fill-[rgba(190,195,210,0.18)] hover:stroke-[rgba(190,195,210,0.28)]"
                     : "",
                 )}
                 filter={slug && isHovered ? "url(#softGlow)" : undefined}
