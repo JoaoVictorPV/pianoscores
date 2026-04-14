@@ -88,14 +88,14 @@ export function CircleOfFifths({
 }) {
   const [hovered, setHovered] = React.useState<KeyId | null>(null);
   const [hoveredInner, setHoveredInner] = React.useState<number | null>(null);
-  const size = 520;
+  const size = 720;
   const cx = size / 2;
   const cy = size / 2;
-  const rOuter = 220;
-  const rInner = 150;
+  const rOuter = 300;
+  const rInner = 205;
   // Inner ring (relative minors) is intentionally thicker for readability on iPad.
-  const rInner2Outer = 148;
-  const rInner2Inner = 92;
+  const rInner2Outer = 200;
+  const rInner2Inner = 120;
 
   const { progress, hydrated, hydrate } = useProgressStore();
 
@@ -158,13 +158,22 @@ export function CircleOfFifths({
     return labelForSlug(slug, `${id} (em breve)`);
   }
 
-  function fillFor(id: KeyId) {
+  function fillForOuter(id: KeyId) {
     const pct = pctForSlug(outerMajorToSlug[id]);
-    const base = 0.04;
-    const glow = 0.34;
+    const base = 0.05;
+    const glow = 0.42;
     const alpha = base + (pct / 100) * glow;
-    // Purple heat glow (more visible and iPad Safari-friendly: plain rgba).
-    return `rgba(139,92,246,${alpha.toFixed(3)})`;
+    // Outer ring: cyan/teal (modern + contrasts inner ring)
+    return `rgba(20,199,255,${alpha.toFixed(3)})`;
+  }
+
+  function fillForInner(slug?: KeySlug) {
+    const pct = pctForSlug(slug);
+    const base = 0.05;
+    const glow = 0.38;
+    const alpha = base + (pct / 100) * glow;
+    // Inner ring: violet/purple
+    return `rgba(167,139,250,${alpha.toFixed(3)})`;
   }
 
   const hoveredSlug = hovered ? outerMajorToSlug[hovered] : undefined;
@@ -177,7 +186,7 @@ export function CircleOfFifths({
     <div className={cn("flex w-full flex-col items-center justify-center", className)}>
       <svg
         viewBox={`0 0 ${size} ${size}`}
-        className="h-[320px] w-[320px] md:h-[420px] md:w-[420px]"
+        className="h-[78vmin] w-[78vmin] max-h-[860px] max-w-[860px] md:h-[86vmin] md:w-[86vmin]"
         role="img"
         aria-label="Círculo das Quintas"
       >
@@ -246,7 +255,7 @@ export function CircleOfFifths({
 
           const path = describeArc(cx, cy, rOuter, rInner, startAngle, endAngle);
 
-          const fill = fillFor(k.id);
+          const fill = fillForOuter(k.id);
 
           const midAngle = (startAngle + endAngle) / 2;
           const labelPos = polarToCartesian(cx, cy, (rOuter + rInner) / 2, midAngle);
@@ -270,7 +279,7 @@ export function CircleOfFifths({
                 className={cn(
                   "transition-[fill,stroke] duration-200",
                   slug
-                    ? "hover:fill-[rgba(139,92,246,0.22)] hover:stroke-[rgba(167,139,250,0.30)]"
+                    ? "hover:fill-[rgba(20,199,255,0.26)] hover:stroke-[rgba(77,225,255,0.34)]"
                     : "",
                 )}
                 filter={slug && isHovered ? "url(#softGlow)" : undefined}
@@ -303,9 +312,7 @@ export function CircleOfFifths({
 
           const inner = INNER_RELATIVE_MINORS[idx];
           const slug = inner?.slug;
-          const pct = pctForSlug(slug);
-          const alpha = 0.03 + (pct / 100) * 0.28;
-          const fill = `rgba(167,139,250,${alpha.toFixed(3)})`;
+          const fill = fillForInner(slug);
 
           const midAngle = (startAngle + endAngle) / 2;
           const labelPos = polarToCartesian(cx, cy, (rInner2Outer + rInner2Inner) / 2, midAngle);
@@ -329,7 +336,7 @@ export function CircleOfFifths({
                 className={cn(
                   "transition-[fill,stroke] duration-200",
                   slug
-                    ? "hover:fill-[rgba(167,139,250,0.26)] hover:stroke-[rgba(167,139,250,0.32)]"
+                    ? "hover:fill-[rgba(167,139,250,0.30)] hover:stroke-[rgba(216,180,254,0.34)]"
                     : "",
                 )}
                 filter={slug && isHovered ? "url(#softGlow)" : undefined}
@@ -353,13 +360,7 @@ export function CircleOfFifths({
           );
         })}
 
-        <circle
-          cx={cx}
-          cy={cy}
-          r={96}
-          fill="rgba(14,17,27,0.92)"
-          stroke="rgba(255,255,255,0.07)"
-        />
+        <circle cx={cx} cy={cy} r={122} fill="rgba(10,11,16,0.92)" stroke="rgba(255,255,255,0.07)" />
         <text
           x={cx}
           y={cy - 8}

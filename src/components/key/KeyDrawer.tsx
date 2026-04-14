@@ -4,7 +4,7 @@ import * as React from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import * as ScrollArea from "@radix-ui/react-scroll-area";
 import * as Accordion from "@radix-ui/react-accordion";
-import { X } from "lucide-react";
+import { Apple, FileText, PlayCircle, X } from "lucide-react";
 
 import type { KeyContent } from "@/content/keys";
 import { cn } from "@/lib/cn";
@@ -13,97 +13,6 @@ import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { getComposerBlurb } from "@/content/composers";
 import { getRepertoireDeepDive } from "@/content/repertoireDeepDive";
-
-function autoExerciseGoals(title: string) {
-  const t = title.toLowerCase();
-  if (t.includes("escala")) {
-    return [
-      "Uniformizar timbre e volume em todas as notas (inclusive nos cruzamentos).",
-      "Treinar ‘polegar silencioso’: troca de posição sem clique nem degrau de dinâmica.",
-      "Construir estabilidade rítmica: a escala vira frase (não ‘subir e descer’).",
-    ];
-  }
-  if (t.includes("arpejo")) {
-    return [
-      "Transformar o arpejo em um gesto contínuo (um arco), evitando ‘escada de posições’.",
-      "Treinar antecipação de rota do antebraço: o braço chega antes do dedo.",
-      "Construir legato convincente (com ou sem pedal, dependendo do estilo).",
-    ];
-  }
-  if (t.includes("hanon")) {
-    return [
-      "Igualdade de ataque (borda nítida) + relaxamento imediato (sem acumular tensão).",
-      "Educar independência/coordenação de dedos sem ‘levantar garra’.",
-      "Quebrar memória muscular automática (especialmente quando é transposição).",
-    ];
-  }
-  if (t.includes("czerny")) {
-    return [
-      "Agilidade com contorno (jeu perlé): clareza primeiro, velocidade depois.",
-      "Regularidade: repetir sem perder intenção musical.",
-      "Sincronizar olho e mão (antecipação visual).",
-    ];
-  }
-  if (t.includes("voicing") || t.includes("voz")) {
-    return [
-      "Separar camadas de volume na mesma mão (melodia canta; internas sustentam).",
-      "Treinar ‘peso distribuído’ (som cheio) sem apertar as notas internas.",
-    ];
-  }
-  if (t.includes("staccato")) {
-    return [
-      "Staccato elástico (quique), sem martelar nem travar o antebraço.",
-      "Borda clara no ataque + soltura imediata (som curto, corpo disponível).",
-    ];
-  }
-  if (t.includes("células rítmicas") || t.includes("células")) {
-    return [
-      "Diagnosticar pontos de ansiedade/embolação (ritmos alterados expõem falhas).",
-      "Reprogramar coordenação para voltar ao ritmo normal com estrada lisa.",
-    ];
-  }
-  if (t.includes("leitura")) {
-    return [
-      "Treinar fluxo (não parar) e reduzir ‘pânico de nota’.",
-      "Forçar o olho a trabalhar à frente (mão acalma quando o olho chega cedo).",
-    ];
-  }
-  return [
-    "Consolidar controle fino (clareza, relaxamento e repetição consciente).",
-    "Treinar estabilidade de gesto (o mesmo som em repetições iguais).",
-  ];
-}
-
-function autoExerciseHowTo(title: string) {
-  const t = title.toLowerCase();
-  const base = [
-    "Comece em andamento lento (onde você controla 100% do gesto) e só acelere quando estiver ‘liso’.",
-    "Use 2 dinâmicas: p (lupa de controle) e mf (som cheio sem dureza).",
-    "Faça sessões curtas (30–90s) com pausas: técnica boa não depende de ‘força na marra’.",
-    "Meta de conforto: ombro baixo, punho estável (estável ≠ rígido), dedos perto da tecla.",
-    "Se surgir dor/aguda: pare e ajuste. Dor é bug de mecânica, não medalha.",
-  ];
-
-  if (t.includes("escala") || t.includes("arpejo")) {
-    return [
-      "Mãos separadas primeiro (som e rota), depois mãos juntas (sincronização).",
-      "Treine 3 articulações: legato, non-legato e staccato leve (mesma soltura em todas).",
-      "Use metrônomo como ‘juiz’ do pulso — mas não sacrifique timbre por velocidade.",
-      ...base,
-    ];
-  }
-
-  if (t.includes("hanon") || t.includes("czerny")) {
-    return [
-      "Toque como se fosse música: frase, direção e som bonito (exercício feio ensina feiura).",
-      "Se embolar, quebre em células de 2–4 notas e reconstrua.",
-      "Grave 20–30s e ouça: o microfone denuncia irregularidade melhor que a sensação da mão.",
-      ...base,
-    ];
-  }
-
-  return base;
-}
 
 function ProgressBar({ value }: { value: number }) {
   return (
@@ -152,16 +61,29 @@ function CheckItem({
   );
 }
 
+function linkIcon(label: string) {
+  const l = label.toLowerCase();
+  if (l.includes("youtube")) return <PlayCircle className="h-4 w-4" />;
+  if (l.includes("spotify")) {
+    // No official Spotify icon in lucide; use PlayCircle as neutral player icon.
+    return <PlayCircle className="h-4 w-4" />;
+  }
+  if (l.includes("apple")) return <Apple className="h-4 w-4" />;
+  if (l.includes("imslp")) return <FileText className="h-4 w-4" />;
+  return <PlayCircle className="h-4 w-4" />;
+}
+
 function ExternalLink({ href, label }: { href: string; label: string }) {
   return (
     <a
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="inline-flex items-center gap-2 rounded-xl border border-[var(--color-border)] bg-[var(--color-panel-900)] px-3 py-1.5 text-xs text-[var(--color-foreground)] hover:bg-[color-mix(in_oklab,var(--color-panel-900),white_6%)]"
+      aria-label={label}
+      title={label}
+      className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-[var(--color-border)] bg-[var(--color-panel-900)] text-[var(--color-foreground)] hover:bg-[color-mix(in_oklab,var(--color-panel-900),white_6%)]"
     >
-      {label}
-      <span className="text-[var(--color-muted)]">↗</span>
+      {linkIcon(label)}
     </a>
   );
 }
@@ -205,8 +127,9 @@ export function KeyDrawer({
         <Dialog.Overlay className="fixed inset-0 bg-black/60 backdrop-blur-sm" />
         <Dialog.Content
           className={cn(
-            "fixed bottom-0 left-0 right-0 max-h-[86vh] rounded-t-3xl border border-[var(--color-border)] bg-[color-mix(in_oklab,var(--color-bg-950),black_10%)] shadow-[var(--shadow-glow)]",
-            "md:bottom-auto md:left-auto md:right-6 md:top-6 md:h-[calc(100vh-3rem)] md:w-[520px] md:max-h-none md:rounded-3xl",
+            "fixed left-1/2 top-1/2 w-[min(960px,calc(100vw-1.5rem))] max-w-[960px] -translate-x-1/2 -translate-y-1/2",
+            "max-h-[min(92vh,980px)] rounded-3xl border border-[var(--color-border)]",
+            "bg-[color-mix(in_oklab,var(--color-bg-950),black_10%)] shadow-[var(--shadow-glow)]",
           )}
         >
           <div className="flex items-start justify-between gap-4 border-b border-[var(--color-border)] px-5 py-4">
@@ -219,8 +142,6 @@ export function KeyDrawer({
               </Dialog.Description>
               <div className="mt-3 flex flex-wrap items-center gap-2">
                 <Badge>{pct}% completo</Badge>
-                <Badge>{keyContent.estimatedReadingMinutes} min de leitura (estim.)</Badge>
-                {k?.concludedAt ? <Badge>Concluída ✓</Badge> : <Badge>Meta: 3 obras</Badge>}
               </div>
               <div className="mt-3">
                 <ProgressBar value={pct} />
@@ -234,9 +155,9 @@ export function KeyDrawer({
             </Dialog.Close>
           </div>
 
-          <ScrollArea.Root className="h-[calc(86vh-88px)] md:h-[calc(100vh-3rem-88px)]">
+          <ScrollArea.Root className="h-[calc(min(92vh,980px)-88px)]">
             <ScrollArea.Viewport className="h-full px-5 py-5">
-              <Accordion.Root type="multiple" className="space-y-3" defaultValue={["mechanical", "repertoire"]}>
+              <Accordion.Root type="multiple" className="space-y-3" defaultValue={[]}>
                 {/* Mechanical */}
                 <Accordion.Item value="mechanical" className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-panel-900)]">
                   <Accordion.Header>
@@ -273,24 +194,6 @@ export function KeyDrawer({
                               <li key={i}>{n}</li>
                             ))}
                           </ul>
-
-                          <div className="mt-4 rounded-2xl border border-[var(--color-border)] bg-[rgba(0,0,0,0.18)] p-4">
-                            <div className="text-xs font-semibold text-[var(--color-foreground)]">Objetivo</div>
-                            <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm leading-6 text-[var(--color-muted)]">
-                              {autoExerciseGoals(ex.title).map((t) => (
-                                <li key={t}>{t}</li>
-                              ))}
-                            </ul>
-
-                            <div className="mt-4 text-xs font-semibold text-[var(--color-foreground)]">
-                              Como praticar (protocolo)
-                            </div>
-                            <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm leading-6 text-[var(--color-muted)]">
-                              {autoExerciseHowTo(ex.title).map((t) => (
-                                <li key={t}>{t}</li>
-                              ))}
-                            </ul>
-                          </div>
 
                           <div className="mt-4">
                             <CheckItem

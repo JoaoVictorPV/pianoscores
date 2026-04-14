@@ -12,13 +12,8 @@ export function HomeClient() {
 
   return (
     <div className="relative flex-1">
-      <div className="relative mx-auto flex w-full max-w-6xl flex-col items-center px-4 py-10 md:px-8 md:py-14">
-        <h1 className="text-center text-3xl font-semibold tracking-tight md:text-4xl">
-          Observatório das Quintas
-        </h1>
-        <div className="mt-8">
-          <CircleOfFifths onPickKey={(slug) => setSelected(slug)} />
-        </div>
+      <div className="relative mx-auto flex min-h-[calc(100vh-0px)] w-full flex-col items-center justify-center px-4 py-6 md:px-8">
+        <CircleOfFifths onPickKey={(slug) => setSelected(slug)} />
       </div>
 
       {selectedContent ? (
