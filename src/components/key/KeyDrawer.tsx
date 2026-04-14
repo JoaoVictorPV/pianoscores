@@ -12,6 +12,7 @@ import { useProgressStore } from "@/store/progressStore";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { getComposerBlurb } from "@/content/composers";
+import { getRepertoireDeepDive } from "@/content/repertoireDeepDive";
 
 function autoExerciseGoals(title: string) {
   const t = title.toLowerCase();
@@ -321,6 +322,7 @@ export function KeyDrawer({
                     <div className="mt-4 space-y-3">
                       {keyContent.repertoire.items.map((item) => {
                         const done = k?.repertoireDone.includes(item.id) ?? false;
+                        const deepDive = getRepertoireDeepDive(item);
                         return (
                           <div key={item.id} className="rounded-2xl border border-[var(--color-border)] bg-[color-mix(in_oklab,var(--color-panel-900),white_4%)] p-4">
                             <div className="flex flex-wrap items-start justify-between gap-3">
@@ -336,6 +338,76 @@ export function KeyDrawer({
                             </div>
 
                             <p className="mt-3 text-sm leading-6 text-[var(--color-muted)]">{item.notes}</p>
+
+                            <div className="mt-4 rounded-2xl border border-[var(--color-border)] bg-[rgba(0,0,0,0.18)] p-4">
+                              <div className="text-xs font-semibold text-[var(--color-foreground)]">
+                                Simpósio da obra (aprofundado)
+                              </div>
+
+                              <Accordion.Root type="multiple" className="mt-3 space-y-2">
+                                <Accordion.Item value={`summary-${item.id}`} className="rounded-xl border border-[var(--color-border)]">
+                                  <Accordion.Header>
+                                    <Accordion.Trigger className="flex w-full items-center justify-between gap-4 px-3 py-2 text-left">
+                                      <span className="text-xs font-semibold text-[var(--color-foreground)]">
+                                        Resumo (o que esta obra te dá)
+                                      </span>
+                                      <span className="text-[var(--color-muted)]">▼</span>
+                                    </Accordion.Trigger>
+                                  </Accordion.Header>
+                                  <Accordion.Content className="px-3 pb-3">
+                                    <ul className="list-disc space-y-1.5 pl-5 text-sm leading-6 text-[var(--color-muted)]">
+                                      {deepDive.summary.map((p, i) => (
+                                        <li key={i}>{p}</li>
+                                      ))}
+                                    </ul>
+                                  </Accordion.Content>
+                                </Accordion.Item>
+
+                                {deepDive.sections.map((sec) => (
+                                  <Accordion.Item
+                                    key={`${item.id}-${sec.title}`}
+                                    value={`${item.id}-${sec.title}`}
+                                    className="rounded-xl border border-[var(--color-border)]"
+                                  >
+                                    <Accordion.Header>
+                                      <Accordion.Trigger className="flex w-full items-center justify-between gap-4 px-3 py-2 text-left">
+                                        <span className="text-xs font-semibold text-[var(--color-foreground)]">
+                                          {sec.title}
+                                        </span>
+                                        <span className="text-[var(--color-muted)]">▼</span>
+                                      </Accordion.Trigger>
+                                    </Accordion.Header>
+                                    <Accordion.Content className="px-3 pb-3">
+                                      <div className="space-y-3 text-sm leading-6 text-[var(--color-muted)]">
+                                        {sec.paragraphs.map((p, i) => (
+                                          <p key={i}>{p}</p>
+                                        ))}
+                                      </div>
+                                    </Accordion.Content>
+                                  </Accordion.Item>
+                                ))}
+
+                                {deepDive.takeaways?.length ? (
+                                  <Accordion.Item value={`takeaways-${item.id}`} className="rounded-xl border border-[var(--color-border)]">
+                                    <Accordion.Header>
+                                      <Accordion.Trigger className="flex w-full items-center justify-between gap-4 px-3 py-2 text-left">
+                                        <span className="text-xs font-semibold text-[var(--color-foreground)]">
+                                          Takeaways (o que praticar/ouvir)
+                                        </span>
+                                        <span className="text-[var(--color-muted)]">▼</span>
+                                      </Accordion.Trigger>
+                                    </Accordion.Header>
+                                    <Accordion.Content className="px-3 pb-3">
+                                      <ul className="list-disc space-y-1.5 pl-5 text-sm leading-6 text-[var(--color-muted)]">
+                                        {deepDive.takeaways.map((t) => (
+                                          <li key={t}>{t}</li>
+                                        ))}
+                                      </ul>
+                                    </Accordion.Content>
+                                  </Accordion.Item>
+                                ) : null}
+                              </Accordion.Root>
+                            </div>
 
                             <div className="mt-4 rounded-2xl border border-[var(--color-border)] bg-[rgba(0,0,0,0.18)] p-4">
                               <div className="text-xs font-semibold text-[var(--color-foreground)]">
