@@ -247,25 +247,23 @@ export function KeyDrawer({
                                 Simpósio da obra (aprofundado)
                               </div>
 
-                              <Accordion.Root type="multiple" className="mt-3 space-y-2">
-                                <Accordion.Item value={`summary-${item.id}`} className="rounded-xl border border-[var(--color-border)]">
-                                  <Accordion.Header>
-                                    <Accordion.Trigger className="flex w-full items-center justify-between gap-4 px-3 py-2 text-left">
-                                      <span className="text-xs font-semibold text-[var(--color-foreground)]">
-                                        Resumo (o que esta obra te dá)
-                                      </span>
-                                      <span className="text-[var(--color-muted)]">▼</span>
-                                    </Accordion.Trigger>
-                                  </Accordion.Header>
-                                  <Accordion.Content className="px-3 pb-3">
-                                    <ul className="list-disc space-y-1.5 pl-5 text-sm leading-6 text-[var(--color-muted)]">
-                                      {deepDive.summary.map((p, i) => (
-                                        <li key={i}>{p}</li>
-                                      ))}
-                                    </ul>
-                                  </Accordion.Content>
-                                </Accordion.Item>
+                              {/*
+                               * IMPORTANTE: o usuário precisa ver conteúdo "enciclopédico" imediatamente.
+                               * Por isso, mostramos o RESUMO sempre aberto e deixamos o restante em accordion.
+                               */}
 
+                              <div className="mt-3 rounded-xl border border-[var(--color-border)] bg-[rgba(0,0,0,0.12)] px-3 py-3">
+                                <div className="text-xs font-semibold text-[var(--color-foreground)]">
+                                  Resumo (o que esta obra te dá)
+                                </div>
+                                <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm leading-6 text-[var(--color-muted)]">
+                                  {deepDive.summary.map((p, i) => (
+                                    <li key={i}>{p}</li>
+                                  ))}
+                                </ul>
+                              </div>
+
+                              <Accordion.Root type="multiple" className="mt-3 space-y-2">
                                 {deepDive.sections.map((sec) => (
                                   <Accordion.Item
                                     key={`${item.id}-${sec.title}`}

@@ -1,5 +1,5 @@
 
-> Progresso: **43/234** deepdives manuais (enciclopédicos) implementados.
+> Progresso: **82/234** deepdives manuais (enciclopédicos) implementados.
 # Tracker — Deepdives de Repertório
 
 Este arquivo lista **todas as obras sugeridas no site** (repertório) e marca automaticamente quais já têm deepdive manual (enciclopédico) implementado.
@@ -64,58 +64,58 @@ Gerado por: `node scripts/update-repertoire-tracker.mjs`
 - [x] **L. v. Beethoven** — Sonata Op. 27 nº 2 ‘Ao Luar’ (C♯ menor) — I mov. (e além, se quiser)  _(id: `beethoven-op27-2`)_
 - [x] **Frédéric Chopin** — Noturno Op. 27 nº 1 (C♯ menor) — cantabile e arquitetura  _(id: `chopin-op27-1`)_
 - [x] **Sergei Rachmaninoff** — Prelúdio Op. 3 nº 2 (C♯ menor) — peso sem dureza  _(id: `rachmaninoff-op3-2`)_
-- [ ] **J. S. Bach** — Cravo Bem Temperado, Livro I: Prelúdio e Fuga em C♯ menor (BWV 849)  _(id: `bach-wtc1-csharp-minor`)_
-- [ ] **Frédéric Chopin** — Scherzo nº 3 Op. 39 (C♯ menor) — trechos  _(id: `chopin-op39`)_
-- [ ] **Alexander Scriabin** — Estudo Op. 2 nº 1 (C♯ menor) — lirismo tenso  _(id: `scriabin-op2-1`)_
-- [ ] **Frédéric Chopin** — (ponte) Estudo Op. 10 nº 4 (C# menor?) — ponte de agilidade  _(id: `bridge-chopin-op10-4`)_
+- [x] **J. S. Bach** — Cravo Bem Temperado, Livro I: Prelúdio e Fuga em C♯ menor (BWV 849)  _(id: `bach-wtc1-csharp-minor`)_
+- [x] **Frédéric Chopin** — Scherzo nº 3 Op. 39 (C♯ menor) — trechos  _(id: `chopin-op39`)_
+- [x] **Alexander Scriabin** — Estudo Op. 2 nº 1 (C♯ menor) — lirismo tenso  _(id: `scriabin-op2-1`)_
+- [x] **Frédéric Chopin** — (ponte) Estudo Op. 10 nº 4 (C# menor?) — ponte de agilidade  _(id: `bridge-chopin-op10-4`)_
 - [x] **Claude Debussy** — (ponte) Clair de Lune — controle de pedal e camadas  _(id: `bridge-debussy`)_
 - [x] **Johannes Brahms** — (ponte) Intermezzi (seleção) — densidade íntima  _(id: `bridge-brahms`)_
 
 ## e-minor
 
-- [ ] **Frédéric Chopin** — Prelúdio Op. 28 nº 4 (E menor) — respiração e harmonia  _(id: `chopin-op28-4`)_
-- [ ] **Frédéric Chopin** — Noturno Op. 72 nº 1 (E menor) — cantabile com sombra  _(id: `chopin-op72-1`)_
-- [ ] **Frédéric Chopin** — Mazurca Op. 41 nº 2 (E menor) — dança com acento inteligente  _(id: `chopin-op41-2`)_
-- [ ] **J. S. Bach** — Cravo Bem Temperado, Livro I: Prelúdio e Fuga em E menor (BWV 855)  _(id: `bach-bwv855`)_
-- [ ] **Felix Mendelssohn** — Prelúdio e Fuga Op. 35 nº 1 (E menor)  _(id: `mendelssohn-op35-1`)_
-- [ ] **L. v. Beethoven** — Sonata Op. 90 (E menor) — I mov. (trechos)  _(id: `beethoven-op90`)_
-- [ ] **Joseph Haydn** — Sonata Hob. XVI:34 (E menor) — seleção de movimentos/trechos  _(id: `haydn-hob-xvi-34`)_
-- [ ] **Edvard Grieg** — Peças Líricas Op. 12 nº 1 ‘Arietta’ (E menor) — simplicidade profunda  _(id: `grieg-op12-1`)_
-- [ ] **Sergei Rachmaninoff** — Prelúdio Op. 32 nº 4 (E menor) — peso sem dureza  _(id: `rachmaninoff-op32-4`)_
-- [ ] **Friedrich Burgmüller** — (ponte) 25 Estudos Fáceis Op. 100 — escolha 1 estudo em modo menor e transfira o som para E menor  _(id: `bridge-burgmuller-op100`)_
+- [x] **Frédéric Chopin** — Prelúdio Op. 28 nº 4 (E menor) — respiração e harmonia  _(id: `chopin-op28-4`)_
+- [x] **Frédéric Chopin** — Noturno Op. 72 nº 1 (E menor) — cantabile com sombra  _(id: `chopin-op72-1`)_
+- [x] **Frédéric Chopin** — Mazurca Op. 41 nº 2 (E menor) — dança com acento inteligente  _(id: `chopin-op41-2`)_
+- [x] **J. S. Bach** — Cravo Bem Temperado, Livro I: Prelúdio e Fuga em E menor (BWV 855)  _(id: `bach-bwv855`)_
+- [x] **Felix Mendelssohn** — Prelúdio e Fuga Op. 35 nº 1 (E menor)  _(id: `mendelssohn-op35-1`)_
+- [x] **L. v. Beethoven** — Sonata Op. 90 (E menor) — I mov. (trechos)  _(id: `beethoven-op90`)_
+- [x] **Joseph Haydn** — Sonata Hob. XVI:34 (E menor) — seleção de movimentos/trechos  _(id: `haydn-hob-xvi-34`)_
+- [x] **Edvard Grieg** — Peças Líricas Op. 12 nº 1 ‘Arietta’ (E menor) — simplicidade profunda  _(id: `grieg-op12-1`)_
+- [x] **Sergei Rachmaninoff** — Prelúdio Op. 32 nº 4 (E menor) — peso sem dureza  _(id: `rachmaninoff-op32-4`)_
+- [x] **Friedrich Burgmüller** — (ponte) 25 Estudos Fáceis Op. 100 — escolha 1 estudo em modo menor e transfira o som para E menor  _(id: `bridge-burgmuller-op100`)_
 
 ## b-minor
 
-- [ ] **J. S. Bach** — Cravo Bem Temperado, Livro I: Prelúdio e Fuga em Si menor (BWV 869)  _(id: `bach-wtc1-bm`)_
-- [ ] **Frédéric Chopin** — Sonata nº 3 Op. 58 (Si menor) — trechos  _(id: `chopin-op58`)_
-- [ ] **Franz Liszt** — Sonata em Si menor — trechos (o Everest)  _(id: `liszt-sonata`)_
-- [ ] **P. I. Tchaikovsky** — Children's Album Op. 39: ‘Sweet Dream’ (Si menor) — cantabile  _(id: `tchaikovsky-op39-16`)_
-- [ ] **Robert Schumann** — Kinderszenen Op. 15 nº 7 ‘Träumerei’ (Fá maior) — (ponte: cantabile)   _(id: `schumann-op15-7`)_
-- [ ] **Franz Schubert** — Sonata D 960 (Si bemol maior) — (ponte: arquitetura lenta)   _(id: `schubert-d960-2`)_
-- [ ] **Edvard Grieg** — Lyric Pieces Op. 54 nº 4 ‘Notturno’ (Si menor) — cor e pedal  _(id: `grieg-op54-4`)_
-- [ ] **Johannes Brahms** — Intermezzo Op. 119 nº 1 (Si menor) — densidade íntima  _(id: `brahms-op119-1`)_
-- [ ] **Sergei Rachmaninoff** — Prelúdio Op. 23 nº 5 (Sol menor) — (ponte: acentos e energia)  _(id: `rachmaninoff-op23-5`)_
+- [x] **J. S. Bach** — Cravo Bem Temperado, Livro I: Prelúdio e Fuga em Si menor (BWV 869)  _(id: `bach-wtc1-bm`)_
+- [x] **Frédéric Chopin** — Sonata nº 3 Op. 58 (Si menor) — trechos  _(id: `chopin-op58`)_
+- [x] **Franz Liszt** — Sonata em Si menor — trechos (o Everest)  _(id: `liszt-sonata`)_
+- [x] **P. I. Tchaikovsky** — Children's Album Op. 39: ‘Sweet Dream’ (Si menor) — cantabile  _(id: `tchaikovsky-op39-16`)_
+- [x] **Robert Schumann** — Kinderszenen Op. 15 nº 7 ‘Träumerei’ (Fá maior) — (ponte: cantabile)   _(id: `schumann-op15-7`)_
+- [x] **Franz Schubert** — Sonata D 960 (Si bemol maior) — (ponte: arquitetura lenta)   _(id: `schubert-d960-2`)_
+- [x] **Edvard Grieg** — Lyric Pieces Op. 54 nº 4 ‘Notturno’ (Si menor) — cor e pedal  _(id: `grieg-op54-4`)_
+- [x] **Johannes Brahms** — Intermezzo Op. 119 nº 1 (Si menor) — densidade íntima  _(id: `brahms-op119-1`)_
+- [x] **Sergei Rachmaninoff** — Prelúdio Op. 23 nº 5 (Sol menor) — (ponte: acentos e energia)  _(id: `rachmaninoff-op23-5`)_
 
 ## fsharp-minor
 
-- [ ] **Frédéric Chopin** — Noturno Op. 48 nº 2 (F♯ menor) — drama com disciplina  _(id: `chopin-op48-2`)_
-- [ ] **Frédéric Chopin** — Polonaise-Fantaisie Op. 61 (A♭ maior) — (ponte: arquitetura)   _(id: `chopin-op44`)_
-- [ ] **Alexander Scriabin** — Estudo Op. 8 nº 12 (D# menor) — (ponte: energia e técnica)  _(id: `scriabin-op8-12`)_
-- [ ] **J. S. Bach** — Cravo Bem Temperado, Livro II: Prelúdio e Fuga em F♯ menor (BWV 883)  _(id: `bach-wtc2-fsharp-minor`)_
-- [ ] **W. A. Mozart** — Fantasia K. 475 (C menor) — (ponte: drama clássico)  _(id: `mozart-k475`)_
+- [x] **Frédéric Chopin** — Noturno Op. 48 nº 2 (F♯ menor) — drama com disciplina  _(id: `chopin-op48-2`)_
+- [x] **Frédéric Chopin** — Polonaise-Fantaisie Op. 61 (A♭ maior) — (ponte: arquitetura)   _(id: `chopin-op44`)_
+- [x] **Alexander Scriabin** — Estudo Op. 8 nº 12 (D# menor) — (ponte: energia e técnica)  _(id: `scriabin-op8-12`)_
+- [x] **J. S. Bach** — Cravo Bem Temperado, Livro II: Prelúdio e Fuga em F♯ menor (BWV 883)  _(id: `bach-wtc2-fsharp-minor`)_
+- [x] **W. A. Mozart** — Fantasia K. 475 (C menor) — (ponte: drama clássico)  _(id: `mozart-k475`)_
 - [x] **Sergei Rachmaninoff** — Morceaux de fantaisie Op. 3 nº 2 ‘Prelúdio em C# menor’ — (ponte: peso)  _(id: `rachmaninoff-op3-2`)_
-- [ ] **Robert Schumann** — Kreisleriana Op. 16 nº 2 (B♭ maior) — (ponte: vozes e turbulência)   _(id: `schumann-op16-2`)_
-- [ ] **P. I. Tchaikovsky** — 6 Pieces Op. 19 nº 2 ‘Nocturne’ (F♯ menor) — canto e pedal  _(id: `tchaikovsky-op19-2`)_
-- [ ] **John Field** — Noturno em F♯ menor (seleção) — o DNA do noturno  _(id: `field-nocturne-fsharp-minor`)_
-- [ ] **Edvard Grieg** — Lyric Pieces Op. 54 nº 4 ‘Notturno’ (Si menor) — (ponte: neblina controlada)  _(id: `grieg-op54-4-bridge`)_
+- [x] **Robert Schumann** — Kreisleriana Op. 16 nº 2 (B♭ maior) — (ponte: vozes e turbulência)   _(id: `schumann-op16-2`)_
+- [x] **P. I. Tchaikovsky** — 6 Pieces Op. 19 nº 2 ‘Nocturne’ (F♯ menor) — canto e pedal  _(id: `tchaikovsky-op19-2`)_
+- [x] **John Field** — Noturno em F♯ menor (seleção) — o DNA do noturno  _(id: `field-nocturne-fsharp-minor`)_
+- [x] **Edvard Grieg** — Lyric Pieces Op. 54 nº 4 ‘Notturno’ (Si menor) — (ponte: neblina controlada)  _(id: `grieg-op54-4-bridge`)_
 
 ## c-major
 
-- [ ] **J. S. Bach (atribuído/coleções pedagógicas)** — Minueto em Sol Maior (BWV Anh. 114) — relaciona com C pela clareza de frase  _(id: `bach-minuet-g-major`)_
-- [ ] **Muzio Clementi** — Sonatina Op. 36 nº 1 (I mov.)  _(id: `clementi-op36-1`)_
-- [ ] **W. A. Mozart** — Sonata K. 545 (I mov.)  _(id: `mozart-k545-1`)_
-- [ ] **Robert Schumann** — Melodia (Álbum para a Juventude, Op. 68 nº 1)  _(id: `schumann-op68-1`)_
-- [ ] **Piotr Ilyich Tchaikovsky** — The New Doll (Album for the Young, Op. 39 nº 9)  _(id: `tchaikovsky-op39-9`)_
+- [x] **J. S. Bach (atribuído/coleções pedagógicas)** — Minueto em Sol Maior (BWV Anh. 114) — relaciona com C pela clareza de frase  _(id: `bach-minuet-g-major`)_
+- [x] **Muzio Clementi** — Sonatina Op. 36 nº 1 (I mov.)  _(id: `clementi-op36-1`)_
+- [x] **W. A. Mozart** — Sonata K. 545 (I mov.)  _(id: `mozart-k545-1`)_
+- [x] **Robert Schumann** — Melodia (Álbum para a Juventude, Op. 68 nº 1)  _(id: `schumann-op68-1`)_
+- [x] **Piotr Ilyich Tchaikovsky** — The New Doll (Album for the Young, Op. 39 nº 9)  _(id: `tchaikovsky-op39-9`)_
 - [ ] **Friedrich Burgmüller** — Arabesque (25 Estudos Fáceis, Op. 100 nº 2)  _(id: `burgmuller-op100-2`)_
 - [ ] **L. v. Beethoven** — Sonata Op. 49 nº 2 (I mov.)  _(id: `beethoven-op49-2-1`)_
 - [ ] **Claude Debussy** — Clair de Lune (Suite Bergamasque) — C Maior como base de ‘luz’  _(id: `debussy-clair-de-lune`)_
@@ -147,7 +147,7 @@ Gerado por: `node scripts/update-repertoire-tracker.mjs`
 - [ ] **L. v. Beethoven** — Sonata Op. 10 nº 3 (D Maior) — escolha um movimento/trechos  _(id: `beethoven-op10-3`)_
 - [ ] **J. S. Bach** — Pequeno Prelúdio em Ré Maior (BWV 936)  _(id: `bach-prelude-bwv936`)_
 - [ ] **Friedrich Kuhlau** — Sonatina Op. 55 nº 1 — trechos em Ré e vizinhança (boa ponte)  _(id: `kuhlau-op55-1-d`)_
-- [ ] **Piotr Ilyich Tchaikovsky** — The New Doll (Album for the Young, Op. 39 nº 9) — referência estética  _(id: `tchaikovsky-op39-9`)_
+- [x] **Piotr Ilyich Tchaikovsky** — The New Doll (Album for the Young, Op. 39 nº 9) — referência estética  _(id: `tchaikovsky-op39-9`)_
 - [ ] **Robert Schumann** — Soldier's March (Álbum para a Juventude, Op. 68) — marcha e precisão  _(id: `schumann-op68-2`)_
 - [ ] **François-Joseph Gossec** — Gavotte em Ré Maior (arranjos/edições) — dança clássica  _(id: `gossec-gavotte`)_
 
@@ -156,7 +156,7 @@ Gerado por: `node scripts/update-repertoire-tracker.mjs`
 - [ ] **W. A. Mozart** — Sonata K. 310 (A menor) — trechos (é intensa)  _(id: `mozart-k310`)_
 - [ ] **J. S. Bach** — Invenção a duas vozes em Lá menor (BWV 784)  _(id: `bach-invention-13`)_
 - [ ] **Frédéric Chopin** — Valsa em Lá menor (pósuma) — rubato com disciplina  _(id: `chopin-waltz-a-minor`)_
-- [ ] **Robert Schumann** — Melodia (Álbum para a Juventude, Op. 68 nº 1) — cantabile sem drama  _(id: `schumann-op68-1`)_
+- [x] **Robert Schumann** — Melodia (Álbum para a Juventude, Op. 68 nº 1) — cantabile sem drama  _(id: `schumann-op68-1`)_
 - [ ] **Piotr Ilyich Tchaikovsky** — Morning Prayer (Album for the Young, Op. 39 nº 1/2 — seleção) — calma controlada  _(id: `tchaikovsky-op39-2`)_
 - [ ] **Friedrich Burgmüller** — Consolation (25 Estudos Fáceis, Op. 100 nº 13) — canto e sombra  _(id: `burgmuller-op100-13`)_
 - [ ] **Erik Satie** — Gymnopédie nº 1 — tempo como técnica  _(id: `satie-gymnopedie-1`)_

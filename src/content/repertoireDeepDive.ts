@@ -1113,6 +1113,920 @@ const MANUAL: Partial<Record<string, RepertoireDeepDive>> = {
       "Grave 20–30s e confira se dá para cantar a voz superior sem aumentar volume geral.",
     ],
   },
+
+  "bach-wtc1-csharp-minor": {
+    summary: [
+      "WTC I em dó# menor: Bach no modo ‘noite’ — polifonia como engenharia emocional, não decoração barroca.",
+      "Treina clareza sob tensão: vozes nítidas mesmo quando a harmonia aperta.",
+    ],
+    sections: [
+      {
+        title: "O ‘problema’ real: fazer contraponto soar inevitável",
+        paragraphs: [
+          "Dó# menor tende a soar sério no teclado: a sensação tátil e o clima harmônico puxam para densidade psicológica. Bach usa isso como laboratório de discurso: sustentar tensão por lógica de voz, não por volume.",
+          "O inimigo aqui é o borrão (pedal e legato genérico). O contraponto funciona quando cada voz respira: começo, meio e fim. O ouvinte precisa conseguir seguir personagens.",
+        ],
+      },
+      {
+        title: "Como estudar (sem virar ‘só nota’)",
+        paragraphs: [
+          "No prelúdio: encontre o motor (figura recorrente) e marque viradas harmônicas como pontuação. Se você não percebe cadências, você está tocando superfície.",
+          "Na fuga: trate o sujeito como personagem. Toque apenas as entradas do sujeito; depois devolva o resto sem perder reconhecimento. Ataque + release limpos são seu ‘código-fonte’.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: Bach como treino de controle de densidade",
+        paragraphs: [
+          "Dominar WTC em tonalidades carregadas melhora seu romantismo: você aprende a separar camadas sem ‘gritar’ a melodia.",
+          "Isso transfere direto para voicing de Brahms e clareza de Rachmaninoff.",
+        ],
+      },
+    ],
+  },
+
+  "chopin-op39": {
+    summary: [
+      "Mazurkas Op. 39: Chopin ‘de raiz’ — dança polonesa filtrada por sofisticação harmônica e ironia.",
+      "Treina ritmo com sotaque (não metrônomo) e rubato que respira sem desmanchar.",
+    ],
+    sections: [
+      {
+        title: "Mazurka não é ‘valsa triste’: é idioma com sotaque",
+        paragraphs: [
+          "A mazurka é um universo rítmico: acentos deslocados, sensação de puxar/soltar e um chão de dança. Chopin transforma isso em arte de salão, mas o DNA é popular.",
+          "A pergunta que organiza sua interpretação: onde está o acento expressivo? Muitas vezes, o charme está no desvio: síncopes, atrasos e ‘olhares de lado’ harmônicos.",
+        ],
+      },
+      {
+        title: "Como estudar sem matar a dança",
+        paragraphs: [
+          "Primeiro encontre o passo (pulso estável), depois adicione o sotaque (microdeslocamentos). Rubato antes do passo vira sentimentalismo sem chão.",
+          "Truque: bata o pé em tempo regular e cante a melodia. Se ainda faz sentido, seu rubato está saudável.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: Chopin patriótico sem panfleto",
+        paragraphs: [
+          "Em Paris, Chopin vive exílio cultural. A mazurka vira uma forma de manter identidade — não com bandeira, mas com linguagem.",
+          "Interprete como memória íntima, não como marcha heroica.",
+        ],
+      },
+    ],
+  },
+
+  "scriabin-op2-1": {
+    summary: [
+      "Scriabin Op. 2 nº 1: juventude romântica com cromatismo nervoso — já dá para sentir a ‘química’ scriabiniana.",
+      "Treina cantabile em harmonia instável: linha que canta enquanto o chão muda.",
+    ],
+    sections: [
+      {
+        title: "Scriabin jovem: romântico, mas não ‘Chopin 2.0’",
+        paragraphs: [
+          "Scriabin bebe de Chopin, mas já tem outra ansiedade harmônica: ele gosta de fazer a harmonia escorregar para outra cor sem pedir licença.",
+          "Isso exige escuta harmônica: sustentar tensão por timbre e direção, não por volume.",
+        ],
+      },
+      {
+        title: "Como estudar: direção de frase + acordes-chave",
+        paragraphs: [
+          "Marque 2–3 acordes em que a harmonia vira. Sua missão é fazer o ouvinte sentir essas viradas — às vezes por micro-ênfase de timbre, às vezes por relaxamento.",
+          "Se você tocar tudo com o mesmo legato/pedal, vira névoa romântica genérica. Scriabin pede contorno.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: ponte para o século XX",
+        paragraphs: [
+          "Mesmo cedo, Scriabin aponta para um mundo onde função fica menos óbvia. Isso te prepara para Debussy e para repertório de tensão por cor.",
+          "É treino de ouvido: harmonia como ambiente, não só como cadência.",
+        ],
+      },
+    ],
+  },
+
+  "bridge-chopin-op10-4": {
+    summary: [
+      "Ponte: Étude Op. 10 nº 4 como laboratório de precisão em alta energia — velocidade como resultado de clareza.",
+      "Treina mão organizada: dedos perto, pulso vivo e nenhum movimento sobrando.",
+    ],
+    sections: [
+      {
+        title: "Por que isso é ponte e não ‘provação’",
+        paragraphs: [
+          "O benefício vem da competência: coordenar padrões rápidos sem tensão. Você não precisa tocar no tempo final para ganhar o ganho técnico-musical.",
+          "Meta: eliminar ruído. Quando a mão está organizada, o som fica limpo e a velocidade aparece como consequência.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: virtuosismo em Chopin é estética",
+        paragraphs: [
+          "Chopin escreve textura, não academia. Se a textura está limpa, a música existe. Se está suja, vira exercício.",
+          "Trate clareza como objetivo musical (não só técnico).",
+        ],
+      },
+    ],
+  },
+
+  "chopin-op28-4": {
+    summary: [
+      "Prelúdio (Op. 28 nº 4): a arte de dizer muito com quase nada — lamento harmônico sem melodrama.",
+      "Treina controle de tensão lenta: cada acorde é uma palavra; cada resolução, um suspiro com direção.",
+    ],
+    sections: [
+      {
+        title: "O que faz esse prelúdio ‘grande’ (ele é harmonia encenada)",
+        paragraphs: [
+          "Aqui o protagonista não é virtuosismo, nem melodia longa: é a progressão harmônica. Chopin escreve como se estivesse girando a câmera devagar por um quarto escuro; cada acorde muda a luz.",
+          "Isso exige maturidade: se você usa pedal como anestesia, você mata a fala. Se você toca seco demais, você mata o ar. O ponto é ressonância controlada e direção inevitável.",
+        ],
+      },
+      {
+        title: "Como estudar sem cair no ‘triste genérico’",
+        paragraphs: [
+          "Decida onde está a frase (mesmo sem melodia óbvia): qual acorde prepara, qual aponta, qual fecha. Depois, faça microdinâmicas coerentes com essa pontuação.",
+          "Truque honesto: toque sem pedal e procure legato por troca de dedos. Só depois devolva o pedal como cor — não como cola.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: a pedagogia do silêncio",
+        paragraphs: [
+          "Peças lentas curtas são cruéis porque não deixam você se esconder: qualquer tremor de pulso vira ‘mentira’ musical.",
+          "Se você aprende a sustentar esse tipo de tensão, seus noturnos e suas baladas ficam automaticamente mais inteligentes.",
+        ],
+      },
+    ],
+  },
+
+  "chopin-op72-1": {
+    summary: [
+      "Valsa (Op. 72 nº 1): elegância com ‘melancolia de salão’ — sorriso que já sabe do inverno.",
+      "Treina rubato civilizado: dança com coluna vertebral (sem desmanchar o passo).",
+    ],
+    sections: [
+      {
+        title: "Valsa em Chopin: dança real, mas vista de dentro",
+        paragraphs: [
+          "A valsa é um gênero social: roda, gira, mostra etiqueta. Chopin escreve valsas que ainda dançam, mas que também pensam — como alguém dançando e lembrando de outra coisa ao mesmo tempo.",
+          "O resultado é um treino perfeito de estilo: você precisa manter o pulso de dança (o ‘um-dois-três’) enquanto deixa a mão direita respirar como voz.",
+        ],
+      },
+      {
+        title: "Como estudar: passo primeiro, poesia depois",
+        paragraphs: [
+          "Faça duas passagens: (1) toque com pulso rígido e simples, para garantir o chão; (2) depois adicione pequenas flexões na melodia — mas sem mexer no baixo como se ele estivesse bêbado.",
+          "A qualidade aqui é timbre: elegante não é fraco; é redondo e com borda discreta.",
+        ],
+      },
+    ],
+  },
+
+  "chopin-op41-2": {
+    summary: [
+      "Mazurka (Op. 41 nº 2): dança com ironia e harmonia afiada — Chopin te ensinando ‘sotaque’ em alta definição.",
+      "Treina acento deslocado + frase falada: o charme mora onde a métrica parece ‘errar’ de propósito.",
+    ],
+    sections: [
+      {
+        title: "A doutrina da mazurka: o acento é personagem",
+        paragraphs: [
+          "Em mazurka, acento não é pancada; é intenção. O deslocamento de acento cria identidade, como um jeito de falar.",
+          "Chopin brinca com isso harmonicamente: ele troca o chão sob seus pés sem perder a sensação de dança. Seu trabalho é manter a dança viva enquanto as cores mudam.",
+        ],
+      },
+      {
+        title: "Como estudar: metrônomo com senso de humor",
+        paragraphs: [
+          "Use metrônomo para firmar o passo, mas não para matar o sotaque. Depois desligue e mantenha a memória do pulso.",
+          "Uma boa execução soa ‘natural’, quase improvisada — mas é uma naturalidade construída com muita consciência.",
+        ],
+      },
+    ],
+  },
+
+  "bach-bwv855": {
+    summary: [
+      "BWV 855 (WTC I): Bach como engenharia de clareza — textura que parece simples até você tentar deixar tudo legível.",
+      "Treina independência real: cada voz precisa ter papel sem você recorrer ao pedal como tapa-buraco.",
+    ],
+    sections: [
+      {
+        title: "O que você está estudando aqui (hierarquia de vozes)",
+        paragraphs: [
+          "O segredo do WTC não é ‘tocar rápido’: é decidir o que é fala e o que é textura. Quando você escolhe hierarquia, o contraponto vira discurso.",
+          "No piano moderno, o risco é sustain excessivo: a mesma vantagem (ressonância) vira problema (cola). Seu trabalho é desenhar bordas.",
+        ],
+      },
+      {
+        title: "Como estudar: separar para unir",
+        paragraphs: [
+          "Toque cada voz isolada em andamento lento e cantabile. Depois, una duas vozes e mantenha as duas audíveis. Só então junte tudo.",
+          "Se no final você ‘ouve’ cada linha internamente, o resultado soa natural; se não, soa como digitação.",
+        ],
+      },
+    ],
+  },
+
+  "mendelssohn-op35-1": {
+    summary: [
+      "Mendelssohn Op. 35 nº 1 (estudo/peça): virtuosismo limpo — brilho com etiqueta clássica.",
+      "Treina leveza organizada: agilidade que não perde transparência.",
+    ],
+    sections: [
+      {
+        title: "Mendelssohn: ‘clássico com adrenalina’",
+        paragraphs: [
+          "Mendelssohn tem uma virtude rara: ele consegue ser rápido e brilhante sem virar grosso. A escrita é transparente e exige limpeza.",
+          "Isso faz dele ótimo professor: qualquer sujeira de articulação aparece. O estudo vira treino de precisão com som bonito.",
+        ],
+      },
+      {
+        title: "Como estudar: clareza antes de velocidade",
+        paragraphs: [
+          "Toque em andamento moderado com dedos perto da tecla e releases curtos. Quando a textura fica nítida, a velocidade sobe com menos esforço.",
+          "Pense em ‘linha’ mesmo em passagens: a frase tem destino, não é só corrida.",
+        ],
+      },
+    ],
+  },
+
+  "beethoven-op90": {
+    summary: [
+      "Sonata Op. 90: Beethoven no limiar do tardio — concisão, caráter e uma retórica mais íntima.",
+      "Treina forma como teatro sem exagero: energia concentrada e clareza de intenção.",
+    ],
+    sections: [
+      {
+        title: "Por que Op. 90 é ‘ponte’ para o Beethoven tardio",
+        paragraphs: [
+          "Aqui Beethoven já não está interessado em ‘cumprir protocolo’ clássico. Ele compacta forma e intensifica motivação: menos enfeite, mais nervo.",
+          "Para o pianista, isso é treino de leitura estrutural: você precisa reconhecer motivos e articulações que funcionam como linguagem.",
+        ],
+      },
+      {
+        title: "Como estudar: acento com função",
+        paragraphs: [
+          "Acento beethoveniano não é pancada: é pontuação. Ele marca gramática harmônica, viradas e respostas.",
+          "Se você organiza acentos e camadas, a peça soa inevitável; se não, vira ‘forte aleatório’.",
+        ],
+      },
+    ],
+  },
+
+  "haydn-hob-xvi-34": {
+    summary: [
+      "Haydn (Hob. XVI:34): clareza clássica com humor de laboratório — forma como conversa inteligente.",
+      "Treina ‘piano falando’: articulação, cadência como pontuação e surpresa sem virar teatro exagerado.",
+    ],
+    sections: [
+      {
+        title: "Haydn não é ‘pré-Mozart’: é o inventor do jogo",
+        paragraphs: [
+          "Haydn escreve como quem inventa regras enquanto brinca. A graça não está em tocar ‘bonito’; está em fazer o ouvinte perceber a piada formal: uma pausa que é piscadela, um acorde que parece óbvio e, de repente, te contradiz.",
+          "Isso é didático: você aprende que classicismo é retórica (fala) e timing. Se você toca tudo igual, perde o texto. Se exagera, vira caricatura.",
+        ],
+      },
+      {
+        title: "Como estudar: pontuação + contraste de camadas",
+        paragraphs: [
+          "Trate cadências como sinais de pontuação: vírgula, ponto, exclamação. Respire. O classicismo precisa de espaço para a forma aparecer.",
+          "Treine duas dinâmicas: mf ‘conversando’ e p ‘confidencial’. O humor de Haydn muitas vezes está em tirar o tapete em voz baixa.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: por que isso melhora Beethoven",
+        paragraphs: [
+          "Beethoven aprendeu (e depois quebrou) o sistema. Se você entende o sistema com Haydn, você entende melhor o alvo da ruptura.",
+          "Tecnicamente, Haydn te dá higiene: articulação, clareza harmônica e senso de período.",
+        ],
+      },
+    ],
+  },
+
+  "grieg-op12-1": {
+    summary: [
+      "Grieg (Lyric Pieces Op. 12 nº 1): miniatura como paisagem — romantismo nórdico em poucos compassos.",
+      "Treina cor e pedais pequenos: atmosfera sem borrar, e melodia que surge ‘dentro’ do tecido.",
+    ],
+    sections: [
+      {
+        title: "Grieg: romantismo com sotaque (e não ‘Chopin diluído’)",
+        paragraphs: [
+          "Grieg escreve com uma lógica de natureza: frases curtas, mudança de luz, e uma harmonia que às vezes soa como ‘ar frio’ — transparente, mas carregada de nostalgia.",
+          "O estudo aqui é de timbre: você precisa criar cor sem virar neblina. Pense em camadas como aquarela: cada pincelada precisa ser visível.",
+        ],
+      },
+      {
+        title: "Como estudar: melodia cantada + acompanhamento discreto",
+        paragraphs: [
+          "Faça a melodia cantar com peso mínimo e apoio constante (como voz). O acompanhamento deve ser confiável, mas nunca protagonista.",
+          "Pedal: use como respiração curta (meio-pedal/mini-trocas) para colorir harmonia sem colar tudo.",
+        ],
+      },
+    ],
+  },
+
+  "rachmaninoff-op32-4": {
+    summary: [
+      "Rachmaninoff (Op. 32 nº 4): lirismo com sombra — o piano ‘orquestra’ em escala de câmara.",
+      "Treina camadas em dinâmica média: som grande e redondo sem virar peso bruto.",
+    ],
+    sections: [
+      {
+        title: "O segredo do som rachmaninoviano: hierarquia, não força",
+        paragraphs: [
+          "Em Rachmaninoff, quase sempre há três coisas acontecendo: baixo como coluna, meio como textura (ar denso) e um canto que precisa emergir sem gritar. Quando você decide isso conscientemente, a música ‘acende’.",
+          "A tentação é tocar tudo ‘bonito e cheio’. Mas cheio sem hierarquia vira sopa. O som rico vem de perspectiva.",
+        ],
+      },
+      {
+        title: "Como estudar: timbre primeiro, volume depois",
+        paragraphs: [
+          "Estude em dinâmica média (mf) buscando timbre redondo. Se o timbre fica duro, você está empurrando com dedo em vez de organizar peso.",
+          "Faça testes sem pedal e depois devolva pedal como cor. Se o pedal resolve a clareza, você não resolveu a escrita.",
+        ],
+      },
+    ],
+  },
+
+  "bridge-burgmuller-op100": {
+    summary: [
+      "Ponte: Burgmüller Op. 100 como ‘Mozart do iniciante’ — miniaturas que ensinam caráter e frase.",
+      "Treina intenção: tocar peças fáceis como música de verdade (não como exercício).",
+    ],
+    sections: [
+      {
+        title: "Por que essa ponte é essencial (a arte de ser simples)",
+        paragraphs: [
+          "Burgmüller parece simples, mas é um professor de estilo: ele ensina articulação, direção de frase e caráter claro. Isso é a base de tocar qualquer repertório depois.",
+          "A ponte aqui é psicológica: aprender a não ‘subestimar’ peça fácil. A musicalidade nasce justamente quando a dificuldade não te distrai.",
+        ],
+      },
+      {
+        title: "Como estudar: texto curto, intenção grande",
+        paragraphs: [
+          "Escolha uma peça e descreva em uma frase (ex.: ‘uma marcha orgulhosa’, ‘uma canção tímida’). Depois toque fazendo o som obedecer essa frase.",
+          "O ganho é enorme: você treina narrativa, não só dedos.",
+        ],
+      },
+    ],
+  },
+
+  "bach-wtc1-bm": {
+    summary: [
+      "WTC I em si menor: Bach como tensão com disciplina — contraponto que precisa soar ‘falado’, não mecânico.",
+      "Treina clareza de vozes em clima escuro: legibilidade sem dureza.",
+    ],
+    sections: [
+      {
+        title: "O clima: ‘escuro’ não é forte — é direção",
+        paragraphs: [
+          "Si menor carrega um peso histórico de afeto (lamento, seriedade), mas no teclado isso não significa tocar pesado. Significa sustentar direção harmônica e densidade sem perder bordas.",
+          "A polifonia pede que você seja maestro de mini-orquestra: entradas precisam ser reconhecidas, acompanhamentos precisam ter vida sem competir.",
+        ],
+      },
+      {
+        title: "Como estudar: sujeito reconhecível + releases limpos",
+        paragraphs: [
+          "Isolar o sujeito e as entradas é a forma mais rápida de dar sentido. Depois, devolva as vozes secundárias com dinâmica menor, mas com articulação igualmente clara.",
+          "No piano, ‘soltar’ a tecla no tempo certo é tão importante quanto pressionar. Releases sujos viram lama.",
+        ],
+      },
+    ],
+  },
+
+  "chopin-op58": {
+    summary: [
+      "Sonata Op. 58: Chopin ‘sinfonizando’ o piano — arquitetura grande com coração lírico.",
+      "Treina forma longa com cantabile: disciplina estrutural sem perder perfume harmônico.",
+    ],
+    sections: [
+      {
+        title: "Chopin em formato grande: por que é diferente de Beethoven",
+        paragraphs: [
+          "Chopin não pensa como compositor ‘de argumento’. Ele pensa como compositor de canto e harmonia. Em uma sonata, isso cria um desafio: unir lirismo (fragmentos cantáveis) em arquitetura de longo fôlego.",
+          "O estudo aqui é de mapa: saber onde a música está indo. Sem mapa, você toca capítulos bonitos, mas sem romance.",
+        ],
+      },
+      {
+        title: "Como estudar: objetivos por seção (não por página)",
+        paragraphs: [
+          "Defina para cada seção: qual é a ideia principal? onde está o clímax? onde a textura precisa ficar transparente? Isso reduz ansiedade e aumenta coerência.",
+          "Técnica aplicada: voicing constante. A melodia não pode desaparecer só porque a mão está ocupada.",
+        ],
+      },
+    ],
+  },
+
+  "liszt-sonata": {
+    summary: [
+      "Sonata em si menor: Liszt como arquitetura de transformação — virtuosismo a serviço de uma ideia única.",
+      "Treina narrativa épica: motivos que mudam de máscara, sem você perder o fio.",
+    ],
+    sections: [
+      {
+        title: "Liszt além do ‘efeito’: motivo como DNA",
+        paragraphs: [
+          "A Sonata é um estudo de metamorfose: um motivo aparece, reaparece, vira outra coisa, muda de caráter, mas mantém identidade. A técnica aqui é reconhecer o DNA.",
+          "Se você toca como ‘coleção de trechos difíceis’, você destrói a obra. Se você toca como história, até os trechos virtuosos passam a ter sentido.",
+        ],
+      },
+      {
+        title: "Como estudar: reduzir para entender e depois reconstruir",
+        paragraphs: [
+          "Faça redução: identifique linhas principais (baixo, canto, motivo). Toque essas linhas como esqueleto. Só então recoloque a textura completa.",
+          "O objetivo é não ser refém da digitação. Você precisa saber o que está dizendo — senão a velocidade vira pânico.",
+        ],
+      },
+    ],
+  },
+
+  "tchaikovsky-op39-16": {
+    summary: [
+      "Tchaikovsky (Álbum para a Juventude Op. 39 nº 16): narrativa em miniatura — pedagogia com dramaturgia.",
+      "Treina caráter e timing: fazer o piano ‘contar história’ com poucos recursos.",
+    ],
+    sections: [
+      {
+        title: "Tchaikovsky pedagogo: fácil no papel, exigente no teatro",
+        paragraphs: [
+          "O Álbum para a Juventude é a prova de que pedagogia não precisa ser sem graça. Tchaikovsky escreve peças curtas que ensinam estilo, frase e imaginação.",
+          "Aqui, o estudo é menos ‘digitacional’ e mais narrativo: você precisa decidir um personagem e fazer o som obedecer essa decisão.",
+        ],
+      },
+      {
+        title: "Como estudar: descreva a cena em uma frase",
+        paragraphs: [
+          "Antes de tocar, escreva (mentalmente): ‘isso é uma marcha? uma canção? uma brincadeira?’ Depois, ajuste articulação e dinâmica para apoiar a cena.",
+          "O ganho é enorme porque isso treina intenção — e intenção é a base do repertório adulto.",
+        ],
+      },
+    ],
+  },
+
+  "schumann-op15-7": {
+    summary: [
+      "Schumann (Kinderszenen Op. 15 nº 7): infância como lembrança — simplicidade com psicologia.",
+      "Treina som ‘íntimo’: cantar sem sentimentalismo e manter pulso calmo sem ficar neutro.",
+    ],
+    sections: [
+      {
+        title: "Schumann: personagem em miniatura",
+        paragraphs: [
+          "Schumann escreve cenas internas. A dificuldade real é fazer parecer inevitável — como se a música estivesse lembrando, não performando.",
+          "Isso pede controle de timbre em dinâmica baixa: o piano precisa falar baixo, mas com dicção.",
+        ],
+      },
+      {
+        title: "Como estudar: melodia como frase falada",
+        paragraphs: [
+          "Cante a melodia como uma frase de linguagem (com vírgulas). Depois toque buscando o mesmo ‘texto’ no teclado.",
+          "Se você usa pedal demais, a memória vira névoa; se usa pedal de menos, vira esqueleto. Procure um meio-pedal que respire.",
+        ],
+      },
+    ],
+  },
+
+  "schubert-d960-2": {
+    summary: [
+      "Schubert (D. 960, mov. II): tempo interno profundo — o drama é harmônico e existencial, não ‘barulhento’.",
+      "Treina sustentar silêncio: frase longa, dinâmica baixa e tensão que não pode desmanchar.",
+    ],
+    sections: [
+      {
+        title: "O desafio: tocar lento sem ficar morto",
+        paragraphs: [
+          "Schubert tardio pede coragem: você precisa sustentar um tempo lento com direção. Se você ‘segura’ demais, congela; se você ‘anda’ demais, perde gravidade.",
+          "O ouvido manda: a harmonia aqui é quem conta a história. Você precisa sentir onde o chão muda e deixar isso aparecer no som.",
+        ],
+      },
+      {
+        title: "Como estudar: mapa harmônico + camadas",
+        paragraphs: [
+          "Marque (mesmo mentalmente) os pontos onde a harmonia vira de cor. Faça microcrescimentos para essas viradas e microrelaxamentos depois.",
+          "Camadas: baixo como coluna silenciosa, meio como atmosfera, e uma linha que precisa cantar sem virar ‘solo’.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: Schubert como treino para Brahms",
+        paragraphs: [
+          "Brahms aprendeu com Schubert a sustentar tensão por harmonia lenta. Estudar esse movimento é estudar ‘gravidade musical’.",
+          "Depois disso, você entende melhor por que certas peças românticas não pedem pressa: pedem inevitabilidade.",
+        ],
+      },
+    ],
+  },
+
+  "grieg-op54-4": {
+    summary: [
+      "Grieg Op. 54 nº 4: cor nórdica — dança/poesia em textura clara, com harmonia que muda como clima.",
+      "Treina timbre e articulação: deixar a peça ‘respirar ar frio’ sem virar seca.",
+    ],
+    sections: [
+      {
+        title: "Grieg: folclore como técnica de harmonia",
+        paragraphs: [
+          "Em Grieg, o ‘folclórico’ não é fantasia turística: ele entra como escolha harmônica e rítmica. Isso cria um idioma de frescor e nostalgia.",
+          "A técnica aqui é colorir sem borrar: você quer ressonância, mas quer bordas.",
+        ],
+      },
+      {
+        title: "Como estudar: ataque leve + pedal consciente",
+        paragraphs: [
+          "Faça o ataque com borda suave (não percussiva) e planeje pedais em pontos de mudança harmônica.",
+          "Se a harmonia muda e você não troca o pedal, você ‘apaga’ a narrativa. Se troca demais, fica picotado. Procure trocas que soem como respiração.",
+        ],
+      },
+    ],
+  },
+
+  "brahms-op119-1": {
+    summary: [
+      "Brahms Op. 119 nº 1: densidade íntima — drama em câmera lenta, por vozes internas.",
+      "Treina voicing adulto: fazer camadas falarem sem ‘explicar’ com volume.",
+    ],
+    sections: [
+      {
+        title: "Brahms tardio: quando o clímax é interior",
+        paragraphs: [
+          "Brahms aqui escreve como alguém conversando consigo mesmo. A tensão não é gesto heroico; é harmonia que pesa e se resolve devagar.",
+          "A dificuldade real é hierarquia: às vezes a voz principal está no meio, às vezes está sugerida. Você precisa ouvir como compositor.",
+        ],
+      },
+      {
+        title: "Como estudar: ‘quem fala agora?’",
+        paragraphs: [
+          "A cada compasso, responda: qual voz está falando? Qual está sustentando? Qual é apenas atmosfera? Isso organiza timbre e dinâmica automaticamente.",
+          "Pedal: use curto para coloração. Se você cola demais, a harmonia perde legibilidade e o drama some.",
+        ],
+      },
+    ],
+  },
+
+  "rachmaninoff-op23-5": {
+    summary: [
+      "Prelúdio Op. 23 nº 5: Rachmaninoff marcial — energia como arquitetura, não como grito.",
+      "Treina ritmo de aço + camadas: marcha com clareza e timbre redondo, sem endurecer o braço.",
+    ],
+    sections: [
+      {
+        title: "O que faz isso funcionar: chão + brilho + perspectiva",
+        paragraphs: [
+          "O público ouve ‘marcha’. Você precisa ouvir: baixo como coluna, acordes como metais, figuração como textura. Se tudo vira a mesma camada, some a sensação de orquestra.",
+          "A peça pede precisão rítmica e controle de peso. O som grande aparece quando o gesto é econômico e o pulso não contrai.",
+        ],
+      },
+      {
+        title: "Como estudar: metrônomo e depois fala",
+        paragraphs: [
+          "Primeiro, firme pulso com metrônomo para construir estabilidade (sem rubato). Depois, refine microacentos que apontem estrutura: cadências, respostas e viradas harmônicas.",
+          "Se o forte fica duro, volte ao mf com timbre redondo. É um bug comum: confundir energia com pressão.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: o ‘marcial’ é coreografia",
+        paragraphs: [
+          "A marcha convincente é dançante, não rígida. O segredo é deixar o pulso vivo enquanto a métrica permanece firme.",
+          "Quando você consegue isso, ganha uma habilidade transferível para qualquer peça com ostinato rítmico.",
+        ],
+      },
+    ],
+  },
+
+  "chopin-op48-2": {
+    summary: [
+      "Noturno Op. 48 nº 2: Chopin dramático com arquitetura — clímax como construção, não como emoção solta.",
+      "Treina sustentar tensão longa: camadas claras enquanto a harmonia ‘puxa’ para frente.",
+    ],
+    sections: [
+      {
+        title: "O que estudar aqui: arco, não compasso",
+        paragraphs: [
+          "O noturno vira uma narrativa: você precisa saber onde a tensão começa, onde acumula, onde explode e onde assenta. Se você toca ‘lindo’ sem mapa, o clímax parece aleatório.",
+          "Chopin aqui é harmonia + retórica. A melodia canta, mas quem decide o drama é a função harmônica e a densidade da textura.",
+        ],
+      },
+      {
+        title: "Como estudar: três camadas e um relógio interno",
+        paragraphs: [
+          "Camadas: baixo como coluna, meio como tecido, melodia como fala. Se a textura engole a melodia, você perde o gênero.",
+          "Relógio interno: a mão esquerda deve manter pulso calmo. A direita pode respirar, mas sem desligar da gravidade.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: clímax não é ‘forte’ — é inevitabilidade",
+        paragraphs: [
+          "O clímax convincente aparece quando você já preparou a harmonia e a direção. Volume sem direção vira teatro raso.",
+          "Se você aprende isso aqui, você aprende um princípio universal do romantismo.",
+        ],
+      },
+    ],
+  },
+
+  "chopin-op44": {
+    summary: [
+      "Ballade Op. 44: Chopin épico — narrativa em grande escala com dança interna e harmonia que ‘vira o mundo’.",
+      "Treina pensar em capítulos: contrastes de caráter com unidade de motivo.",
+    ],
+    sections: [
+      {
+        title: "Ballade em Chopin: forma como literatura",
+        paragraphs: [
+          "A ballade não é forma acadêmica; é forma narrativa. Você precisa tratar seções como capítulos com personagens que retornam transformados.",
+          "A técnica real é estrutural: saber onde você está na história. Sem isso, você vira refém de trechos difíceis.",
+        ],
+      },
+      {
+        title: "Como estudar: redução + pontos de virada",
+        paragraphs: [
+          "Faça redução harmônica: toque só baixo + melodia (quando existe) para entender direção. Depois devolva textura.",
+          "Marque os pontos onde o clima muda de forma irreversível. Esses pontos precisam ser ‘sentidos’ no som — por timbre e timing.",
+        ],
+      },
+    ],
+  },
+
+  "scriabin-op8-12": {
+    summary: [
+      "Étude Op. 8 nº 12: Scriabin em alta voltagem — clímax contínuo com harmonia cromática.",
+      "Treina potência elástica: grande som sem rigidez, e direção mesmo dentro do caos.",
+    ],
+    sections: [
+      {
+        title: "O erro clássico: confundir intensidade com tensão",
+        paragraphs: [
+          "Essa peça parece pedir ‘força’. Na verdade, ela pede gestão de peso e um braço que não trava. Se trava, o som endurece e o tempo desmancha.",
+          "A harmonia cromática precisa de direção: você não pode só ‘surfar’ volume. Precisa saber para onde a frase está indo.",
+        ],
+      },
+      {
+        title: "Como estudar: clímax em camadas",
+        paragraphs: [
+          "Separe vozes/planos: quais notas são estrutura? quais são textura? Se você entende isso, você toca grande sem virar massa.",
+          "Trabalhe em dinâmica média primeiro. Se você consegue manter clareza em mf, o ff fica seguro.",
+        ],
+      },
+    ],
+  },
+
+  "bach-wtc2-fsharp-minor": {
+    summary: [
+      "WTC II em fá# menor: Bach ‘noturno’ — contraponto como tensão controlada.",
+      "Treina clareza em clima denso: cada entrada precisa ter identidade, mesmo com harmonia carregada.",
+    ],
+    sections: [
+      {
+        title: "O foco: legibilidade polifônica no piano moderno",
+        paragraphs: [
+          "Fá# menor no piano tem um peso natural (teclas pretas + cor). A tentação é usar sustain demais e perder as bordas.",
+          "O ganho aqui é mental: você treina hierarquia de vozes em tempo real. Isso é uma habilidade rara.",
+        ],
+      },
+      {
+        title: "Como estudar: entradas como personagens",
+        paragraphs: [
+          "Toque só as entradas principais (sujeito/respostas) e faça elas soarem reconhecíveis por articulação, não por volume.",
+          "Depois adicione vozes secundárias sem apagar as principais. Release limpo é tão importante quanto ataque.",
+        ],
+      },
+    ],
+  },
+
+  "mozart-k475": {
+    summary: [
+      "Fantasia em dó menor K. 475: Mozart ‘dramático’ — improviso controlado, teatro harmônico e retórica de ópera no teclado.",
+      "Treina contrastes rápidos: mudanças de humor com clareza de articulação e lógica harmônica.",
+    ],
+    sections: [
+      {
+        title: "Mozart fora da porcelana (por que isso surpreende)",
+        paragraphs: [
+          "Muita gente associa Mozart a simetria e elegância solar. A K. 475 mostra outro Mozart: sombrio, teatral, com mudanças súbitas — como uma cena de ópera com cortes de luz.",
+          "O estudo aqui é de retórica: você precisa fazer as viradas harmônicas soarem como decisões dramáticas, não como ‘acordes diferentes’.",
+        ],
+      },
+      {
+        title: "Como estudar: capítulos + cadências como pontuação",
+        paragraphs: [
+          "Divida em seções curtas e dê um nome a cada uma (ex.: ‘declamação’, ‘corrida’, ‘sussurro’). Isso impede execução uniforme.",
+          "Pedal deve ser cirúrgico: coloração de chegada, não cola permanente. A clareza das cadências é o fio que segura a fantasia.",
+        ],
+      },
+    ],
+  },
+
+  "schumann-op16-2": {
+    summary: [
+      "Schumann (Kreisleriana/Fantasiestücke – Op. 16 nº 2): instabilidade controlada — personagem que muda de máscara.",
+      "Treina alternância de energia e silêncio: textura e harmonia como psicologia.",
+    ],
+    sections: [
+      {
+        title: "Schumann: o piano como mente",
+        paragraphs: [
+          "Schumann não escreve ‘peças’; ele escreve estados mentais. A técnica principal é coerência de caráter: mudar rápido sem perder unidade.",
+          "O risco é virar colagem. O antídoto é ouvir harmonia e manter pulso interno: mesmo quando parece livre, existe uma gravidade.",
+        ],
+      },
+      {
+        title: "Como estudar: duas leituras (estrutura vs personagem)",
+        paragraphs: [
+          "Faça uma passada ‘estrutural’: cadências, pontos de repouso, direções. Depois uma passada ‘teatral’: timbre e gesto.",
+          "Quando as duas concordam, a peça fica convincente.",
+        ],
+      },
+    ],
+  },
+
+  "tchaikovsky-op19-2": {
+    summary: [
+      "Tchaikovsky Op. 19 nº 2: lirismo com melancolia — romantismo russo em frase longa.",
+      "Treina cantabile sustentado: melodia ‘vocal’ com acompanhamento que não sufoca.",
+    ],
+    sections: [
+      {
+        title: "O foco: cantar no piano sem virar açúcar",
+        paragraphs: [
+          "Tchaikovsky pede melodia generosa, mas com dignidade. Sentimentalismo exagerado mata a nobreza da linha.",
+          "A técnica aqui é voicing: a melodia precisa emergir do tecido, não flutuar como algo separado e artificial.",
+        ],
+      },
+      {
+        title: "Como estudar: legato real + pedal por harmonia",
+        paragraphs: [
+          "Construa legato por dedo (trocas discretas) e use pedal para coloração de harmonia, trocando em mudanças estruturais.",
+          "Se a melodia some, normalmente o acompanhamento está pesado demais — ajuste peso, não ‘aumente a melodia’.",
+        ],
+      },
+    ],
+  },
+
+  "field-nocturne-fsharp-minor": {
+    summary: [
+      "John Field em fá# menor: o noturno antes do ‘Noturno de Chopin’ — canto simples com harmonia que suspira.",
+      "Treina legato verdadeiro e rubato discreto: poesia com economia (sem perfume demais).",
+    ],
+    sections: [
+      {
+        title: "Field: o inventor do clima (antes do romantismo virar tempestade)",
+        paragraphs: [
+          "Field cria o noturno como gênero de atmosfera: melodia cantada, acompanhamento suave e sensação de noite doméstica — piano como intimidade, não como palco.",
+          "Isso é importante historicamente porque Chopin herda essa ideia e a sofisticará harmonicamente. Estudar Field é estudar o proto-idioma.",
+        ],
+      },
+      {
+        title: "Como estudar: canto em p + pedal limpo",
+        paragraphs: [
+          "Faça a melodia cantar em dinâmica baixa com apoio constante. O acompanhamento é respiração, não martelinho.",
+          "Pedal deve ser curto e funcional: troque em mudanças harmônicas e evite nuvem contínua. O charme é clareza suave.",
+        ],
+      },
+    ],
+  },
+
+  "grieg-op54-4-bridge": {
+    summary: [
+      "Ponte: Grieg (Op. 54 – seleção) como laboratório de cor nórdica — harmonia como clima e ritmo como paisagem.",
+      "Treina ‘cor sem borrão’: pedais curtos, ataque suave e frase com ar.",
+    ],
+    sections: [
+      {
+        title: "Como usar essa ponte",
+        paragraphs: [
+          "Escolha 8–16 compassos de uma peça da Op. 54 e trate como paleta: onde a harmonia muda de cor? onde a textura precisa ser mais seca? onde pede ressonância?",
+          "A regra é simples: pedal curto por harmonia, ataque leve e releases limpos. Se virar nuvem, você perdeu a linguagem.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: por que Grieg é ‘técnica de atmosfera’",
+        paragraphs: [
+          "Grieg te ensina algo raro: fazer o ouvinte sentir espaço sem você tocar mais alto. Atmosfera é gestão de ressonância.",
+          "Isso transfere direto para Debussy: cor com contorno.",
+        ],
+      },
+    ],
+  },
+
+  "bach-minuet-g-major": {
+    summary: [
+      "Minueto em Sol maior (atribuído a Bach/Anna Magdalena): etiqueta barroca em miniatura — dançar com boa pronúncia.",
+      "Treina articulação e fraseado: ‘sorriso’ no pulso, clareza nas cadências e baixo com educação.",
+    ],
+    sections: [
+      {
+        title: "Por que uma peça ‘fácil’ vira escola de maturidade",
+        paragraphs: [
+          "O minueto é dança social: postura, simetria e pontuação. Isso significa que a música precisa respirar em frases claras — como alguém falando com boa dicção.",
+          "O erro típico é tocar em legato genérico com pedal e transformar dança em ‘música bonita’. O certo é dar borda e manter o passo.",
+        ],
+      },
+      {
+        title: "Como estudar: pontuação + baixo com função",
+        paragraphs: [
+          "Marque mentalmente onde cada frase pergunta e responde. Respire nos finais (sem ‘cair’ o tempo).",
+          "Na mão esquerda, pense em função harmônica: tônica/dominante como chão. Se o baixo fica tímido demais, a dança perde coluna.",
+        ],
+      },
+    ],
+  },
+
+  "clementi-op36-1": {
+    summary: [
+      "Clementi Op. 36 nº 1: sonatina como engenharia — clareza clássica com ‘mecânica elegante’.",
+      "Treina mão direita articulada + mão esquerda inteligente: tocar leve sem ficar vazio, e preciso sem ficar duro.",
+    ],
+    sections: [
+      {
+        title: "Clementi e o mercado do piano (virtuose + editor + pedagogo)",
+        paragraphs: [
+          "Clementi é uma peça-chave do piano como indústria: compositor, editor, fabricante/empreendedor e professor. Suas sonatinas são ‘produto’ — mas produto com inteligência.",
+          "Tecnicamente, ele ensina eficiência: escalas, padrões e simetria, mas sempre dentro de forma clássica legível.",
+        ],
+      },
+      {
+        title: "Como estudar: clareza de textura e acentos com função",
+        paragraphs: [
+          "Pense em três camadas: melodia (fala), baixo (chão) e recheio (textura). Se o recheio sobe demais, a peça vira emaranhado.",
+          "Acentos não são pancadas: são pontuação. Faça a forma aparecer por articulação e timing.",
+        ],
+      },
+    ],
+  },
+
+  "mozart-k545-1": {
+    summary: [
+      "K. 545 (I mov.): Mozart ‘fácil’ que denuncia tudo — transparência absoluta, forma como conversa.",
+      "Treina retórica clássica: frase que pergunta/responde, e independência de mãos sem pedal-muleta.",
+    ],
+    sections: [
+      {
+        title: "Por que ‘Sonata Facile’ é cruel",
+        paragraphs: [
+          "Ela é chamada de ‘fácil’ porque a leitura é acessível. Mas musicalmente ela é implacável: qualquer descontrole de tempo, qualquer falta de frase, qualquer pedal excessivo aparece.",
+          "A missão é fazer parecer óbvio e natural: como alguém falando com elegância, sem ficar recitando.",
+        ],
+      },
+      {
+        title: "Como estudar: frases curtas, cadências nítidas",
+        paragraphs: [
+          "Cante mentalmente a melodia e trate cadências como pontuação real (vírgula/ponto).",
+          "Pedal mínimo: se você precisa de pedal para ligar, o problema é condução de dedo e direção de frase.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: isso é base para tocar ‘grande Mozart’",
+        paragraphs: [
+          "O mesmo idioma aparece nas sonatas mais complexas. Aqui você treina o DNA: clareza e intenção.",
+          "Dominar essa sonata melhora todo o repertório clássico — e até Debussy, porque te ensina transparência.",
+        ],
+      },
+    ],
+  },
+
+  "schumann-op68-1": {
+    summary: [
+      "Schumann Op. 68 nº 1 (Álbum para a Juventude): narrativa doméstica — técnica a serviço de personagem.",
+      "Treina tocar ‘simples’ como arte: intenção, timbre e fala clara sem exagero.",
+    ],
+    sections: [
+      {
+        title: "Schumann pedagogo: miniaturas com psicologia",
+        paragraphs: [
+          "Schumann escreve para ensinar, mas não ensina como manual: ele ensina como literatura curta. Cada peça é um quadro.",
+          "O desafio é dar caráter: o ouvinte precisa entender a cena sem você teatralizar com volume.",
+        ],
+      },
+      {
+        title: "Como estudar: descreva o personagem em uma frase",
+        paragraphs: [
+          "Antes de tocar, escolha uma frase-guia (ex.: ‘um passeio calmo’). Depois toque fazendo o som obedecer essa frase.",
+          "Se o som fica ‘duro’, geralmente é dedo alto + falta de apoio. Gesto pequeno, ouvido grande.",
+        ],
+      },
+    ],
+  },
+
+  "tchaikovsky-op39-9": {
+    summary: [
+      "Tchaikovsky Op. 39 nº 9 (‘The New Doll’): delicadeza russa — ingenuidade com técnica de timbre.",
+      "Treina controle de dinâmica baixa + pedal sutil: fazer o piano soar ‘de brinquedo’ sem ficar fraco.",
+    ],
+    sections: [
+      {
+        title: "O foco: ternura com disciplina",
+        paragraphs: [
+          "A peça parece ‘fofa’. Mas o que ela exige é maturidade de som: ataque suave, frase cantada e um pedal que colore sem borrar.",
+          "Tchaikovsky é mestre em escrever emoção direta. Seu trabalho é não adoçar demais: mantenha clareza e simplicidade.",
+        ],
+      },
+      {
+        title: "Como estudar: mf como teto, p como casa",
+        paragraphs: [
+          "Estude mantendo o mf como teto: se você já começa grande, não existe espaço para nuance. Construa a peça em p e pp bem controlados.",
+          "Troque o pedal em mudanças harmônicas e ouça a ‘cauda’ do som: se a cauda encobre a melodia, você pedalou demais.",
+        ],
+      },
+    ],
+  },
 };
 
 function stableHash(s: string) {
