@@ -21,6 +21,43 @@ export type RepertoireDeepDive = {
  * so the site stays complete without needing hundreds of handcrafted entries.
  */
 const MANUAL: Partial<Record<string, RepertoireDeepDive>> = {
+  "mozart-k331": {
+    summary: [
+      "Tema e variações como ‘microscópio’ de estilo: o mesmo material muda de personalidade sem mudar de gramática.",
+      "Uma aula de retórica clássica: clareza, simetria e fantasia controlada (não ‘efeito’).",
+    ],
+    sections: [
+      {
+        title: "Mozart no piano: por que variações viram autobiografia indireta",
+        paragraphs: [
+          "A K. 331 pertence ao Mozart que já domina o idioma de salão e o transforma em arte: ele escreve para um mundo em que o piano vira objeto central da burguesia urbana — música que precisa ser tocável, memorável, vendável, mas ainda assim elegante ao extremo.",
+          "O formato ‘Tema e Variações’ aqui não é só divertimento. Em Mozart, variação é uma aula de linguagem: ele mostra como caráter muda por articulação, registro, figuração e harmonia — e não por sentimentalismo. Isso é valioso porque treina interpretação sem recorrer ao excesso romântico.",
+        ],
+      },
+      {
+        title: "Arquitetura: como o mesmo tema vira vários ‘personagens’",
+        paragraphs: [
+          "O tema é propositalmente simples: períodos claros, cadências limpas, uma harmonia que ‘se explica’ em voz baixa. Justamente por isso, qualquer escolha de toque aparece.",
+          "Cada variação desloca o foco: ora a textura vira filigrana, ora a mão esquerda assume mais movimento, ora a dinâmica exige gradações. A genialidade está em manter a forma reconhecível enquanto a superfície muda — como alguém mudando de roupa sem mudar de identidade.",
+        ],
+      },
+      {
+        title: "Sintaxe clássica: cadências, simetria e a ideia de ‘período’",
+        paragraphs: [
+          "O idioma clássico depende de pontuação: cadências funcionam como pontos e vírgulas. Se você alisa cadências com pedal ou pressa, você remove a sintaxe e a peça vira uma sequência bonita, porém sem fala.",
+          "O brilho mozartiano aqui é o equilíbrio entre previsibilidade (forma) e surpresa (variação). Mesmo quando há ornamentação, a harmonia continua inteligível: virtuosismo que não faz barulho.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: por que esse movimento é difícil ‘do jeito certo’",
+        paragraphs: [
+          "Em Mozart, o erro mais comum é confundir elegância com neutralidade. Cada variação pede um caráter específico, mas dentro do mesmo ‘bom gosto’ (sem virar caricatura).",
+          "Um bom estudo aqui é de estética: variar timbre e intenção com economia de gesto. Isso vira técnica de alto nível porque exige ouvido — não força.",
+        ],
+      },
+    ],
+  },
+
   "beethoven-op27-2": {
     summary: [
       "Uma peça-fenômeno que é menos sobre ‘pedal bonito’ e mais sobre arquitetura de harmonia e controle de densidade.",
