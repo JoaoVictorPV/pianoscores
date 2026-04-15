@@ -1,5 +1,5 @@
 
-> Progresso: **120/234** deepdives manuais (enciclopédicos) implementados.
+> Progresso: **160/234** deepdives manuais (enciclopédicos) implementados.
 # Tracker — Deepdives de Repertório
 
 Este arquivo lista **todas as obras sugeridas no site** (repertório) e marca automaticamente quais já têm deepdive manual (enciclopédico) implementado.
@@ -168,58 +168,58 @@ Gerado por: `node scripts/update-repertoire-tracker.mjs`
 - [x] **L. v. Beethoven** — Sonata Op. 78 (F♯ Maior) — seleção de trechos  _(id: `beethoven-op78`)_
 - [x] **Frédéric Chopin** — Prelúdio Op. 28 nº 13 (F♯ Maior)  _(id: `chopin-prelude-28-13`)_
 - [x] **Frédéric Chopin** — Noturno Op. 15 nº 2 (F♯ Maior)  _(id: `chopin-nocturne-op15-2`)_
-- [ ] **Frédéric Chopin** — Barcarola Op. 60 (F♯ Maior)  _(id: `chopin-barcarolle-op60`)_
-- [ ] **Claude Debussy** — (enarmônico) ‘La fille aux cheveux de lin’ (G♭ Maior)  _(id: `debussy-fille-gflat`)_
-- [ ] **Franz Schubert** — (enarmônico) Impromptu Op. 90 nº 3 (G♭ Maior)  _(id: `schubert-impromptu-op90-3`)_
-- [ ] **J. S. Bach** — (ponte) Transponha 8–16 compassos de uma invenção para F♯ Maior  _(id: `bridge-bach-transposition`)_
-- [ ] **Claude Debussy** — (ponte) Prelúdios de Debussy (seleção) — transparência  _(id: `bridge-debussy-preludes`)_
+- [x] **Frédéric Chopin** — Barcarola Op. 60 (F♯ Maior)  _(id: `chopin-barcarolle-op60`)_
+- [x] **Claude Debussy** — (enarmônico) ‘La fille aux cheveux de lin’ (G♭ Maior)  _(id: `debussy-fille-gflat`)_
+- [x] **Franz Schubert** — (enarmônico) Impromptu Op. 90 nº 3 (G♭ Maior)  _(id: `schubert-impromptu-op90-3`)_
+- [x] **J. S. Bach** — (ponte) Transponha 8–16 compassos de uma invenção para F♯ Maior  _(id: `bridge-bach-transposition`)_
+- [x] **Claude Debussy** — (ponte) Prelúdios de Debussy (seleção) — transparência  _(id: `bridge-debussy-preludes`)_
 
 ## csharp-major
 
-- [ ] **J. S. Bach** — WTC I: Prelúdio e Fuga em D♭ Maior (enarmônico de C♯)  _(id: `csharp-major-bach-wtc-db`)_
-- [ ] **Frédéric Chopin** — Prelúdio Op. 28 nº 15 ‘Raindrop’ (D♭ Maior)  _(id: `csharp-major-chopin-op28-15`)_
-- [ ] **Frédéric Chopin** — Noturno Op. 27 nº 2 (D♭ Maior)  _(id: `csharp-major-chopin-nocturne-op27-2`)_
-- [ ] **Frédéric Chopin** — Valsa Op. 64 nº 1 (D♭ Maior)  _(id: `csharp-major-chopin-waltz-op64-1`)_
-- [ ] **Claude Debussy** — ‘Reflets dans l’eau’ (D♭ Maior)  _(id: `csharp-major-debussy-reflets`)_
-- [ ] **Alexander Scriabin** — Prelúdios Op. 11 (seleção em D♭/vizinhança)  _(id: `csharp-major-scriabin-op11-selection`)_
-- [ ] **Sergei Rachmaninoff** — (ponte) Prelúdio Op. 23 nº 4 (C♯ menor) — camadas em pretas  _(id: `csharp-major-rachmaninoff-op23-4`)_
-- [ ] **Johannes Brahms** — (ponte) Intermezzi (seleção) — camadas em textura densa  _(id: `csharp-major-bridge-brahms`)_
-- [ ] **J. S. Bach** — (ponte) Transponha 8 compassos para D♭/C♯ Maior  _(id: `csharp-major-bridge-transposition`)_
+- [x] **J. S. Bach** — WTC I: Prelúdio e Fuga em D♭ Maior (enarmônico de C♯)  _(id: `csharp-major-bach-wtc-db`)_
+- [x] **Frédéric Chopin** — Prelúdio Op. 28 nº 15 ‘Raindrop’ (D♭ Maior)  _(id: `csharp-major-chopin-op28-15`)_
+- [x] **Frédéric Chopin** — Noturno Op. 27 nº 2 (D♭ Maior)  _(id: `csharp-major-chopin-nocturne-op27-2`)_
+- [x] **Frédéric Chopin** — Valsa Op. 64 nº 1 (D♭ Maior)  _(id: `csharp-major-chopin-waltz-op64-1`)_
+- [x] **Claude Debussy** — ‘Reflets dans l’eau’ (D♭ Maior)  _(id: `csharp-major-debussy-reflets`)_
+- [x] **Alexander Scriabin** — Prelúdios Op. 11 (seleção em D♭/vizinhança)  _(id: `csharp-major-scriabin-op11-selection`)_
+- [x] **Sergei Rachmaninoff** — (ponte) Prelúdio Op. 23 nº 4 (C♯ menor) — camadas em pretas  _(id: `csharp-major-rachmaninoff-op23-4`)_
+- [x] **Johannes Brahms** — (ponte) Intermezzi (seleção) — camadas em textura densa  _(id: `csharp-major-bridge-brahms`)_
+- [x] **J. S. Bach** — (ponte) Transponha 8 compassos para D♭/C♯ Maior  _(id: `csharp-major-bridge-transposition`)_
 
 ## dsharp-minor
 
-- [ ] **J. S. Bach** — WTC I: Prelúdio e Fuga em E♭ menor (BWV 853)  _(id: `dsharpmin-bach-wtc-ebm`)_
-- [ ] **Frédéric Chopin** — Estudo Op. 10 nº 6 (E♭ menor)  _(id: `dsharpmin-chopin-op10-6`)_
-- [ ] **Frédéric Chopin** — Prelúdio Op. 28 nº 14 (E♭ menor)  _(id: `dsharpmin-chopin-op28-14`)_
-- [ ] **Alexander Scriabin** — Estudo Op. 8 nº 12 (D♯ menor)  _(id: `dsharpmin-scriabin-op8-12`)_
-- [ ] **Johannes Brahms** — Intermezzo Op. 118 nº 6 (E♭ menor)  _(id: `dsharpmin-brahms-op118-6`)_
-- [ ] **Sergei Rachmaninoff** — (ponte) Procure um Prelúdio/Etude em E♭ menor — laboratório de camadas  _(id: `dsharpmin-bridge-rachmaninoff-ebm`)_
-- [ ] **Claude Debussy** — (ponte) Prelúdios (seleção) — sombra com transparência  _(id: `dsharpmin-bridge-debussy`)_
-- [ ] **J. S. Bach** — (ponte) Transponha 8 compassos para E♭ menor  _(id: `dsharpmin-bridge-transposition`)_
-- [ ] **Frédéric Chopin** — (ponte) Noturnos (seleção) — pedagogia do canto  _(id: `dsharpmin-bridge-chopin-nocturnes`)_
-- [ ] **Johannes Brahms** — (ponte) Outros Intermezzi (seleção) — camadas  _(id: `dsharpmin-bridge-brahms`)_
+- [x] **J. S. Bach** — WTC I: Prelúdio e Fuga em E♭ menor (BWV 853)  _(id: `dsharpmin-bach-wtc-ebm`)_
+- [x] **Frédéric Chopin** — Estudo Op. 10 nº 6 (E♭ menor)  _(id: `dsharpmin-chopin-op10-6`)_
+- [x] **Frédéric Chopin** — Prelúdio Op. 28 nº 14 (E♭ menor)  _(id: `dsharpmin-chopin-op28-14`)_
+- [x] **Alexander Scriabin** — Estudo Op. 8 nº 12 (D♯ menor)  _(id: `dsharpmin-scriabin-op8-12`)_
+- [x] **Johannes Brahms** — Intermezzo Op. 118 nº 6 (E♭ menor)  _(id: `dsharpmin-brahms-op118-6`)_
+- [x] **Sergei Rachmaninoff** — (ponte) Procure um Prelúdio/Etude em E♭ menor — laboratório de camadas  _(id: `dsharpmin-bridge-rachmaninoff-ebm`)_
+- [x] **Claude Debussy** — (ponte) Prelúdios (seleção) — sombra com transparência  _(id: `dsharpmin-bridge-debussy`)_
+- [x] **J. S. Bach** — (ponte) Transponha 8 compassos para E♭ menor  _(id: `dsharpmin-bridge-transposition`)_
+- [x] **Frédéric Chopin** — (ponte) Noturnos (seleção) — pedagogia do canto  _(id: `dsharpmin-bridge-chopin-nocturnes`)_
+- [x] **Johannes Brahms** — (ponte) Outros Intermezzi (seleção) — camadas  _(id: `dsharpmin-bridge-brahms`)_
 
 ## asharp-minor
 
-- [ ] **Frédéric Chopin** — Noturno Op. 9 nº 1 (B♭ menor)  _(id: `asharpmin-chopin-op9-1`)_
-- [ ] **Frédéric Chopin** — Prelúdio Op. 28 nº 16 (B♭ menor)  _(id: `asharpmin-chopin-op28-16`)_
-- [ ] **Sergei Rachmaninoff** — Prelúdio Op. 23 nº 2 (B♭ menor)  _(id: `asharpmin-rachmaninoff-op23-2`)_
-- [ ] **J. S. Bach** — WTC: Prelúdio e Fuga em B♭ menor (A♯ menor) — escolha Livro I/II  _(id: `asharpmin-bach-wtc-bbm`)_
-- [ ] **Alexander Scriabin** — (ponte) Procure um Prelúdio/Estudo em B♭ menor — cor e tensão  _(id: `asharpmin-scriabin-bbm`)_
-- [ ] **Johannes Brahms** — (ponte) Intermezzi (seleção) — densidade íntima  _(id: `asharpmin-brahms-bridge`)_
-- [ ] **Claude Debussy** — (ponte) Debussy (seleção) — transparência em clima escuro  _(id: `asharpmin-debussy-bridge`)_
-- [ ] **Frédéric Chopin** — Sonata nº 2 Op. 35 (B♭ menor) — trechos  _(id: `asharpmin-chopin-bbm-sonata`)_
-- [ ] **J. S. Bach** — (ponte) Transponha 8 compassos para B♭ menor  _(id: `asharpmin-bridge-transposition`)_
-- [ ] **Frédéric Chopin** — (ponte) Outros noturnos — pedagogia do canto no piano  _(id: `asharpmin-bridge-nocturnes`)_
+- [x] **Frédéric Chopin** — Noturno Op. 9 nº 1 (B♭ menor)  _(id: `asharpmin-chopin-op9-1`)_
+- [x] **Frédéric Chopin** — Prelúdio Op. 28 nº 16 (B♭ menor)  _(id: `asharpmin-chopin-op28-16`)_
+- [x] **Sergei Rachmaninoff** — Prelúdio Op. 23 nº 2 (B♭ menor)  _(id: `asharpmin-rachmaninoff-op23-2`)_
+- [x] **J. S. Bach** — WTC: Prelúdio e Fuga em B♭ menor (A♯ menor) — escolha Livro I/II  _(id: `asharpmin-bach-wtc-bbm`)_
+- [x] **Alexander Scriabin** — (ponte) Procure um Prelúdio/Estudo em B♭ menor — cor e tensão  _(id: `asharpmin-scriabin-bbm`)_
+- [x] **Johannes Brahms** — (ponte) Intermezzi (seleção) — densidade íntima  _(id: `asharpmin-brahms-bridge`)_
+- [x] **Claude Debussy** — (ponte) Debussy (seleção) — transparência em clima escuro  _(id: `asharpmin-debussy-bridge`)_
+- [x] **Frédéric Chopin** — Sonata nº 2 Op. 35 (B♭ menor) — trechos  _(id: `asharpmin-chopin-bbm-sonata`)_
+- [x] **J. S. Bach** — (ponte) Transponha 8 compassos para B♭ menor  _(id: `asharpmin-bridge-transposition`)_
+- [x] **Frédéric Chopin** — (ponte) Outros noturnos — pedagogia do canto no piano  _(id: `asharpmin-bridge-nocturnes`)_
 
 ## ab-major
 
-- [ ] **Frédéric Chopin** — Estudo Op. 25 nº 1 (A♭ Maior) — ‘Harpa Eólia’  _(id: `ab-chopin-etude-op25-1`)_
-- [ ] **Frédéric Chopin** — Valsa Op. 69 nº 1 (A♭ Maior) — ‘Adeus’  _(id: `ab-chopin-waltz-op69-1`)_
-- [ ] **Frédéric Chopin** — Polonaise-Fantaisie Op. 61 (A♭ Maior) — trechos  _(id: `ab-chopin-polonaise-fantaisie-op61`)_
-- [ ] **L. v. Beethoven** — Sonata Op. 26 (A♭ Maior) — seleção de movimentos  _(id: `ab-beethoven-op26`)_
-- [ ] **Franz Schubert** — Impromptu Op. 90 nº 4 (A♭ Maior)  _(id: `ab-schubert-impromptu-op90-4`)_
-- [ ] **Franz Liszt** — Liebestraum nº 3 (A♭ Maior)  _(id: `ab-liszt-liebestraum-3`)_
+- [x] **Frédéric Chopin** — Estudo Op. 25 nº 1 (A♭ Maior) — ‘Harpa Eólia’  _(id: `ab-chopin-etude-op25-1`)_
+- [x] **Frédéric Chopin** — Valsa Op. 69 nº 1 (A♭ Maior) — ‘Adeus’  _(id: `ab-chopin-waltz-op69-1`)_
+- [x] **Frédéric Chopin** — Polonaise-Fantaisie Op. 61 (A♭ Maior) — trechos  _(id: `ab-chopin-polonaise-fantaisie-op61`)_
+- [x] **L. v. Beethoven** — Sonata Op. 26 (A♭ Maior) — seleção de movimentos  _(id: `ab-beethoven-op26`)_
+- [x] **Franz Schubert** — Impromptu Op. 90 nº 4 (A♭ Maior)  _(id: `ab-schubert-impromptu-op90-4`)_
+- [x] **Franz Liszt** — Liebestraum nº 3 (A♭ Maior)  _(id: `ab-liszt-liebestraum-3`)_
 - [ ] **J. S. Bach** — (ponte) WTC: procure prelúdio/fuga em A♭ Maior (ou G♯ Maior) — laboratório de clareza  _(id: `ab-bach-wtc1-ab`)_
 - [ ] **Claude Debussy** — (ponte) Prelúdios/Estampes (seleção) — cor com transparência  _(id: `ab-debussy-bridge`)_
 - [ ] **Johannes Brahms** — (ponte) Intermezzi (seleção) — camadas e densidade íntima  _(id: `ab-brahms-bridge`)_
