@@ -1,5 +1,5 @@
 
-> Progresso: **82/234** deepdives manuais (enciclopédicos) implementados.
+> Progresso: **120/234** deepdives manuais (enciclopédicos) implementados.
 # Tracker — Deepdives de Repertório
 
 Este arquivo lista **todas as obras sugeridas no site** (repertório) e marca automaticamente quais já têm deepdive manual (enciclopédico) implementado.
@@ -116,58 +116,58 @@ Gerado por: `node scripts/update-repertoire-tracker.mjs`
 - [x] **W. A. Mozart** — Sonata K. 545 (I mov.)  _(id: `mozart-k545-1`)_
 - [x] **Robert Schumann** — Melodia (Álbum para a Juventude, Op. 68 nº 1)  _(id: `schumann-op68-1`)_
 - [x] **Piotr Ilyich Tchaikovsky** — The New Doll (Album for the Young, Op. 39 nº 9)  _(id: `tchaikovsky-op39-9`)_
-- [ ] **Friedrich Burgmüller** — Arabesque (25 Estudos Fáceis, Op. 100 nº 2)  _(id: `burgmuller-op100-2`)_
-- [ ] **L. v. Beethoven** — Sonata Op. 49 nº 2 (I mov.)  _(id: `beethoven-op49-2-1`)_
-- [ ] **Claude Debussy** — Clair de Lune (Suite Bergamasque) — C Maior como base de ‘luz’  _(id: `debussy-clair-de-lune`)_
-- [ ] **Frédéric Chopin** — Prelúdio Op. 28 nº 7  _(id: `chopin-prelude-7`)_
-- [ ] **Erik Satie** — Gymnopédie nº 1  _(id: `satie-gymnopedie-1`)_
-- [ ] **J. S. Bach** — Prelúdio em Dó Maior (Cravo Bem Temperado, Livro I)  _(id: `bach-wtc1-prelude-c`)_
-- [ ] **Joseph Haydn** — Sonata Hob. XVI:7 (seleção de movimentos/trechos) — classicismo afiado  _(id: `haydn-hob-xvi-7`)_
-- [ ] **Béla Bartók** — Mikrokosmos (seleção de peças em Dó/relacionadas) — alfabetização moderna  _(id: `bartok-mikrokosmos`)_
-- [ ] **L. v. Beethoven** — Ecossaise(s) (seleção) — ritmo e humor sem sentimentalismo  _(id: `beethoven-ecossaise`)_
-- [ ] **Felix Mendelssohn** — Songs Without Words (seleção) — cantabile sob controle  _(id: `mendelssohn-songs-without-words`)_
+- [x] **Friedrich Burgmüller** — Arabesque (25 Estudos Fáceis, Op. 100 nº 2)  _(id: `burgmuller-op100-2`)_
+- [x] **L. v. Beethoven** — Sonata Op. 49 nº 2 (I mov.)  _(id: `beethoven-op49-2-1`)_
+- [x] **Claude Debussy** — Clair de Lune (Suite Bergamasque) — C Maior como base de ‘luz’  _(id: `debussy-clair-de-lune`)_
+- [x] **Frédéric Chopin** — Prelúdio Op. 28 nº 7  _(id: `chopin-prelude-7`)_
+- [x] **Erik Satie** — Gymnopédie nº 1  _(id: `satie-gymnopedie-1`)_
+- [x] **J. S. Bach** — Prelúdio em Dó Maior (Cravo Bem Temperado, Livro I)  _(id: `bach-wtc1-prelude-c`)_
+- [x] **Joseph Haydn** — Sonata Hob. XVI:7 (seleção de movimentos/trechos) — classicismo afiado  _(id: `haydn-hob-xvi-7`)_
+- [x] **Béla Bartók** — Mikrokosmos (seleção de peças em Dó/relacionadas) — alfabetização moderna  _(id: `bartok-mikrokosmos`)_
+- [x] **L. v. Beethoven** — Ecossaise(s) (seleção) — ritmo e humor sem sentimentalismo  _(id: `beethoven-ecossaise`)_
+- [x] **Felix Mendelssohn** — Songs Without Words (seleção) — cantabile sob controle  _(id: `mendelssohn-songs-without-words`)_
 
 ## g-major
 
-- [ ] **J. S. Bach** — Prelúdio e Fuga em Sol Maior (Cravo Bem Temperado) — escolha 1 movimento  _(id: `bach-wtc1-g`)_
-- [ ] **L. v. Beethoven** — Sonata Op. 49 nº 2 (G Maior) — I mov.  _(id: `beethoven-op49-2`)_
-- [ ] **W. A. Mozart** — Sonata K. 283 (G Maior) — I mov.  _(id: `mozart-k283`)_
-- [ ] **Edvard Grieg** — Lyric Pieces (seleção em G/relacionadas) — cor e cantabile  _(id: `grieg-lyric-pieces`)_
-- [ ] **Robert Schumann** — Caça / peça de caráter (Álbum para a Juventude) — seleção  _(id: `schumann-op68-10`)_
-- [ ] **J. S. Bach (atribuído)** — Minueto em Sol menor (BWV Anh. 115/116) — contraste dentro da vizinhança  _(id: `bach-minuet-anh116`)_
-- [ ] **L. v. Beethoven** — Sonata Op. 79 (G Maior) — I mov. (trechos)  _(id: `beethoven-op79`)_
-- [ ] **Friedrich Kuhlau** — Sonatina Op. 55 nº 1 (G Maior) — I mov.  _(id: `kuhlau-op55-1`)_
-- [ ] **Muzio Clementi** — Sonatina Op. 36 nº 3 (G Maior) — I mov.  _(id: `clementi-op36-3`)_
-- [ ] **Franz Schubert** — Impromptu (seleção em G/relacionadas) — cantabile longo  _(id: `schubert-d894`)_
+- [x] **J. S. Bach** — Prelúdio e Fuga em Sol Maior (Cravo Bem Temperado) — escolha 1 movimento  _(id: `bach-wtc1-g`)_
+- [x] **L. v. Beethoven** — Sonata Op. 49 nº 2 (G Maior) — I mov.  _(id: `beethoven-op49-2`)_
+- [x] **W. A. Mozart** — Sonata K. 283 (G Maior) — I mov.  _(id: `mozart-k283`)_
+- [x] **Edvard Grieg** — Lyric Pieces (seleção em G/relacionadas) — cor e cantabile  _(id: `grieg-lyric-pieces`)_
+- [x] **Robert Schumann** — Caça / peça de caráter (Álbum para a Juventude) — seleção  _(id: `schumann-op68-10`)_
+- [x] **J. S. Bach (atribuído)** — Minueto em Sol menor (BWV Anh. 115/116) — contraste dentro da vizinhança  _(id: `bach-minuet-anh116`)_
+- [x] **L. v. Beethoven** — Sonata Op. 79 (G Maior) — I mov. (trechos)  _(id: `beethoven-op79`)_
+- [x] **Friedrich Kuhlau** — Sonatina Op. 55 nº 1 (G Maior) — I mov.  _(id: `kuhlau-op55-1`)_
+- [x] **Muzio Clementi** — Sonatina Op. 36 nº 3 (G Maior) — I mov.  _(id: `clementi-op36-3`)_
+- [x] **Franz Schubert** — Impromptu (seleção em G/relacionadas) — cantabile longo  _(id: `schubert-d894`)_
 
 ## d-major
 
-- [ ] **Muzio Clementi** — Sonatina Op. 36 nº 6 (D Maior) — I mov.  _(id: `clementi-op36-6`)_
-- [ ] **W. A. Mozart** — Sonata K. 311 (D Maior) — trechos  _(id: `mozart-k311`)_
-- [ ] **L. v. Beethoven** — Sonata Op. 10 nº 3 (D Maior) — escolha um movimento/trechos  _(id: `beethoven-op10-3`)_
-- [ ] **J. S. Bach** — Pequeno Prelúdio em Ré Maior (BWV 936)  _(id: `bach-prelude-bwv936`)_
-- [ ] **Friedrich Kuhlau** — Sonatina Op. 55 nº 1 — trechos em Ré e vizinhança (boa ponte)  _(id: `kuhlau-op55-1-d`)_
+- [x] **Muzio Clementi** — Sonatina Op. 36 nº 6 (D Maior) — I mov.  _(id: `clementi-op36-6`)_
+- [x] **W. A. Mozart** — Sonata K. 311 (D Maior) — trechos  _(id: `mozart-k311`)_
+- [x] **L. v. Beethoven** — Sonata Op. 10 nº 3 (D Maior) — escolha um movimento/trechos  _(id: `beethoven-op10-3`)_
+- [x] **J. S. Bach** — Pequeno Prelúdio em Ré Maior (BWV 936)  _(id: `bach-prelude-bwv936`)_
+- [x] **Friedrich Kuhlau** — Sonatina Op. 55 nº 1 — trechos em Ré e vizinhança (boa ponte)  _(id: `kuhlau-op55-1-d`)_
 - [x] **Piotr Ilyich Tchaikovsky** — The New Doll (Album for the Young, Op. 39 nº 9) — referência estética  _(id: `tchaikovsky-op39-9`)_
-- [ ] **Robert Schumann** — Soldier's March (Álbum para a Juventude, Op. 68) — marcha e precisão  _(id: `schumann-op68-2`)_
-- [ ] **François-Joseph Gossec** — Gavotte em Ré Maior (arranjos/edições) — dança clássica  _(id: `gossec-gavotte`)_
+- [x] **Robert Schumann** — Soldier's March (Álbum para a Juventude, Op. 68) — marcha e precisão  _(id: `schumann-op68-2`)_
+- [x] **François-Joseph Gossec** — Gavotte em Ré Maior (arranjos/edições) — dança clássica  _(id: `gossec-gavotte`)_
 
 ## a-minor
 
-- [ ] **W. A. Mozart** — Sonata K. 310 (A menor) — trechos (é intensa)  _(id: `mozart-k310`)_
-- [ ] **J. S. Bach** — Invenção a duas vozes em Lá menor (BWV 784)  _(id: `bach-invention-13`)_
-- [ ] **Frédéric Chopin** — Valsa em Lá menor (pósuma) — rubato com disciplina  _(id: `chopin-waltz-a-minor`)_
+- [x] **W. A. Mozart** — Sonata K. 310 (A menor) — trechos (é intensa)  _(id: `mozart-k310`)_
+- [x] **J. S. Bach** — Invenção a duas vozes em Lá menor (BWV 784)  _(id: `bach-invention-13`)_
+- [x] **Frédéric Chopin** — Valsa em Lá menor (pósuma) — rubato com disciplina  _(id: `chopin-waltz-a-minor`)_
 - [x] **Robert Schumann** — Melodia (Álbum para a Juventude, Op. 68 nº 1) — cantabile sem drama  _(id: `schumann-op68-1`)_
-- [ ] **Piotr Ilyich Tchaikovsky** — Morning Prayer (Album for the Young, Op. 39 nº 1/2 — seleção) — calma controlada  _(id: `tchaikovsky-op39-2`)_
-- [ ] **Friedrich Burgmüller** — Consolation (25 Estudos Fáceis, Op. 100 nº 13) — canto e sombra  _(id: `burgmuller-op100-13`)_
-- [ ] **Erik Satie** — Gymnopédie nº 1 — tempo como técnica  _(id: `satie-gymnopedie-1`)_
-- [ ] **L. v. Beethoven** — Für Elise (WoO 59) — trechos em A menor  _(id: `beethoven-fuer-elise`)_
+- [x] **Piotr Ilyich Tchaikovsky** — Morning Prayer (Album for the Young, Op. 39 nº 1/2 — seleção) — calma controlada  _(id: `tchaikovsky-op39-2`)_
+- [x] **Friedrich Burgmüller** — Consolation (25 Estudos Fáceis, Op. 100 nº 13) — canto e sombra  _(id: `burgmuller-op100-13`)_
+- [x] **Erik Satie** — Gymnopédie nº 1 — tempo como técnica  _(id: `satie-gymnopedie-1`)_
+- [x] **L. v. Beethoven** — Für Elise (WoO 59) — trechos em A menor  _(id: `beethoven-fuer-elise`)_
 
 ## fsharp-major
 
-- [ ] **J. S. Bach** — WTC I: Prelúdio e Fuga em F♯ Maior (BWV 858)  _(id: `bach-bwv858`)_
-- [ ] **L. v. Beethoven** — Sonata Op. 78 (F♯ Maior) — seleção de trechos  _(id: `beethoven-op78`)_
-- [ ] **Frédéric Chopin** — Prelúdio Op. 28 nº 13 (F♯ Maior)  _(id: `chopin-prelude-28-13`)_
-- [ ] **Frédéric Chopin** — Noturno Op. 15 nº 2 (F♯ Maior)  _(id: `chopin-nocturne-op15-2`)_
+- [x] **J. S. Bach** — WTC I: Prelúdio e Fuga em F♯ Maior (BWV 858)  _(id: `bach-bwv858`)_
+- [x] **L. v. Beethoven** — Sonata Op. 78 (F♯ Maior) — seleção de trechos  _(id: `beethoven-op78`)_
+- [x] **Frédéric Chopin** — Prelúdio Op. 28 nº 13 (F♯ Maior)  _(id: `chopin-prelude-28-13`)_
+- [x] **Frédéric Chopin** — Noturno Op. 15 nº 2 (F♯ Maior)  _(id: `chopin-nocturne-op15-2`)_
 - [ ] **Frédéric Chopin** — Barcarola Op. 60 (F♯ Maior)  _(id: `chopin-barcarolle-op60`)_
 - [ ] **Claude Debussy** — (enarmônico) ‘La fille aux cheveux de lin’ (G♭ Maior)  _(id: `debussy-fille-gflat`)_
 - [ ] **Franz Schubert** — (enarmônico) Impromptu Op. 90 nº 3 (G♭ Maior)  _(id: `schubert-impromptu-op90-3`)_
