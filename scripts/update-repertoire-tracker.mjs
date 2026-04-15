@@ -6,6 +6,8 @@ const KEYS_PATH = path.join(ROOT, "src", "content", "keys.ts");
 const DEEPDIVE_PATH = path.join(ROOT, "src", "content", "repertoireDeepDive.ts");
 const OUT_DIR = path.join(ROOT, "docs");
 const OUT_PATH = path.join(OUT_DIR, "repertoire_deepdive_tracker.md");
+const IDS_PATH = path.join(OUT_DIR, "repertoire_ids.json");
+const FIRST40_PATH = path.join(OUT_DIR, "repertoire_first40_ids.json");
 
 function readText(p) {
   return fs.readFileSync(p, "utf8");
@@ -122,6 +124,9 @@ function main() {
   const grouped = groupByKey(items);
   const keys = Array.from(grouped.keys());
 
+  // Also export an ordered list of repertoire IDs (in the same order as the tracker).
+  const orderedIds = [];
+
   const lines = [];
   lines.push("# Tracker — Deepdives de Repertório");
   lines.push("");
@@ -144,6 +149,7 @@ function main() {
       const isDone = manualIds.has(it.id);
       total++;
       if (isDone) done++;
+      orderedIds.push(it.id);
       lines.push(`- ${isDone ? "[x]" : "[ ]"} **${it.composer}** — ${it.title}  _(id: \`${it.id}\`)_`);
     }
     lines.push("");
@@ -153,7 +159,11 @@ function main() {
   lines.unshift("");
 
   fs.writeFileSync(OUT_PATH, lines.join("\n"), "utf8");
+  fs.writeFileSync(IDS_PATH, JSON.stringify(orderedIds, null, 2), "utf8");
+  fs.writeFileSync(FIRST40_PATH, JSON.stringify(orderedIds.slice(0, 40), null, 2), "utf8");
   console.log(`Wrote: ${path.relative(ROOT, OUT_PATH)} (${done}/${total} done)`);
+  console.log(`Wrote: ${path.relative(ROOT, IDS_PATH)} (total: ${orderedIds.length})`);
+  console.log(`Wrote: ${path.relative(ROOT, FIRST40_PATH)} (total: ${Math.min(40, orderedIds.length)})`);
 }
 
 main();

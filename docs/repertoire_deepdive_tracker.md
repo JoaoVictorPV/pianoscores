@@ -1,5 +1,5 @@
 
-> Progresso: **11/234** deepdives manuais (enciclopédicos) implementados.
+> Progresso: **43/234** deepdives manuais (enciclopédicos) implementados.
 # Tracker — Deepdives de Repertório
 
 Este arquivo lista **todas as obras sugeridas no site** (repertório) e marca automaticamente quais já têm deepdive manual (enciclopédico) implementado.
@@ -25,51 +25,51 @@ Gerado por: `node scripts/update-repertoire-tracker.mjs`
 
 ## e-major
 
-- [ ] **J. S. Bach** — Cravo Bem Temperado, Livro I: Prelúdio e Fuga em E Maior (BWV 854)  _(id: `bach-wtc1-e`)_
-- [ ] **Frédéric Chopin** — Estudo Op. 10 nº 3 (E Maior) — canto e saudade (sem peso)  _(id: `chopin-op10-3`)_
-- [ ] **Frédéric Chopin** — Prelúdio Op. 28 nº 9 (E Maior) — clareza e elegância  _(id: `chopin-op28-9`)_
-- [ ] **L. v. Beethoven** — Sonata Op. 14 nº 1 (E Maior) — I mov. (trechos)  _(id: `beethoven-op14-1`)_
-- [ ] **Domenico Scarlatti** — Sonata em E Maior (ex.: K. 380 / outras em E) — leveza com precisão  _(id: `scarlatti-e-major`)_
-- [ ] **W. A. Mozart** — (ponte) Divertimento/obras de câmara com trechos em E maior — treino de fraseado  _(id: `mozart-divertimento-k563-bridge`)_
-- [ ] **Sergei Rachmaninoff** — Prelúdio Op. 23 nº 4 (Dó sustenido menor) — (ponte: território de pretas)  _(id: `rachmaninoff-op23-4`)_
-- [ ] **Felix Mendelssohn** — (ponte) Songs Without Words (seleção) — brilho e leveza  _(id: `mendelssohn-op19b-1-bridge`)_
-- [ ] **Claude Debussy** — (ponte) Arabesques (seleção) — leveza com estrutura  _(id: `debussy-bridge`)_
+- [x] **J. S. Bach** — Cravo Bem Temperado, Livro I: Prelúdio e Fuga em E Maior (BWV 854)  _(id: `bach-wtc1-e`)_
+- [x] **Frédéric Chopin** — Estudo Op. 10 nº 3 (E Maior) — canto e saudade (sem peso)  _(id: `chopin-op10-3`)_
+- [x] **Frédéric Chopin** — Prelúdio Op. 28 nº 9 (E Maior) — clareza e elegância  _(id: `chopin-op28-9`)_
+- [x] **L. v. Beethoven** — Sonata Op. 14 nº 1 (E Maior) — I mov. (trechos)  _(id: `beethoven-op14-1`)_
+- [x] **Domenico Scarlatti** — Sonata em E Maior (ex.: K. 380 / outras em E) — leveza com precisão  _(id: `scarlatti-e-major`)_
+- [x] **W. A. Mozart** — (ponte) Divertimento/obras de câmara com trechos em E maior — treino de fraseado  _(id: `mozart-divertimento-k563-bridge`)_
+- [x] **Sergei Rachmaninoff** — Prelúdio Op. 23 nº 4 (Dó sustenido menor) — (ponte: território de pretas)  _(id: `rachmaninoff-op23-4`)_
+- [x] **Felix Mendelssohn** — (ponte) Songs Without Words (seleção) — brilho e leveza  _(id: `mendelssohn-op19b-1-bridge`)_
+- [x] **Claude Debussy** — (ponte) Arabesques (seleção) — leveza com estrutura  _(id: `debussy-bridge`)_
 
 ## b-major
 
-- [ ] **J. S. Bach** — Cravo Bem Temperado, Livro I: Prelúdio e Fuga em Si Maior (BWV 868)  _(id: `bach-wtc1-b`)_
-- [ ] **Frédéric Chopin** — Noturno Op. 62 nº 1 (Si Maior) — brilho íntimo  _(id: `chopin-op62-1`)_
-- [ ] **W. A. Mozart** — Sonata K. 570 (Si Maior) — trechos  _(id: `mozart-k570`)_
-- [ ] **L. v. Beethoven** — (ponte) Sonata Op. 22 (B♭ Maior) — disciplina clássica  _(id: `beethoven-op22-bridge`)_
-- [ ] **Robert Schumann** — (ponte) Waldszenen Op. 82 (seleção) — cor e camadas  _(id: `schumann-op82-bridge`)_
-- [ ] **Claude Debussy** — (ponte) L'isle joyeuse (A maior) — brilho e controle  _(id: `debussy-lisle-joyeuse-bridge`)_
-- [ ] **Alexander Scriabin** — (ponte) Prelúdios Op. 11 (seleção) — harmonia e cor  _(id: `bridge-scriabin-op11-bridge`)_
-- [ ] **Johannes Brahms** — (ponte) Intermezzi Op. 118/119 (seleção) — camadas  _(id: `bridge-brahms-op118`)_
-- [ ] **Felix Mendelssohn** — (ponte) Songs Without Words (seleção) — leveza com coluna  _(id: `bridge-mendelssohn-sww`)_
+- [x] **J. S. Bach** — Cravo Bem Temperado, Livro I: Prelúdio e Fuga em Si Maior (BWV 868)  _(id: `bach-wtc1-b`)_
+- [x] **Frédéric Chopin** — Noturno Op. 62 nº 1 (Si Maior) — brilho íntimo  _(id: `chopin-op62-1`)_
+- [x] **W. A. Mozart** — Sonata K. 570 (Si Maior) — trechos  _(id: `mozart-k570`)_
+- [x] **L. v. Beethoven** — (ponte) Sonata Op. 22 (B♭ Maior) — disciplina clássica  _(id: `beethoven-op22-bridge`)_
+- [x] **Robert Schumann** — (ponte) Waldszenen Op. 82 (seleção) — cor e camadas  _(id: `schumann-op82-bridge`)_
+- [x] **Claude Debussy** — (ponte) L'isle joyeuse (A maior) — brilho e controle  _(id: `debussy-lisle-joyeuse-bridge`)_
+- [x] **Alexander Scriabin** — (ponte) Prelúdios Op. 11 (seleção) — harmonia e cor  _(id: `bridge-scriabin-op11-bridge`)_
+- [x] **Johannes Brahms** — (ponte) Intermezzi Op. 118/119 (seleção) — camadas  _(id: `bridge-brahms-op118`)_
+- [x] **Felix Mendelssohn** — (ponte) Songs Without Words (seleção) — leveza com coluna  _(id: `bridge-mendelssohn-sww`)_
 
 ## gsharp-minor
 
-- [ ] **Sergei Rachmaninoff** — Prelúdio Op. 32 nº 12 (G♯ menor) — arquitetura e sombra  _(id: `rachmaninoff-op32-12`)_
-- [ ] **Alexander Scriabin** — Estudo Op. 8 nº 9 (G♯ menor) — tensão elástica  _(id: `scriabin-op8-9`)_
-- [ ] **J. S. Bach** — (ponte) WTC (livros I/II): procure prelúdio/fuga em G# menor (ou enarmônico A♭ menor) — laboratório de clareza  _(id: `bach-wtc1-gsharp-minor`)_
-- [ ] **Frédéric Chopin** — (ponte) Noturno Op. 48 nº 2 (F♯ menor) — controle de clímax  _(id: `chopin-op48-2-bridge`)_
-- [ ] **L. v. Beethoven** — (ponte) Sonata Op. 27 nº 2 (C♯ menor) — textura e pedal  _(id: `beethoven-op27-2-bridge`)_
-- [ ] **Sergei Rachmaninoff** — (ponte) Prelúdio Op. 23 nº 4 (Dó# menor) — camadas em território de pretas  _(id: `rachmaninoff-op23-4-bridge`)_
-- [ ] **Claude Debussy** — (ponte) Estampes / Prelúdios (seleção) — cor sem borrão  _(id: `bridge-debussy`)_
-- [ ] **Johannes Brahms** — (ponte) Intermezzi Op. 118/119 (seleção) — densidade íntima  _(id: `bridge-brahms`)_
-- [ ] **Robert Schumann** — (ponte) Kreisleriana Op. 16 (seleção) — turbulência organizada  _(id: `bridge-schumann`)_
+- [x] **Sergei Rachmaninoff** — Prelúdio Op. 32 nº 12 (G♯ menor) — arquitetura e sombra  _(id: `rachmaninoff-op32-12`)_
+- [x] **Alexander Scriabin** — Estudo Op. 8 nº 9 (G♯ menor) — tensão elástica  _(id: `scriabin-op8-9`)_
+- [x] **J. S. Bach** — (ponte) WTC (livros I/II): procure prelúdio/fuga em G# menor (ou enarmônico A♭ menor) — laboratório de clareza  _(id: `bach-wtc1-gsharp-minor`)_
+- [x] **Frédéric Chopin** — (ponte) Noturno Op. 48 nº 2 (F♯ menor) — controle de clímax  _(id: `chopin-op48-2-bridge`)_
+- [x] **L. v. Beethoven** — (ponte) Sonata Op. 27 nº 2 (C♯ menor) — textura e pedal  _(id: `beethoven-op27-2-bridge`)_
+- [x] **Sergei Rachmaninoff** — (ponte) Prelúdio Op. 23 nº 4 (Dó# menor) — camadas em território de pretas  _(id: `rachmaninoff-op23-4-bridge`)_
+- [x] **Claude Debussy** — (ponte) Estampes / Prelúdios (seleção) — cor sem borrão  _(id: `bridge-debussy`)_
+- [x] **Johannes Brahms** — (ponte) Intermezzi Op. 118/119 (seleção) — densidade íntima  _(id: `bridge-brahms`)_
+- [x] **Robert Schumann** — (ponte) Kreisleriana Op. 16 (seleção) — turbulência organizada  _(id: `bridge-schumann`)_
 
 ## csharp-minor
 
 - [x] **L. v. Beethoven** — Sonata Op. 27 nº 2 ‘Ao Luar’ (C♯ menor) — I mov. (e além, se quiser)  _(id: `beethoven-op27-2`)_
-- [ ] **Frédéric Chopin** — Noturno Op. 27 nº 1 (C♯ menor) — cantabile e arquitetura  _(id: `chopin-op27-1`)_
-- [ ] **Sergei Rachmaninoff** — Prelúdio Op. 3 nº 2 (C♯ menor) — peso sem dureza  _(id: `rachmaninoff-op3-2`)_
+- [x] **Frédéric Chopin** — Noturno Op. 27 nº 1 (C♯ menor) — cantabile e arquitetura  _(id: `chopin-op27-1`)_
+- [x] **Sergei Rachmaninoff** — Prelúdio Op. 3 nº 2 (C♯ menor) — peso sem dureza  _(id: `rachmaninoff-op3-2`)_
 - [ ] **J. S. Bach** — Cravo Bem Temperado, Livro I: Prelúdio e Fuga em C♯ menor (BWV 849)  _(id: `bach-wtc1-csharp-minor`)_
 - [ ] **Frédéric Chopin** — Scherzo nº 3 Op. 39 (C♯ menor) — trechos  _(id: `chopin-op39`)_
 - [ ] **Alexander Scriabin** — Estudo Op. 2 nº 1 (C♯ menor) — lirismo tenso  _(id: `scriabin-op2-1`)_
 - [ ] **Frédéric Chopin** — (ponte) Estudo Op. 10 nº 4 (C# menor?) — ponte de agilidade  _(id: `bridge-chopin-op10-4`)_
-- [ ] **Claude Debussy** — (ponte) Clair de Lune — controle de pedal e camadas  _(id: `bridge-debussy`)_
-- [ ] **Johannes Brahms** — (ponte) Intermezzi (seleção) — densidade íntima  _(id: `bridge-brahms`)_
+- [x] **Claude Debussy** — (ponte) Clair de Lune — controle de pedal e camadas  _(id: `bridge-debussy`)_
+- [x] **Johannes Brahms** — (ponte) Intermezzi (seleção) — densidade íntima  _(id: `bridge-brahms`)_
 
 ## e-minor
 
@@ -103,7 +103,7 @@ Gerado por: `node scripts/update-repertoire-tracker.mjs`
 - [ ] **Alexander Scriabin** — Estudo Op. 8 nº 12 (D# menor) — (ponte: energia e técnica)  _(id: `scriabin-op8-12`)_
 - [ ] **J. S. Bach** — Cravo Bem Temperado, Livro II: Prelúdio e Fuga em F♯ menor (BWV 883)  _(id: `bach-wtc2-fsharp-minor`)_
 - [ ] **W. A. Mozart** — Fantasia K. 475 (C menor) — (ponte: drama clássico)  _(id: `mozart-k475`)_
-- [ ] **Sergei Rachmaninoff** — Morceaux de fantaisie Op. 3 nº 2 ‘Prelúdio em C# menor’ — (ponte: peso)  _(id: `rachmaninoff-op3-2`)_
+- [x] **Sergei Rachmaninoff** — Morceaux de fantaisie Op. 3 nº 2 ‘Prelúdio em C# menor’ — (ponte: peso)  _(id: `rachmaninoff-op3-2`)_
 - [ ] **Robert Schumann** — Kreisleriana Op. 16 nº 2 (B♭ maior) — (ponte: vozes e turbulência)   _(id: `schumann-op16-2`)_
 - [ ] **P. I. Tchaikovsky** — 6 Pieces Op. 19 nº 2 ‘Nocturne’ (F♯ menor) — canto e pedal  _(id: `tchaikovsky-op19-2`)_
 - [ ] **John Field** — Noturno em F♯ menor (seleção) — o DNA do noturno  _(id: `field-nocturne-fsharp-minor`)_

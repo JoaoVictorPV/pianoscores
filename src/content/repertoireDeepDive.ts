@@ -328,6 +328,757 @@ const MANUAL: Partial<Record<string, RepertoireDeepDive>> = {
     ],
   },
 
+  "bach-wtc1-e": {
+    summary: [
+      "Bach no WTC I em Mi maior: clareza luminosa, contraponto limpo e ‘tempo interno’ que não pode tremer.",
+      "É uma peça que te ensina a separar camadas sem precisar de pedal-cobertor.",
+    ],
+    sections: [
+      {
+        title: "WTC I: por que isso é mais ‘língua’ do que ‘peça’",
+        paragraphs: [
+          "O WTC é um atlas de linguagem: cada tonalidade vira um laboratório onde Bach prova (na prática) que você consegue pensar em todas as regiões do sistema tonal — e ainda fazer música viva.",
+          "Em Mi maior, a armadilha é tocar ‘bonito e reto’. A clareza verdadeira aqui é retórica: cadências como pontuação, articulação como consoante, e direção harmônica como frase.",
+        ],
+      },
+      {
+        title: "Como ouvir enquanto toca (prelúdio vs fuga)",
+        paragraphs: [
+          "No prelúdio, a figuração precisa carregar a harmonia sem virar ‘moto-perpétuo’ vazio: faça o ouvinte sentir quando a harmonia muda de chão.",
+          "Na fuga, trate cada entrada como personagem: o sujeito precisa ser reconhecível, mas as vozes secundárias não podem morrer. O equilíbrio é o jogo.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: Bach no piano moderno",
+        paragraphs: [
+          "O piano moderno te dá sustain e dinâmica — ótimo. Só que sustain é cola: se você usa demais, a polifonia vira nuvem.",
+          "Estudar Bach com pouco pedal (ou pedal ‘por sílaba’) melhora diretamente seu repertório romântico: você aprende a organizar camadas com o ouvido, não com volume.",
+        ],
+      },
+    ],
+  },
+
+  "chopin-op10-3": {
+    summary: [
+      "Um ‘estudo’ que é, na verdade, um tratado de canto: melodia como voz humana sustentada por engenharia invisível.",
+      "A dificuldade não é velocidade: é controlar clímax e timbre sem engrossar o som.",
+    ],
+    sections: [
+      {
+        title: "O que Chopin está ensinando aqui (técnica = estética)",
+        paragraphs: [
+          "Chopin redefine o gênero Étude: ele pega um problema técnico e o transforma em poesia com forma. Não é exercício para aguentar sofrimento; é exercício para aprender a falar bonito com o instrumento.",
+          "Neste estudo, a meta não é ‘melodia alta’: é melodia inevitável. O acompanhamento precisa existir (harmonia e pulso), mas não pode roubar a fala.",
+        ],
+      },
+      {
+        title: "Linguagem: por que o meio ‘machuca’ (e por que tem que machucar)",
+        paragraphs: [
+          "A seção central contrasta porque a narrativa precisa de fratura: se tudo é canto confortável, não existe retorno com significado.",
+          "Você aprende aqui uma regra de ouro: clímax de Chopin é harmônico + tímbrico. Quando você resolve harmonia e voicing, o clímax aparece sem empurrar.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: o perigo do ‘som bonito’",
+        paragraphs: [
+          "É fácil ‘embelezar’ com pedal e perder contorno de vozes. Um Chopin adulto é legível por dentro.",
+          "Grave 20–30s: se você não consegue cantar a melodia com clareza sem aumentar o volume geral, o problema é hierarquia — não sensibilidade.",
+        ],
+      },
+    ],
+  },
+
+  "chopin-op28-9": {
+    summary: [
+      "Prelúdio curto em Mi maior: brilho econômico — uma frase que precisa soar natural e inevitável.",
+      "Treina leveza com contorno: rápido não é pressa; é elasticidade.",
+    ],
+    sections: [
+      {
+        title: "O prelúdio como microcapítulo",
+        paragraphs: [
+          "Nos 24 prelúdios, Chopin escreve estados. O nº 9 é um daqueles ‘sorrisos curtos’: parece simples, mas expõe se sua figuração tem desenho ou só movimento.",
+          "Como peça de estudo, é excelente porque não permite disfarce: o timbre e a direção aparecem imediatamente.",
+        ],
+      },
+      {
+        title: "Linguagem: cadências rápidas, mas pontuadas",
+        paragraphs: [
+          "Você precisa fazer o ouvinte sentir onde a harmonia fecha e reabre. Sem essa pontuação, a peça vira ‘passagem bonita’ e perde caráter.",
+          "Pense em articulação como gramática: o legato não é cola; é condução.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: o truque da leveza",
+        paragraphs: [
+          "Leveza aqui não é dedo fraco: é gesto pequeno e direção clara. Se você aperta, endurece; se você solta demais, some o desenho.",
+          "Quando dá certo, o prelúdio soa ‘óbvio’ — e esse é o sinal de maturidade.",
+        ],
+      },
+    ],
+  },
+
+  "beethoven-op14-1": {
+    summary: [
+      "Beethoven em Mi maior: clareza clássica com personalidade — humor e acento como pontuação.",
+      "Uma ponte perfeita: etiqueta do classicismo + energia beethoveniana sem exagero.",
+    ],
+    sections: [
+      {
+        title: "Onde isso senta no Beethoven (já é ‘Beethoven’, mas ainda conversa com Mozart)",
+        paragraphs: [
+          "A Op. 14 nº 1 mostra um Beethoven que domina o idioma clássico e começa a colocar as próprias garras: pequenos deslocamentos de acento, energia em motivos curtos e um senso de ‘piada’ musical que depende de timing.",
+          "Como estudante, você aprende que a forma não é burocracia: é teatro. Se você toca neutro, a peça vira correta e sem graça.",
+        ],
+      },
+      {
+        title: "Linguagem: acento como função (não como pancada)",
+        paragraphs: [
+          "Beethoven usa acentos para apontar estrutura harmônica e retórica: dominante, surpresa, resposta. O objetivo é fazer o ouvinte entender a frase sem legenda.",
+          "Se você transforma tudo em forte, perde contraste. Se você ‘alisa’, perde a piada. O meio-termo é articulação clara com peso organizado.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: por que Mi maior aqui importa",
+        paragraphs: [
+          "Mi maior não é a tonalidade mais ‘padrão’ para Beethoven; isso dá uma cor específica: brilho que pede precisão.",
+          "Pense nessa sonata como treino de elegância muscular: energia sem brutalidade.",
+        ],
+      },
+    ],
+  },
+
+  "scarlatti-e-major": {
+    summary: [
+      "Scarlatti em Mi maior (exemplos/seleção): articulação afiada, humor e gesto rápido — teclado como teatro.",
+      "Treina clareza em alta energia: desenho rítmico primeiro, ‘beleza’ depois.",
+    ],
+    sections: [
+      {
+        title: "Como estudar ‘Scarlatti genérico’ sem virar genérico",
+        paragraphs: [
+          "Este item é uma ponte deliberada: em vez de uma sonata única, ele te convida a pegar uma (ou duas) sonatas em Mi maior e tratá-las como laboratório de idioma.",
+          "A regra de ouro é estilo: pouca cola (pedal), ataque claro, releases limpos e pulso dançante. O que faz Scarlatti soar vivo é a borda.",
+        ],
+      },
+      {
+        title: "Linguagem: forma binária e surpresa por gesto",
+        paragraphs: [
+          "A maioria das sonatas trabalha com forma binária: duas metades com retornos claros. Você não precisa ‘romantizar’: precisa fazer o ouvinte perceber fronteiras e respostas.",
+          "O brilho está em ritmo e textura: repetição que vira fala, não repetição que vira tédio.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: por que isso melhora seu Mozart",
+        paragraphs: [
+          "Scarlatti te obriga a articular com inteligência. Isso limpa vícios de dedo alto e de pedal excessivo.",
+          "Quando você volta para Mozart depois, o fraseado fica mais ‘falado’ e menos ‘amassado’.",
+        ],
+      },
+    ],
+  },
+
+  "mozart-divertimento-k563-bridge": {
+    summary: [
+      "Item-ponte: Mozart de câmara como escola de fraseado — pense em três personagens conversando, não em ‘duas mãos’.",
+      "Treina hierarquia e respiração: o ouvido manda mais do que o dedo.",
+    ],
+    sections: [
+      {
+        title: "Por que música de câmara é o melhor professor de piano (sem você perceber)",
+        paragraphs: [
+          "Mozart é mestre de conversação musical. Em obras de câmara, isso fica escancarado: cada linha tem direito a respirar, interromper, responder e mudar de humor com lógica.",
+          "Como ‘ponte’, o objetivo não é decorar o Divertimento inteiro ao piano: é usar trechos/ideias para treinar a sensação de ensemble — você faz o piano parecer um trio conversando.",
+        ],
+      },
+      {
+        title: "Como estudar (sem virar tarefa impossível)",
+        paragraphs: [
+          "Escolha 8–16 compassos de um trecho cantabile e faça três coisas: (1) cante mentalmente a voz principal, (2) toque a voz principal sozinha com intenção, (3) adicione as outras vozes mantendo a principal como discurso.",
+          "O ganho real é controle de textura: você aprende a deixar uma linha ‘falar’ enquanto as outras sustentam o mundo sem virar ruído.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: por que isso melhora seu Mozart pianístico",
+        paragraphs: [
+          "Muitos pianistas ‘tocam Mozart’ como porcelana: bonito, mas sem fala. Música de câmara te obriga a fazer Mozart como teatro — elegante, mas cheio de intenção.",
+          "Quando você volta para sonatas, o fraseado fica mais humano: perguntas e respostas aparecem naturalmente.",
+        ],
+      },
+    ],
+  },
+
+  "rachmaninoff-op23-4": {
+    summary: [
+      "Rachmaninoff: camadas como arquitetura — o som precisa ser grande sem virar peso bruto.",
+      "Prelúdio como laboratório de voicing: baixo firme, meio denso e canto que aparece dentro do tecido.",
+    ],
+    sections: [
+      {
+        title: "Rachmaninoff e o piano ‘orquestra’",
+        paragraphs: [
+          "No romantismo tardio, o piano vira um substituto de orquestra: registro grave como metais/contrabaixos, médio como violas e madeiras, agudo como cordas e canto. Rachmaninoff escreve pensando em massa sonora com desenho.",
+          "Isso muda o estudo: não é só acertar notas; é decidir o que é estrutura (baixo), o que é textura (meio) e o que é fala (canto).",
+        ],
+      },
+      {
+        title: "Linguagem: densidade controlada (o segredo é hierarquia)",
+        paragraphs: [
+          "A armadilha é confundir densidade com barulho. Rachmaninoff soa ‘rico’ quando as camadas têm funções claras. Se tudo vira forte, a música perde perspectiva.",
+          "Pense no pedal como lente: ele pode dar profundidade, mas se você deixa ligado o tempo todo, vira neblina sem contorno.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: por que isso é treino de resistência inteligente",
+        paragraphs: [
+          "Muita gente acha que Rachmaninoff é ‘mão grande e força’. Na prática, é economia de gesto + gestão de peso. O corpo precisa aguentar densidade sem contrair.",
+          "Se você consegue manter timbre redondo em dinâmica média, o resto do repertório romântico fica mais fácil: você aprende a ‘carregar’ o som sem empurrar.",
+        ],
+      },
+    ],
+  },
+
+  "mendelssohn-op19b-1-bridge": {
+    summary: [
+      "Ponte: Mendelssohn ‘Songs Without Words’ como laboratório de leveza com coluna — canto por cima de textura discreta.",
+      "Treina transparência e fraseado: romantismo sem excesso.",
+    ],
+    sections: [
+      {
+        title: "Por que isso é ponte excelente",
+        paragraphs: [
+          "Esse item é um convite para escolher 1 ‘Song Without Words’ e usar como treino de idioma: período claro (clássico) + cor (romântico).",
+          "A habilidade central é controle de camadas: a melodia precisa soar vocal; o acompanhamento precisa ser confiável e leve.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: o mesmo problema aparece em Debussy",
+        paragraphs: [
+          "Mendelssohn te ensina transparência sem dissolver a harmonia. Isso é exatamente o que você vai precisar em Debussy: clareza sem secura.",
+          "Ou seja: ponte não é ‘peça aleatória’. É treino de uma competência transferível.",
+        ],
+      },
+    ],
+  },
+
+  "debussy-bridge": {
+    summary: [
+      "Ponte: Debussy como treino de transparência — pedal como cor, não como cola.",
+      "O objetivo é ouvir harmonia por timbre: ‘luz’ e ‘sombra’ sem borrar linhas.",
+    ],
+    sections: [
+      {
+        title: "Como estudar Debussy como ‘competência’ (e não como mistério)",
+        paragraphs: [
+          "Debussy funciona quando você troca a pergunta ‘qual é a nota?’ por ‘qual é a cor?’. Isso não é esoterismo: é controle de ataque, duração e pedal para deixar a harmonia respirar.",
+          "Como ponte, escolha um trecho curto (8–16 compassos) de uma Arabesque/Prelúdio e estude como se fosse laboratório de timbre: repita buscando clareza de vozes com ressonância controlada.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: Debussy não é ‘sem pulso’",
+        paragraphs: [
+          "A sensação de flutuação só aparece porque existe um pulso interno estável. Se o tempo desmancha, vira borrão.",
+          "O segredo é pulso calmo + microflexibilidade. Você sustenta o chão enquanto a superfície parece livre.",
+        ],
+      },
+    ],
+  },
+
+  "bach-wtc1-b": {
+    summary: [
+      "Bach no WTC I em Si maior: clareza rara em tonalidade brilhante — polifonia precisa soar como conversa, não como vitrine.",
+      "O desafio é fazer luz com contorno: belo é fácil; legível é que dá trabalho.",
+    ],
+    sections: [
+      {
+        title: "Por que Si maior é um laboratório especial no WTC",
+        paragraphs: [
+          "Si maior vive no ‘território de pretas’: a mão encontra posições confortáveis e o ouvido recebe um brilho natural. Isso é maravilhoso — e perigoso — porque convida o pianista a tocar no piloto automático.",
+          "Bach aqui te pede sintaxe: cadências como pontuação, vozes com hierarquia e tempo interno estável. Se você entrega só ‘som bonito’, a música perde linguagem.",
+        ],
+      },
+      {
+        title: "Como estudar sem virar soma de notas",
+        paragraphs: [
+          "No prelúdio: faça o ouvinte sentir as viradas harmônicas por direção de frase (não por volume).",
+          "Na fuga: trate o sujeito como personagem. Cada entrada precisa ser reconhecível, mas as vozes secundárias não podem morrer — principalmente no piano moderno.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: ‘pedal por sílaba’",
+        paragraphs: [
+          "Se você usar pedal, use como pontuação curta: coloração de chegada, não cola permanente.",
+          "Quando esse Bach fica legível, você ganha uma habilidade transferível: tocar densidade sem virar massa (isso reaparece direto em Brahms e Rachmaninoff).",
+        ],
+      },
+    ],
+  },
+
+  "chopin-op62-1": {
+    summary: [
+      "Noturno tardio em Si maior: harmonia refinada, vozes internas e um cantabile que precisa ser esculpido.",
+      "Treino de maturidade: ornamentação como dicção (fala), não como ‘enfeite bonito’.",
+    ],
+    sections: [
+      {
+        title: "Chopin tardio: por que isso não é mais ‘romantismo de salão’",
+        paragraphs: [
+          "Nos noturnos tardios, Chopin escreve com densidade de compositor que já ultrapassou o clichê do ‘suspiro’. A superfície ainda é sedutora, mas por baixo existe harmonia com ambiguidade e condução de vozes muito consciente.",
+          "Isso muda o estudo: você não está treinando apenas legato. Você está treinando hierarquia, respiração, e controle de tensão harmônica ao longo do tempo.",
+        ],
+      },
+      {
+        title: "Linguagem: ornamentação como consoante",
+        paragraphs: [
+          "Ornamentos aqui funcionam como dicção: eles dão sentido ao canto. Se você toca como ‘renda’, perde a fala; se toca pesado, tropeça.",
+          "Teste honesto: você consegue cantar a melodia mentalmente enquanto toca, sem subir o volume geral? Se não, a textura está engolindo a voz.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: a armadilha da tonalidade ‘luxuosa’",
+        paragraphs: [
+          "Si maior soa naturalmente brilhante no piano. Chopin usa essa luz para fazer sutileza de cor, não para fazer espetáculo.",
+          "Quando bem tocado, parece simples. Quando mal tocado, parece apenas bonito. A diferença é direção harmônica + voicing.",
+        ],
+      },
+    ],
+  },
+
+  "mozart-k570": {
+    summary: [
+      "Mozart tardio em Si maior: transparência clássica com sofisticação — ‘fácil de tocar, difícil de dizer’.",
+      "Treino de retórica: perguntas e respostas com pontuação, sem exagero de pedal.",
+    ],
+    sections: [
+      {
+        title: "Por que Mozart tardio é cruel (e por isso é ótimo)",
+        paragraphs: [
+          "Mozart tardio escreve transparente: ele não deixa você esconder. Tempo, articulação, cadências, vozes internas — tudo aparece.",
+          "Em Si maior, o brilho natural pode enganar: você acha que está ‘soando bem’ quando, na verdade, está só brilhando. A missão é brilho com intenção.",
+        ],
+      },
+      {
+        title: "Linguagem: período clássico (a gramática do bom gosto)",
+        paragraphs: [
+          "Pense em períodos: uma frase pergunta, outra responde. Cadências são pontuação. Se você não respira nas vírgulas, a música perde fala.",
+          "Mozart não precisa de pedal para soar ligado. Quando você usa pedal para criar legato, muitas vezes está cobrindo falta de condução de dedo + direção de frase.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: por que isso melhora seu Debussy",
+        paragraphs: [
+          "Debussy exige transparência. Mozart te ensina transparência. Essa é a ponte secreta.",
+          "Se você consegue tocar Mozart com camadas claras em dinâmica moderada, você já tem metade da técnica de ‘clareza com cor’ que o século XX pede.",
+        ],
+      },
+    ],
+  },
+
+  "beethoven-op22-bridge": {
+    summary: [
+      "Ponte: Beethoven ‘clássico’ em B♭ maior como escola de disciplina — clareza de forma, pulso e articulação.",
+      "Treino de retórica sem drama: aprender a ser convincente com pouco ‘efeito’.",
+    ],
+    sections: [
+      {
+        title: "Por que essa ponte existe (Beethoven antes do ‘Beethoven’)",
+        paragraphs: [
+          "Antes do Beethoven virar sinônimo de ruptura, ele já era mestre de gramática clássica. Estudar esse território é como estudar fundamentos de engenharia: não é ‘menos artístico’; é a base do que vem depois.",
+          "Como ponte, o foco não é ‘zerar a sonata inteira’: é usar trechos para treinar forma (seções claras), pontuação (cadências) e acentos com função.",
+        ],
+      },
+      {
+        title: "O que ouvir enquanto toca",
+        paragraphs: [
+          "Você está treinando três coisas: (1) baixo com chão, (2) melodia com fala, (3) acompanhamento disciplinado. Se qualquer uma domina as outras, a forma perde nitidez.",
+          "Beethoven aqui é quase um professor de ‘clareza com energia’: o pulso precisa ser firme, mas a frase precisa respirar.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: por que isso melhora seu Beethoven tardio",
+        paragraphs: [
+          "Quando você entende Beethoven ‘disciplinado’, você entende melhor o Beethoven ‘rebelde’: a ruptura tem alvo.",
+          "Em termos técnicos, isso te dá controle de articulação e acento que depois vira essencial em movimentos rápidos.",
+        ],
+      },
+    ],
+  },
+
+  "schumann-op82-bridge": {
+    summary: [
+      "Ponte: Schumann e a ideia de ‘cenas’ — cor, caráter e camadas psicológicas em miniaturas.",
+      "Treina alternância rápida de humor: frase como narrativa, não como exercício.",
+    ],
+    sections: [
+      {
+        title: "Schumann em miniatura: por que isso é técnica de imaginação",
+        paragraphs: [
+          "Schumann escreve personagens: o piano vira teatro interior. A técnica principal é caracterização — mudar intenção sem perder coerência de som.",
+          "Como ponte, pegue uma peça curta de Waldszenen (ou coleção afim) e trate como laboratório de cor: você aprende a mudar timbre e densidade sem trocar por volume.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: Schumann como ponte para Debussy",
+        paragraphs: [
+          "Schumann te ensina cor por harmonia e textura. Debussy continua isso com outra linguagem.",
+          "Se você aprende a ‘pintar’ sem borrar, sua leitura do século XIX e XX muda de patamar.",
+        ],
+      },
+    ],
+  },
+
+  "debussy-lisle-joyeuse-bridge": {
+    summary: [
+      "Ponte: Debussy virtuoso — brilho e euforia com controle de camadas (não é ‘pedal infinito’).",
+      "Estudo de textura: deixar o piano cintilar sem virar espuma.",
+    ],
+    sections: [
+      {
+        title: "Por que essa ponte é importante",
+        paragraphs: [
+          "‘L’isle joyeuse’ mostra que Debussy pode ser virtuoso sem perder transparência. É o contrário do clichê ‘impressionismo = borrão’.",
+          "Como ponte, você não precisa estudar a peça inteira: escolha um trecho curto e trate como laboratório de brilho controlado.",
+        ],
+      },
+      {
+        title: "O que ouvir (pra não virar espuma)",
+        paragraphs: [
+          "Separe camadas: baixo/harmonia como chão, figuração como textura, e qualquer linha superior como fala.",
+          "Pedal aqui é cor pontuada: se ele vira contínuo, você perde articulação e o brilho vira espuma.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: Debussy também tem ‘retórica’",
+        paragraphs: [
+          "Mesmo quando parece livre, existe pontuação e direção harmônica. O pulso interno é o que permite a sensação de flutuação.",
+          "Quem estuda isso aprende uma habilidade rara: controlar alta densidade com ouvido calmo.",
+        ],
+      },
+    ],
+  },
+
+  "bridge-scriabin-op11-bridge": {
+    summary: [
+      "Ponte: Scriabin Op. 11 (prelúdios) como laboratório de cor harmônica — romantismo tardio com ‘química’ própria.",
+      "Treina ouvir tensão por acorde (e não só por melodia).",
+    ],
+    sections: [
+      {
+        title: "Como estudar Scriabin (sem cair no ‘místico genérico’)",
+        paragraphs: [
+          "Scriabin pré-místico ainda é romântico, mas já tem vício de cor: acordes com funções menos óbvias e uma tendência a fazer a harmonia ‘derreter’ entre estados.",
+          "Como ponte, escolha 1 prelúdio curto da Op. 11 e estude como paleta: identifique 2–3 acordes-chave e ouça como a tensão muda mesmo sem grande volume.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: isso prepara seu ouvido para Debussy e Rachmaninoff",
+        paragraphs: [
+          "Scriabin te ensina a ouvir cor por função ambígua. Debussy te pede cor por timbre. Rachmaninoff te pede cor por camadas.",
+          "Ou seja: é ponte de ouvido, não só de repertório.",
+        ],
+      },
+    ],
+  },
+
+  "bridge-brahms-op118": {
+    summary: [
+      "Ponte: Brahms (Op. 118/119 — seleção) como treino de vozes internas e densidade íntima.",
+      "O objetivo é aprender ‘som profundo’ sem virar massa.",
+    ],
+    sections: [
+      {
+        title: "Como usar Brahms como ponte",
+        paragraphs: [
+          "Escolha uma miniatura tardia e trate como laboratório de camadas: a melodia pode estar no meio; o baixo pode ser a coluna; o resto é atmosfera.",
+          "Treine ouvir ‘quem fala’ a cada compasso. Essa pergunta resolve 80% do problema brahmsiano.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: Brahms é Bach com sangue (no teclado)",
+        paragraphs: [
+          "Brahms pensa em condução de vozes (herança de Bach), mas escreve com densidade romântica. Entender isso te impede de tocar só ‘acordes bonitos’.",
+          "Essa ponte melhora seu Chopin: você aprende a fazer timbre por camadas, não por volume.",
+        ],
+      },
+    ],
+  },
+
+  "bridge-mendelssohn-sww": {
+    summary: [
+      "Ponte: mais Mendelssohn (‘Songs Without Words’ — seleção) como treino de transparência com pulso.",
+      "Perfeito para consolidar cantabile e acompanhamento invisível.",
+    ],
+    sections: [
+      {
+        title: "O que escolher e como estudar",
+        paragraphs: [
+          "Escolha uma ‘Song’ cantabile e trate como exercício de hierarquia: melodia canta; acompanhamento respira; harmonia aparece sem empurrar.",
+          "Se você consegue manter a melodia clara em dinâmica média, você ganha controle que transfere direto para noturnos de Chopin.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: ‘leve’ = controle",
+        paragraphs: [
+          "O erro típico é tocar leve ‘fraco’. O certo é leve com coluna: pulso estável e gesto pequeno.",
+          "Essa ponte também te prepara para Debussy, porque o ouvido aprende a não borrar.",
+        ],
+      },
+    ],
+  },
+
+  "rachmaninoff-op32-12": {
+    summary: [
+      "Prelúdio tardio em sol# menor: arquitetura sombria e camadas que precisam respirar — densidade com desenho.",
+      "Treina ‘piano orquestra’ com autocontrole: grande sem virar duro.",
+    ],
+    sections: [
+      {
+        title: "O que ouvir: camadas e direção harmônica",
+        paragraphs: [
+          "Rachmaninoff te pede hierarquia constante: baixo como coluna, textura média como ‘ar denso’ e uma voz que precisa emergir sem gritar.",
+          "A peça funciona quando a tensão parece inevitável e a resolução parece ‘assentar’. Isso não vem de volume; vem de direção harmônica e de timing.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: o mito da força",
+        paragraphs: [
+          "Rachmaninoff não exige força bruta; exige gestão de peso e economia de gesto. Se você contrai, o som endurece e o pedal vira muleta.",
+          "Estude em dinâmica média com timbre redondo. Se o timbre já está bom no meio, o forte aparece como expansão natural.",
+        ],
+      },
+    ],
+  },
+
+  "scriabin-op8-9": {
+    summary: [
+      "Estudo em sol# menor: tensão elástica — virtuosismo que precisa soar como linha, não como tranco.",
+      "Treina controle de clímax: crescer sem endurecer.",
+    ],
+    sections: [
+      {
+        title: "Por que Scriabin é ‘Chopin com outro DNA’",
+        paragraphs: [
+          "Scriabin herda a ideia de canto e rubato do romantismo, mas coloca outro tipo de cromatismo e outra psicologia de tensão. O resultado é música que pede elasticidade controlada.",
+          "O estudo vira laboratório de ‘tensão organizada’: você precisa manter direção enquanto a harmonia parece escorregar.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: clímax por harmonia (não por volume)",
+        paragraphs: [
+          "Se você resolve a direção harmônica, o clímax aparece sem empurrar. Se você empurra, o som quebra.",
+          "Scriabin te ensina um conceito adulto: intensidade ≠ força. Intensidade pode ser cor e direção.",
+        ],
+      },
+    ],
+  },
+
+  "bach-wtc1-gsharp-minor": {
+    summary: [
+      "WTC em sol# menor (ou enarmônico): Bach no modo ‘escuro’ — contraponto que exige clareza em meio a tensão.",
+      "Treina controle de articulação: deixar a polifonia legível mesmo quando a harmonia pesa.",
+    ],
+    sections: [
+      {
+        title: "Por que tons ‘difíceis’ no WTC te deixam mais inteligente",
+        paragraphs: [
+          "Em tonalidades como sol# menor, o teclado convida a dedos confortáveis e, ao mesmo tempo, desafia o ouvido com um clima mais carregado. Isso é perfeito para treinar escuta de função.",
+          "O objetivo é o mesmo de sempre: sujeito reconhecível, vozes com vida e cadências pontuadas. Só que aqui o risco de virar massa é maior.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: enarmonia como ferramenta mental",
+        paragraphs: [
+          "Pensar enarmonicamente (G# vs A♭) pode te ajudar a enxergar padrões no teclado e a diminuir medo de ‘tonalidade de sustenido’.",
+          "No fim, o que importa é linguagem: quando você ouve a função harmônica, qualquer tonalidade fica ‘falável’.",
+        ],
+      },
+    ],
+  },
+
+  "chopin-op48-2-bridge": {
+    summary: [
+      "Ponte: Chopin dramático (Noturno Op. 48 nº 2 em F# menor) como escola de clímax — arquitetura, não ‘emoção sem mapa’.",
+      "Treina sustentar tensão por harmonia e textura.",
+    ],
+    sections: [
+      {
+        title: "Por que isso é ponte: clímax como competência",
+        paragraphs: [
+          "Antes de pensar em ‘tocar bonito’, pense em construir um arco: onde começa, onde acumula, onde explode, onde assenta.",
+          "Como ponte, use trechos (20–40s) para estudar a competência ‘clímax com controle’: crescer sem perder legibilidade de vozes.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: clímax de Chopin não é só volume",
+        paragraphs: [
+          "O clímax realmente convincente costuma ser harmônico + tímbrico. Se você só aumenta volume, a peça vira teatro raso.",
+          "Estude perguntando: qual voz está falando agora? Se você responde isso, a música se organiza.",
+        ],
+      },
+    ],
+  },
+
+  "beethoven-op27-2-bridge": {
+    summary: [
+      "Ponte: ‘Ao Luar’ como laboratório de textura contínua — pedalar é consequência de arquitetura, não efeito.",
+      "Treina hierarquia (baixo/textura/linha) e resistência sem contrair.",
+    ],
+    sections: [
+      {
+        title: "Como usar como ponte (sem cair no clichê do pedal)",
+        paragraphs: [
+          "Escolha 16–32 compassos e estude as três camadas: (1) baixo como função harmônica, (2) figuração como ‘ar’, (3) linha superior como fala.",
+          "O pedal entra depois, como ajuste fino para coloração — se ele entra antes, ele vira máscara.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: ‘beleza’ aqui é higiene",
+        paragraphs: [
+          "Se a peça soa bonita mas sem direção, normalmente o baixo está fraco ou o pedal está cobrindo decisões.",
+          "É um ótimo estudo de maturidade: você aprende a manter atmosfera sem perder gramática harmônica.",
+        ],
+      },
+    ],
+  },
+
+  "rachmaninoff-op23-4-bridge": {
+    summary: [
+      "Ponte: Rachmaninoff (território de pretas) como treino de camadas — densidade organizada e timbre redondo.",
+      "Treina baixo como coluna e meio como textura, sem ‘empurrar’ o som.",
+    ],
+    sections: [
+      {
+        title: "Por que isso é ponte",
+        paragraphs: [
+          "Esse tipo de escrita te prepara para qualquer romantismo tardio: você aprende a controlar densidade sem virar barulho.",
+          "Use trechos curtos para treinar voicing: faça a camada estrutural aparecer sem esmagar a textura.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: pedal como lente",
+        paragraphs: [
+          "Pense no pedal como uma lente de profundidade: você liga para colorir chegada, desliga para recuperar contorno.",
+          "Quando isso fica natural, você ganha um ‘padrão’ que serve até para Brahms.",
+        ],
+      },
+    ],
+  },
+
+  "bridge-debussy": {
+    summary: [
+      "Ponte: Debussy (geral) como laboratório de cor — timbre e pedal com lógica, não com neblina.",
+      "Treina transparência: ressonância controlada e pulso interno.",
+    ],
+    sections: [
+      {
+        title: "Como estudar (sem virar ‘mágica’)",
+        paragraphs: [
+          "Escolha 8–16 compassos de um prelúdio/peça e estude como timbre: repita buscando (1) contorno de vozes, (2) pedal curto e consciente, (3) direção harmônica.",
+          "O objetivo é criar cor sem perder desenho. Se você perde desenho, vira borrão; se você perde cor, vira seco.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: Debussy é clássico em segredo",
+        paragraphs: [
+          "A liberdade que parece existir depende de um pulso interno bem estável. Sem isso, a peça ‘desmancha’.",
+          "Quando você aprende isso, o romantismo inteiro fica mais transparente.",
+        ],
+      },
+    ],
+  },
+
+  "bridge-brahms": {
+    summary: [
+      "Ponte: Brahms (seleção) como treino de densidade íntima — vozes internas e harmonia que se move devagar.",
+      "Treina ‘som profundo’ sem grosseria.",
+    ],
+    sections: [
+      {
+        title: "O que estudar de verdade",
+        paragraphs: [
+          "Não é sobre tocar forte: é sobre fazer o ouvinte perceber camadas. Escolha um trecho e determine: (1) voz principal, (2) voz de suporte, (3) textura.",
+          "Se você mantém essa hierarquia, a emoção aparece como consequência.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: densidade não precisa de pedal longo",
+        paragraphs: [
+          "Pedal pode ajudar, mas não pode substituir condução de vozes. Brahms fica ‘caro’ quando a harmonia é legível.",
+          "Esse treino melhora seu Rachmaninoff e seu Chopin automaticamente.",
+        ],
+      },
+    ],
+  },
+
+  "bridge-schumann": {
+    summary: [
+      "Ponte: Schumann (seleção) como treino de personagens — alternância de humor com coerência de som.",
+      "Treina imaginação com disciplina: mudar caráter sem perder pulso.",
+    ],
+    sections: [
+      {
+        title: "Como estudar sem virar ‘teatro confuso’",
+        paragraphs: [
+          "Escolha uma peça curta e descreva (em uma frase) o personagem. Depois, toque tentando manter essa frase ‘viva’ no som.",
+          "O segredo é não exagerar: Schumann é intenso, mas a intensidade vem de harmonia e ritmo, não de pancada.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: isso te prepara para repertório narrativo",
+        paragraphs: [
+          "Quando você aprende a manter caráter, você melhora qualquer peça de ‘história’ — de Tchaikovsky a Debussy.",
+          "Essa ponte é sobre linguagem: fazer o piano falar em estilos diferentes.",
+        ],
+      },
+    ],
+  },
+
+  "chopin-op27-1": {
+    summary: [
+      "Noturno em dó# menor: drama com arquitetura — canto sobre textura e harmonia que precisa ‘andar’.",
+      "Treina rubato com coluna vertebral: liberdade por cima de chão estável.",
+    ],
+    sections: [
+      {
+        title: "Linguagem: cantabile + tensão harmônica",
+        paragraphs: [
+          "A melodia precisa soar vocal, mas o motor real é harmônico: a tensão se acumula por função e por registro.",
+          "O grande erro é romantizar com pedal e perder contorno. A emoção aparece quando as camadas são claras.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: rubato não é ‘derreter’",
+        paragraphs: [
+          "Rubato adulto é respiração com pulso interno. A mão esquerda segura a coluna; a direita flutua.",
+          "Se você consegue manter a coluna enquanto a frase respira, você domina o noturno — não só esta peça.",
+        ],
+      },
+    ],
+  },
+
+  "rachmaninoff-op3-2": {
+    summary: [
+      "Prelúdio em dó# menor: um ícone de peso e sino — mas o segredo é clareza e controle de ressonância.",
+      "Treina acordes como arquitetura: grande, redondo e legível.",
+    ],
+    sections: [
+      {
+        title: "O que o mundo ouve (e o que você precisa controlar)",
+        paragraphs: [
+          "O público ouve ‘drama’. Você precisa ouvir estrutura: baixo, acordes, ressonância e direção.",
+          "Se você só toca forte, perde o efeito de sino e vira bloco. O impacto vem de timbre + timing.",
+        ],
+      },
+      {
+        title: "Curiosidade útil: ressonância como parte da composição",
+        paragraphs: [
+          "O sustain aqui é parte do texto: você precisa de ressonância, mas com bordas. Isso é exatamente o equilíbrio que o piano moderno dificulta.",
+          "Estudar isso te dá uma habilidade valiosa: controlar densidade vertical sem perder legibilidade.",
+        ],
+      },
+    ],
+  },
+
   "beethoven-op27-2": {
     summary: [
       "Uma peça-fenômeno que é menos sobre ‘pedal bonito’ e mais sobre arquitetura de harmonia e controle de densidade.",
