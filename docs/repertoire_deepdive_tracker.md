@@ -1,5 +1,5 @@
 
-> Progresso: **2/234** deepdives manuais (enciclopédicos) implementados.
+> Progresso: **11/234** deepdives manuais (enciclopédicos) implementados.
 # Tracker — Deepdives de Repertório
 
 Este arquivo lista **todas as obras sugeridas no site** (repertório) e marca automaticamente quais já têm deepdive manual (enciclopédico) implementado.
@@ -13,15 +13,15 @@ Gerado por: `node scripts/update-repertoire-tracker.mjs`
 ## a-major
 
 - [x] **W. A. Mozart** — Sonata K. 331 (A Maior) — I mov. (Tema e Variações)  _(id: `mozart-k331`)_
-- [ ] **L. v. Beethoven** — Sonata Op. 2 nº 2 (A Maior) — trechos  _(id: `beethoven-op2-2`)_
-- [ ] **Franz Schubert** — Sonata D 664 (A Maior) — trechos  _(id: `schubert-d664`)_
-- [ ] **Frédéric Chopin** — Prelúdio Op. 28 nº 7 (A Maior) — micro-joia  _(id: `chopin-prelude-7-a`)_
-- [ ] **Frédéric Chopin** — Polonaise Op. 40 nº 1 (A Maior) — ‘Militar’ (trechos)  _(id: `chopin-polonaise-op40-1`)_
-- [ ] **Johannes Brahms** — Intermezzo Op. 118 nº 2 (A Maior) — canto interno  _(id: `brahms-op118-2`)_
-- [ ] **Felix Mendelssohn** — Songs Without Words Op. 62 nº 6 (A Maior) — ‘Spring Song’  _(id: `mendelssohn-op62-6`)_
-- [ ] **J. S. Bach** — Prelúdio e Fuga em A Maior (Cravo Bem Temperado, Livro II — BWV 888)  _(id: `bach-wtc2-a`)_
-- [ ] **Domenico Scarlatti** — Sonata em A Maior (K. 208/L. 238) — ‘pianismo com sorriso’  _(id: `scarlatti-k208`)_
-- [ ] **L. v. Beethoven** — Sonata Op. 101 (A Maior) — trechos  _(id: `beethoven-op101`)_
+- [x] **L. v. Beethoven** — Sonata Op. 2 nº 2 (A Maior) — trechos  _(id: `beethoven-op2-2`)_
+- [x] **Franz Schubert** — Sonata D 664 (A Maior) — trechos  _(id: `schubert-d664`)_
+- [x] **Frédéric Chopin** — Prelúdio Op. 28 nº 7 (A Maior) — micro-joia  _(id: `chopin-prelude-7-a`)_
+- [x] **Frédéric Chopin** — Polonaise Op. 40 nº 1 (A Maior) — ‘Militar’ (trechos)  _(id: `chopin-polonaise-op40-1`)_
+- [x] **Johannes Brahms** — Intermezzo Op. 118 nº 2 (A Maior) — canto interno  _(id: `brahms-op118-2`)_
+- [x] **Felix Mendelssohn** — Songs Without Words Op. 62 nº 6 (A Maior) — ‘Spring Song’  _(id: `mendelssohn-op62-6`)_
+- [x] **J. S. Bach** — Prelúdio e Fuga em A Maior (Cravo Bem Temperado, Livro II — BWV 888)  _(id: `bach-wtc2-a`)_
+- [x] **Domenico Scarlatti** — Sonata em A Maior (K. 208/L. 238) — ‘pianismo com sorriso’  _(id: `scarlatti-k208`)_
+- [x] **L. v. Beethoven** — Sonata Op. 101 (A Maior) — trechos  _(id: `beethoven-op101`)_
 
 ## e-major
 
