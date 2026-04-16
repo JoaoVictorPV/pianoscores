@@ -1,5 +1,5 @@
 
-> Progresso: **200/234** deepdives manuais (enciclopédicos) implementados.
+> Progresso: **234/234** deepdives manuais (enciclopédicos) implementados.
 # Tracker — Deepdives de Repertório
 
 Este arquivo lista **todas as obras sugeridas no site** (repertório) e marca automaticamente quais já têm deepdive manual (enciclopédico) implementado.
@@ -272,46 +272,46 @@ Gerado por: `node scripts/update-repertoire-tracker.mjs`
 - [x] **J. S. Bach** — WTC I: Prelúdio e Fuga em B♭ Maior (BWV 866)  _(id: `bb-bach-wtc1-866`)_
 - [x] **Joseph Haydn** — Sonata em B♭ Maior (seleção) — pontuação musical  _(id: `bb-haydn-bb-sonata`)_
 - [x] **L. v. Beethoven** — (ponte) Sonata Op. 106 (B♭ Maior) — trechos  _(id: `bb-beethoven-hammerklavier-bridge`)_
-- [ ] **Frédéric Chopin** — (ponte) Aprenda 1 peça cantabile em tom vizinho (E♭/A♭) e traga o som para B♭  _(id: `bb-chopin-bridge`)_
-- [ ] **Claude Debussy** — (ponte) Prelúdios (seleção) — transparência  _(id: `bb-debussy-bridge`)_
-- [ ] **Johannes Brahms** — (ponte) Intermezzi/Valsas (seleção) — camadas  _(id: `bb-brahms-bridge`)_
-- [ ] **J. S. Bach / você** — (ponte) Transponha 8–16 compassos para B♭ Maior  _(id: `bb-transposition`)_
+- [x] **Frédéric Chopin** — (ponte) Aprenda 1 peça cantabile em tom vizinho (E♭/A♭) e traga o som para B♭  _(id: `bb-chopin-bridge`)_
+- [x] **Claude Debussy** — (ponte) Prelúdios (seleção) — transparência  _(id: `bb-debussy-bridge`)_
+- [x] **Johannes Brahms** — (ponte) Intermezzi/Valsas (seleção) — camadas  _(id: `bb-brahms-bridge`)_
+- [x] **J. S. Bach / você** — (ponte) Transponha 8–16 compassos para B♭ Maior  _(id: `bb-transposition`)_
 
 ## f-major
 
-- [ ] **W. A. Mozart** — Sonata K. 332 (F Maior) — trechos  _(id: `f-mozart-k332`)_
-- [ ] **L. v. Beethoven** — Sonata Op. 10 nº 2 (F Maior) — trechos  _(id: `f-beethoven-op10-2`)_
-- [ ] **J. S. Bach** — WTC I: Prelúdio e Fuga em F Maior (BWV 856)  _(id: `f-bach-wtc1-856`)_
-- [ ] **Frédéric Chopin** — Noturno Op. 15 nº 1 (F Maior)  _(id: `f-chopin-nocturne-op15-1`)_
-- [ ] **Joseph Haydn** — (ponte) Sonatas em F Maior (seleção) — clareza formal  _(id: `f-haydn-bridge`)_
-- [ ] **D. Scarlatti** — (ponte) Sonatas (seleção) — toque perolado  _(id: `f-scarlatti-bridge`)_
-- [ ] **Claude Debussy** — (ponte) Peças de transparência (seleção) — pedal limpo  _(id: `f-debussy-bridge`)_
-- [ ] **Johannes Brahms** — (ponte) Intermezzi (seleção) — camadas  _(id: `f-brahms-bridge`)_
-- [ ] **Robert Schumann** — (ponte) Álbum para a Juventude (seleção) — som humano  _(id: `f-schumann-bridge`)_
-- [ ] **J. S. Bach / você** — (ponte) Transponha 8 compassos para F Maior  _(id: `f-transposition`)_
+- [x] **W. A. Mozart** — Sonata K. 332 (F Maior) — trechos  _(id: `f-mozart-k332`)_
+- [x] **L. v. Beethoven** — Sonata Op. 10 nº 2 (F Maior) — trechos  _(id: `f-beethoven-op10-2`)_
+- [x] **J. S. Bach** — WTC I: Prelúdio e Fuga em F Maior (BWV 856)  _(id: `f-bach-wtc1-856`)_
+- [x] **Frédéric Chopin** — Noturno Op. 15 nº 1 (F Maior)  _(id: `f-chopin-nocturne-op15-1`)_
+- [x] **Joseph Haydn** — (ponte) Sonatas em F Maior (seleção) — clareza formal  _(id: `f-haydn-bridge`)_
+- [x] **D. Scarlatti** — (ponte) Sonatas (seleção) — toque perolado  _(id: `f-scarlatti-bridge`)_
+- [x] **Claude Debussy** — (ponte) Peças de transparência (seleção) — pedal limpo  _(id: `f-debussy-bridge`)_
+- [x] **Johannes Brahms** — (ponte) Intermezzi (seleção) — camadas  _(id: `f-brahms-bridge`)_
+- [x] **Robert Schumann** — (ponte) Álbum para a Juventude (seleção) — som humano  _(id: `f-schumann-bridge`)_
+- [x] **J. S. Bach / você** — (ponte) Transponha 8 compassos para F Maior  _(id: `f-transposition`)_
 
 ## g-minor
 
-- [ ] **J. S. Bach** — WTC I: Prelúdio e Fuga em G menor (BWV 861)  _(id: `gmin-bach-wtc1-861`)_
-- [ ] **W. A. Mozart** — Sonata K. 457 (G menor) — trechos  _(id: `gmin-mozart-k457`)_
-- [ ] **L. v. Beethoven** — Sonata Op. 49 nº 1 (G menor) — I mov.  _(id: `gmin-beethoven-op49-1`)_
-- [ ] **Frédéric Chopin** — Balada nº 1 Op. 23 (G menor) — trechos  _(id: `gmin-chopin-op23`)_
-- [ ] **Sergei Rachmaninoff** — Prelúdio Op. 23 nº 5 (G menor)  _(id: `gmin-rachmaninoff-op23-5`)_
-- [ ] **Johannes Brahms** — Rapsódia Op. 79 nº 2 (G menor)  _(id: `gmin-brahms-op79-2`)_
-- [ ] **J. S. Bach** — Pequeno Prelúdio em G menor (BWV 930) — (selecione edição)  _(id: `gmin-bach-little-prelude`)_
-- [ ] **Claude Debussy** — (ponte) Prelúdios (seleção) — sombra transparente  _(id: `gmin-debussy-bridge`)_
-- [ ] **J. S. Bach / você** — (ponte) Transponha 8 compassos para G menor  _(id: `gmin-transposition`)_
-- [ ] **D. Scarlatti** — (ponte) Sonatas em modo menor (seleção) — borda  _(id: `gmin-scarlatti-bridge`)_
+- [x] **J. S. Bach** — WTC I: Prelúdio e Fuga em G menor (BWV 861)  _(id: `gmin-bach-wtc1-861`)_
+- [x] **W. A. Mozart** — Sonata K. 457 (G menor) — trechos  _(id: `gmin-mozart-k457`)_
+- [x] **L. v. Beethoven** — Sonata Op. 49 nº 1 (G menor) — I mov.  _(id: `gmin-beethoven-op49-1`)_
+- [x] **Frédéric Chopin** — Balada nº 1 Op. 23 (G menor) — trechos  _(id: `gmin-chopin-op23`)_
+- [x] **Sergei Rachmaninoff** — Prelúdio Op. 23 nº 5 (G menor)  _(id: `gmin-rachmaninoff-op23-5`)_
+- [x] **Johannes Brahms** — Rapsódia Op. 79 nº 2 (G menor)  _(id: `gmin-brahms-op79-2`)_
+- [x] **J. S. Bach** — Pequeno Prelúdio em G menor (BWV 930) — (selecione edição)  _(id: `gmin-bach-little-prelude`)_
+- [x] **Claude Debussy** — (ponte) Prelúdios (seleção) — sombra transparente  _(id: `gmin-debussy-bridge`)_
+- [x] **J. S. Bach / você** — (ponte) Transponha 8 compassos para G menor  _(id: `gmin-transposition`)_
+- [x] **D. Scarlatti** — (ponte) Sonatas em modo menor (seleção) — borda  _(id: `gmin-scarlatti-bridge`)_
 
 ## d-minor
 
-- [ ] **J. S. Bach** — WTC I: Prelúdio e Fuga em D menor (BWV 851)  _(id: `dmin-bach-wtc1-851`)_
-- [ ] **J. S. Bach** — Invenção nº 4 (D menor) — BWV 775  _(id: `dmin-bach-invention-4`)_
-- [ ] **W. A. Mozart** — Concerto nº 20 K. 466 (D menor) — trechos/arranjos  _(id: `dmin-mozart-k466`)_
-- [ ] **L. v. Beethoven** — Sonata Op. 31 nº 2 ‘Tempest’ (D menor) — trechos  _(id: `dmin-beethoven-tempest`)_
-- [ ] **Frédéric Chopin** — Prelúdio Op. 28 nº 24 (D menor)  _(id: `dmin-chopin-prelude-op28-24`)_
-- [ ] **D. Scarlatti** — Sonata K. 9 (D menor) — virtuosismo com clareza  _(id: `dmin-scarlatti-k9`)_
-- [ ] **Sergei Rachmaninoff** — Prelúdio Op. 23 nº 3 (D menor) — seleta de trechos  _(id: `dmin-rachmaninoff-op23-3`)_
-- [ ] **Johannes Brahms** — (ponte) Intermezzi (seleção) — densidade íntima  _(id: `dmin-brahms-bridge`)_
-- [ ] **Claude Debussy** — (ponte) Prelúdios (seleção) — transparência  _(id: `dmin-debussy-bridge`)_
-- [ ] **J. S. Bach / você** — (ponte) Transponha 8 compassos para D menor  _(id: `dmin-transposition`)_
+- [x] **J. S. Bach** — WTC I: Prelúdio e Fuga em D menor (BWV 851)  _(id: `dmin-bach-wtc1-851`)_
+- [x] **J. S. Bach** — Invenção nº 4 (D menor) — BWV 775  _(id: `dmin-bach-invention-4`)_
+- [x] **W. A. Mozart** — Concerto nº 20 K. 466 (D menor) — trechos/arranjos  _(id: `dmin-mozart-k466`)_
+- [x] **L. v. Beethoven** — Sonata Op. 31 nº 2 ‘Tempest’ (D menor) — trechos  _(id: `dmin-beethoven-tempest`)_
+- [x] **Frédéric Chopin** — Prelúdio Op. 28 nº 24 (D menor)  _(id: `dmin-chopin-prelude-op28-24`)_
+- [x] **D. Scarlatti** — Sonata K. 9 (D menor) — virtuosismo com clareza  _(id: `dmin-scarlatti-k9`)_
+- [x] **Sergei Rachmaninoff** — Prelúdio Op. 23 nº 3 (D menor) — seleta de trechos  _(id: `dmin-rachmaninoff-op23-3`)_
+- [x] **Johannes Brahms** — (ponte) Intermezzi (seleção) — densidade íntima  _(id: `dmin-brahms-bridge`)_
+- [x] **Claude Debussy** — (ponte) Prelúdios (seleção) — transparência  _(id: `dmin-debussy-bridge`)_
+- [x] **J. S. Bach / você** — (ponte) Transponha 8 compassos para D menor  _(id: `dmin-transposition`)_
